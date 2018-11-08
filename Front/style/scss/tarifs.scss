@@ -1,0 +1,302 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*==================================
+=            PAGE TARIFS           =
+===================================*/
+
+#section-cover{
+	position: relative;
+	padding: 210px 0px 90px 0px;
+	.wrapper{
+		position: relative;
+		z-index: 1;
+		@include styleGrid2;
+	}
+	.container-text{
+		text-align: center;
+		h1{
+			@include styleH3;
+		}
+		p{
+			max-width: 580px;
+			margin: 10px auto 0px auto;
+			@include styleParagraphMedium;
+		}
+	}
+	.shape{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 70%;
+		z-index: 1;
+	}
+}
+
+#section-tarifs{
+	position: relative;
+	padding-bottom: 60px;
+	background: linear-gradient(180deg, #FFFFFF 0%, #E7E8EC 100%);
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-el{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		.el{
+			width: calc(100% / 3);
+			text-align: center;
+			border-radius: 8px;
+			padding: 45px;
+			transition: all 0.25s ease;
+			&:hover{
+				box-shadow: 0 9px 25px 0 rgba(56,70,122,0.15);
+				background-color: #FFF;
+			}
+			.icn{
+				height: 60px;
+			}
+			.title{
+				margin-top: 25px;
+				@include styleParagraphBig;
+				font-family: $font_1;
+				color: $colorMain_1;
+			}
+			.paragraph{
+				@include styleParagraphSmall;
+			}
+			.container-price{
+				margin-top: 20px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: flex-start;
+				justify-content: center;
+				.price{
+					@include styleH2;
+					line-height: 28px !important;
+				}
+				.dvs{
+					margin-left: 5px;
+					@include styleH6;
+				}
+			}
+			.desc-1{
+				margin-top: 20px;
+				@include styleParagraphSmall;
+			}
+			.desc-2{
+				@include styleParagraphSmall;
+				color: $colorMain_3;
+				opacity: 1;
+				font-family: $font_1;
+			}
+			.btn{
+				@include button;
+				margin-top: 28px;
+				padding: 7px 34px 7px 34px;
+			}
+			ul{
+				margin-top: 60px;
+				list-style: none;
+				text-align: left;
+				li{
+					position: relative;
+					margin-bottom: 33px;
+					padding-left: 30px;
+					@include styleParagraphSmall;
+					&:last-child{
+						margin-bottom: 0px;
+					}
+					&:before{
+						content: '';
+						height: 5px;
+						width: 5px;
+						border-radius: 3px;
+						position: absolute;
+						left: 0px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+			&:nth-child(1) ul li:before{
+				background-color: $colorMain_6;
+			}
+			&:nth-child(2) ul li:before{
+				background-color: $colorMain_2;
+			}
+			&:nth-child(3) ul li:before{
+				background-color: $colorMain_5;
+			}
+		}
+	}
+	.text{
+		margin-top: 90px;
+		text-align: center;
+		@include styleParagraphSmall;
+	}
+}
+
+#section-try{
+	padding: 130px 0px 130px 0px;
+	.wrapper{
+		position: relative;
+		@include styleGrid2;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.container-text{
+		width: 515px;
+		.title{
+			@include styleH3;
+		}
+		.paragraph{
+			margin-top: 14px;
+			@include styleParagraphBig;
+		}
+		.title-label{
+			margin-top: 50px;
+			@include styleParagraphSmall;
+			font-family: $font_3;
+		}
+		.container-input{
+			margin-top: 15px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			input{
+				width: 350px;
+				height: 36px;
+				border:1px solid rgba($colorMain_1, 0.4);
+				border-radius: 6px;
+				outline: none;
+				@include styleParagraphSmall;
+				color: rgba($colorMain_1, 1);
+				padding-left: 15px;
+				transition: all 0.25s ease;
+				&:focus{
+					border-color:rgba($colorMain_1, 1);
+				}
+				&::placeholder {
+					color:rgba($colorMain_1, 0.3);
+				}
+			}
+			.btn{
+				@include button;
+				padding: 7px 34px 7px 34px;
+			}
+		}
+	}
+	.container-li{
+		width: 400px;
+		ul{
+			list-style: none;
+			text-align: left;
+			li{
+				position: relative;
+				margin-bottom: 33px;
+				padding-left: 30px;
+				@include styleParagraphSmall;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				&:before{
+					content: '';
+					height: 5px;
+					width: 5px;
+					border-radius: 3px;
+					position: absolute;
+					left: 0px;
+					top: 50%;
+					transform: translateY(-50%);
+					background-color: $colorMain_4;
+				}
+			}
+		}
+	}
+}
+
+#section-faq{
+	padding: 150px 0px 150px 0px;
+	background-color: #F4f4f6;
+	.wrapper{
+		@include styleGrid2;
+	}
+	.container-text{
+		text-align: center;
+		img{
+			height: 60px;
+		}
+		h2{
+			margin-top: 15px;
+			@include styleH3;
+		}
+	}
+	.container-li{
+		margin-top: 110px;
+		.li{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			margin-bottom: 100px;
+			&:last-child{
+				margin-bottom:0px;
+			}
+			h3{
+				@include styleH5;
+				width: calc(100% - 800px);
+			}
+			.container-el{
+				width: 750px;
+				.el{
+					border-bottom: 1px solid rgba(185,188,198,0.5);
+					padding: 20px 0px 20px 0px;
+					.title{
+						cursor: pointer;
+						position: relative;
+						h4{
+							@include styleParagraphSmall;
+							font-family: $font_2;
+							color:rgba($colorMain_1, 1);
+							padding-right: 20px;
+						}
+						img{
+							width: 10px;
+							position: absolute;
+							top: 50%;
+							right: 0px;
+							opacity: 0.6;
+							transform: translateY(-50%) rotate(90deg);
+							transition: all 0.25s ease;
+						}
+					}
+					p{
+						overflow: hidden;
+						height: 0px;
+						@include styleParagraphSmall;
+					}
+					&.active{
+						.title img{
+							transform: translateY(-50%) rotate(-90deg);
+						}
+						p{
+							height: initial;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*======================================
+=            END PAGE TARIFS           =
+=======================================*/
+
+@import 'footer.scss';

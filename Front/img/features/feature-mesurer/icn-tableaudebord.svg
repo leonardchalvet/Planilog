@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>DECDC298-D919-4DD2-82C7-B48F3069C986</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-818.000000, -2771.000000)">
+            <g id="2" transform="translate(773.000000, 2726.000000)">
+                <g id="picto">
+                    <g id="tableau-de-bord" transform="translate(45.000000, 45.000000)">
+                        <circle id="Oval-4" fill="#FB6D6D" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                        <g id="Group" transform="translate(16.000000, 14.000000)">
+                            <g id="3d-box-corner">
+                                <g id="Group-10">
+                                    <path d="M26.0985178,10.5493757 L3.81089954,0.507268153 C3.42569673,0.333707748 2.97272964,0.505277816 2.79916924,0.890480627 C2.75465818,0.989269197 2.73164062,1.09638634 2.73164062,1.20473954 L2.73164062,18.2988914 C2.73164062,18.9007003 3.08443722,19.4466135 3.6331228,19.6938342 L25.9207411,29.7359417 C26.3059439,29.9095021 26.758911,29.7379321 26.9324714,29.3527293 C26.9769824,29.2539407 27,29.1468235 27,29.0384703 L27,20.7777778 L27,11.9443185 C27,11.3425096 26.6472034,10.7965964 26.0985178,10.5493757 Z" id="Shape" fill="#FB6D6D"></path>
+                                    <path d="M23.3985178,12.3271535 L1.11089954,2.28504593 C0.725696728,2.11148553 0.272729643,2.28305559 0.0991692374,2.66825841 C0.0546581806,2.76704697 0.0316406242,2.87416412 0.0316406242,2.98251732 L0.0316406242,20.0766692 C0.0316406242,20.678478 0.384437216,21.2243913 0.933122799,21.4716119 L23.2207411,31.5137195 C23.6059439,31.6872799 24.058911,31.5157098 24.2324714,31.130507 C24.2769824,31.0317185 24.3,30.9246013 24.3,30.8162481 L24.3,22.5555556 L24.3,13.7220963 C24.3,13.1202874 23.9472034,12.5743742 23.3985178,12.3271535 Z" id="Shape" fill="#FFA6B0"></path>
+                                    <path d="M6.4546875,15.6134259 C8.76133928,16.5781344 10.63125,15.4996795 10.63125,13.2046296 C10.63125,10.9095796 8.76133928,8.26702328 6.4546875,7.30231479 C4.14803572,6.3376063 2.278125,7.41606115 2.278125,9.71111111 C2.278125,12.0061611 4.14803572,14.6487174 6.4546875,15.6134259 Z" id="Oval" stroke="#FFCBFE" stroke-width="0.765000001" fill-rule="nonzero"></path>
+                                    <path d="M13.66875,10.8444444 L20.503125,13.8666667" id="Path-20" stroke="#FB6D6D" stroke-width="1.53" stroke-linecap="round" fill-rule="nonzero"></path>
+                                    <path d="M13.66875,13.8666667 L20.503125,16.8888889" id="Path-20" stroke="#FB6D6D" stroke-width="1.53" stroke-linecap="round" fill-rule="nonzero"></path>
+                                    <path d="M13.66875,16.8888889 L20.503125,19.9111111" id="Path-20" stroke="#FB6D6D" stroke-width="1.53" stroke-linecap="round" fill-rule="nonzero"></path>
+                                    <polygon id="Path-21" fill="#FFCBFE" fill-rule="nonzero" points="3.0375 16.8888889 3.0375 19.9111111 7.59375 22.1777778 7.59375 19.1555556"></polygon>
+                                    <polygon id="Path-21-Copy" fill="#FFCBFE" fill-rule="nonzero" points="9.871875 19.9111111 9.871875 22.9333333 14.428125 25.2 14.428125 22.1777778"></polygon>
+                                    <polygon id="Path-21-Copy-2" fill="#FFCBFE" fill-rule="nonzero" points="16.70625 23.6888889 16.70625 26.7111111 21.2625 28.9777778 21.2625 25.9555556"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

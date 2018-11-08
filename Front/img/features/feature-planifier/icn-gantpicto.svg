@@ -1,0 +1,13 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <circle fill="#FFB400" fill-rule="nonzero" opacity=".2" cx="30" cy="30" r="30"/>
+    <path fill="#FFE300" d="M14 18v5.3l12 6 .4-6z"/>
+    <path fill="#FFB400" d="M31.4 20.1v6L26 29.3v-6z"/>
+    <path fill="#FFFCCF" d="M31.4 20.1l-12-5.4L14 18l12 5.7z"/>
+    <path fill="#FFE300" d="M27.5 35.7V41l12 6 .5-6z"/>
+    <path fill="#FFB400" d="M45 37.8v6L39.4 47v-6z"/>
+    <path fill="#FFFCCF" d="M45 37.8l-12-5.4-5.5 3.3 12 5.7z"/>
+    <path stroke="#FFB400" stroke-linecap="round" d="M28 25l4.8 2.2v6.4"/>
+    <path stroke="#FFB400" stroke-linecap="round" d="M31 32.7l1.8 1.9 2-2"/>
+  </g>
+</svg>
