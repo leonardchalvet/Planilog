@@ -1,0 +1,1 @@
+[13-Nov-2018 09:48:00 UTC] PHP Fatal error:  Declaration of App\Http\Services\PrismicLinkResolver::resolve($link) must be compatible with Prismic\LinkResolver::resolve($link): ?string in /Users/raphael/projets/planilog/app/Http/Services/PrismicLinkResolver.php on line 8

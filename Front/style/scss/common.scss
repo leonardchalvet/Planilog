@@ -1,0 +1,485 @@
+@font-face {
+	font-family:OpenSans-Bold;
+	src:url(../../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family:OpenSans-SemiBold;
+	src:url(../../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+	font-family:OpenSans-Regular;
+	src:url(../../fonts/OpenSans-Regular.ttf);
+}
+body, html, *
+{
+	padding: 0px;
+	margin: 0px;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, i
+{
+	font-weight: normal;
+	font-style: normal;
+}
+body.block
+{
+	overflow:hidden;
+}
+
+/* ------------------------------------------------------------- */
+/* ********************* CONTAINER GENERAL ********************* */
+/* ------------------------------------------------------------- */
+
+main
+{
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+}
+
+/* ----------------------------------------------------------------- */
+/* ********************* END CONTAINER GENERAL ********************* */
+/* ----------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* ********************* VARIABLES ********************* */
+/* ----------------------------------------------------- */
+
+/*==============================
+=            COLORS            =
+==============================*/
+
+	/*----------  MAIN COLORS  ----------*/
+	$colorMain_1: #38467A;
+	$colorMain_2: #FB6D6D;
+	$colorMain_3: #747A91;
+	$colorMain_4: #00D1C1;
+	$colorMain_5: #1C95FF;
+	$colorMain_6: #FFB400;
+
+
+/*=====  End of COLORS  ======*/
+
+
+/*=============================
+=            FONTS            =
+=============================*/
+
+	$font_1: OpenSans-Bold;
+	$font_2: OpenSans-SemiBold;
+	$font_3: OpenSans-Regular;
+
+/*=====  End of FONTS  ======*/
+
+
+/*=================================
+=            TEXT SIZE            =
+=================================*/
+
+	/*----------  H1  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h1_textsize_desktop: 50px;
+		$h1_lineheight_desktop: 68px;
+
+		/*----------  MOBILE  ----------*/
+		$h1_textsize_mobile: 33px;
+		$h1_lineheight_mobile: 45px;
+
+
+	/*----------  H2  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h2_textsize_desktop: 42px;
+		$h2_lineheight_desktop: 57px;
+
+		/*----------  MOBILE  ----------*/
+		$h2_textsize_mobile: 30px;
+		$h2_lineheight_mobile: 41px;
+
+
+	/*----------  H3  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h3_textsize_desktop: 36px;
+		$h3_lineheight_desktop: 49px;
+
+		/*----------  MOBILE  ----------*/
+		$h3_textsize_mobile: 27px;
+		$h3_lineheight_mobile: 37px;
+
+
+	/*----------  H4  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h4_textsize_desktop: 28px;
+		$h4_lineheight_desktop: 38px;
+
+		/*----------  MOBILE  ----------*/
+		$h4_textsize_mobile: 22px;
+		$h4_lineheight_mobile: 30px;
+
+
+	/*----------  H5  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h5_textsize_desktop: 22px;
+		$h5_lineheight_desktop: 30px;
+
+		/*----------  MOBILE  ----------*/
+		$h5_textsize_mobile: 20px;
+		$h5_lineheight_mobile: 27px;
+
+
+	/*----------  H6  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h6_textsize_desktop: 18px;
+		$h6_lineheight_desktop: 19px;
+
+
+	/*----------  PARAGRAPH BIG  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphBig_textsize_desktop: 20px;
+		$paragraphBig_lineheight_desktop: 30px;
+
+		/*----------  MOBILE  ----------*/
+		$paragraphBig_textsize_mobile: 18px;
+		$paragraphBig_lineheight_mobile: 30px;
+
+
+	/*----------  PARAGRAPH MEDIUM  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphMedium_textsize_desktop: 18px;
+		$paragraphMedium_lineheight_desktop: 28px;
+
+		/*----------  MOBILE  ----------*/
+		$paragraphMedium_textsize_mobile: 16px;
+		$paragraphMedium_lineheight_mobile: 27px;
+
+
+	/*----------  PARAGRAPH SMALL  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphSmall_textsize_desktop: 16px;
+		$paragraphSmall_lineheight_desktop: 24px;
+
+		/*----------  MOBILE  ----------*/
+		$paragraphSmall_textsize_mobile: 14px;
+		$paragraphSmall_lineheight_mobile: 21px;
+
+
+/*=====  End of TEXT SIZE  ======*/
+
+
+/*============================
+=            GRID            =
+============================*/
+
+	$grid_desktop_1: 1200px;
+	$grid_desktop_2: 1100px;
+	$grid_desktop_3: 1000px;
+	$grid_desktop_4: 900px;
+
+	$grid_tablet: 100%;
+	$grid_mobile: 100%;
+
+/*=====  End of GRID  ======*/
+
+
+/*===================================
+=            BREAK POINT            =
+===================================*/
+
+	$breakPoint_tablet: 1250px;
+	$breakPoint_mobile: 700px;
+
+
+/*=====  End of BREAK POINT  ======*/
+
+/* --------------------------------------------------------- */
+/* ********************* END VARIABLES ********************* */
+/* --------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ********************* MIXIN ********************* */
+/* ------------------------------------------------- */
+
+	/*----------  FUNCTION  ----------*/
+	/*
+	@mixin rgba-background($hexcolor, $opacity) {
+	  background-color: rgba($hexcolor, $opacity); 
+	}*/
+
+	/*----------  HEADING  ----------*/
+
+		/*----------  H1  ----------*/
+		@mixin styleH1{
+			font-family: $font_1;
+		  	color: $colorMain_1;
+
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h1_textsize_desktop;
+				line-height: $h1_lineheight_desktop;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h1_textsize_mobile;
+				line-height: $h1_lineheight_mobile;
+			}	
+		}
+
+		/*----------  H2  ----------*/
+		@mixin styleH2{
+			font-family: $font_1;
+		  	color: $colorMain_1;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h2_textsize_desktop;
+				line-height: $h2_lineheight_desktop;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h2_textsize_mobile;
+				line-height: $h2_lineheight_mobile;
+			}
+		}
+
+		/*----------  H3  ----------*/
+		@mixin styleH3{
+			font-family: $font_2;
+		  	color: $colorMain_1;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h3_textsize_desktop;
+				line-height: $h3_lineheight_desktop;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h3_textsize_mobile;
+				line-height: $h3_lineheight_mobile;
+			}
+		}
+
+		/*----------  H4  ----------*/
+		@mixin styleH4{
+			font-family: $font_2;
+		  	color: $colorMain_1;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h4_textsize_desktop;
+				line-height: $h4_lineheight_desktop;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h4_textsize_mobile;
+				line-height: $h4_lineheight_mobile;
+			}
+		}
+
+		/*----------  H5  ----------*/
+		@mixin styleH5{
+			font-family: $font_2;
+		  	color: $colorMain_1;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h5_textsize_desktop;
+				line-height: $h5_lineheight_desktop;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h5_textsize_mobile;
+				line-height: $h5_lineheight_mobile;
+			}
+		}
+
+		/*----------  H6  ----------*/
+		@mixin styleH6{
+			font-family: $font_2;
+		  	color: $colorMain_1;
+			font-size: $h6_textsize_desktop;
+			line-height: $h6_lineheight_desktop;
+		}
+
+
+		/*----------  PARAGRAPH BIG  ----------*/
+		@mixin styleParagraphBig{
+			font-family: $font_3;
+		  	color: rgba($colorMain_1, 0.6); 
+			font-size: $paragraphBig_textsize_desktop;
+			line-height: $paragraphBig_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH MEDIUM  ----------*/
+		@mixin styleParagraphMedium{
+			font-family: $font_2;
+		  	color: rgba($colorMain_1, 0.6); 
+			font-size: $paragraphMedium_textsize_desktop;
+			line-height: $paragraphMedium_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH SMALL  ----------*/
+		@mixin styleParagraphSmall{
+			font-family: $font_2;
+		  	color: rgba($colorMain_1, 0.6); 
+			font-size: $paragraphSmall_textsize_desktop;
+			line-height: $paragraphSmall_lineheight_desktop;
+		}
+
+
+		/*----------  BUTTON  ----------*/
+		@mixin button{
+			cursor: pointer;
+		  	padding: 18px 20px 18px 20px;
+		  	border-radius: 4px;
+		  	background-color: $colorMain_2;
+		  	box-shadow: 0 8px 15px 0 rgba(56,70,122,0.30);
+		  	display: inline-flex;
+		  	flex-flow: row wrap;
+		  	align-items: center;
+		  	justify-content: space-between;
+		  	text-decoration: none;
+		  	transition: all 0.25s ease;
+			.btn-text{
+				font-family: $font_1;
+				font-size: 13px;
+				line-height: 25px;	
+				color: #FFF;
+			}
+			.btn-arrow{
+				width: 10px;
+			}
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+
+
+		/*----------  GRID  ----------*/
+
+			/*----------  SIZE 1  ----------*/
+			@mixin styleGrid1{
+				margin-right: auto;
+				margin-left: auto;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_1;
+				}
+				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+					width: $grid_tablet;
+					padding-right: 50px;
+					padding-left: 50px;
+				}
+				@media screen and (max-width: $breakPoint_mobile){
+					width: $grid_mobile;
+					padding-right: 25px;
+					padding-left: 25px;
+				}
+			}
+
+			/*----------  SIZE 2  ----------*/
+			@mixin styleGrid2{
+				margin-right: auto;
+				margin-left: auto;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_2;
+				}
+				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+					width: $grid_tablet;
+					padding-right: 50px;
+					padding-left: 50px;
+				}
+				@media screen and (max-width: $breakPoint_mobile){
+					width: $grid_mobile;
+					padding-right: 25px;
+					padding-left: 25px;
+				}
+			}
+
+			/*----------  SIZE 3  ----------*/
+			@mixin styleGrid3{
+				margin-right: auto;
+				margin-left: auto;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_3;
+				}
+				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+					width: $grid_tablet;
+					padding-right: 50px;
+					padding-left: 50px;
+				}
+				@media screen and (max-width: $breakPoint_mobile){
+					width: $grid_mobile;
+					padding-right: 25px;
+					padding-left: 25px;
+				}
+			}
+
+			/*----------  SIZE 4  ----------*/
+			@mixin styleGrid4{
+				margin-right: auto;
+				margin-left: auto;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_4;
+				}
+				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+					width: $grid_tablet;
+					padding-right: 50px;
+					padding-left: 50px;
+				}
+				@media screen and (max-width: $breakPoint_mobile){
+					width: $grid_mobile;
+					padding-right: 25px;
+					padding-left: 25px;
+				}
+			}
+
+/* ----------------------------------------------------- */
+/* ********************* END MIXIN ********************* */
+/* ----------------------------------------------------- */
+
+/*====================================
+=            SECTION START           =
+=====================================*/
+
+#section-start{
+	position: relative;
+	padding: 135px 0px 135px 0px;
+	background: linear-gradient(90deg, #FFFFFF 0%, #E7E8EC 100%);
+	&:before{
+		content:'';
+		position: absolute;
+		z-index: -1;
+		left: 0px;
+		bottom: 100%;
+		width: 100%;
+		height: 70%;
+		background: linear-gradient(90deg, #FFFFFF 0%, #E7E8EC 100%);
+	}
+	.wrapper{
+		text-align: center;
+		h2{
+			@include styleH3;
+			margin-bottom: 14px;
+		}
+		p{
+			@include styleParagraphBig;
+			margin-bottom: 50px;
+		}
+		.btn{
+			@include button;
+			margin-bottom: 24px;
+		}
+		.text{
+			@include styleParagraphSmall;
+			color: $colorMain_1;
+			a{
+				color: $colorMain_1;
+			}
+		}
+	}
+	.laptop{
+		position: absolute;
+		right: -150px;
+		top: 10%;
+		height: 600px;
+		mix-blend-mode: multiply;
+	}
+}
+
+/*========================================
+=            END SECTION START           =
+========================================*/
