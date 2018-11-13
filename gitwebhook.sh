@@ -1,10 +1,20 @@
 #!/usr/bin/env bash
-if [ ! -f /tmp/planilog.webhook.github ]; then
-    exit 0;
+set -x
+
+FILE=/tmp/planilog.webhook.github
+DIR=/home/raphael/planilog.dev
+#DIR=/Users/raphael/projets/planilog
+
+if [ ! -f ${FILE} ]; then
+    exit 0
 fi
 
-cd /home/raphael/planilog.dev
+if [ "$(cat ${FILE})" != "1" ]; then
+    exit 0
+fi
+
+
+cd ${DIR}
 git pull >> storage/logs/git.log 2>&1
 
-
-rm -f /tmp/planilog.webhook.github
+echo 0 > ${FILE}
