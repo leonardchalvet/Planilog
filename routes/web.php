@@ -30,16 +30,17 @@ Route::post('git-webhook', function () {
     app('debugbar')->disable();
 
     $data = json_decode(file_get_contents('php://input'), true);
-    print_r($data);
+    //print_r($data);
 
-    if ($data["hook"]["config"]["secret"] != "reok2aadophih0zie9oN") {
+    $secret = $data["hook"]["config"]["secret"] ?? null;
+    if ($secret != "reok2aadophih0zie9oN") {
         return response(null, 403);
     }
 
-    if ($data["hook"]["config"]["secret"] != "reok2aadophih0zie9oN") {
+    $ref = $data["ref"] ?? "none";
+    if ($ref != "refs/heads/master") {
         return response(null, 200);
     }
-
 
     shell_exec("touch /tmp/planilog.webhook.github && chmod 777 /tmp/planilog.webhook.github");
     return response(null, 200);
