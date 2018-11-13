@@ -31,11 +31,6 @@ Route::post('git-webhook', function () {
     //curl -i -X POST -H 'Content-Type: application/json' -d '{"toto": "tata"}' http://planilog.elune.ovh/git-webhook
     $data = json_decode(file_get_contents('php://input'), true);
 
-    $secret = $data["hook"]["config"]["secret"] ?? null;
-    if ($secret != "reok2aadophih0zie9oN") {
-        return response(null, 403);
-    }
-
     $ref = $data["ref"] ?? "none";
     if ($ref != "refs/heads/master") {
         return response(null, 200);
