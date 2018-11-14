@@ -24,20 +24,10 @@ class PrismicLinkResolver extends LinkResolver
             $url = '/404';
         }
         elseif (substr($link->type, 0, 5) == "page_") {
-            if ($link->type !== "page_template") {
-                // Direct route to page
-                if (Route::has($link->type)) {
-                    $url = route($link->type);    
-                }        
+            // Direct route to page
+            if (Route::has($link->type)) {
+                $url = route($link->type);
             }
-        }
-        elseif ($link->type == "backpage_expense") {
-            // Direct route to backpage
-            $url = route('backpage', ['slug' => $link->uid]);
-        }
-        elseif ($link->type == "backpage_travel") {
-            // Direct route to backpage
-            $url = route('backpage', ['slug' => $link->uid]);
         }
         elseif ($link->type == "article") {
             // Direct route to post
