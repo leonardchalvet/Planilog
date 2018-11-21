@@ -1,0 +1,44 @@
+{
+  "A-Main" : {
+    "footer_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    }
+  },
+  "CTA" : {
+    "footer_cta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Footer CTA Title"
+      }
+    },
+    "footer_cta_paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Footer CTA Paragraph"
+      }
+    },
+    "footer_cta_button_text": {
+      "type": "Text",
+      "config": {
+        "label": "Footer CTA Button Text"
+      }
+    },
+    "footer_cta_button_link": {
+      "type": "Link",
+      "config": {
+        "label": "Footer CTA Button Link"
+      }
+    },
+    "footer_cta_contact_paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "label": "Footer CTA contact paragraph"
+      }
+    }
+  }
+}

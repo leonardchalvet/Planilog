@@ -7,6 +7,7 @@ use Prismic\Dom\RichText;
 @section('title', $doc->seo_page_title)
 @section('description', $doc->seo_page_description)
 @section('style', asset('css/home.css'))
+@section('header_class', '')
 
 @section('content')
 
@@ -77,15 +78,7 @@ use Prismic\Dom\RichText;
                             <div class="video video-<?= $video_id++ ?>">
                                 <!-- TODO : VIMEO -->
                                 <video poster="xxx">
-                                    <source
-                                            src="video/home/Simuler.mp4"
-                                            type="video/mp4">
-                                    <source
-                                            src="video/home/Simuler.webm"
-                                            type="video/webm">
-                                    <source
-                                            src="video/home/Simuler.ogv"
-                                            type="video/ogv">
+                                    <source src="XXX" type="video/mp4">
                                 </video>
                             </div>
                         @endforeach
@@ -219,8 +212,12 @@ use Prismic\Dom\RichText;
             </div>
         </section>
 
+        @if (property_exists($doc, 'include_footer_cta') && $doc->include_footer_cta == "yes")
+            @include('layouts.footer_cta')
+        @endif
+
     </main>
-    
+
 @endsection
 
 
@@ -228,5 +225,4 @@ use Prismic\Dom\RichText;
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/header.js") }}"></script>
     <script src="{{ asset("js/index.js") }}"></script>
-
 @endsection

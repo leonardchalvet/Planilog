@@ -1,11 +1,146 @@
 {
-  "A-Main" : {
-    "header_title" : {
-      "type" : "Text",
-      "config" : {
-        "useAsTitle" : true,
-        "label" : "Page name (displayed only on Prismic)"
+  "A-Main": {
+    "header_title": {
+      "type": "Text",
+      "config": {
+        "useAsTitle": true,
+        "label": "Page name (displayed only on Prismic)"
+      }
+    },
+    "header_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Header Logo"
+      }
+    },
+    "header_menu_outils": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Outils"
+      }
+    },
+    "header_outils_container_el": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "header_outils_el_icon": {
+            "type": "Image",
+            "config": {
+              "label": "Menu Outils El Icon"
+            }
+          },
+          "header_outils_el_title": {
+            "type": "Text",
+            "config": {
+              "label": "Menu Outils El Title"
+            }
+          },
+          "header_outils_el_paragraph": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "Menu Outils El Paragraph"
+            }
+          },
+          "header_outils_el_link": {
+            "type": "Link",
+            "config": {
+              "label": "Menu Outils El Link"
+            }
+          }
+        },
+        "label": "Menu Outils Container El"
+      }
+    },
+    "header_menu_modules": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Modules"
+      }
+    },
+    "header_modules_container_el": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "header_modules_el_icon": {
+            "type": "Image",
+            "config": {
+              "label": "Menu Modules El Icon"
+            }
+          },
+          "header_modules_el_title": {
+            "type": "Text",
+            "config": {
+              "label": "Menu Modules El Title"
+            }
+          },
+          "header_modules_el_paragraph": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "Menu Modules El Paragraph"
+            }
+          },
+          "header_modules_el_button_link": {
+            "type": "Link",
+            "config": {
+              "label": "Menu Modules El Link"
+            }
+          }
+        },
+        "label": "Menu Modules Container El"
+      }
+    },
+    "header_menu_tarifs": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Tarifs"
+      }
+    },
+    "header_menu_tarifs_link": {
+      "type": "Link",
+      "config": {
+        "label": "Header Menu Tarifs Link"
+      }
+    },
+    "header_menu_contact": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Contact"
+      }
+    },
+    "header_menu_contact_link": {
+      "type": "Link",
+      "config": {
+        "label": "Header Menu Contact Link"
+      }
+    },
+    "header_menu_login": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Connexion"
+      }
+    },
+    "header_menu_login_link": {
+      "type": "Link",
+      "config": {
+        "label": "Header Menu Login Link"
+      }
+    },
+    "header_menu_essai": {
+      "type": "Text",
+      "config": {
+        "label": "Header Menu Essai"
+      }
+    },
+    "header_menu_essai_link": {
+      "type": "Link",
+      "config": {
+        "label": "Header Menu Essai Link"
       }
     }
+  },
+  "Formulaire d'inscription": {
+
   }
 }

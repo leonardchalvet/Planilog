@@ -70,4 +70,9 @@ class PageStructureComposer
         $footer = $this->contentProvider->getLayout('footer', $this->locale);
         $view->with('footer', $footer);
     }
+    public function composeFooterCTA(View $view)
+    {
+        $footer_cta = $this->contentProvider->getLayout('footer_cta', $this->locale);
+        $view->with('footer_cta', $footer_cta);
+    }
 }

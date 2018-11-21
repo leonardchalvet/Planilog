@@ -1,10 +1,145 @@
 {
-  "A-Main" : {
-    "footer_title" : {
-      "type" : "Text",
-      "config" : {
-        "useAsTitle" : true,
-        "label" : "Page name (displayed only on Prismic)"
+  "A-Main": {
+    "footer_title": {
+      "type": "Text",
+      "config": {
+        "useAsTitle": true,
+        "label": "Page name (displayed only on Prismic)"
+      }
+    },
+    "footer_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Footer Logo"
+      }
+    },
+    "footer_menu_outils": {
+      "type": "Text",
+      "config": {
+        "label": "Footer Outils"
+      }
+    },
+    "footer_outils_container_el": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "footer_outils_el_title": {
+            "type": "Text",
+            "config": {
+              "label": "Outils El Title"
+            }
+          },
+          "footer_outils_el_link": {
+            "type": "Link",
+            "config": {
+              "label": "Outils El Link"
+            }
+          }
+        },
+        "label": "Outils Container El"
+      }
+    },
+    "footer_menu_domaines": {
+      "type": "Text",
+      "config": {
+        "label": "Footer Domaines"
+      }
+    },
+    "footer_domaines_container_el": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "footer_domaines_el_title": {
+            "type": "Text",
+            "config": {
+              "label": "Domaines El Title"
+            }
+          },
+          "footer_domaines_el_link": {
+            "type": "Link",
+            "config": {
+              "label": "Domaines El Link"
+            }
+          }
+        },
+        "label": "Domaines Container El"
+      }
+    },
+    "footer_menu_company": {
+      "type": "Text",
+      "config": {
+        "label": "Footer Company"
+      }
+    },
+    "footer_company_container_el": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "footer_company_el_title": {
+            "type": "Text",
+            "config": {
+              "label": "Company El Title"
+            }
+          },
+          "footer_company_el_link": {
+            "type": "Link",
+            "config": {
+              "label": "Company El Link"
+            }
+          }
+        },
+        "label": "Company Container El"
+      }
+    },
+    "footer_menu_contact": {
+      "type": "Text",
+      "config": {
+        "label": "Contact"
+      }
+    },
+    "footer_menu_contact_image": {
+      "type": "Image",
+      "config": {
+        "label": "Contact Image"
+      }
+    },
+    "footer_menu_contact_paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Contact paragraph"
+      }
+    },
+    "footer_menu_contact_text": {
+      "type": "Text",
+      "config": {
+        "label": "Contact Mail Text"
+      }
+    },
+    "footer_menu_contact_link": {
+      "type": "Text",
+      "config": {
+        "label": "Contact Mail link"
+      }
+    },
+    "footer_social_medias": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "social_icon": {
+            "type": "Image",
+            "config": {
+              "label": "Social Media Icon"
+            }
+          },
+          "social_link": {
+            "type": "Link",
+            "config": {
+              "label": "Social Media Link"
+            }
+          }
+        },
+        "label": "Social Medias"
       }
     }
   }
