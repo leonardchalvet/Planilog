@@ -1,0 +1,297 @@
+{
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Page name"
+      }
+    },
+    "seo_page_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Page description"
+      }
+    }
+  },
+  "Cover" : {
+    "cover_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Cover title"
+      }
+    },
+    "cover_paragraph" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Cover paragraph"
+      }
+    },
+    "cover_button_text" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Cover Button Text"
+      }
+    },
+    "cover_button_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Cover Button Link"
+      }
+    },
+    "cover_list_logos" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "cover_logo" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Cover logo"
+            }
+          }
+        },
+        "label" : "Cover List Logos"
+      }
+    }
+  },
+  "Section - Boîte à outils" : {
+    "section_ftr_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Ftr Title"
+      }
+    },
+    "section_ftr_paragraph" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Section Ftr Paragraph"
+      }
+    },
+    "section_ftr_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "section_ftr_el_icon" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Section Ftr El Icon"
+            }
+          },
+          "section_ftr_el_title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Ftr El Title"
+            }
+          },
+          "section_ftr_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "label" : "Section Ftr El Paragraph"
+            }
+          },
+          "section_ftr_el_video" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Ftr El Video (Vimeo ID)"
+            }
+          },
+          "section_ftr_el_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Section Ftr El Link"
+            }
+          }
+        },
+        "label" : "Section Ftr Container El"
+      }
+    }
+  },
+  "Section - Modules spécialisés" : {
+    "section_modules_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Modules Title"
+      }
+    },
+    "section_modules_paragraph" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Section Modules Paragraph"
+      }
+    },
+    "section_modules_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "section_modules_el_icon" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Section Ftr El Icon"
+            }
+          },
+          "section_modules_el_title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Modules El Title"
+            }
+          },
+          "section_modules_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "label" : "Section Modules El Paragraph"
+            }
+          },
+          "section_modules_el_button_text" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Modules El Button Text"
+            }
+          },
+          "section_modules_el_button_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Section Modules El Button Link"
+            }
+          }
+        },
+        "label" : "Section Modules Container El"
+      }
+    }
+  },
+  "Section - Résultats pérennes" : {
+    "section_resultats_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Resultats Title"
+      }
+    },
+    "section_resultats_paragraph" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Section Resultats Paragraph"
+      }
+    },
+    "section_resultats_img" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Section Resultats Img"
+      }
+    },
+    "section_resultats_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "section_resultats_el_num" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Resultats El Num"
+            }
+          },
+          "section_resultats_el_obj" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Resultats El Obj"
+            }
+          },
+          "section_resultats_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "label" : "Section Resultats El Paragraph"
+            }
+          }
+        },
+        "label" : "Section Resultats Container El"
+      }
+    }
+  },
+  "Section - Priorité à l’apprentissage" : {
+    "section_apprentissage_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Apprentissage Title"
+      }
+    },
+    "section_apprentissage_paragraph" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Section Apprentissage Paragraph"
+      }
+    },
+    "section_apprentissage_button_text" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Apprentissage Button Text"
+      }
+    },
+    "section_apprentissage_button_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Section Apprentissage Button Link"
+      }
+    }
+  },
+  "Section - Parole d'expert" : {
+    "section_quotes_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Section Quotes Title"
+      }
+    },
+    "section_quotes_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "section_quotes_el_img" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Section Quotes El Img"
+            }
+          },
+          "section_quotes_el_name" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Quotes El Name"
+            }
+          },
+          "section_quotes_el_job" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Quotes El Job"
+            }
+          },
+          "section_quotes_el_place" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Quotes El Place"
+            }
+          },
+          "section_quotes_el_paragraph" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Section Quotes El Paragraph"
+            }
+          }
+        },
+        "label" : "Section Quotes Container El"
+      }
+    }
+  }
+}

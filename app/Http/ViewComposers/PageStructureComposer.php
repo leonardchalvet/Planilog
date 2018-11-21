@@ -43,8 +43,8 @@ class PageStructureComposer
         $view->with('linkResolver', $this->linkResolver);
 
         // Get translation from prismic
-        $translations = $this->contentProvider->getLayout('translations', $this->locale);
-        $view->with('translations', $translations);
+        //$translations = $this->contentProvider->getLayout('translations', $this->locale);
+        //$view->with('translations', $translations);
     }
 
     /**

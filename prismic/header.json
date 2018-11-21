@@ -1,0 +1,11 @@
+{
+  "A-Main" : {
+    "header_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
             // lol! Blade directives cannot use multiple parameters?
             list($doc, $field) = explode(',',str_replace(['(',')',' ', '\''], '', $arguments));
 
-            return  '<?= isset('.$doc.'->'.$field.') ? nl2br('.$doc.'->'.$field.'->value) : ""; ?>';
+            return  '<?= isset('.$doc.'->'.$field.') ? nl2br('.$doc.'->'.$field.') : ""; ?>';
         });
 
         Blade::directive('richText', function ($arguments) {
@@ -35,10 +35,10 @@ class AppServiceProvider extends ServiceProvider
             // RichText::asHtml($doc->cover_intro->value, $linkResolver))
             if ($class) {
                 // Add class to paragraph
-                return '<?= isset(' . $doc . '->' . $field . ') ? str_replace("<p>", "<p class=\''.$class.'\'>", RichText::asHtml(' . $doc . '->' . $field . '->value, $linkResolver)) : ""; ?>';
+                return '<?= isset(' . $doc . '->' . $field . ') ? str_replace("<p>", "<p class=\''.$class.'\'>", RichText::asHtml(' . $doc . '->' . $field . ', $linkResolver)) : ""; ?>';
             }
             else {
-                return '<?= isset(' . $doc . '->' . $field . ') ? RichText::asHtml(' . $doc . '->' . $field . '->value, $linkResolver) : ""; ?>';
+                return '<?= isset(' . $doc . '->' . $field . ') ? RichText::asHtml(' . $doc . '->' . $field . ', $linkResolver) : ""; ?>';
             }
         });
 
@@ -56,8 +56,7 @@ class AppServiceProvider extends ServiceProvider
             // lol! Blade directives cannot use multiple parameters?
             list($doc, $field) = explode(',',str_replace(['(',')',' ', '\''], '', $arguments));
 
-            //$doc->physical_security_bg->value->main->url
-            return  '<?= isset('.$doc.'->'.$field.') ? '.$doc.'->'.$field.'->value->main->url : ""; ?>';
+            return  '<?= isset('.$doc.'->'.$field.') ? '.$doc.'->'.$field.'->url : ""; ?>';
         });
         Blade::directive('linkSrc', function ($arguments) {
             // lol! Blade directives cannot use multiple parameters?

@@ -108,8 +108,8 @@ class PrismicContentProvider
         /** @var Document $document */
         $document = $response->results[0];
 
-        $document->data->$pageType->document_id = $document->id;
-        return $document->data->$pageType;
+        $document->data->document_id = $document->id;
+        return $document->data;
     }
 
     /**
@@ -129,7 +129,7 @@ class PrismicContentProvider
             }
             /** @var Document $document */
             $document = $response->results[0];
-            $layout = $document->data->$pageType;
+            $layout = $document->data;
 
             Cache::put($pageType.'-'.$locale, $layout, now()->addMinutes(10));
             Debugbar::info("Load $pageType from API");

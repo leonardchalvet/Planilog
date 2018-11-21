@@ -23,13 +23,13 @@ class PrismicLinkResolver extends LinkResolver
         if (property_exists($link, 'isBroken') && $link->isBroken === true) {
             $url = '/404';
         }
-        elseif (substr($link->type, 0, 5) == "page_") {
+        elseif (substr($link->link_type, 0, 5) == "page_") {
             // Direct route to page
-            if (Route::has($link->type)) {
-                $url = route($link->type);
+            if (Route::has($link->link_type)) {
+                $url = route($link->link_type);
             }
         }
-        elseif ($link->type == "article") {
+        elseif ($link->link_type == "article") {
             // Direct route to post
             $tags = $link->tags ?? [];
             if (in_array('customer', $tags)) {
@@ -42,14 +42,14 @@ class PrismicLinkResolver extends LinkResolver
                 $url = '/404';
             }
         }
-        elseif ($link->type == "Link.web") {
+        elseif ($link->link_type == "Web") {
             // Web link
-            $url = $link->value->url;
+            $url = $link->url;
         }
-        elseif ($link->type === 'Link.document') {
+        elseif ($link->link_type === 'Link.document') {
             // Document
             $doc = $link->value->document;
-            if ($doc->type == 'article') {
+            if ($doc->link_type == 'article') {
                 // Article
                 if (in_array("customer", $doc->tags)) {
                     $url = route('post_customers', ['slug' => $doc->uid]);
@@ -61,20 +61,20 @@ class PrismicLinkResolver extends LinkResolver
                     $url = route('post_hub', ['slug' => $doc->uid]);
                 }
             }
-            elseif ($doc->type == "software") {
+            elseif ($doc->link_type == "software") {
                 // Direct route to software
                 $url = route('post_integrations', ['slug' => $doc->uid]);
             }
             else {
                 // Page
-                $url = route($doc->type);
+                $url = route($doc->link_type);
             }
         }
-        elseif ($link->type === 'Link.image') {
+        elseif ($link->link_type === 'Link.image') {
             // Image (hosted on prismic)
             $url = $link->value->image->url;
         }
-        elseif ($link->type === 'Link.file') {
+        elseif ($link->link_type === 'Link.file') {
             // Simple file (hosted on prismic)
             $url = $link->value->file->url;
         }
