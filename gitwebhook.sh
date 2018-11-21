@@ -18,3 +18,4 @@ cd ${DIR}
 git pull >> storage/logs/git.log 2>&1
 
 echo 0 > ${FILE}
+
