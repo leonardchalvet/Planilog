@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>041C308F-4014-478E-B92E-102ED194E962</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2c-Features---Ordonnancer" transform="translate(-729.000000, -878.000000)">
+            <g id="Section-1" transform="translate(193.000000, 878.000000)">
+                <g id="2" transform="translate(536.000000, 0.000000)">
+                    <g id="gestion">
+                        <circle id="Oval-4" fill="#1C95FF" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                        <g id="Group-7" transform="translate(14.000000, 14.000000)">
+                            <g id="Group" transform="translate(0.000000, 13.694444)">
+                                <g id="3d-box-corner">
+                                    <polygon id="Shape" fill="#1CCAFF" points="7.2 7.16562178 0.0260869558 3.84410365 0.0260869558 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1C95FF" points="7.2 7.16562178 14.373913 3.84410365 14.373913 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1CEEFF" points="14.373913 3.84410365 7.2 0.52258552 0.0260869558 3.84410365 7.2 7.31231112"></polygon>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(17.600000, 13.694444)">
+                                <g id="3d-box-corner">
+                                    <polygon id="Shape" fill="#1CCAFF" points="7.2 7.16562178 0.0260869558 3.84410365 0.0260869558 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1C95FF" points="7.2 7.16562178 14.373913 3.84410365 14.373913 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1CEEFF" points="14.373913 3.84410365 7.2 0.52258552 0.0260869558 3.84410365 7.2 7.31231112"></polygon>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(8.800000, 0.000000)">
+                                <g id="3d-box-corner">
+                                    <polygon id="Shape" fill="#1CCAFF" points="7.2 7.16562178 0.0260869558 3.84410365 0.0260869558 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1C95FF" points="7.2 7.16562178 14.373913 3.84410365 14.373913 11.8157472 7.2 15.1372653"></polygon>
+                                    <polygon id="Shape" fill="#1CEEFF" points="14.373913 3.84410365 7.2 0.52258552 0.0260869558 3.84410365 7.2 7.31231112"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,129 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*========================================
+=            PAGE SUPPORT LIST           =
+=========================================*/
+
+#section-cover{
+	position: relative;
+	background-color: $colorMain_1;
+	.wrapper{
+		@include styleGrid2;
+		padding: 175px 0px 100px 0px;
+	}
+	.container-title{
+		position: relative;
+		.container-rslt{
+			cursor: pointer;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.text{
+				@include styleH3;
+				color: #FFF;
+			}
+			img{
+				margin-left:20px;
+				width: 30px;
+			}
+		}
+		.container-dropdown{
+			z-index: 10;
+			display: none;
+			position: absolute;
+			top: calc(100% + 20px);
+			width: 100%;
+			left: 0px;
+			border-radius: 6px;	
+			background-color: #FFFFFF;	
+			box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
+			.container-el{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				padding: 17px 17px 7px 17px;
+				.el{
+					width: calc(100% / 3);
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					padding: 18px;
+					transition: all 0.25s ease;
+					border-radius: 6px;
+					text-decoration: none;
+					cursor: pointer;
+					margin-bottom: 10px;
+					.icn{
+						width: 60px;
+						position: relative;
+						text-align: center;
+					}
+					.text{
+						@include styleH6;
+					}
+					&:hover{
+						background-color: #F7F9FC;
+					}
+				}
+			}
+		}
+		&.open{
+			.container-dropdown{
+				display: block;
+			}
+		}
+	}
+}
+
+#section-list{
+	.wrapper{
+		@include styleGrid2;
+	}
+	.container-list{
+		padding: 90px 0px 100px 0px;
+		.list{
+			margin-bottom: 90px;
+			&:last-child{
+				margin-bottom:0px;
+			}
+			h3{
+				@include styleH5;
+				margin-bottom:35px;
+			}
+			.container-el{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: flex-start;
+				.el{
+					width: 40%;
+					position: relative;
+					padding-left: 28px;
+					margin-bottom:12px;
+					&:before{
+						content:'';
+						position: absolute;
+						top: 10px;
+						left: 0px;
+						height: 5px;	
+						width: 5px;	
+						border-radius: 5px;
+						background-color: rgba(116,122,145,0.36);
+					}
+					a{
+						@include styleParagraphSmall;
+						color: $colorMain_5;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*============================================
+=            END PAGE SUPPORT LIST           =
+============================================*/
+
+@import 'footer.scss';
