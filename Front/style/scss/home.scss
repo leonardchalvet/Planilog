@@ -37,7 +37,7 @@
 			}
 			.btn{
 				margin-top: 55px;
-				@include button;
+				@include styleButtonBig;
 			}
 		}
 	}
@@ -100,7 +100,7 @@
 			}
 		}
 		p{
-			@include styleParagraphBig;
+			@include styleParagraphMedium;
 		}
 	}
 	.container-ftr{
@@ -126,9 +126,11 @@
 					}
 					h3{
 						@include styleH6;
+						color: rgba($colorMain_1, 0.6);
 						width: calc(100% - 17px);
 						padding-left: 17px;
 						cursor: pointer;
+						transition: all 0.25s ease;
 					}
 				}
 				.text{
@@ -149,7 +151,6 @@
 						top: 0px;
 						width: 1px;
 						height: 100%;
-						background-color: $colorMain_6;
 						transform: scaleY(0);
 						transition: all 1s ease;
 					}
@@ -158,15 +159,18 @@
 						width: calc(100% - 80px);
 					}
 					.btn{
-						@include button;
-						padding-top: 21px;
-						padding-bottom: 21px;
+						@include styleButtonTiny;
 					}
 				}
 
 				&.active{
-					.head .icn{
-						filter: grayscale(0%);
+					.head {
+						.icn{
+							filter: grayscale(0%);
+						}
+						h3{
+							color: $colorMain_1;
+						}
 					}
 					.text{
 						opacity: 1;
@@ -176,6 +180,18 @@
 							transform: scaleY(1);
 						}
 					}
+				}
+				&:nth-child(1) .text:after{
+					background-color: $colorMain_6;
+				}
+				&:nth-child(2) .text:after{
+					background-color: $colorMain_4;
+				}
+				&:nth-child(3) .text:after{
+					background-color: $colorMain_5;
+				}
+				&:nth-child(4) .text:after{
+					background-color: $colorMain_2;
 				}
 			}
 		}
@@ -203,12 +219,21 @@
 
 #section-modules{
 	position: relative;
-	background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FC 100%);
 	padding-top: 85px;
 	padding-bottom: 85px;
+	&:before{
+		content:'';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 70%;
+		background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FC 100%);
+	}
 	.wrapper{
 		@include styleGrid1;
 		position: relative;
+		z-index: 1;
 	}
 	.container-text{
 		position: relative;
@@ -241,41 +266,59 @@
 			border-radius: 6px;
 			width: calc(50% - 10px);
 			text-align: center;
-			padding: 55px 55px 30px 55px;
+			padding:55px;
 			transition: all 0.25s ease;
+			position: relative;
+			&:before{
+				content:'';
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+				width: 100%;
+				background-color: #FFF;
+				box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
+				transition: all 250ms cubic-bezier(0.000, 1.100, 0.735, 0.920);
+				opacity: 0;
+			}
 			.icn{
+				position: relative;
+				z-index: 1;
+				margin: 0px auto 25px auto;
 				width: 35px;
-				margin-bottom: 25px;
+				height: 35px;
+				img{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
 			}
 			h3{
+				position: relative;
+				z-index: 1;
 				@include styleH6;
 				margin-bottom: 25px;
 			}
 			p{
+				position: relative;
+				z-index: 1;
 				@include styleParagraphSmall;
 			}
-			&:hover{
-				background-color: #FFF;
-				box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
+			&:hover:before{
+				
+				opacity: 1;
 			}
 			.btn{
 				margin-top: 32px;
-				@include button;
-				.btn-text{
-					margin-right: 15px;
-				}
-				&:hover{
-					.btn-text{
-						opacity: 1;
-					}
-				}
+				@include styleButtonTinyOpen;
 			}
 		}
 	}
 	.obj{
 		position: absolute;
 		left: 0px;
-		top: 100%;
+		top: 70%;
 		width: 100%;
 	}
 }
@@ -296,10 +339,7 @@
 			}
 			h2{
 				margin-top: 35px;
-				@include styleH4
-
-
-				;
+				@include styleH4;
 			}
 			p{
 				margin-top: 45px;
@@ -321,6 +361,9 @@
 					flex-flow: row wrap;
 					.num{
 						@include styleH3;
+						font-size: 28px;
+						line-height: 36px;
+						font-family: $font_1;
 						margin-right: 10px;
 					}
 				}
@@ -371,7 +414,7 @@
 		height: 100%;
 		width: calc((300px + ((100vw - #{$grid_desktop_3}))/2));
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: top center;
 		background-size: cover;
 		background-color: rgba(0, 0, 0, 0.1);
 	}
@@ -398,18 +441,14 @@
 		}
 		.btn{
 			margin-top: 40px;
-			@include button;
-			padding: 6px 17px 6px 17px;
-			.btn-text{
-				margin-right: 12px;
-			}
+			@include styleButtonSmall;
 		}
 	}
 	.container-text{
 		padding-top: 85px;
 		width: 500px;
 		p{
-			@include styleParagraphBig;
+			@include styleParagraphMedium;
 		}
 	}
 }
@@ -458,45 +497,53 @@
 	.wrapper{
 		position: relative;
 		z-index: 1;
-		padding-top: 130px;
-		padding-bottom: 130px;
+		padding: 90px 0px 0px 0px;
 		@include styleGrid1;
 		padding-left: 320px;
-		min-height: 750px;
+		min-height: 500px;
 		.container-el{
 			width: 100%;
 			.el{
 				display: none;
 				width: 580px;
 				position: relative;
-				.container-logo{
-					position: relative;
+				.head{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
 					margin-bottom: 40px;
-					img{
-						max-width: 140px;
-						max-height: 54px;
-						filter: brightness(100);
+					.container-logo{
+						position: relative;
+						margin-right: 30px;
+						img{
+							max-width: 140px;
+							max-height: 54px;
+							filter: brightness(100);
+						}
+					}
+					.cdr{
+						position: relative;
+						.name{
+							@include styleParagraphMedium;
+							color: $colorMain_4;
+						}
+						.job{
+							@include styleParagraphSmall;
+							color: rgba(255, 255, 255, 0.7);
+						}
 					}
 				}
+				
 				.container-quote{
 					position: relative;
 					margin-bottom: 40px;
 					q{
-						@include styleH4;
+						@include styleH5;
 						color: #FFF;
+						font-family: $font_3;
 					}
 				}
-				.cdr{
-					position: relative;
-					.name{
-						@include styleParagraphMedium;
-						color: $colorMain_4;
-					}
-					.job{
-						@include styleParagraphSmall;
-						color: rgba(255, 255, 255, 0.7);
-					}
-				}
+				
 
 				/* ANIM */
 				.container-logo{
@@ -526,13 +573,13 @@
 					}
 					.container-quote{
 						transition: all 500ms cubic-bezier(0.000, 0.865, 0.510, 1.000);
-						transition-delay: 0.2s;
+						transition-delay: 0.3s;
 						transform: translateY(0px);
 						opacity: 1;
 					}
 					.cdr{
 						transition: all 500ms cubic-bezier(0.000, 0.865, 0.510, 1.000);
-						transition-delay: 0.3s;
+						transition-delay: 0.2s;
 						opacity: 1;
 						transform: translateY(0px);
 					}
@@ -615,7 +662,7 @@
 			margin-bottom: 50px;
 		}
 		.btn{
-			@include button;
+			@include styleButtonBig;
 			margin-bottom: 24px;
 		}
 		.text{

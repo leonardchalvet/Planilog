@@ -1,6 +1,8 @@
 $(window).on('load', function() {
+	/*
+	var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
 
-
-	$('#section-cover video').get(0).play();
+	player.play();*/
 
 })

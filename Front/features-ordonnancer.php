@@ -33,6 +33,7 @@
 						</p>
 						<a class="btn" href="#">
 							<span class="btn-text">ESSAI GRATUIT</span>
+							<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 						</a>
 					</div>
 					<div class="container-illu">
@@ -159,7 +160,7 @@
 			<?php include('common-sectionStart.php') ?> 
 		</main>
 
-		<footer></footer>
+		<?php include('common-footer.php') ?> 
 
 		<script type="text/javascript" src="js/features.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>

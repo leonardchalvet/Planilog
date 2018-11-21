@@ -1,7 +1,8 @@
 <header id="header-desktop">
 	<div class="wrapper">
-		<a class="logo" href="#">
+		<a class="logo <?php echo($styleHeader); ?>" href="index.php">
 			<img src="img/common/logo.png" alt="">
+
 		</a>
 	</div>
 	<div class="container-head">
@@ -14,7 +15,7 @@
 				<div class="dropdown">
 					<div class="content">
 						<div class="container-el">
-							<a class="el" href="features-mesurer.php">
+							<a class="el" href="features-planifier.php">
 								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
 								<div class="text">
 									<h3>Planifier</h3>
@@ -23,7 +24,7 @@
 									</p>
 								</div>
 							</a>
-							<a class="el" href="features-ordonnancer.php">
+							<a class="el" href="features-simuler.php">
 								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
 								<div class="text">
 									<h3>Simuler</h3>
@@ -32,7 +33,7 @@
 									</p>
 								</div>
 							</a>
-							<a class="el" href="features-planifier.php">
+							<a class="el" href="features-ordonnancer.php">
 								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
 								<div class="text">
 									<h3>Ordonnancer</h3>
@@ -41,7 +42,7 @@
 									</p>
 								</div>
 							</a>
-							<a class="el" href="features-simuler.php">
+							<a class="el" href="features-mesurer.php">
 								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
 								<div class="text">
 									<h3>Mesurer</h3>
@@ -59,12 +60,11 @@
 					<div class="title">Modules</div>
 					<img class="arrow" src="img/common/arrow-red.svg" alt="">
 				</div>
-				<!--
 				<div class="dropdown">
 					<div class="content">
 						<div class="container-el">
 							<a class="el" href="#">
-								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
+								<img class="icn" src="img/common/icn-production.svg" alt="">
 								<div class="text">
 									<h3>Production industrielle</h3>
 									<p>
@@ -73,7 +73,7 @@
 								</div>
 							</a>
 							<a class="el" href="#">
-								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
+								<img class="icn" src="img/common/icn-maintenance.svg" alt="">
 								<div class="text">
 									<h3>Maintenance industrielle</h3>
 									<p>
@@ -84,7 +84,6 @@
 						</div>
 					</div>
 				</div>
-				-->
 			</li>
 			<li>
 				<div class="container-text">
@@ -101,7 +100,7 @@
 			<a class="signin" href="">
 				SE CONNECTER
 			</a>
-			<a class="signup" href="">
+			<a class="signup">
 				<span class="text">
 					ESSAI GRATUIT
 				</span>
@@ -109,3 +108,58 @@
 		</div>
 	</div>
 </header>
+
+<div id="lightbox-subscribe">
+
+	<div class="background">
+		
+	</div>
+
+	<div class="container-subscribe">
+		<div class="container-form">
+			<h2>
+				Inscription
+			</h2>
+			<form action="">
+				<div class="container-input">
+					<div class="input">
+						<div class="title">NOM</div>
+						<input type="text">
+					</div>
+					<div class="input">
+						<div class="title">PRÉNOM</div>
+						<input type="text">
+					</div>
+					<div class="input">
+						<div class="title">E-MAIL PROFESSIONNEL*</div>
+						<input type="text">
+					</div>
+					<div class="input">
+						<div class="title">TÉLÉPHONE</div>
+						<input type="text">
+					</div>
+				</div>
+				<p>
+					En cliquant sur « Se créer un compte » , je reconnais avoir pris connaissance des Conditions Générales d’Utilisation et accepte la déclaration de confidentialité. 
+				</p>
+				<button>
+					<span class="btn-text">
+						SE CREER UN COMPTE
+					</span>
+				</button>
+			</form>
+		</div>
+		<div class="container-desc">
+			<div class="close">
+				<img src="img/common/icn-cross.svg" alt="">
+			</div>
+			<div class="icn">
+				<img src="img/common/icn-subscribe.svg" alt="">
+			</div>
+			<p>
+				Votre version d’essai est valable pendant 30 jours et vous offre l’ensemble des fonctionnalités de planification et d’ordonnancement de la version Standard, avec outil de simulation et partage collaboratif intégrés. 
+			</p>
+		</div>
+	</div>
+	
+</div>

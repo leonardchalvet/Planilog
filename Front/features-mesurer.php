@@ -13,11 +13,13 @@
 
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
+		<script src="https://player.vimeo.com/api/player.js"></script>
+
 	</head>
 	
 	<body>
 
-		<?php include('common-header.php') ?> 
+		<?php include('common-header.php'); ?> 
 
 		<main class="feature-mesurer">
 			<section id="section-cover">
@@ -33,14 +35,18 @@
 						</p>
 						<a class="btn" href="#">
 							<span class="btn-text">ESSAI GRATUIT</span>
+							<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 						</a>
 					</div>
 					<div class="container-illu">
+						<!--
 						<video>
 						  <source loop
 						    src="video/home/Mesurer.mp4"
 						    type="video/mp4">
-						</video>
+						</video>-->
+						
+						<iframe src="https://player.vimeo.com/video/238480244?autoplay=1&loop=1&autopause=0?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
@@ -172,7 +178,7 @@
 			<?php include('common-sectionStart.php') ?> 
 		</main>
 
-		<footer></footer>
+		<?php include('common-footer.php') ?> 
 
 		<script type="text/javascript" src="js/features.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>

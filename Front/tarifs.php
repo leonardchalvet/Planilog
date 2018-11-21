@@ -65,6 +65,7 @@
 							</div>
 							<a class="btn" href="">
 								<span class="btn-text">SOUSCRIRE</span>
+								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 							</a>
 							<ul>
 								<li>
@@ -103,6 +104,7 @@
 							</div>
 							<a class="btn" href="">
 								<span class="btn-text">SOUSCRIRE</span>
+								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 							</a>
 							<ul>
 								<li>
@@ -151,6 +153,7 @@
 							</div>
 							<a class="btn" href="">
 								<span class="btn-text">SOUSCRIRE</span>
+								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 							</a>
 							<ul>
 								<li>
@@ -201,6 +204,7 @@
 							<input type="text" placeholder="Renseignez votre e-mail">
 							<a href="#" class="btn">
 								<span class="btn-text">SOUSCRIRE</span>
+								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 							</a>
 						</div>
 					</div>

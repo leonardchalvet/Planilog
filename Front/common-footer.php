@@ -49,10 +49,10 @@
 				<li>Contact</li>
 				<li>
 					<div class="container-contact">
-						<div class="pp" style="background-image: url(img/common/user.jpg)"></div>
+						<div class="pp" style="background-image: url(img/img-test/user.jpg)"></div>
 						<div class="text">
 							<p>Un expert à votre écoute</p>
-							<a href="#">Contacter</a>
+							<a href="mailto:sales@planilog.com">Contacter</a>
 						</div>
 					</div>
 				</li>

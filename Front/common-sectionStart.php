@@ -8,6 +8,7 @@
 			<span class="btn-text">
 				ESSAI GRATUIT
 			</span>
+			<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 		</a>
 		<div class="text">
 			ou <a href="">contactez nous</a>

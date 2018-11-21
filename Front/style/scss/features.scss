@@ -29,7 +29,7 @@
 		h2{
 			font-size: 13px;
 			line-height: 18px;
-			font-family: $font_2;
+			font-family: $font_1;
 			margin-bottom: 12px;
 		}
 		h1{
@@ -41,15 +41,19 @@
 			margin-bottom: 45px;
 		}
 		.btn{
-			@include button;
+			@include styleButtonBig;
 		}
 	}
 	.container-illu{
-		width: 600px;
-		video{
-			border-radius: 4px;
+		position: relative; 
+		border-radius: 4px;
+		box-shadow: 0 29px 40px 0 rgba(56,70,122,0.15);
+		height: 326px;	
+		width: 579px;
+		video,
+		iframe{
+			height: 100%;	
 			width: 100%;
-			box-shadow: 0 29px 40px 0 rgba(56,70,122,0.15);
 		}
 	}
 }
@@ -195,7 +199,7 @@
 			top: calc(100% + 15px);
 			left: 50%;
 			transform: translateX(-50%);
-			@include button;
+			@include styleButtonBig;
 			padding: 10px 15px 10px 15px;
 			transition: all 0.5s cubic-bezier(0.035, 1.080, 0.660, 0.955);
 			transition-delay: 0s;

@@ -21,6 +21,7 @@
 
 		<main>
 
+
 			<section id="section-cover">
 				<div class="background" style="background-image: url(img/home/sectionCover/cover.jpg);"></div>
 				<img class="shape" src="img/home/sectionCover/shape.svg" alt="">
@@ -35,6 +36,7 @@
 							</p>
 							<a class="btn" href="#">
 								<span class="btn-text">ESSAI GRATUIT</span>
+								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 							</a>
 						</div>
 						<div class="container-illu">
@@ -201,7 +203,10 @@
 					</div>
 					<div class="container-el">
 						<div class="el">
-							<img class="icn" src="img/home/sectionModules/icn-1.svg" alt="">
+							<div class="icn">
+								<img src="img/home/sectionModules/icn-1.svg" alt="">
+							</div>
+							
 							<h3>Production industrielle</h3>
 							<p>
 								Découvrez comment Planilog développe votre capacité de production et améliore votre taux de service client.
@@ -212,7 +217,9 @@
 							</a>
 						</div>
 						<div class="el">
-							<img class="icn" src="img/home/sectionModules/icn-2.svg" alt="">
+							<div class="icn">
+								<img src="img/home/sectionModules/icn-2.svg" alt="">
+							</div>
 							<h3>Maintenance industrielle</h3>
 							<p>
 								Découvrez comment Planilog optimise le taux d’utilisation de vos équipements et la planification des interventions de vos techniciens. 
@@ -318,47 +325,59 @@
 				<div class="wrapper">
 					<div class="container-el">
 						<div class="el" data-step='step-1'>
-							<div class="container-logo">
-								<img src="img/home/logos/logo-fmlogistic.svg" alt="">
+							<div class="head">
+								<div class="container-logo">
+									<img src="img/home/logos/logo-fmlogistic.svg" alt="">
+								</div>
+								<div class="cdr">
+									<div class="name">Jean Marc Tolini</div>
+									<div class="job">
+										Directeur Fonctions Supports France<br>FM France SAS 
+									</div>
+								</div>
 							</div>
+
 							<div class="container-quote">
 								<q>Par sa qualité d’écoute et la puissance de calcul du moteur d’ordonnancement, Planilog a parfaitement complété cette équipe projet, contribuant ainsi à l’amélioration de nos performances.</q>
 							</div>
-							<div class="cdr">
-								<div class="name">Jean Marc Tolini</div>
-								<div class="job">
-									Directeur Fonctions Supports France<br>FM France SAS 
-								</div>
-							</div>
+							
 						</div>
 						<div class="el" data-step='step-2'>
-							<div class="container-logo">
-								<img src="img/home/logos/logo-lisi.png" alt="">
+							<div class="head">
+								<div class="container-logo">
+									<img src="img/home/logos/logo-lisi.png" alt="">
+								</div>
+								<div class="cdr">
+									<div class="name">Jean Marc Tolini</div>
+									<div class="job">
+										IS-IT Manager<br> 
+										Lisi Aerospace Efsm
+									</div>
+								</div>
 							</div>
+							
 							<div class="container-quote">
 								<q>L’optimisation de l’ordonnancement des flux a apporté des résultats immédiats : l’On Time Delivery (OTD) est passé de 60% à 90%. Planilog a permis de gagner plusieurs mois de capacité de production par an, sans augmenter nos ressources</q>
 							</div>
-							<div class="cdr">
-								<div class="name">Jean Marc Tolini</div>
-								<div class="job">
-									IS-IT Manager<br> 
-									Lisi Aerospace Efsm
-								</div>
-							</div>
+							
 						</div>
 						<div class="el" data-step='step-3'>
-							<div class="container-logo">
-								<img src="img/home/logos/logo-cmi.png" alt="">
+							<div class="head">
+								<div class="container-logo">
+									<img src="img/home/logos/logo-cmi.png" alt="">
+								</div>
+								<div class="cdr">
+									<div class="name">Cédric Lacoste</div>
+									<div class="job">
+										Directeur des opérations Région Nord Est<br>CMI Maintenance Est
+									</div>
+								</div>
 							</div>
+							
 							<div class="container-quote">
 								<q>Accompagnés par notre éditeur Planilog, spécialiste de la planification, nous avons réussi à optimiser chacune de nos ressources et obtenir des gains significatifs. 35 000 heures de travail économisées, ce qui représente une augmentation de la productivité de 2%</q>
 							</div>
-							<div class="cdr">
-								<div class="name">Cédric Lacoste</div>
-								<div class="job">
-									Directeur des opérations Région Nord Est<br>CMI Maintenance Est
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<div class="container-step">

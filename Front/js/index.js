@@ -5,7 +5,7 @@ $(window).on('load', function() {
 		El = Section + ' ' + El;
 		Video = Section + ' ' + Video;
 
-		var valDelay = Delay;
+		var valDelay = 0;
 		var numberEl = $(El).length;
 		var countEl;
 		
@@ -40,7 +40,7 @@ $(window).on('load', function() {
 				$(elVideo + '.' + $(El + '.active').data('video')).fadeIn(350).addClass('active');
 				$(elVideo + '.active video').get(0).play();
 
-				var transformDistance = $(El + '.active .text').height();
+				var transformDistance = $(El + '.active .text').height()/2;
 
 				$(El + '.active').nextAll().css({
 				  '-webkit-transform' : 'translateY(' + transformDistance + 'px' + ')',
@@ -48,6 +48,20 @@ $(window).on('load', function() {
 				  '-ms-transform'     : 'translateY(' + transformDistance + 'px' + ')',
 				  '-o-transform'      : 'translateY(' + transformDistance + 'px' + ')',
 				  'transform'         : 'translateY(' + transformDistance + 'px' + ')'
+				});
+				$(El + '.active').css({
+				  '-webkit-transform' : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-moz-transform'    : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-ms-transform'     : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-o-transform'      : 'translateY(-' + transformDistance + 'px' + ')',
+				  'transform'         : 'translateY(-' + transformDistance + 'px' + ')'
+				});
+				$(El + '.active').prevAll().css({
+				  '-webkit-transform' : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-moz-transform'    : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-ms-transform'     : 'translateY(-' + transformDistance + 'px' + ')',
+				  '-o-transform'      : 'translateY(-' + transformDistance + 'px' + ')',
+				  'transform'         : 'translateY(-' + transformDistance + 'px' + ')'
 				});
 
 
@@ -84,10 +98,12 @@ $(window).on('load', function() {
 	    	prg('next');
 	    }, valDelay);
 
+	    valDelay = Delay;
+
 	};
 
 	sectionFtrCaroussel(
-		3000,
+		10000,
 		'#section-ftr',  
 		".container-el .el", 
 		".container-video .video"
@@ -101,7 +117,7 @@ $(window).on('load', function() {
 		Step = Section + ' ' + Step;
 		Nav = Section + ' ' + Nav;
 
-		var valDelay = Delay;
+		var valDelay = 0;
 		var numberEl = $(El).length;
 		var countEl;
 		
@@ -162,15 +178,36 @@ $(window).on('load', function() {
 	    	prg('next');
 	    }, valDelay);
 
+	    valDelay = Delay;
+
 	};
 
 	sectionQuotesCaroussel(
-		3000,
+		10000,
 		'#section-quotes',  
 		".container-el .el", 
 		".container-step .step", 
 		'.container-nav .nav'
 	);
+
+
+	function sectionModulesHoverBtn(){
+		var width = $('#section-modules .container-el .el .btn .btn-text').width();
+		var padding = $('#section-modules .container-el .el .btn').css('padding-left');
+		var calcTranslate = (width + parseInt(padding)) / 2;
+
+		$('#section-modules .container-el .el .btn').css({
+		  '-webkit-transform' : 'translateX(-' + calcTranslate + 'px)',
+		  '-moz-transform'    : 'translateX(-' + calcTranslate + 'px)',
+		  '-ms-transform'     : 'translateX(-' + calcTranslate + 'px)',
+		  '-o-transform'      : 'translateX(-' + calcTranslate + 'px)',
+		  'transform'         : 'translateX(-' + calcTranslate + 'px)'
+		});
+	};
+
+	sectionModulesHoverBtn();
+
+	
 
 
 })

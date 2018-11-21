@@ -10,16 +10,25 @@ $(window).on('load', function() {
 	    };
 	});
 
-	$('.li-dropdown').click(function(){
+	$('#header-desktop .li-dropdown').click(function(){
 		if ($(this).hasClass('show')) {
-			$('.li-dropdown').removeClass('show');
+			$('#header-desktop .li-dropdown').removeClass('show');
 			setTimeout(function() {
-				$('.li-dropdown .dropdown').removeClass('displayBlock');
+				$('#header-desktop .li-dropdown .dropdown').removeClass('displayBlock');
 			}, 250);
 		} else {
 			$(this).find('.dropdown').addClass('displayBlock').outerWidth();
 			$(this).addClass('show');
 		}
 		
+	})
+
+	$('#header-desktop .container-head .container-action .signup').click(function(){
+		$('#lightbox-subscribe').addClass('displayBlock').outerWidth();
+		$('#lightbox-subscribe').addClass('show').outerWidth();
+	})
+
+	$('#lightbox-subscribe .container-subscribe .container-desc .close').click(function(){
+		$('#lightbox-subscribe').removeClass('displayBlock show');
 	})
 })

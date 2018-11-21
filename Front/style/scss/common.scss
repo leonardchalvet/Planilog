@@ -14,8 +14,6 @@ body, html, *
 {
 	padding: 0px;
 	margin: 0px;
-	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
 }
 body, html {
 	width: 100%;
@@ -29,6 +27,16 @@ h1, h2, h3, h4, h5, h6, i
 {
 	font-weight: normal;
 	font-style: normal;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	body, html, *
+	{
+		-webkit-font-smoothing: antialiased;
+  		-moz-osx-font-smoothing: grayscale;
+	}
 }
 body.block
 {
@@ -172,6 +180,16 @@ main
 		$paragraphSmall_lineheight_mobile: 21px;
 
 
+	/*----------  PARAGRAPH TINY  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphTiny_textsize_desktop: 14px;
+		$paragraphTiny_lineheight_desktop: 20px;
+
+		/*----------  MOBILE  ----------*/
+		$paragraphTiny_textsize_mobile: 12px;
+		$paragraphTiny_lineheight_mobile: 18px;
+
+
 /*=====  End of TEXT SIZE  ======*/
 
 
@@ -299,55 +317,147 @@ main
 		/*----------  PARAGRAPH BIG  ----------*/
 		@mixin styleParagraphBig{
 			font-family: $font_3;
-		  	color: rgba($colorMain_1, 0.6); 
+		  	color: $colorMain_3; 
 			font-size: $paragraphBig_textsize_desktop;
 			line-height: $paragraphBig_lineheight_desktop;
 		}
 
 		/*----------  PARAGRAPH MEDIUM  ----------*/
 		@mixin styleParagraphMedium{
-			font-family: $font_2;
-		  	color: rgba($colorMain_1, 0.6); 
+			font-family: $font_3;
+		  	color: $colorMain_3; 
 			font-size: $paragraphMedium_textsize_desktop;
 			line-height: $paragraphMedium_lineheight_desktop;
 		}
 
 		/*----------  PARAGRAPH SMALL  ----------*/
 		@mixin styleParagraphSmall{
-			font-family: $font_2;
-		  	color: rgba($colorMain_1, 0.6); 
+			font-family: $font_3;
+		  	color: $colorMain_3; 
 			font-size: $paragraphSmall_textsize_desktop;
 			line-height: $paragraphSmall_lineheight_desktop;
 		}
 
-
-		/*----------  BUTTON  ----------*/
-		@mixin button{
-			cursor: pointer;
-		  	padding: 18px 20px 18px 20px;
-		  	border-radius: 4px;
-		  	background-color: $colorMain_2;
-		  	box-shadow: 0 8px 15px 0 rgba(56,70,122,0.30);
-		  	display: inline-flex;
-		  	flex-flow: row wrap;
-		  	align-items: center;
-		  	justify-content: space-between;
-		  	text-decoration: none;
-		  	transition: all 0.25s ease;
-			.btn-text{
-				font-family: $font_1;
-				font-size: 13px;
-				line-height: 25px;	
-				color: #FFF;
-			}
-			.btn-arrow{
-				width: 10px;
-			}
-			&:hover{
-				opacity: 0.8;
-			}
+		/*----------  PARAGRAPH TINY  ----------*/
+		@mixin styleParagraphTiny{
+			font-family: $font_3;
+		  	color: $colorMain_3; 
+			font-size: $paragraphTiny_textsize_desktop;
+			line-height: $paragraphTiny_lineheight_desktop;
 		}
 
+
+		/*----------  BUTTON  ----------*/
+
+			/*----------  COMMON STYLE  ----------*/
+			@mixin styleButton{
+				cursor: pointer;
+			  	padding: 18px 30px 18px 30px;
+			  	border-radius: 4px;
+			  	background-color: $colorMain_2;
+			  	box-shadow: 0 8px 15px 0 rgba(56,70,122,0.30);
+			  	display: inline-flex;
+			  	flex-flow: row wrap;
+			  	align-items: center;
+			  	justify-content: space-between;
+			  	text-decoration: none;
+			  	transition: all 0.25s ease;
+				.btn-text{
+					font-family: $font_1;
+					font-size: 13px;
+					line-height: 25px;	
+					color: #FFF;
+					position: relative;
+					z-index: 1;
+				}
+				.btn-arrow{
+					width: 10px;
+					transition: all 500ms cubic-bezier(0.020, 1.000, 0.825, 0.965);
+					position: relative;
+					z-index: 1;
+				}
+				&:hover{
+					background-color: $colorMain_1;
+					.btn-arrow{
+						transform: translateX(5px) scaleX(1.2);
+					}
+				}
+			}
+
+			/*----------  BUTTON BIG  ----------*/
+			@mixin styleButtonBig{
+				@include styleButton;
+			  	padding: 18px 30px 18px 30px;
+				.btn-text{
+					font-size: 13px;
+				}
+				.btn-arrow{
+					margin-left: 22px;
+				}
+			}
+
+			/*----------  BUTTON SMALL  ----------*/
+			@mixin styleButtonSmall{
+				@include styleButton;
+			  	padding: 7px 15px 7px 15px;
+				.btn-text{
+					font-size: 11px;
+				}
+				.btn-arrow{
+					margin-left: 15px;
+				}
+			}
+
+			/*----------  BUTTON TINY  ----------*/
+			@mixin styleButtonTiny{
+				@include styleButtonBig;
+				padding: 17px 15px 17px 15px;
+				.btn-arrow{
+					margin-left: 0px;
+				}
+			}
+
+			@mixin styleButtonTinyOpen{
+				@include styleButtonSmall;
+				position: relative;
+				background-color: transparent;
+				box-shadow: none;
+				z-index: 1;
+				border-radius: 4px;
+				overflow: hidden;
+			  	transition: transform 0.25s ease 0s, box-shadow 0s ease 0s;
+				.btn-text{
+					opacity: 0;
+				}
+				.btn-arrow{
+					margin-left: 15px;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 100%;
+					height: 100%;
+					background-color: $colorMain_2;
+					border-radius: 4px;
+					transform: translateX(calc(100% - 40px));
+					transition: all 0.25s ease;
+				}
+				&:hover{
+					background-color: transparent;
+					transition: transform 0.25s ease 0s, box-shadow 0.25s ease 0.1s;
+					transform: translate(0px) !important;
+					box-shadow: 0 8px 15px 0 rgba(56,70,122,0.30);
+					&:before{
+						background-color: $colorMain_1;
+						transform: translateX(0px);
+					}
+					.btn-text{
+						opacity: 1;
+					}
+				}
+			}
 
 		/*----------  GRID  ----------*/
 
@@ -446,7 +556,7 @@ main
 		left: 0px;
 		bottom: 100%;
 		width: 100%;
-		height: 70%;
+		height: 80%;
 		background: linear-gradient(90deg, #FFFFFF 0%, #E7E8EC 100%);
 	}
 	.wrapper{
@@ -460,7 +570,7 @@ main
 			margin-bottom: 50px;
 		}
 		.btn{
-			@include button;
+			@include styleButtonBig;
 			margin-bottom: 24px;
 		}
 		.text{
@@ -482,4 +592,33 @@ main
 
 /*========================================
 =            END SECTION START           =
+========================================*/
+
+
+/*=====================================
+=            SECTION BANNER           =
+=====================================*/
+#section-banner{
+	position: relative;
+	padding: 60px 0px 60px 0px;
+	background-color: $colorMain_1;
+	.wrapper{
+		@include styleGrid2;
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	h2{
+		@include styleH5;
+		color: #fff;
+	}
+	.btn{
+		@include styleButtonBig;
+	}
+
+}
+/*=========================================
+=            END SECTION BANNER           =
 ========================================*/
