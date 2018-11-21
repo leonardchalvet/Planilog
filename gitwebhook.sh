@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+#set -x
 
 FILE=/tmp/planilog.webhook.github
 DIR=/home/raphael/planilog.dev
