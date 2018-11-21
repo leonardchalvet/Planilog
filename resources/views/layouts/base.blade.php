@@ -21,7 +21,7 @@
     <meta property="og:locale" content="{{ app()->getLocale() }}" />
     --}}
 
-    {{-- FAVICON --}}
+    {{-- FAVICON
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="194x194" href="{{ asset('img/favicon/favicon-194x194.png') }}">
@@ -32,6 +32,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('img/favicon/mstile-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
+    --}}
 
     {{-- alternate languages --}}
     @if (!in_array(Route::currentRouteName(), ['post_customers', 'post_hub', 'post_press', 'post_integrations']))

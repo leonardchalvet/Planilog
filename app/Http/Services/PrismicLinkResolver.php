@@ -23,6 +23,45 @@ class PrismicLinkResolver extends LinkResolver
         if (property_exists($link, 'isBroken') && $link->isBroken === true) {
             $url = '/404';
         }
+
+        // LINK
+        if (property_exists($link, 'link_type')) {
+            if (substr($link->link_type, 0, 5) == "page_") {
+                // Direct route to page
+                if (Route::has($link->link_type)) {
+                    $url = route($link->link_type);
+                }
+            }
+            elseif ($link->link_type == "Web") {
+                // Web link
+                $url = $link->url;
+            }
+
+        }
+
+        // DOCUMENT
+        elseif (property_exists($link, 'type')) {
+            if (substr($link->type, 0, 5) == "page_") {
+                // Direct route to page
+                if (Route::has($link->type)) {
+                    $url = route($link->type);
+                }
+            }
+
+        }
+
+        return $url;
+
+
+        /*
+        elseif (property_exists($link, 'type')) {
+            if (substr($link->link_type, 0, 5) == "page_") {
+                // Direct route to page
+                if (Route::has($link->link_type)) {
+                    $url = route($link->link_type);
+                }
+            }
+        }
         elseif (substr($link->link_type, 0, 5) == "page_") {
             // Direct route to page
             if (Route::has($link->link_type)) {
@@ -80,5 +119,6 @@ class PrismicLinkResolver extends LinkResolver
         }
 
         return $url;
+        */
     }
 }
