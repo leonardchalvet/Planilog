@@ -1,0 +1,215 @@
+@import 'common.scss';
+@import 'header.scss';
+/*===================================
+=            PAGE SUPPORT           =
+===================================*/
+
+#section-cover{
+	padding: 185px 0px 125px 0px;
+	background-color: $colorMain_1;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		text-align: center;
+		h1{
+			@include styleH3;
+			color: #FFF;
+		}
+		.container-search{
+			position: relative;
+			width: 755px;
+			margin: 35px auto 0px auto;
+			.container-input{
+				height: 70px;
+				display: flex;
+				flex-flow: row wrap;
+				border-radius: 6px;
+				overflow: hidden;
+				box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
+				background-color: #FFF;
+				.icn{
+					position: relative;
+					width: 75px;
+					height: 100%;
+					img{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 32px;
+						transform: translate(-50%, -50%)
+					}
+				}
+				input{
+					border: none;
+					outline: none;
+					height: 100%;
+					width: calc(100% - 75px);
+					@include styleH5;
+					font-family: $font_3;
+				}
+			}
+			.container-dropdown{
+				display: none;
+				overflow: auto;
+				position: absolute;
+				z-index: 10;
+				width: 100%;
+				left: 0px;
+				top: 100%;
+				border-radius: 0 0 6px 6px;
+				padding: 25px 35px 25px 35px;
+				background-color: #FFFFFF;
+				box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
+				.container-el{
+					position: relative;
+					.el{
+						text-align: left;
+						margin-bottom:50px;
+						&:last-child{
+							margin-bottom:0px;
+						}
+						.head{
+							display: flex;
+							flex-flow: row wrap;
+							align-items: center;
+							background-color: #F7F9FC;
+							border-radius: 6px;
+							padding: 18px 18px 18px 0px;
+							.icn{
+								width: 60px;
+								height: 100%;
+								position: relative;
+								img{
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									width: 23px;
+									transform: translate(-50%, -50%)
+								}
+							}
+							.title{
+								width: calc(100% - 60px);
+								@include styleH6;
+							}
+						}
+						.container-ul{
+							margin-top:20px;
+							.list{
+								margin-bottom: 40px;
+								&:last-child{
+									margin-bottom:0px;
+								}
+								.title{
+									@include styleH6;
+									padding-left: 14px;
+								}
+								ul{
+									margin-top: 12px;
+									list-style: none;
+									li{
+										position: relative;
+										transition: all 0.25s ease;
+										border-radius: 6px;
+										&:before{
+											content:'';
+											height: 5px;	
+											width: 5px;
+											border-radius: 4px;
+											position: absolute;
+											left: 16px;
+											top: 50%;
+											transform: translateY(-50%);
+											background-color: $colorMain_2;
+										}
+										position: relative;
+										padding: 13px 20px 13px 42px;
+										a{
+											text-decoration: none;
+											@include styleParagraphSmall;
+											color:$colorMain_1;
+										}
+										&:hover{
+											background-color: rgba($colorMain_2, 0.05);
+											a{
+												color: $colorMain_2;
+											} 
+											
+										}
+										
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&.open{
+				.container-input{
+					border-radius: 6px 6px 0px 0px;
+				}
+				.container-dropdown{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+#section-ftr{
+	position: relative;
+	padding: 100px 0px 100px 0px;
+	.wrapper{
+		@include styleGrid2;
+		position: relative;
+	}
+	.container-el{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.el{
+			display: block;
+			text-decoration: none;
+			height: 358px;	
+			width: 358px;
+			background-color: #F7F9FC;
+			padding: 72px 22px 0px 22px;
+			text-align: center;
+			margin-bottom: 12px;
+			transition:all 0.25s ease;
+			&:hover{
+				background-color: $colorMain_1;
+				.icn{
+					filter: brightness(0) invert(1);
+				}
+				h3{
+					color:#FFF;
+				} 
+				p{
+					color:#FFF;
+				}
+			}
+			.icn{
+				text-align: center;
+				transition:all 0.25s ease;
+			}
+			h3{
+				margin-top:22px;
+				@include styleParagraphMedium;
+				font-family: $font_2;
+				color: $colorMain_1;
+				transition:all 0.25s ease;
+			}
+			p{
+				margin-top:22px;
+				@include styleParagraphSmall;
+				transition:all 0.25s ease;
+			}
+		}
+	}
+}
+
+/*=======================================
+=            END PAGE SUPPORT           =
+========================================*/
+@import 'footer.scss';
