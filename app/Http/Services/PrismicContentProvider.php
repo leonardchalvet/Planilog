@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 use Prismic\Api;
+use Prismic\Exception\RequestFailureException;
 use Prismic\Predicates;
 use Prismic\Document;
 use Barryvdh\Debugbar\Facade as Debugbar;
@@ -86,7 +87,13 @@ class PrismicContentProvider
 
         /** @var Document $document */
         Debugbar::startMeasure('prismic', "Prismic API [$pageType]");
-        $response = $this->api->query($predicates, $options);
+        try {
+            $response = $this->api->query($predicates);
+            //dd($predicates, $options, $response);
+        }
+        catch (RequestFailureException $e) {
+            dd($e);
+        }
         Debugbar::stopMeasure('prismic');
 
         return $response;

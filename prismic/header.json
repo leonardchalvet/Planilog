@@ -45,7 +45,8 @@
           "header_outils_el_link": {
             "type": "Link",
             "config": {
-              "label": "Menu Outils El Link"
+              "label": "Menu Outils El Link",
+              "allowTargetBlank" : true
             }
           }
         },
@@ -84,7 +85,8 @@
           "header_modules_el_button_link": {
             "type": "Link",
             "config": {
-              "label": "Menu Modules El Link"
+              "label": "Menu Modules El Link",
+              "allowTargetBlank" : true
             }
           }
         },
@@ -100,7 +102,8 @@
     "header_menu_tarifs_link": {
       "type": "Link",
       "config": {
-        "label": "Header Menu Tarifs Link"
+        "label": "Header Menu Tarifs Link",
+        "allowTargetBlank" : true
       }
     },
     "header_menu_contact": {
@@ -112,7 +115,8 @@
     "header_menu_contact_link": {
       "type": "Link",
       "config": {
-        "label": "Header Menu Contact Link"
+        "label": "Header Menu Contact Link",
+        "allowTargetBlank" : true
       }
     },
     "header_menu_login": {
@@ -124,19 +128,14 @@
     "header_menu_login_link": {
       "type": "Link",
       "config": {
-        "label": "Header Menu Login Link"
+        "label": "Header Menu Login Link",
+        "allowTargetBlank" : true
       }
     },
     "header_menu_essai": {
       "type": "Text",
       "config": {
         "label": "Header Menu Essai"
-      }
-    },
-    "header_menu_essai_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Essai Link"
       }
     }
   },

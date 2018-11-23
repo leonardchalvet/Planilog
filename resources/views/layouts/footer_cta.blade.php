@@ -6,7 +6,9 @@ use Prismic\Dom\RichText;
     <div class="wrapper">
         <h2>@simpleText($footer_cta, footer_cta_title)</h2>
         @richText($footer_cta, footer_cta_paragraph)
-        <a class="btn" href="@linkSrc($footer_cta, footer_cta_button_link)">
+        <a class="btn"
+           href="@linkSrc($footer_cta, footer_cta_button_link)"
+           @linkTarget($footer_cta, footer_cta_button_link)>
 			<span class="btn-text">
 				@simpleText($footer_cta, footer_cta_button_text)
 			</span>

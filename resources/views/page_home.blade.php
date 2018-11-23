@@ -6,6 +6,10 @@ use Prismic\Dom\RichText;
 
 @section('title', $doc->seo_page_title)
 @section('description', $doc->seo_page_description)
+@section('og_title', $doc->seo_og_title ?? $doc->seo_page_title)
+@section('og_description', $doc->seo_og_description ?? $doc->seo_page_description)
+@section('og_image', property_exists($doc->seo_og_image, 'url') ? $doc->seo_og_image->url : "")
+
 @section('style', asset('css/home.css'))
 @section('header_class', '')
 
@@ -23,7 +27,7 @@ use Prismic\Dom\RichText;
                             @simpleText($doc, cover_title)
                         </h1>
                         @richText($doc, cover_paragraph)
-                        <a class="btn" href="@linkSrc($doc, cover_button_link)">
+                        <a class="btn" href="@linkSrc($doc, cover_button_link)" @linkTarget($doc, cover_button_link)>
                             <span class="btn-text">@simpleText($doc, cover_button_text)</span>
                             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                         </a>
@@ -64,8 +68,10 @@ use Prismic\Dom\RichText;
                                 </div>
                                 <div class="text">
                                     @richText($outil, section_ftr_el_paragraph)
-                                    <a class="btn" href="@linkSrc($outil, section_ftr_el_link)">
-                                        <img class="btn-arrow" src="img/common/arrow-white.svg">
+                                    <a class="btn"
+                                       href="@linkSrc($outil, section_ftr_el_link)"
+                                       @linkTarget($outil, section_ftr_el_link)>
+                                        <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                                     </a>
                                 </div>
                             </div>
@@ -102,7 +108,9 @@ use Prismic\Dom\RichText;
                             </div>
                             <h3>@simpleText($module, section_modules_el_title)</h3>
                             @richText($module, section_modules_el_paragraph)
-                            <a class="btn" href="@linkSrc($module, section_modules_el_button_link)">
+                            <a class="btn"
+                               href="@linkSrc($module, section_modules_el_button_link)"
+                               @linkTarget($module, section_modules_el_button_link)>
                                 <div class="btn-text">@simpleText($module, section_modules_el_button_text)</div>
                                 <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                             </a>
@@ -150,7 +158,9 @@ use Prismic\Dom\RichText;
                     <h2>
                         @simpleText($doc, section_apprentissage_title)
                     </h2>
-                    <a class="btn" href="@linkSrc($doc, section_apprentissage_button_link)">
+                    <a class="btn"
+                       href="@linkSrc($doc, section_apprentissage_button_link)"
+                       @linkTarget($doc, section_apprentissage_button_link)>
                         <div class="btn-text">@simpleText($doc, section_apprentissage_button_text)</div>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                     </a>
@@ -212,9 +222,7 @@ use Prismic\Dom\RichText;
             </div>
         </section>
 
-        @if (property_exists($doc, 'include_footer_cta') && $doc->include_footer_cta == "yes")
-            @include('layouts.footer_cta')
-        @endif
+        @include('layouts.footer_cta')
 
     </main>
 

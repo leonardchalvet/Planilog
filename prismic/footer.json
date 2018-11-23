@@ -32,7 +32,8 @@
           "footer_outils_el_link": {
             "type": "Link",
             "config": {
-              "label": "Outils El Link"
+              "label": "Outils El Link",
+              "allowTargetBlank" : true
             }
           }
         },
@@ -58,7 +59,8 @@
           "footer_domaines_el_link": {
             "type": "Link",
             "config": {
-              "label": "Domaines El Link"
+              "label": "Domaines El Link",
+              "allowTargetBlank" : true
             }
           }
         },
@@ -84,7 +86,8 @@
           "footer_company_el_link": {
             "type": "Link",
             "config": {
-              "label": "Company El Link"
+              "label": "Company El Link",
+              "allowTargetBlank" : true
             }
           }
         },
@@ -135,7 +138,8 @@
           "social_link": {
             "type": "Link",
             "config": {
-              "label": "Social Media Link"
+              "label": "Social Media Link",
+              "allowTargetBlank" : true
             }
           }
         },

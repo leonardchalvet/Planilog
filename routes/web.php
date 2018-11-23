@@ -21,6 +21,11 @@ function () {
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_home']
     )->name('page_home');
 
+    Route::get(
+        LaravelLocalization::transRoute('routes.tarifs'),
+        ['uses' => 'PrismicController@genericPage', 'page' => 'page_tarifs']
+    )->name('page_tarifs');
+
 });
 
 // Github webhook

@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 use Prismic\LinkResolver;
+use Barryvdh\Debugbar\Facade as Debugbar;
 use Route;
 
 class PrismicLinkResolver extends LinkResolver
@@ -18,7 +19,7 @@ class PrismicLinkResolver extends LinkResolver
      */
     public function resolve($link) :?string
     {
-        //dd($link);
+        //print_r($link);
         $url = "/";
         if (property_exists($link, 'isBroken') && $link->isBroken === true) {
             $url = '/404';
@@ -26,7 +27,11 @@ class PrismicLinkResolver extends LinkResolver
 
         // LINK
         if (property_exists($link, 'link_type')) {
-            if (substr($link->link_type, 0, 5) == "page_") {
+            if ($link->link_type == "Any") {
+                //Debugbar::warning("Missing link URL " . print_r($link, true));
+                $url = "#";
+            }
+            elseif (substr($link->link_type, 0, 5) == "page_") {
                 // Direct route to page
                 if (Route::has($link->link_type)) {
                     $url = route($link->link_type);
@@ -35,6 +40,14 @@ class PrismicLinkResolver extends LinkResolver
             elseif ($link->link_type == "Web") {
                 // Web link
                 $url = $link->url;
+            }
+            elseif ($link->link_type == "Document") {
+                if (substr($link->type, 0, 5) == "page_") {
+                    // Direct route to page
+                    if (Route::has($link->type)) {
+                        $url = route($link->type);
+                    }
+                }
             }
 
         }
@@ -47,7 +60,6 @@ class PrismicLinkResolver extends LinkResolver
                     $url = route($link->type);
                 }
             }
-
         }
 
         return $url;

@@ -20,7 +20,9 @@ use Prismic\Dom\RichText;
                     <div class="content">
                         <div class="container-el">
                             @foreach($header->header_outils_container_el as $outil)
-                                <a class="el" href="@linkSrc($outil, header_outils_el_link)">
+                                <a class="el"
+                                   href="@linkSrc($outil, header_outils_el_link)"
+                                   @linkTarget($outil, header_outils_el_link)>
                                     <img class="icn" src="@imageSrc($outil, header_outils_el_icon)">
                                     <div class="text">
                                         <h3>@simpleText($outil, header_outils_el_title)</h3>
@@ -41,7 +43,9 @@ use Prismic\Dom\RichText;
                     <div class="content">
                         <div class="container-el">
                             @foreach($header->header_modules_container_el as $module)
-                            <a class="el" href="@linkSrc($module, header_modules_el_button_link)">
+                            <a class="el"
+                               href="@linkSrc($module, header_modules_el_button_link)"
+                               @linkTarget($module, header_modules_el_button_link)>
                                 <img class="icn" src="@imageSrc($module, header_modules_el_icon)">
                                 <div class="text">
                                     <h3>@simpleText($module, header_modules_el_title)</h3>
@@ -55,20 +59,30 @@ use Prismic\Dom\RichText;
             </li>
             <li>
                 <div class="container-text">
-                    <a href="@linkSrc($header, header_menu_tarifs_link)" class="title">@simpleText($header, header_menu_tarifs)</a>
+                    <a class="title"
+                       href="@linkSrc($header, header_menu_tarifs_link)"
+                       @linkTarget($header, header_menu_tarifs_link)>
+                    @simpleText($header, header_menu_tarifs)
+                    </a>
                 </div>
             </li>
             <li>
                 <div class="container-text">
-                    <a href="@linkSrc($header, header_menu_contact_link)" class="title">@simpleText($header, header_menu_contact)</a>
+                    <a class="title"
+                       href="@linkSrc($header, header_menu_contact_link)"
+                       @linkTarget($header, header_menu_contact_link)>
+                        @simpleText($header, header_menu_contact)
+                    </a>
                 </div>
             </li>
         </ul>
         <div class="container-action">
-            <a class="signin" href="@linkSrc($header, header_menu_login_link)">
+            <a class="signin"
+               href="@linkSrc($header, header_menu_login_link)"
+                    @linkTarget($header, header_menu_login_link)>
                 @simpleText($header, header_menu_login)
             </a>
-            <a class="signup" href="@linkSrc($header, header_menu_essai_link)">
+            <a class="signup">
 				<span class="text">
 					@simpleText($header, header_menu_essai)
 				</span>

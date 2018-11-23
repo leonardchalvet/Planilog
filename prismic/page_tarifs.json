@@ -1,0 +1,344 @@
+{
+  "A-General": {
+    "page_title": {
+      "type": "Text",
+      "config": {
+        "useAsTitle": true,
+        "label": "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO - Name"
+      }
+    },
+    "seo_page_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO - Description"
+      }
+    },
+    "seo_og_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Open Graph - Name"
+      }
+    },
+    "seo_og_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Open Graph - Description"
+      }
+    },
+    "seo_og_image": {
+      "type": "Image",
+      "config": {
+        "label": "SEO Open Graph - Image"
+      }
+    }
+  },
+  "Tarifs": {
+    "tarifs_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "tarifs_desc_1": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Description"
+      }
+    },
+    "tarifs_desc_2": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Description 2"
+      }
+    },
+    "tarif_standard_title": {
+      "type": "Text",
+      "config": {
+        "label": "Standard - Titre"
+      }
+    },
+    "tarif_standard_paragraph": {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label": "Standard - Description"
+      }
+    },
+    "tarif_standard_price": {
+      "type": "Text",
+      "config": {
+        "label": "Standard - Prix"
+      }
+    },
+    "tarif_standard_price_desc_1": {
+      "type": "Text",
+      "config": {
+        "label": "Standard - Description 1"
+      }
+    },
+    "tarif_standard_price_desc_2": {
+      "type": "Text",
+      "config": {
+        "label": "Standard - Description 2"
+      }
+    },
+    "tarif_standard_price_button": {
+      "type": "Text",
+      "config": {
+        "label": "Standard - Bouton souscrire"
+      }
+    },
+    "tarif_standard_price_link": {
+      "type": "Link",
+      "config": {
+        "label": "Standard - Lien bouton souscrire",
+        "allowTargetBlank" : true
+      }
+    },
+    "tarif_standard_options" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "option" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Option"
+            }
+          }
+        },
+        "label" : "Standard - Options"
+      }
+    },
+
+
+
+    "tarif_business_title": {
+      "type": "Text",
+      "config": {
+        "label": "Business - Titre"
+      }
+    },
+    "tarif_business_paragraph": {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label": "Business - Description"
+      }
+    },
+    "tarif_business_price": {
+      "type": "Text",
+      "config": {
+        "label": "Business - Prix"
+      }
+    },
+    "tarif_business_price_desc_1": {
+      "type": "Text",
+      "config": {
+        "label": "Business - Description 1"
+      }
+    },
+    "tarif_business_price_desc_2": {
+      "type": "Text",
+      "config": {
+        "label": "Business - Description 2"
+      }
+    },
+    "tarif_business_price_button": {
+      "type": "Text",
+      "config": {
+        "label": "Business - Bouton souscrire"
+      }
+    },
+    "tarif_business_price_link": {
+      "type": "Link",
+      "config": {
+        "label": "Business - Lien bouton souscrire",
+        "allowTargetBlank" : true
+      }
+    },
+    "tarif_business_options" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "option" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Option"
+            }
+          }
+        },
+        "label" : "Business - Options"
+      }
+    },
+
+
+
+    "tarif_premium_title": {
+      "type": "Text",
+      "config": {
+        "label": "Premium - Titre"
+      }
+    },
+    "tarif_premium_paragraph": {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label": "Premium - Description"
+      }
+    },
+    "tarif_premium_price": {
+      "type": "Text",
+      "config": {
+        "label": "Premium - Prix"
+      }
+    },
+    "tarif_premium_price_desc_1": {
+      "type": "Text",
+      "config": {
+        "label": "Premium - Description 1"
+      }
+    },
+    "tarif_premium_price_desc_2": {
+      "type": "Text",
+      "config": {
+        "label": "Premium - Description 2"
+      }
+    },
+    "tarif_premium_price_button": {
+      "type": "Text",
+      "config": {
+        "label": "Premium - Bouton souscrire"
+      }
+    },
+    "tarif_premium_price_link": {
+      "type": "Link",
+      "config": {
+        "label": "Premium - Lien bouton souscrire",
+        "allowTargetBlank" : true
+      }
+    },
+    "tarif_premium_options" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "option" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Option"
+            }
+          }
+        },
+        "label" : "Premium - Options"
+      }
+    }
+  },
+
+
+  "Essai gratuit": {
+    "free_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "free_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Description"
+      }
+    },
+    "free_input_label": {
+      "type": "Text",
+      "config": {
+        "label": "Formulaire - texte"
+      }
+    },
+    "free_input_placeholder": {
+      "type": "Text",
+      "config": {
+        "label": "Formulaire - placeholder"
+      }
+    },
+    "free_input_button": {
+      "type": "Text",
+      "config": {
+        "label": "Formulaire - bouton souscrire"
+      }
+    },
+    "free_options": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "option": {
+            "type": "Text",
+            "config": {
+              "label": "Option"
+            }
+          }
+        },
+        "label": "Options"
+      }
+    }
+  },
+
+
+
+  "FAQ": {
+    "faq_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "FAQ",
+      "config": {
+        "choices": {
+          "test": {
+            "type": "Slice",
+            "fieldset": "questions",
+            "description": "Questions",
+            "icon": "chat_bubble_outline",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Catégorie"
+                }
+              }
+            },
+            "repeat": {
+              "question": {
+                "type": "Text",
+                "config": {
+                  "label": "Question"
+                }
+              },
+              "réponse": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Réponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+

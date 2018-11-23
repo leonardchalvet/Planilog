@@ -31,7 +31,8 @@
     "footer_cta_button_link": {
       "type": "Link",
       "config": {
-        "label": "Footer CTA Button Link"
+        "label": "Footer CTA Button Link",
+        "allowTargetBlank" : true
       }
     },
     "footer_cta_contact_paragraph": {

@@ -62,9 +62,15 @@ class AppServiceProvider extends ServiceProvider
             // lol! Blade directives cannot use multiple parameters?
             list($doc, $field) = explode(',',str_replace(['(',')',' ', '\''], '', $arguments));
 
-            //$doc->field->value->main->url
             return  '<?= isset('.$doc.'->'.$field.') ? $linkResolver->resolve('.$doc.'->'.$field.') : ""; ?>';
-        });    }
+        });
+        Blade::directive('linkTarget', function ($arguments) {
+            // lol! Blade directives cannot use multiple parameters?
+            list($doc, $field) = explode(',',str_replace(['(',')',' ', '\''], '', $arguments));
+
+            return  '<?= (isset('.$doc.'->'.$field.') && isset('.$doc.'->'.$field.'->target)) ? "target=\"".'.$doc.'->'.$field.'->target."\"" : ""; ?>';
+        });
+    }
 
     /**
      * Register any application services.

@@ -11,15 +11,14 @@
     {{-- STYLE --}}
     <link type="text/css" rel="stylesheet" href="@yield('style')">
 
-    {{-- Open Graph
-    <meta property="og:title" content="@yield('title')" />
-    <meta property="og:description" content="@yield('description')" />
+    {{-- Open Graph --}}
+    <meta property="og:title" content="@yield('og_title')" />
+    <meta property="og:description" content="@yield('og_description')" />
     <meta property="og:type" content="@yield('content_type', 'website')" />
     <meta property="og:url" content="{{ Request::url() }}" />
-    <meta property="og:image" content="@yield('content_image', url('/') . '/img/logo.svg')" />
-    <meta property="og:image:secure_url" content="@yield('content_image', url('/') . '/img/logo.svg')" />
+    <meta property="og:image" content="@yield('og_image')" />
+    <meta property="og:image:secure_url" content="@yield('og_image')" />
     <meta property="og:locale" content="{{ app()->getLocale() }}" />
-    --}}
 
     {{-- FAVICON
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-touch-icon.png') }}">
@@ -44,7 +43,6 @@
         <link rel="alternate" href="{{ LaravelLocalization::getNonLocalizedURL() }}" hreflang="x-default" />
     @endif
 
-
     {{-- canonical url --}}
     @if (isset($lang) && $lang != LaravelLocalization::getCurrentLocale())
         {{-- if language is defined (on articles) --}}
@@ -53,6 +51,7 @@
         {{-- else, canonical url is current url --}}
         <link rel="canonical" href="{{ URL::current() }}" />
     @endif
+
 
 </head>
 
@@ -70,11 +69,20 @@
 @yield('js')
 
 
-{{--  Prismic Toolbar for previews --}}
+{{-- DEBUG --}}
+<style>
+    @keyframes blink { 50% { outline: 1px solid red; } }
+    /*.emptyLink{ animation: blink 2s step-end infinite alternate; }*/
+    .emptyLink { outline: 1px solid red; }
+</style>
+<script>$('a[href="#"]').addClass("emptyLink");</script>
+
+{{--  Prismic Toolbar for previews
 <script>
     window.prismic = { endpoint: 'https://maxgodenne.cdn.prismic.io/api/v2' };
 </script>
 <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
+--}}
 
 </body>
 </html>
