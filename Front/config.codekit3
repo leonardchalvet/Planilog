@@ -72,20 +72,6 @@
 		"oAP": "/contact-commercial.php",
 		"oF": 0
 		},
-	"/domaine-maintenance.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/domaine-maintenance.php",
-		"oF": 0
-		},
-	"/domaine-production.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/domaine-production.php",
-		"oF": 0
-		},
 	"/features-mesurer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -378,39 +364,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"/img/domaine/cover-maintenance.png": {
-		"ft": 32768,
-		"iS": 1365116,
-		"oA": 0,
-		"oAP": "/img/domaine/cover-maintenance.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/domaine/cover-production.png": {
-		"ft": 32768,
-		"iS": 1553328,
-		"oA": 0,
-		"oAP": "/img/domaine/cover-production.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/domaine/Lisi.png": {
-		"ft": 32768,
-		"iS": 16298,
-		"oA": 0,
-		"oAP": "/img/domaine/Lisi.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/img/features/common-features/icn-mesurer.svg": {
 		"ft": 2097152,
@@ -1372,16 +1325,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/style/css/domaine.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style/css/domaine-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/style/css/features.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1529,19 +1472,6 @@
 		"oA": 0,
 		"oAP": "/style/css/contact-commercial.css",
 		"oF": 2,
-		"oS": 3,
-		"uL": 1
-		},
-	"/style/scss/domaine.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style/css/domaine.css",
-		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
