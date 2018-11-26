@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>homme</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="3-B-Domaine-Maintenance" transform="translate(-660.000000, -3332.000000)" stroke-width="1.92">
+            <g id="Section-6" transform="translate(0.000000, 3035.000000)">
+                <g id="planifier-copy" transform="translate(469.000000, 201.000000)">
+                    <g id="homme" transform="translate(191.666045, 97.000000)">
+                        <circle id="Oval" stroke="#38467A" cx="6.34375" cy="4.53125" r="3.625"></circle>
+                        <path d="M9.0625,28.09375 L9.96875,19.03125 L11.78125,19.03125 L11.78125,15.40625 C11.78125,12.4032017 9.3467983,9.96875008 6.34375,9.96875008 C3.3407017,9.96875008 0.906250045,12.4032017 0.90625,15.40625 L0.90625,19.03125 L2.71875,19.03125 L3.625,28.09375 L9.0625,28.09375 Z" id="Path" stroke="#38467A"></path>
+                        <path d="M20.84375,13.59375 L14.6643333,7.14729167 C13.551294,6.03492961 13.2757256,4.33478013 13.9804167,2.92779167 C14.5056401,1.87657899 15.5042388,1.14198913 16.6641564,0.953577346 C17.8240739,0.765165558 19.0038427,1.14591118 19.8347917,1.97683333 L20.84375,2.98579167 L21.8527083,1.97683333 C22.6838903,1.14592244 23.8638154,0.765200828 25.0238939,0.953599874 C26.1839724,1.14199892 27.182775,1.87655024 27.7082917,2.92779167 C28.4118957,4.33515124 28.1359128,6.03485493 27.0231667,7.14729167 L20.84375,13.59375 Z" id="Path" stroke="#FB6D6D"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

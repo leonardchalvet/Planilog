@@ -320,7 +320,7 @@
 		},
 	"/img/common/start-laptop.png": {
 		"ft": 32768,
-		"iS": 595361,
+		"iS": 432820,
 		"oA": 0,
 		"oAP": "/img/common/start-laptop.png",
 		"oF": 0,
@@ -400,6 +400,76 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/domaine/icn-avantage-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-6.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/domaine/icn-avantage-7.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/domaine/icn-avantage-7.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/domaine/Lisi.png": {
 		"ft": 32768,
@@ -756,7 +826,7 @@
 		},
 	"/img/home/sectionCover/cover.jpg": {
 		"ft": 16384,
-		"iS": 1214636,
+		"iS": 1440304,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/home/sectionCover/cover.jpg",
@@ -775,11 +845,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/home/sectionFtr/icn-1-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/home/sectionFtr/icn-1-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/home/sectionFtr/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/home/sectionFtr/icn-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/home/sectionFtr/icn-2-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/home/sectionFtr/icn-2-grey.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -795,11 +885,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/home/sectionFtr/icn-3-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/home/sectionFtr/icn-3-grey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/home/sectionFtr/icn-3.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/home/sectionFtr/icn-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/home/sectionFtr/icn-4-grey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/home/sectionFtr/icn-4-grey.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -921,7 +1031,7 @@
 		},
 	"/img/home/sectionResultats/illu.png": {
 		"ft": 32768,
-		"iS": 1962850,
+		"iS": 458438,
 		"oA": 0,
 		"oAP": "/img/home/sectionResultats/illu.png",
 		"oF": 0,

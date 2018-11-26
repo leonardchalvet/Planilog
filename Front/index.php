@@ -23,7 +23,7 @@
 
 
 			<section id="section-cover">
-				<div class="background" style="background-image: url(img/home/sectionCover/cover.jpg);"></div>
+				<img class="background" src="img/home/sectionCover/cover.jpg" alt="">
 				<img class="shape" src="img/home/sectionCover/shape.svg" alt="">
 				<div class="wrapper">
 					<div class="container-cover">
@@ -71,7 +71,11 @@
 						<div class="container-el">
 							<div class="el active" data-video="video-planifier">
 								<div class="head">
-									<img class="icn" src="img/home/sectionFtr/icn-1.svg" alt="">
+									<div class="icn">
+										<img src="img/home/sectionFtr/icn-1.svg" alt="">
+										<img src="img/home/sectionFtr/icn-1-grey.svg" alt="">
+									</div>
+									
 									<h3>
 										Planifier
 									</h3>
@@ -87,7 +91,11 @@
 							</div>
 							<div class="el" data-video="video-simuler">
 								<div class="head">
-									<img class="icn" src="img/home/sectionFtr/icn-2.svg" alt="">
+									<div class="icn">
+										<img src="img/home/sectionFtr/icn-2.svg" alt="">
+										<img src="img/home/sectionFtr/icn-2-grey.svg" alt="">
+									</div>
+									
 									<h3>
 										Simuler
 									</h3>
@@ -103,7 +111,11 @@
 							</div>
 							<div class="el" data-video="video-ordonnancer">
 								<div class="head">
-									<img class="icn" src="img/home/sectionFtr/icn-3.svg" alt="">
+									<div class="icn">
+										<img src="img/home/sectionFtr/icn-3.svg" alt="">
+										<img src="img/home/sectionFtr/icn-3-grey.svg" alt="">
+									</div>
+									
 									<h3>
 										Ordonnancer
 									</h3>
@@ -119,7 +131,10 @@
 							</div>
 							<div class="el" data-video="video-mesurer">
 								<div class="head">
-									<img class="icn" src="img/home/sectionFtr/icn-4.svg" alt="">
+									<div class="icn">
+										<img src="img/home/sectionFtr/icn-4.svg" alt="">
+										<img src="img/home/sectionFtr/icn-4-grey.svg" alt="">
+									</div>
 									<h3>
 										Mesurer
 									</h3>
@@ -136,56 +151,16 @@
 						</div>
 						<div class="container-video">
 							<div class="video video-planifier">
-								<video poster="img/home/sectionFtr/video-Planifier-poster.jpg">
-									<source
-								    src="video/home/Planifier.mp4"
-								    type="video/mp4">
-									<source
-								    src="video/home/Planifier.webm"
-								    type="video/webm">
-									<source
-								    src="video/home/Planifier.ogv"
-								    type="video/ogv">
-								</video>
+								<iframe src="https://player.vimeo.com/video/302867175" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="video video-simuler">
-								<video poster="img/home/sectionFtr/video-Simuler-poster.jpg">
-								  	<source
-								    src="video/home/Simuler.mp4"
-								    type="video/mp4">
-								    <source
-								    src="video/home/Simuler.webm"
-								    type="video/webm">
-								    <source
-								    src="video/home/Simuler.ogv"
-								    type="video/ogv">
-								</video>
+								<iframe src="https://player.vimeo.com/video/302867188" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="video video-ordonnancer">
-								<video poster="img/home/sectionFtr/video-Ordonnancer-poster.jpg">
-								  	<source
-								    src="video/home/Ordonnancer.mp4"
-								    type="video/mp4">
-								    <source
-								    src="video/home/Ordonnancer.webm"
-								    type="video/webm">
-								    <source
-								    src="video/home/Ordonnancer.ogv"
-								    type="video/ogv">
-								</video>
+								<iframe src="https://player.vimeo.com/video/302867167" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="video video-mesurer">
-								<video poster="img/home/sectionFtr/video-Mesurer-poster.jpg">
-								  	<source
-								    src="video/home/Mesurer.mp4"
-								    type="video/mp4">
-								    <source
-								    src="video/home/Mesurer.webm"
-								    type="video/webm">
-								    <source
-								    src="video/home/Mesurer.ogv"
-								    type="video/ogv">
-								</video>
+								<iframe src="https://player.vimeo.com/video/302867153" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>

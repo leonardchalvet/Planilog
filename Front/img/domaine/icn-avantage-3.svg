@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>optimisation-color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="3-A-Domaine-Production" transform="translate(-1014.000000, -3616.000000)" stroke-width="1.92">
+            <g id="Section-3" transform="translate(0.000000, 2826.000000)">
+                <g id="optimisation-color" transform="translate(1015.000000, 791.000000)">
+                    <path d="M22.8242083,11.857375 C22.8238418,16.0483394 20.431639,19.8715559 16.6627826,21.7045602 C12.8939262,23.5375645 8.40945796,23.0588553 5.11245833,20.4715833" id="Path" stroke="#354273"></path>
+                    <path d="M0.966666667,12.8457917 C0.937666667,12.5235694 0.923166667,12.1940972 0.923166667,11.857375 C0.922496671,7.45290017 3.56087176,3.47673476 7.61943669,1.7657556 C11.6780016,0.0547764346 16.3666732,0.942060845 19.5194167,4.01770833" id="Path" stroke="#354273"></path>
+                    <path d="M19.6172917,19.600375 L28.09375,28.09375" id="Path" stroke="#354273"></path>
+                    <polyline id="Path" stroke="#FB6D6D" points="28.09375 7.637875 28.09375 1.8125 22.2852917 1.8125"></polyline>
+                    <path d="M0.90625,19.9375 L10.9595833,9.88779167 C11.4066965,9.44179328 12.1304285,9.44179328 12.5775417,9.88779167 L15.533125,12.8445833 C15.7475511,13.0593799 16.0385978,13.1800825 16.3421042,13.1800825 C16.6456105,13.1800825 16.9366572,13.0593799 17.1510833,12.8445833 L28.09375,1.8125" id="Path" stroke="#FB6D6D"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -162,7 +162,7 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-4.svg" alt="">
 							</div>
 							<h3>
 								Augmentation du rendement
@@ -173,7 +173,7 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-2.svg" alt="">
 							</div>
 							<h3>
 								Augmentation de la satisfaction client
@@ -184,7 +184,7 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-1.svg" alt="">
 							</div>
 							<h3>
 								Baisse du besoin en fonds de roulement (BFR)
@@ -195,7 +195,7 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-3.svg" alt="">
 							</div>
 							<h3>
 								Optimisation des actifs immobilisés

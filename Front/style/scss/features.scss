@@ -46,14 +46,17 @@
 	}
 	.container-illu{
 		position: relative; 
-		border-radius: 4px;
-		box-shadow: 0 29px 40px 0 rgba(56,70,122,0.15);
 		height: 326px;	
-		width: 579px;
+		width: 541px;
+		border-radius: 4px;
+		overflow: hidden;
+		box-shadow: 0 29px 40px 0 rgba(56,70,122,0.15);
 		video,
 		iframe{
 			height: 100%;	
 			width: 100%;
+			border-radius: 4px;
+			
 		}
 	}
 }
@@ -210,74 +213,45 @@
 	}
 }
 
-main.feature-planifier{
-	#section-cover .container-text h2,
-	#section-cover .container-text h1 span{
-		color: $colorMain_6;
-	}
-}
-
-main.feature-simuler{
-	#section-cover .container-text h2,
-	#section-cover .container-text h1 span{
-		color: $colorMain_4;
-	}
-}
-
-main.feature-ordonnancer{
-	#section-cover .container-text h2,
-	#section-cover .container-text h1 span{
-		color: $colorMain_5;
-	}
-}
-
-main.feature-mesurer{
-	#section-cover .container-text h2,
-	#section-cover .container-text h1 span{
-		color: $colorMain_2;
-	}
-	#section-features{
-		.container-el{
-			justify-content: space-between;
+#section-features.style-col .container-el{
+	justify-content: space-between;
+	.col-el{
+		@media screen and (min-width: $breakPoint_mobile){
+			width: 45%;
 		}
-	 	.col-el{
+		@media screen and (max-width: $breakPoint_mobile){
+			width:100%;
+		}
+		.el{
 			@media screen and (min-width: $breakPoint_mobile){
-				width: 45%;
-			}
-			@media screen and (max-width: $breakPoint_mobile){
-				width:100%;
-			}
-			.el{
-				@media screen and (min-width: $breakPoint_mobile){
-					width: 100%;
-					&:nth-child(1n){
-						margin-right: 0%;
-					}
-					&:nth-child(2n){
-						margin-right: 0%;
-					}
+				width: 100%;
+				&:nth-child(1n){
+					margin-right: 0%;
+				}
+				&:nth-child(2n){
+					margin-right: 0%;
 				}
 			}
-			.title{
-				font-family: $font_1;
-			}
-			ul{
-				list-style: none;
-				li{
-					@include styleParagraphSmall;
-					margin-top: 15px;
-					position: relative;
-					padding-left: 20px;
-					&:before{
-						content:'';
-						position: absolute;
-						top: 50%;
-						left: 0px;
-						height: 5px;
-						width: 5px;
-						border-radius: 4px;
-						background-color: $colorMain_1;
-					}
+		}
+		.title{
+			font-family: $font_1;
+		}
+		ul{
+			list-style: none;
+			li{
+				@include styleParagraphSmall;
+				margin-top: 15px;
+				position: relative;
+				padding-left: 20px;
+				&:before{
+					content:'';
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					height: 5px;
+					width: 5px;
+					border-radius: 4px;
+					background-color: $colorMain_1;
 				}
 			}
 		}

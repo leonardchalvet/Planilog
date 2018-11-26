@@ -174,7 +174,7 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-6.svg" alt="">
 							</div>
 							<h3>
 								Optimisation du taux d’utilisation de vos équipements
@@ -185,7 +185,7 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-7.svg" alt="">
 							</div>
 							<h3>
 								Augmentation de la satisfaction client
@@ -196,7 +196,7 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								
+								<img src="img/domaine/icn-avantage-5.svg" alt="">
 							</div>
 							<h3>
 								Baisse du besoin en fonds de roulement (BFR)
