@@ -25,6 +25,7 @@
 		h1{
 			@include styleH3;
 			margin-bottom: 16px;
+			font-family: $font_1;
 		}
 		.paragraph{
 			@include styleParagraphBig;
