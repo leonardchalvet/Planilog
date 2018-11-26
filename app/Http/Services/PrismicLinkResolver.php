@@ -19,7 +19,6 @@ class PrismicLinkResolver extends LinkResolver
      */
     public function resolve($link) :?string
     {
-        //print_r($link);
         $url = "/";
         if (property_exists($link, 'isBroken') && $link->isBroken === true) {
             $url = '/404';
@@ -42,25 +41,17 @@ class PrismicLinkResolver extends LinkResolver
                 $url = $link->url;
             }
             elseif ($link->link_type == "Document") {
-                if (substr($link->type, 0, 5) == "page_") {
-                    // Direct route to page
-                    if (Route::has($link->type)) {
-                        $url = route($link->type);
-                    }
-                }
+                $url = $this->resolve2($link);
             }
 
         }
 
         // DOCUMENT
         elseif (property_exists($link, 'type')) {
-            if (substr($link->type, 0, 5) == "page_") {
-                // Direct route to page
-                if (Route::has($link->type)) {
-                    $url = route($link->type);
-                }
-            }
+            $url = $this->resolve2($link);
         }
+
+        Debugbar::info($link, $url);
 
         return $url;
 
@@ -132,5 +123,25 @@ class PrismicLinkResolver extends LinkResolver
 
         return $url;
         */
+    }
+
+
+    private function resolve2($link)
+    {
+        $url = "/";
+        
+        if (substr($link->type, 0, 5) == "page_") {
+            // Direct route to page
+            if (Route::has($link->type)) {
+                $url = route($link->type);
+            }
+        }
+        elseif ($link->type == "domaine") {
+            $url = route("domaine", ['slug' => $link->uid]);
+        }
+        elseif ($link->type == "fonctionnalite") {
+            $url = route("fonctionnalite", ['slug' => $link->uid]);
+        }
+        return $url;
     }
 }

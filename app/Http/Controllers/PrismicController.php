@@ -51,6 +51,30 @@ class PrismicController extends Controller
         ]);
     }
 
+    /**
+     * Feature page
+     * @param Request $request
+     * @param string $type
+     * @param string $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function genericTypePage(Request $request, string $type, string $slug)
+    {
+        // Get current article
+        $document = $this->contentProvider->getSimpleType($type, $slug);
+
+        if ($request->has("debug")) dd($document);
+
+        return view('repeatable_'.$type, [
+            'doc' => $document
+        ]);
+    }
+
+    public function domaine(Request $request, string $slug)
+    {
+        return $this->genericTypePage($request, 'domaine', $slug);
+    }
+
 
     /**
      * Action for Prismic preview

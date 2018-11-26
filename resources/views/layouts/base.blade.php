@@ -34,14 +34,13 @@
     --}}
 
     {{-- alternate languages --}}
-    @if (!in_array(Route::currentRouteName(), ['post_customers', 'post_hub', 'post_press', 'post_integrations']))
-        {{-- no alternate lang on articles --}}
-        @foreach (LaravelLocalization::getSupportedLocales() as $key => $locale)
-            <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL($key) }}" hreflang="<?=str_replace('_', '-', $locale['regional'])?>" />
-        @endforeach
-        {{-- default language is 'en' --}}
-        <link rel="alternate" href="{{ LaravelLocalization::getNonLocalizedURL() }}" hreflang="x-default" />
-    @endif
+    {{-- Erk, c'est moche :( --}}
+    <?php $locales = array_flip(Config::get('laravellocalization.prismic_locales')); ?>
+    @foreach($doc->alternate_languages as $alt)
+        <link rel="alternate"
+              href="{{ LaravelLocalization::getLocalizedURL($locales[$alt->lang], $linkResolver->resolve($alt)) }}"
+              hreflang="<?= $alt->lang ?>" />
+    @endforeach
 
     {{-- canonical url --}}
     @if (isset($lang) && $lang != LaravelLocalization::getCurrentLocale())
@@ -52,12 +51,9 @@
         <link rel="canonical" href="{{ URL::current() }}" />
     @endif
 
-
 </head>
 
-
 <body>
-
 
 @include('layouts.header')
 
@@ -73,16 +69,16 @@
 <style>
     @keyframes blink { 50% { outline: 1px solid red; } }
     /*.emptyLink{ animation: blink 2s step-end infinite alternate; }*/
-    .emptyLink { outline: 1px solid red; }
+    .emptyLink { outline: 2px solid #6eff64; }
 </style>
 <script>$('a[href="#"]').addClass("emptyLink");</script>
 
-{{--  Prismic Toolbar for previews
+{{--  Prismic Toolbar for previews --}}
 <script>
-    window.prismic = { endpoint: 'https://maxgodenne.cdn.prismic.io/api/v2' };
+    window.prismic = { endpoint: '{{ Config::get('services.prismic.api') }}' };
 </script>
 <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
---}}
+
 
 </body>
 </html>

@@ -116,6 +116,8 @@ class PrismicContentProvider
         $document = $response->results[0];
 
         $document->data->document_id = $document->id;
+        $document->data->alternate_languages = $document->alternate_languages;
+
         return $document->data;
     }
 
@@ -186,24 +188,26 @@ class PrismicContentProvider
     }
 
     /**
+     * @param $type
      * @param $slug
      * @return mixed
      */
-    public function getArticle($slug)
+    public function getSimpleType($type, $slug)
     {
         /** @var Document $document */
-        Debugbar::startMeasure('prismic', "Prismic API [article: $slug]");
-        $document = $this->api->getByUID('article', $slug);
+        Debugbar::startMeasure('prismic', "Prismic API [$type: $slug]");
+        $document = $this->api->getByUID($type, $slug);
         Debugbar::stopMeasure('prismic');
 
         if (null == $document) {
-            abort(404, "Article $slug not found");
+            abort(404, "$type $slug not found");
         }
 
-        $document->data->article->uid = $document->uid;
-        $document->data->article->tags = $document->tags;
-        $document->data->article->lang = substr($document->lang, 0, 2);
-        return $document->data->article;
+        $document->data->uid = $document->uid;
+        $document->data->tags = $document->tags;
+        $document->data->lang = substr($document->lang, 0, 2);
+        $document->data->alternate_languages = $document->alternate_languages;
+        return $document->data;
     }
 }
 
