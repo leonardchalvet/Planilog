@@ -74,6 +74,10 @@ class PrismicController extends Controller
     {
         return $this->genericTypePage($request, 'domaine', $slug);
     }
+    public function client(Request $request, string $slug)
+    {
+        return $this->genericTypePage($request, 'client', $slug);
+    }
 
 
     /**

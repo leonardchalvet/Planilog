@@ -33,10 +33,18 @@ function () {
     )->name('domaine');
 
     // FEATURES
+    /*
     Route::get(
         LaravelLocalization::transRoute('routes.fonctionnalite'),
         ['uses' => 'PrismicController@genericTypePage', 'type' => 'fonctionnalite']
     )->name('fonctionnalite');
+    */
+
+    // CLIENTS
+    Route::get(
+        LaravelLocalization::transRoute('routes.client'),
+        ['uses' => 'PrismicController@client']
+    )->name('client');
 
 });
 
