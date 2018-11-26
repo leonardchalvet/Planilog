@@ -21,7 +21,7 @@
 
 		<?php include('common-header.php'); ?> 
 
-		<main class="feature-mesurer">
+		<main>
 			<section id="section-cover">
 				<img class="shape" src="img/home/sectionCover/shape.svg" alt="">
 				<div class="wrapper">
@@ -39,20 +39,13 @@
 						</a>
 					</div>
 					<div class="container-illu">
-						<!--
-						<video>
-						  <source loop
-						    src="video/home/Mesurer.mp4"
-						    type="video/mp4">
-						</video>-->
-						
-						<iframe src="https://player.vimeo.com/video/238480244?autoplay=1&loop=1&autopause=0?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/302867153" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
-			<section id="section-features">
+			<section id="section-features" class="style-col">
 				<div class="wrapper">
-					<div class="container-el">
+					<div class="container-el style-col">
 						<div class="col-el">
 							<div class="el">
 								<img class="icn" src="img/features/feature-mesurer/icn-visualisation.svg" alt="">

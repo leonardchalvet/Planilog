@@ -85,12 +85,10 @@
 			}
 			.desc-1{
 				margin-top: 20px;
-				@include styleParagraphSmall;
+				@include styleParagraphTiny;
 			}
 			.desc-2{
-				@include styleParagraphSmall;
-				color: $colorMain_3;
-				opacity: 1;
+				@include styleParagraphTiny;
 				font-family: $font_1;
 			}
 			.btn{
@@ -157,12 +155,13 @@
 		}
 		.paragraph{
 			margin-top: 14px;
-			@include styleParagraphBig;
+			@include styleParagraphTiny;
 		}
 		.title-label{
 			margin-top: 50px;
 			@include styleParagraphSmall;
 			font-family: $font_3;
+			color:rgba($colorMain_1, 0.7);
 		}
 		.container-input{
 			margin-top: 15px;
@@ -184,7 +183,9 @@
 					border-color:rgba($colorMain_1, 1);
 				}
 				&::placeholder {
+					@include styleParagraphSmall;
 					color:rgba($colorMain_1, 0.3);
+
 				}
 			}
 			.btn{
@@ -251,6 +252,7 @@
 			h3{
 				@include styleH5;
 				width: calc(100% - 800px);
+				padding-top: 19px;
 			}
 			.container-el{
 				width: 750px;
@@ -287,6 +289,7 @@
 						}
 						p{
 							height: initial;
+							padding-top: 20px;
 						}
 					}
 				}

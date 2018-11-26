@@ -33,12 +33,12 @@ $(window).on('load', function() {
 
 				$(El + '.active').removeClass('active');
 				$(elVideo).hide().removeClass('active');
-				$(elVideo + 'video').get(0);
+				//$(elVideo + 'video').get(0);
 				
 				$(El + ':nth-child('+countEl+')').addClass('active');
 				
 				$(elVideo + '.' + $(El + '.active').data('video')).fadeIn(350).addClass('active');
-				$(elVideo + '.active video').get(0).play();
+				//$(elVideo + '.active video').get(0).play();
 
 				var transformDistance = $(El + '.active .text').height()/2;
 

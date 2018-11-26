@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>clock-color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="3-B-Domaine-Maintenance" transform="translate(-284.000000, -3733.000000)" stroke-width="1.92">
+            <g id="clock-color" transform="translate(285.000000, 3734.000000)">
+                <circle id="Oval" stroke="#FB6D6D" cx="20.84375" cy="20.84375" r="7.25"></circle>
+                <polyline id="Path" stroke="#FB6D6D" points="24.04825 20.84375 20.84375 20.84375 20.84375 17.63925"></polyline>
+                <path d="M9.96875,22.65625 L2.71875,22.65625 C1.71773389,22.65625 0.90625,21.8447661 0.90625,20.84375 L0.90625,8.15625 C0.90625,7.15523389 1.71773389,6.34375 2.71875,6.34375 L20.84375,6.34375 C21.8447661,6.34375 22.65625,7.15523389 22.65625,8.15625 L22.65625,9.96875" id="Path" stroke="#38467A"></path>
+                <path d="M22.0714167,6.82345833 L18.6627083,1.71341667 C18.3272966,1.21025235 17.763043,0.907504219 17.1583333,0.90625 L6.40416667,0.90625 C5.79817229,0.906294024 5.23229155,1.20918532 4.89616667,1.71341667 L1.49108333,6.82345833" id="Path" stroke="#38467A"></path>
+                <path d="M11.78125,0.90625 L11.78125,6.34375" id="Path" stroke="#38467A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

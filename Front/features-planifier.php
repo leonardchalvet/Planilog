@@ -19,7 +19,7 @@
 
 		<?php include('common-header.php') ?> 
 
-		<main class="feature-planifier">
+		<main>
 			<section id="section-cover">
 				<img class="shape" src="img/home/sectionCover/shape.svg" alt="">
 				<div class="wrapper">
@@ -37,11 +37,7 @@
 						</a>
 					</div>
 					<div class="container-illu">
-						<video>
-						  <source loop
-						    src="video/home/Planifier.mp4"
-						    type="video/mp4">
-						</video>
+						<iframe src="https://player.vimeo.com/video/302867175" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
