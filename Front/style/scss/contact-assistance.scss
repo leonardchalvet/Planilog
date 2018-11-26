@@ -27,6 +27,7 @@
 		h1{
 			@include styleH3;
 			margin-bottom: 16px;
+			font-family: $font_1;
 		}
 		.paragraph{
 			@include styleParagraphBig;
@@ -86,7 +87,7 @@
 				font-family: $font_2;
 				position: relative;
 			}
-			&:hover &:before{
+			&:hover:before{
 				opacity: 1;
 			}
 		}

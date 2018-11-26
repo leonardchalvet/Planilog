@@ -54,19 +54,19 @@
 					<form action="">
 						<div class="container-input">
 							<div class="input">
-								<div class="title">Nom Complet</div>
+								<div class="title">NOM COMPLET</div>
 								<input type="text">
 							</div>
 							<div class="input">
-								<div class="title">E-mail professionnel</div>
+								<div class="title">E-MAIL PROFESSIONNEL</div>
 								<input type="text">
 							</div>
 							<div class="input">
-								<div class="title">Numéro de téléphone</div>
+								<div class="title">NUMÉRO DE TÉLÉPHONE</div>
 								<input type="text">
 							</div>
 							<div class="textarea">
-								<div class="title">Posez votre question</div>
+								<div class="title">POSEZ VOTRE QUESTION</div>
 								<textarea></textarea>
 							</div>
 						</div>
