@@ -61,7 +61,7 @@ use Prismic\Dom\RichText;
             </div>
         </section>
 
-        {{--
+        {{-- $case --}}
         <section id="section-case">
             <div class="wrapper">
                 <div class="container-text">
@@ -69,56 +69,38 @@ use Prismic\Dom\RichText;
                         <img src="{{ asset('img/domaine/Lisi.png') }}">
                     </div>
                     <div class="title">
-                        CAS CLIENTS
+                        @simpleText($case, case_title)
                     </div>
                     <h3>
-                        CMI Services
+                        @simpleText($case, case_business)
                     </h3>
-                    <p>
-                        Présent dans plus de 23 pays, avec 3400 collaborateurs dans le monde, et un chiffre d’affaires
-                        de 253 millions d’euros, CMI Services contribue pour 27% au chiffre global du Groupe CMI.
-                    </p>
-                    <a class="btn" href="#">
-                        <span class="btn-text">LIRE LE BUSINESS CASE</span>
+                    @richText($case, case_desc)
+                    <a class="btn" href="@linkSrc($doc, business_case_button_link)">
+                        <span class="btn-text">@simpleText($doc, business_case_button)</span>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                     </a>
                 </div>
                 <div class="container-stats">
-                    <div class="container-img" style="background-image: url(img/img-test/background-4.jpg);"></div>
+                    <div class="container-img" style="background-image: url(@imageSrc($case, case_cover));"></div>
                     <div class="container-el">
-                        <div class="el">
-                            <h4>PRODUCTIVITÉ</h4>
-                            <div class="container-num">
-                                <div class="num">
-                                    + 2
+                        @foreach($case->kpis as $kpi)
+                            <div class="el">
+                                <h4>@simpleText($kpi, title)</h4>
+                                <div class="container-num">
+                                    <div class="num">
+                                        @simpleText($kpi, value)
+                                    </div>
                                 </div>
-                                <div class="obj">
-                                    %
-                                </div>
+                                <p>
+                                    @simpleText($kpi, desc)
+                                </p>
                             </div>
-                            <p>
-                                35 000 heures de sous-traitance et d’intérim économisées
-                            </p>
-                        </div>
-                        <div class="el">
-                            <h4></h4>
-                            <div class="container-num">
-                                <div class="num">
-                                    25
-                                </div>
-                                <div class="obj">
-                                    %
-                                </div>
-                            </div>
-                            <p>
-                                Réduction du temps de traitement sur le pointage estimé
-                            </p>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </section>
-        --}}
+
 
         <section id="section-avantage">
             <div class="wrapper">

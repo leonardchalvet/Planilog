@@ -60,7 +60,6 @@ class PrismicController extends Controller
      */
     public function genericTypePage(Request $request, string $type, string $slug)
     {
-        // Get current article
         $document = $this->contentProvider->getSimpleType($type, $slug);
 
         if ($request->has("debug")) dd($document);
@@ -69,14 +68,27 @@ class PrismicController extends Controller
             'doc' => $document
         ]);
     }
-
-    public function domaine(Request $request, string $slug)
-    {
-        return $this->genericTypePage($request, 'domaine', $slug);
-    }
     public function client(Request $request, string $slug)
     {
         return $this->genericTypePage($request, 'client', $slug);
+    }
+
+    public function domaine(Request $request, string $slug)
+    {
+        $document = $this->contentProvider->getSimpleType('domaine', $slug);
+
+
+        // Get business case
+        $uid = $document->business_case_button_link->uid;
+        $case = $this->contentProvider->getSimpleType('client', $uid);
+
+        if ($request->has("debug")) dd($document, $case);
+
+        return view('repeatable_domaine', [
+            'doc' => $document,
+            'case' => $case
+        ]);
+
     }
 
 
