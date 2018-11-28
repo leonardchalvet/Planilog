@@ -17,6 +17,9 @@ fi
 cd ${DIR}
 git pull >> storage/logs/git.log 2>&1
 
+php artisan cache:clear
+php artisan view:clear
+
 echo 0 > ${FILE}
 
 
