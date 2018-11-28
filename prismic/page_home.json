@@ -52,6 +52,12 @@
         "label" : "Description"
       }
     },
+    "cover_img" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Image"
+      }
+    },
     "cover_button_text" : {
       "type" : "Text",
       "config" : {
