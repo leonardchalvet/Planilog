@@ -42,26 +42,26 @@
     "cover_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Cover title"
+        "label" : "Titre"
       }
     },
     "cover_paragraph" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph",
-        "label" : "Cover paragraph"
+        "label" : "Description"
       }
     },
     "cover_button_text" : {
       "type" : "Text",
       "config" : {
-        "label" : "Cover Button Text"
+        "label" : "CTA - Bouton"
       }
     },
     "cover_button_link" : {
       "type" : "Link",
       "config" : {
-        "label" : "Cover Button Link",
+        "label" : "CTA - Lien",
         "allowTargetBlank" : true
       }
     },
@@ -74,11 +74,11 @@
             "config" : {
               "constraint" : { },
               "thumbnails" : [ ],
-              "label" : "Cover logo"
+              "label" : "Logo"
             }
           }
         },
-        "label" : "Cover List Logos"
+        "label" : "Logos"
       }
     }
   },
@@ -86,14 +86,14 @@
     "section_ftr_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Ftr Title"
+        "label" : "Titre"
       }
     },
     "section_ftr_paragraph" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph",
-        "label" : "Section Ftr Paragraph"
+        "label" : "Description"
       }
     },
     "section_ftr_container_el" : {
@@ -103,39 +103,42 @@
           "section_ftr_el_icon" : {
             "type" : "Image",
             "config" : {
-              "constraint" : { },
-              "thumbnails" : [ ],
-              "label" : "Section Ftr El Icon"
+              "label" : "Icone"
+            }
+          },
+          "section_ftr_el_icon_nw" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Icone (N&B)"
             }
           },
           "section_ftr_el_title" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Ftr El Title"
+              "label" : "Titre"
             }
           },
           "section_ftr_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
               "multi" : "paragraph",
-              "label" : "Section Ftr El Paragraph"
+              "label" : "Description"
             }
           },
           "section_ftr_el_video" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Ftr El Video (Vimeo ID)"
+              "label" : "Vimeo ID"
             }
           },
           "section_ftr_el_link" : {
             "type" : "Link",
             "config" : {
-              "label" : "Section Ftr El Link",
-              "allowTargetBlank" : true
+              "label" : "Lien"
             }
           }
         },
-        "label" : "Section Ftr Container El"
+        "label" : "Outils"
       }
     }
   },
@@ -143,14 +146,14 @@
     "section_modules_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Modules Title"
+        "label" : "Titre"
       }
     },
     "section_modules_paragraph" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph",
-        "label" : "Section Modules Paragraph"
+        "label" : "Description"
       }
     },
     "section_modules_container_el" : {
@@ -160,37 +163,36 @@
           "section_modules_el_icon" : {
             "type" : "Image",
             "config" : {
-              "label" : "Section Ftr El Icon"
+              "label" : "Icone"
             }
           },
           "section_modules_el_title" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Modules El Title"
+              "label" : "Titre"
             }
           },
           "section_modules_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
               "multi" : "paragraph",
-              "label" : "Section Modules El Paragraph"
+              "label" : "Description"
             }
           },
           "section_modules_el_button_text" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Modules El Button Text"
+              "label" : "Bouton"
             }
           },
           "section_modules_el_button_link" : {
             "type" : "Link",
             "config" : {
-              "label" : "Section Modules El Button Link",
-              "allowTargetBlank" : true
+              "label" : "Bouton lien"
             }
           }
         },
-        "label" : "Section Modules Container El"
+        "label" : "Modules"
       }
     }
   },
@@ -198,20 +200,20 @@
     "section_resultats_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Resultats Title"
+        "label" : "Titre"
       }
     },
     "section_resultats_paragraph" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph",
-        "label" : "Section Resultats Paragraph"
+        "label" : "Description"
       }
     },
     "section_resultats_img" : {
       "type" : "Image",
       "config" : {
-        "label" : "Section Resultats Img"
+        "label" : "Illustration"
       }
     },
     "section_resultats_container_el" : {
@@ -221,24 +223,24 @@
           "section_resultats_el_num" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Resultats El Num"
+              "label" : "valeur"
             }
           },
           "section_resultats_el_obj" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Resultats El Obj"
+              "label" : "unité"
             }
           },
           "section_resultats_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
               "multi" : "paragraph",
-              "label" : "Section Resultats El Paragraph"
+              "label" : "texte"
             }
           }
         },
-        "label" : "Section Resultats Container El"
+        "label" : "Chiffres clés"
       }
     }
   },
@@ -246,26 +248,26 @@
     "section_apprentissage_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Apprentissage Title"
+        "label" : "Titre"
       }
     },
     "section_apprentissage_paragraph" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph",
-        "label" : "Section Apprentissage Paragraph"
+        "label" : "Description"
       }
     },
     "section_apprentissage_button_text" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Apprentissage Button Text"
+        "label" : "Bouton"
       }
     },
     "section_apprentissage_button_link" : {
       "type" : "Link",
       "config" : {
-        "label" : "Section Apprentissage Button Link",
+        "label" : "Bouton lien",
         "allowTargetBlank" : true
       }
     }
@@ -274,7 +276,7 @@
     "section_quotes_title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Section Quotes Title"
+        "label" : "Titre"
       }
     },
     "section_quotes_container_el" : {
@@ -284,35 +286,35 @@
           "section_quotes_el_img" : {
             "type" : "Image",
             "config" : {
-              "label" : "Section Quotes El Img"
+              "label" : "logo"
             }
           },
           "section_quotes_el_name" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Quotes El Name"
+              "label" : "Nom"
             }
           },
           "section_quotes_el_job" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Quotes El Job"
+              "label" : "Fonction"
             }
           },
           "section_quotes_el_place" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Quotes El Place"
+              "label" : "Lieu"
             }
           },
           "section_quotes_el_paragraph" : {
             "type" : "Text",
             "config" : {
-              "label" : "Section Quotes El Paragraph"
+              "label" : "citation"
             }
           }
         },
-        "label" : "Section Quotes Container El"
+        "label" : "Citations"
       }
     }
   }

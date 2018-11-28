@@ -18,7 +18,7 @@ use Prismic\Dom\RichText;
     <main>
 
         <section id="section-cover">
-            <div class="background" style="background-image: url({{ asset('img/home/sectionCover/cover.jpg') }});"></div>
+            <img class="background" src="{{ asset('img/home/sectionCover/cover.jpg') }}">
             <img class="shape" src="{{ asset('img/home/sectionCover/shape.svg') }}">
             <div class="wrapper">
                 <div class="container-cover">
@@ -61,7 +61,10 @@ use Prismic\Dom\RichText;
                         @foreach ($doc->section_ftr_container_el as $outil)
                             <div class="el active" data-video="video-<?= $video_id++ ?>">
                                 <div class="head">
-                                    <img class="icn" src="@imageSrc($outil, section_ftr_el_icon)">
+                                    <div class="icn">
+                                        <img src="@imageSrc($outil, section_ftr_el_icon)">
+                                        <img src="@imageSrc($outil, section_ftr_el_icon_nw)">
+                                    </div>
                                     <h3>
                                         @simpleText($outil, section_ftr_el_title)
                                     </h3>
@@ -82,10 +85,11 @@ use Prismic\Dom\RichText;
                     <div class="container-video">
                         @foreach ($doc->section_ftr_container_el as $outil)
                             <div class="video video-<?= $video_id++ ?>">
-                                <!-- TODO : VIMEO -->
-                                <video poster="xxx">
-                                    <source src="XXX" type="video/mp4">
-                                </video>
+                                <iframe src="https://player.vimeo.com/video/@simpleText($outil, section_ftr_el_video)"
+                                        frameborder="0"
+                                        webkitallowfullscreen
+                                        mozallowfullscreen
+                                        allowfullscreen></iframe>
                             </div>
                         @endforeach
                     </div>

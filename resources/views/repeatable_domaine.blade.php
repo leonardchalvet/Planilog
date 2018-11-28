@@ -62,6 +62,7 @@ use Prismic\Dom\RichText;
         </section>
 
         {{-- $case --}}
+        @if ($case != null)
         <section id="section-case">
             <div class="wrapper">
                 <div class="container-text">
@@ -100,6 +101,7 @@ use Prismic\Dom\RichText;
                 </div>
             </div>
         </section>
+        @endif
 
 
         <section id="section-avantage">

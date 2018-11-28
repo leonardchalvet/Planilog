@@ -73,14 +73,22 @@ class PrismicController extends Controller
         return $this->genericTypePage($request, 'client', $slug);
     }
 
+    public function fonctionnalite(Request $request, string $slug)
+    {
+        return $this->genericTypePage($request, 'feature', $slug);
+    }
+
     public function domaine(Request $request, string $slug)
     {
         $document = $this->contentProvider->getSimpleType('domaine', $slug);
 
 
         // Get business case
-        $uid = $document->business_case_button_link->uid;
-        $case = $this->contentProvider->getSimpleType('client', $uid);
+        $case = null;
+        if ($document->business_case_button_link->link_type != "Any") {
+            $uid = $document->business_case_button_link->uid;
+            $case = $this->contentProvider->getSimpleType('client', $uid);
+        }
 
         if ($request->has("debug")) dd($document, $case);
 
