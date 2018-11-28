@@ -377,6 +377,8 @@
 
 		<?php include('common-footer.php') ?> 
 
+		<script src="https://player.vimeo.com/api/player.js"></script>
+
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
 	</body>

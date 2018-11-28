@@ -62,7 +62,7 @@
 }
 
 #section-features{
-	padding: 110px 0px 160px 0px;
+	padding: 110px 0px 70px 0px;
 	.wrapper{
 		@include styleGrid2;
 	}
@@ -157,7 +157,7 @@
 			}
 			&:hover{
 				&:before{
-					transform: scale(1.2);
+					transform: scale(1.1);
 					background-color: rgba(255, 255, 255, 1);
 				}
 				.icn{
