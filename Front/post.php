@@ -57,8 +57,9 @@
 						</div>
 						<p>
 							Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.Nam dapibus nisl vitae elit fringilla              , erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien.
+							<img src="img/img-test/background-1.jpg" alt="">
 						</p>
-						<img src="img/img-test/background-1.jpg" alt="">
+						
 						<h2>Donec facilisis tortor ut augue lacinia, at vive.</h2>
 						<p>
 							ed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.Nam dapibus nisl vitae elit fringilla rutrum, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien.
@@ -93,8 +94,11 @@
 							<a href="">
 								<img src="img/blog/icn-linkedin.svg" alt="">
 							</a>
-							<a href="">
+							<a class="rs-link">
 								<img src="img/blog/icn-hyperlink.svg" alt="">
+								<span class="dropdown">
+									votre lien a été copié
+								</span>
 							</a>
 						</div>
 					</div>
@@ -245,6 +249,8 @@
 		</main>
 
 		<?php include('common-footer.php') ?> 
+
+		<script type="text/javascript" src="js/post.js"></script>
 
 		<script type="text/javascript" src="js/header.js"></script>
 	</body>
