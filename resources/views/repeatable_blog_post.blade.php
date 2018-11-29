@@ -96,24 +96,14 @@ use Prismic\Dom\richText;
 
                     @endforeach
 
-
-
-
-
-                    <div class="container-rs">
-                        <a href="">
-                            <img src="{{ asset('img/blog/icn-facebook.svg') }}">
-                        </a>
-                        <a href="">
-                            <img src="{{ asset('img/blog/icn-twitter.svg') }}">
-                        </a>
-                        <a href="">
-                            <img src="{{ asset('img/blog/icn-linkedin.svg') }}">
-                        </a>
-                        <a href="">
-                            <img src="{{ asset('img/blog/icn-hyperlink.svg') }}">
-                        </a>
-                    </div>
+                    @component('components.share_links')
+                        @slot('title')
+                            @simpleText($doc, post_title)
+                        @endslot
+                        @slot('url')
+                            {{ route('post', ['slug' => $doc->uid]) }}
+                        @endslot
+                    @endcomponent
                 </div>
             </div>
         </section>
@@ -130,20 +120,14 @@ use Prismic\Dom\richText;
                         <div class="el">
                             <div class="cover">
                                 <div class="background" style="background-image: url(@imageSrc($data, post_image));"></div>
-                                <div class="container-rs">
-                                    <a href="">
-                                        <img src="{{ asset('img/blog/icn-facebook.svg') }}">
-                                    </a>
-                                    <a href="">
-                                        <img src="{{ asset('img/blog/icn-twitter.svg') }}">
-                                    </a>
-                                    <a href="">
-                                        <img src="{{ asset('img/blog/icn-linkedin.svg') }}">
-                                    </a>
-                                    <a href="">
-                                        <img src="{{ asset('img/blog/icn-hyperlink.svg') }}">
-                                    </a>
-                                </div>
+                                @component('components.share_links')
+                                    @slot('title')
+                                        @simpleText($doc, post_title)
+                                    @endslot
+                                    @slot('url')
+                                        {{ route('post', ['slug' => $post->uid]) }}
+                                    @endslot
+                                @endcomponent
                             </div>
                             <div class="text">
                                 <div class="category"><?= implode(', ', $post->tags) ?></div>
@@ -163,7 +147,7 @@ use Prismic\Dom\richText;
                             </div>
                         </div>
                     @endforeach
-                    
+
                 </div>
             </div>
         </section>
@@ -179,4 +163,5 @@ use Prismic\Dom\richText;
 @section('js')
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/header.js") }}"></script>
+    <script src="{{ asset("js/post.js") }}"></script>
 @endsection
