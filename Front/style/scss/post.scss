@@ -96,10 +96,10 @@
 				font-weight: normal;
 				font-family: $font_1;
 			}
-		}
-		> img{
-			width: 100%;
-			margin: 40px 0px 70px 0px;
+			> img{
+				width: 100%;
+				margin: 40px 0px 70px 0px;
+			}
 		}
 		> h2{
 			@include styleH4;
