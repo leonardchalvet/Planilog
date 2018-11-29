@@ -135,6 +135,13 @@
 		"oAP": "/fonts/OpenSans-SemiBold.ttf",
 		"oF": 0
 		},
+	"/glossaire.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/glossaire.php",
+		"oF": 0
+		},
 	"/img/blog/icn-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1539,6 +1546,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style/css/glossaire.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/glossaire-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/home.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1734,6 +1751,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/style/css/footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/glossaire.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/glossaire.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

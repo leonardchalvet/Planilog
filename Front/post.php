@@ -111,8 +111,14 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="cover">
-								<div class="background" style="background-image: url(img/img-test/background-1.jpg);"></div>
+								<a class="background" style="background-image: url(img/img-test/background-1.jpg);"></a>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -122,8 +128,42 @@
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
 									</a>
-									<a href="">
+
+								</div>
+							</div>
+							<div class="text">
+								<div class="category">POURE</div>
+								<h3>
+									Nam porttitor blandit accumsan ut vel dic
+								</h3>
+								<p>
+									Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ull.
+								</p>
+							</div>
+							<div class="foot">
+								<div class="author">POLINE SORIA</div>
+								<div class="sep"></div>
+								<div class="date">14 fev. 2018</div>
+							</div>
+						</div>
+						<div class="el">
+							<div class="cover">
+								<a class="background" style="background-image: url(img/img-test/background-2.jpg);"></a>
+								<div class="container-rs">
+									<a class="rs-link">
 										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
+									<a href="">
+										<img src="img/blog/icn-facebook.svg" alt="">
+									</a>
+									<a href="">
+										<img src="img/blog/icn-twitter.svg" alt="">
+									</a>
+									<a href="">
+										<img src="img/blog/icn-linkedin.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -144,8 +184,14 @@
 						</div>
 						<div class="el">
 							<div class="cover">
-								<div class="background" style="background-image: url(img/img-test/background-2.jpg);"></div>
+								<a class="background" style="background-image: url(img/img-test/background-3.jpg);"></a>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -154,42 +200,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
-									</a>
-								</div>
-							</div>
-							<div class="text">
-								<div class="category">POURE</div>
-								<h3>
-									Nam porttitor blandit accumsan ut vel dic
-								</h3>
-								<p>
-									Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ull.
-								</p>
-							</div>
-							<div class="foot">
-								<div class="author">POLINE SORIA</div>
-								<div class="sep"></div>
-								<div class="date">14 fev. 2018</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="cover">
-								<div class="background" style="background-image: url(img/img-test/background-3.jpg);"></div>
-								<div class="container-rs">
-									<a href="">
-										<img src="img/blog/icn-facebook.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-twitter.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -212,6 +222,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-4.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -220,9 +236,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>

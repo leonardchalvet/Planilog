@@ -243,6 +243,8 @@
 					position: relative;
 					overflow: hidden;
 					.background{
+						text-decoration: none;
+						display: block;
 						position: relative;
 						width: 100%;
 						height: 100%;
@@ -266,6 +268,7 @@
 						transform: translateY(100%);
 						transition: all 0.25s ease;
 						a{
+							cursor: pointer;
 							transform: translateY(15px);
 							transition: all 0.3s ease;
 							height: 16px;
@@ -276,6 +279,22 @@
 							}
 							&:last-child{
 								margin-right: 0px;
+							}
+							.dropdown{
+								display: none;
+								opacity: 0;
+								position: absolute;
+								bottom: calc(100% + 15px);
+								left: 50%;
+								transform: translateX(-50%);
+								background-color: #FFF;
+								padding: 10px;
+								box-shadow: 0 9px 25px 0 rgba(56,70,122,0.15);
+								white-space: nowrap;
+								@include styleParagraphTiny;
+								color: $colorMain_1;
+								border-radius: 4px;
+								transition: all 0.25s ease;
 							}
 						}
 					}
@@ -295,6 +314,9 @@
 								&:hover{
 									img{
 										opacity: 0.6;
+									}
+									.dropdown{
+										opacity: 1;
 									}
 								}
 
