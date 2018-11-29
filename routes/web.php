@@ -44,6 +44,12 @@ function () {
         ['uses' => 'PrismicController@client']
     )->name('client');
 
+    // ARTICLES
+    Route::get(
+        LaravelLocalization::transRoute('routes.post'),
+        ['uses' => 'PrismicController@post']
+    )->name('post');
+
 });
 
 // Github webhook

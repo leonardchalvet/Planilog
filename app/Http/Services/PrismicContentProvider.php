@@ -187,6 +187,17 @@ class PrismicContentProvider
         return $response->results;
     }
 
+
+    public function getPostsByIDs(array $ids)
+    {
+        /** @var Document $document */
+        Debugbar::startMeasure('prismic', "Prismic API [posts by ids]");
+        $response = $this->api->getByIDs($ids);
+        Debugbar::stopMeasure('prismic');
+
+        return $response->results ?? [];
+    }
+
     /**
      * @param $type
      * @param $slug

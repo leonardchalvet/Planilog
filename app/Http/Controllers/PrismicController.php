@@ -82,7 +82,6 @@ class PrismicController extends Controller
     {
         $document = $this->contentProvider->getSimpleType('domaine', $slug);
 
-
         // Get business case
         $case = null;
         if ($document->business_case_button_link->link_type != "Any") {
@@ -96,7 +95,25 @@ class PrismicController extends Controller
             'doc' => $document,
             'case' => $case
         ]);
+    }
 
+    public function post(Request $request, string $slug)
+    {
+        $document = $this->contentProvider->getSimpleType('blog_post', $slug);
+
+        // Get related posts
+        $ids = [];
+        foreach ($document->related_posts as $post) {
+            $ids[] = $post->post->id;
+        }
+        $related_posts = $this->contentProvider->getPostsByIDs($ids);
+
+        if ($request->has("debug")) dd($document, $related_posts);
+
+        return view('repeatable_blog_post', [
+            'doc' => $document,
+            'posts' => $related_posts
+        ]);
     }
 
 
