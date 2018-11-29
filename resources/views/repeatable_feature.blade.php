@@ -117,5 +117,7 @@ use Prismic\Dom\RichText;
 
 @section('js')
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="{{ asset("js/header.js") }}"></script>
+    <script src="{{ asset("js/features.js") }}"></script>
 @endsection
