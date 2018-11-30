@@ -27,13 +27,13 @@ function () {
     )->name('page_tarifs');
 
     Route::any(
-        LaravelLocalization::transRoute('routes.contact_1'),
+        LaravelLocalization::transRoute('routes.contact_commercial'),
         ['uses' => 'PrismicController@contactPage']
-    )->name('page_contact_1');
+    )->name('page_contact_commercial');
     Route::get(
-        LaravelLocalization::transRoute('routes.contact_2'),
+        LaravelLocalization::transRoute('routes.contact_assistance'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_contact_assistance']
-    )->name('page_contact_2');
+    )->name('page_contact_assistance');
 
     // DOMAINES
     Route::get(

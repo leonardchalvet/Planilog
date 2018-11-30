@@ -6,6 +6,6 @@ return [
     "client" => "business-case/{slug}",
     "blog" => "blog",
     "post" => "blog/{slug}",
-    "contact_1" => "contact",
-    "contact_2" => "assistance",
+    "contact_commercial" => "contact",
+    "contact_assistance" => "assistance",
 ];
