@@ -23,12 +23,14 @@ use Prismic\Dom\RichText;
                 <div class="container-filter">
                     <a href="{{ route('page_blog') }}"
                        class="filter"
+                       style="text-decoration: none"
                        data-category="all">
                         @simpleText($doc, category_all)
                     </a>
                     @foreach($doc->categories as $category)
                         <a href="{{ route('page_blog') }}?c=@simpleText($category, name)"
                            class="filter"
+                           style="text-decoration: none"
                            data-category="@simpleText($category, name)">
                             @simpleText($category, name)
                         </a>
