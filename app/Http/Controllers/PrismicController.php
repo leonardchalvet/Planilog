@@ -102,6 +102,8 @@ class PrismicController extends Controller
         $document = $this->contentProvider->getSimpleType('blog_post', $slug);
 
         // Get related posts
+        // TODO : use fetch links
+        // https://prismic.io/docs/php/query-the-api/fetch-linked-document-fields
         $ids = [];
         foreach ($document->related_posts as $post) {
             $ids[] = $post->post->id;
@@ -113,6 +115,38 @@ class PrismicController extends Controller
         return view('repeatable_blog_post', [
             'doc' => $document,
             'posts' => $related_posts
+        ]);
+    }
+    public function listPosts(Request $request)
+    {
+        // page
+        $page = $request->get("page", 1);
+
+        // category
+        if ($request->has("c")) {
+            $category = $request->get("c", "all");
+        } else {
+            $category = $request->get("category", "all");
+        }
+
+        $params = [
+            'page' => $page,
+            'limit' => 7,
+            'tags' => $category == "all" ? [] : [$category],
+        ];
+
+        $response = $this->contentProvider->getPosts($this->locale, $params);
+        if ($response->page != $page) {
+            // Don't return results if there is no results, idiot!
+            return response(null, 204);
+        }
+        $next = $page < $response->total_pages ? $page+1 : -1;
+
+        if ($request->has("debug")) dd($params, $response, $next);
+
+        return view('components.list_card_post', [
+            'posts' => $response->results,
+            'next' => $next
         ]);
     }
 

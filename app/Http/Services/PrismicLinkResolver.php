@@ -145,6 +145,9 @@ class PrismicLinkResolver extends LinkResolver
         elseif ($link->type == "client") {
             $url = route($link->type, ['slug' => $link->uid]);
         }
+        elseif ($link->type == "blog_post") {
+            $url = route($link->type, ['slug' => $link->uid]);
+        }
         return $url;
     }
 }

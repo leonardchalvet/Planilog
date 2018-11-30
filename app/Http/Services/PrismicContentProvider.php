@@ -36,7 +36,7 @@ class PrismicContentProvider
      * @param string $pageType
      * @param string $locale
      * @param array|null $params
-     * @return \Prismic\Prismic
+     * @return null|\stdClass
      */
     private function get(string $pageType, string $locale, ?array $params = [])
     {
@@ -66,6 +66,7 @@ class PrismicContentProvider
             $options['page'] = $page;
         }
 
+        /*
         $filters = $params['filters'] ?? null;
         if ($filters) {
             foreach ($filters as $filter => $tags) {
@@ -74,7 +75,9 @@ class PrismicContentProvider
                 }
             }
         }
+        */
 
+        /*
         $search = $params['search'] ?? null;
         if ($search) {
             foreach ($search as $k => $v) {
@@ -83,12 +86,14 @@ class PrismicContentProvider
                 }
             }
         }
+        */
 
 
         /** @var Document $document */
         Debugbar::startMeasure('prismic', "Prismic API [$pageType]");
+        $response = null;
         try {
-            $response = $this->api->query($predicates);
+            $response = $this->api->query($predicates, $options);
             //dd($predicates, $options, $response);
         }
         catch (RequestFailureException $e) {
@@ -163,31 +168,30 @@ class PrismicContentProvider
 
 
     /**
-     * @param array $tags
      * @param string $locale
      * @param array|null $params
      * @return mixed
      */
-    public function getArticles(array $tags, string $locale, ?array $params = [])
+    public function getPosts(string $locale, ?array $params = [])
     {
-        $response = $this->get('article', $locale, [
-            "tags" => $tags,
-            "tags2" => $tags,
-            "order" => "[my.article.article_date desc]",
+        $response = $this->get('blog_post', $locale, [
+            "tags" => $params['tags'] ?? null,
+            "order" => "[my.blog_post.post_date desc]",
             "limit" => $params['limit'] ?? null,
-            "page" => $params['page'] ?? null,
-            "search" => $params['search'] ?? null,
-            "filters" => $params['filters'] ?? null
+            "page" => $params['page'] ?? null
         ]);
 
         if (count($response->results) == 0) {
-            Debugbar::warning("No article [".implode(',', $tags)." / $locale] found");
+            Debugbar::warning("No article [".implode(',', $params['tags'])." / $locale] found");
         }
-
-        return $response->results;
+        return $response;
     }
 
 
+    /**
+     * @param array $ids
+     * @return array
+     */
     public function getPostsByIDs(array $ids)
     {
         /** @var Document $document */

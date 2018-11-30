@@ -44,7 +44,17 @@ function () {
         ['uses' => 'PrismicController@client']
     )->name('client');
 
-    // ARTICLES
+    // BLOG
+    Route::get(
+        LaravelLocalization::transRoute('routes.blog'),
+        ['uses' => 'PrismicController@genericPage', 'page' => 'page_blog']
+    )->name('page_blog');
+    // ARTICLES LIST
+    Route::get(
+        'list-posts',
+        ['uses' => 'PrismicController@listPosts']
+    )->name('list_posts');
+    // ARTICLE
     Route::get(
         LaravelLocalization::transRoute('routes.post'),
         ['uses' => 'PrismicController@post']

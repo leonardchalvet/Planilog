@@ -1,0 +1,71 @@
+{
+  "A-General": {
+    "page_title": {
+      "type": "Text",
+      "config": {
+        "useAsTitle": true,
+        "label": "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO - Name"
+      }
+    },
+    "seo_page_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO - Description"
+      }
+    },
+    "seo_og_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Open Graph - Name"
+      }
+    },
+    "seo_og_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Open Graph - Description"
+      }
+    },
+    "seo_og_image": {
+      "type": "Image",
+      "config": {
+        "label": "SEO Open Graph - Image"
+      }
+    }
+  },
+  "Blog": {
+    "category_all": {
+      "type": "Text",
+      "config": {
+        "label": "Catégorie \"tous les articles\""
+      }
+    },
+    "categories" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "name" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Catégorie"
+            }
+          }
+        },
+        "label" : "Catégories à afficher"
+      }
+    },
+    "more_link": {
+      "type": "Text",
+      "config": {
+        "label": "Bouton plus d'articles"
+      }
+    }
+  }
+}
+
+

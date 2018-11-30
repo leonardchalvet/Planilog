@@ -17,13 +17,11 @@ use Prismic\Dom\richText;
 
     <?php
     if (LaravelLocalization::getCurrentLocale() == "fr") {
-    setlocale(LC_TIME, 'fr_FR');
-    }
-    else {
-    setlocale(LC_TIME, 'en_US');
+        setlocale(LC_TIME, 'fr_FR');
+    } else {
+        setlocale(LC_TIME, 'en_US');
     }
     ?>
-
 
     <main>
 
@@ -116,36 +114,7 @@ use Prismic\Dom\richText;
                 <div class="container-el">
 
                     @foreach($posts as $post)
-                        <?php $data = $post->data ?>
-                        <div class="el">
-                            <div class="cover">
-                                <div class="background" style="background-image: url(@imageSrc($data, post_image));"></div>
-                                @component('components.share_links')
-                                    @slot('title')
-                                        @simpleText($doc, post_title)
-                                    @endslot
-                                    @slot('url')
-                                        {{ route('post', ['slug' => $post->uid]) }}
-                                    @endslot
-                                @endcomponent
-                            </div>
-                            <div class="text">
-                                <div class="category"><?= implode(', ', $post->tags) ?></div>
-                                <h3>
-                                    @simpleText($data, post_title)
-                                </h3>
-                                @richText($data, post_excerpt)
-                            </div>
-                            <div class="foot">
-                                <div class="author">@simpleText($data, post_author)</div>
-                                <div class="sep"></div>
-                                <?php
-                                $date = \Carbon\Carbon::parse($data->post_date);
-                                $date = $date->formatLocalized("%d %b %Y");
-                                ?>
-                                <div class="date"><?= $date ?></div>
-                            </div>
-                        </div>
+                        @include('components.card_post', ['post', $post])
                     @endforeach
 
                 </div>
