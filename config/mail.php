@@ -59,6 +59,10 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
+    'to' => [
+        'commercial' => env('MAIL_CONTACT_COMMERCIAL'),
+        'trial'      => env('MAIL_CONTACT_TRIAL'),
+    ],
 
     /*
     |--------------------------------------------------------------------------

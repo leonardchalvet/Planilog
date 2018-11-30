@@ -3,6 +3,7 @@
 namespace app\Http\Controllers;
 
 use App\Http\Controllers\Controller;  // DO NOT REMOVE!
+use App\Http\Services\MailSupportService;
 use App\Http\Services\PrismicContentProvider;
 use App\Http\Services\PrismicLinkResolver as PrismicLinkResolver;
 use Illuminate\Http\Request;
@@ -42,6 +43,41 @@ class PrismicController extends Controller
         // Get asked page
         $page = $request->route()->action['page'];
 
+        $document = $this->contentProvider->getSimplePage($page, $this->locale);
+
+        if ($request->has("debug")) dd($document);
+
+        return view($page, [
+            'doc' => $document
+        ]);
+    }
+
+
+    public function contactPage(Request $request, MailSupportService $support)
+    {
+        if ($request->isMethod("POST")) {
+
+            $name = $request->post("name");
+            $email = $request->post("email");
+            $tel = $request->post("tel");
+            $question = $request->post("question");
+            $pref = $request->post("rappel");
+            $pref .= $pref == 'tel' ? "(" . $request->post("time") . ")" : '';
+            $to = config('mail.to.commercial');
+            $subject = "[contact commercial]";
+            $message = <<<EOL
+Nouveau message de $name
+Email : $email
+Téléphone : $tel
+Préférences de rappel : $pref
+
+$question         
+EOL;
+            $support->mail($to, $subject, $message);
+        }
+
+        // Get asked page
+        $page = 'page_contact_commercial';
         $document = $this->contentProvider->getSimplePage($page, $this->locale);
 
         if ($request->has("debug")) dd($document);

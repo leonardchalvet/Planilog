@@ -1,0 +1,137 @@
+{
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Name"
+      }
+    },
+    "seo_page_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Description"
+      }
+    },
+    "seo_og_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Name"
+      }
+    },
+    "seo_og_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Description"
+      }
+    },
+    "seo_og_image" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "SEO Open Graph - Image"
+      }
+    }
+  },
+  "Cover" : {
+    "cover_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "cover_paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Description"
+      }
+    },
+    "cover_support_tel": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone support"
+      }
+    },
+    "cover_support_time": {
+      "type": "Text",
+      "config": {
+        "label": "Horaires d'ouverture"
+      }
+    },
+    "cover_assistance": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, hyperlink",
+        "label": "Déjà client ?"
+      }
+    }
+  },
+  "Formulaire" : {
+    "field_name": {
+      "type": "Text",
+      "config": {
+        "label": "Nom"
+      }
+    },
+    "field_email": {
+      "type": "Text",
+      "config": {
+        "label": "Email"
+      }
+    },
+    "field_tel": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone"
+      }
+    },
+    "field_question": {
+      "type": "Text",
+      "config": {
+        "label": "Question"
+      }
+    },
+    "label_contact": {
+      "type": "Text",
+      "config": {
+        "label": "Choix contact"
+      }
+    },
+    "field_contact_email": {
+      "type": "Text",
+      "config": {
+        "label": "Email"
+      }
+    },
+    "field_contact_tel": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone"
+      }
+    },
+    "field_contact_tel_am": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone matin"
+      }
+    },
+    "field_contact_tel_pm": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone après-midi"
+      }
+    },
+    "field_submit": {
+      "type": "Text",
+      "config": {
+        "label": "Bouton envoyer"
+      }
+    }
+  }
+}

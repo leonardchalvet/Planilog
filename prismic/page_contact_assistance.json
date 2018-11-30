@@ -1,0 +1,113 @@
+{
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Name"
+      }
+    },
+    "seo_page_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Description"
+      }
+    },
+    "seo_og_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Name"
+      }
+    },
+    "seo_og_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Description"
+      }
+    },
+    "seo_og_image" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "SEO Open Graph - Image"
+      }
+    }
+  },
+  "Cover" : {
+    "cover_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "cover_paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, hyperlink, strong, em",
+        "label": "Description"
+      }
+    },
+    "el_1_title": {
+      "type": "Text",
+      "config": {
+        "label": "Assistance - Titre"
+      }
+    },
+    "el_1_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Assistance - Texte"
+      }
+    },
+    "el_1_link": {
+      "type": "Link",
+      "config": {
+        "label": "Assistance - lien FAQ"
+      }
+    },
+    "el_2_title": {
+      "type": "Text",
+      "config": {
+        "label": "Email - Titre"
+      }
+    },
+    "el_2_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Email - Texte"
+      }
+    },
+    "el_2_link": {
+      "type": "Text",
+      "config": {
+        "label": "Email - email support"
+      }
+    },
+    "el_3_title": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone - Titre"
+      }
+    },
+    "el_3_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Téléphone - Texte"
+      }
+    },
+    "el_3_link": {
+      "type": "Text",
+      "config": {
+        "label": "Téléphone - tel support"
+      }
+    }
+  }
+}
