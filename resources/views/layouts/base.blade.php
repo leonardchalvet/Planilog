@@ -73,12 +73,12 @@
 </style>
 <script>$('a[href="#"]').addClass("emptyLink");</script>
 
-{{--  Prismic Toolbar for previews --}}
+{{--  Prismic Toolbar for previews
 <script>
     window.prismic = { endpoint: '{{ Config::get('services.prismic.api') }}' };
 </script>
 <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
-
+--}}
 
 </body>
 </html>
