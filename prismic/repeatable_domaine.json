@@ -150,6 +150,12 @@
               "label": "Title"
             }
           },
+          "icon": {
+            "type": "Image",
+            "config": {
+              "label": "Icone"
+            }
+          },
           "desc": {
             "type": "StructuredText",
             "config": {

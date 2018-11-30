@@ -113,7 +113,9 @@ use Prismic\Dom\RichText;
                 <div class="container-el">
                     @foreach($doc->benefits as $item)
                         <div class="el">
-                            <div class="icn"></div>
+                            <div class="icn">
+                                <img src="@imageSrc($item, icon)">
+                            </div>
                             <h3>
                                 @simpleText($item, title)
                             </h3>
