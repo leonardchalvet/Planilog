@@ -48,14 +48,14 @@
     "tarifs_desc_1": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },
     "tarifs_desc_2": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description 2"
       }
     },
@@ -252,7 +252,7 @@
     "free_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },
@@ -328,7 +328,7 @@
               "réponse": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph",
+                  "multi": "paragraph, strong, em",
                   "label": "Réponse"
                 }
               }

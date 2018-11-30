@@ -60,7 +60,7 @@
     "fct_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },
@@ -138,7 +138,7 @@
     "see_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },

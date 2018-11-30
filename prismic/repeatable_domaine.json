@@ -54,7 +54,7 @@
     "domaine_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },
@@ -87,7 +87,7 @@
     "content_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Contenu - Description"
       }
     },
@@ -104,7 +104,7 @@
           "desc": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, strong, em",
               "label": "Description"
             }
           }
@@ -136,7 +136,7 @@
     "benefit_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Description"
       }
     },
@@ -159,7 +159,7 @@
           "desc": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, strong, em",
               "label": "Description"
             }
           }

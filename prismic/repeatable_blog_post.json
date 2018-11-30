@@ -54,7 +54,7 @@
     "post_excerpt": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
         "label": "Résumé"
       }
     },
