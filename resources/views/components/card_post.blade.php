@@ -1,5 +1,5 @@
 <?php
-use Prismic\Dom\richText;
+use Prismic\Dom\RichText;
 $data = $post->data
 ?>
 <div class="el">
