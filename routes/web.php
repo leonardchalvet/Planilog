@@ -81,6 +81,11 @@ function () {
 
 });
 
+
+// Formulaire d'inscription
+Route::post('/trial', ['uses' => 'PrismicController@inscription'])->name('inscription');
+
+
 // Github webhook
 Route::post('git-webhook', function () {
     app('debugbar')->disable();

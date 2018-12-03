@@ -140,6 +140,57 @@
     }
   },
   "Formulaire d'inscription": {
-
+    "form_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "form_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink, image",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "form_name": {
+      "type": "Text",
+      "config": {
+        "label": "Champ - Nom"
+      }
+    },
+    "form_name2": {
+      "type": "Text",
+      "config": {
+        "label": "Champ - Prénom"
+      }
+    },
+    "form_email": {
+      "type": "Text",
+      "config": {
+        "label": "Champ - Email"
+      }
+    },
+    "form_tel": {
+      "type": "Text",
+      "config": {
+        "label": "Champ - Téléphone"
+      }
+    },
+    "form_gcu": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink, image",
+        "allowTargetBlank": true,
+        "label": "Texte CGU"
+      }
+    },
+    "form_button": {
+      "type": "Text",
+      "config": {
+        "label": "Bouton valider"
+      }
+    }
   }
 }

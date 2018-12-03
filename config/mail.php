@@ -61,7 +61,7 @@ return [
     ],
     'to' => [
         'commercial' => env('MAIL_CONTACT_COMMERCIAL'),
-        'trial'      => env('MAIL_CONTACT_TRIAL'),
+        'sales'      => env('MAIL_CONTACT_SALES'),
     ],
 
     /*

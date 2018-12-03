@@ -243,5 +243,23 @@ EOL;
         return response(null, 302)->header('Location', $url);
     }
 
+    public function inscription(Request $request, MailSupportService $support)
+    {
+        $name = implode(' ', [$request->post("firstname"), $request->post("lastname")]);
+        $email = $request->post("email", "--");
+        $tel = $request->post("tel", "--");
+        $to = config('mail.to.sales');
+        $subject = "[Inscription]";
+        $message = <<<EOL
+Nouvelle inscription
+Nom : $name
+Email : $email
+Téléphone : $tel
+EOL;
+        $support->mail($to, $subject, $message);
+
+        return response(null, 302)->header('Location', route('page_home'));
+    }
 }
+
 

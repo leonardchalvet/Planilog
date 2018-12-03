@@ -98,33 +98,32 @@ use Prismic\Dom\RichText;
     <div class="container-subscribe">
         <div class="container-form">
             <h2>
-                Inscription
+                @simpleText($header, form_title)
             </h2>
-            <form action="">
+            <form action="{{ route('inscription') }}" method="post">
+                @csrf
                 <div class="container-input">
                     <div class="input">
-                        <div class="title">NOM</div>
-                        <input type="text">
+                        <div class="title">@simpleText($header, form_name)</div>
+                        <input type="text" name="lastname">
                     </div>
                     <div class="input">
-                        <div class="title">PRÉNOM</div>
-                        <input type="text">
+                        <div class="title">@simpleText($header, form_name2)</div>
+                        <input type="text" name="firstname">
                     </div>
                     <div class="input">
-                        <div class="title">E-MAIL PROFESSIONNEL*</div>
-                        <input type="text">
+                        <div class="title">@simpleText($header, form_email)*</div>
+                        <input type="email" name="email" required>
                     </div>
                     <div class="input">
-                        <div class="title">TÉLÉPHONE</div>
-                        <input type="text">
+                        <div class="title">@simpleText($header, form_tel)</div>
+                        <input type="tel" name="tel">
                     </div>
                 </div>
-                <p>
-                    En cliquant sur « Se créer un compte » , je reconnais avoir pris connaissance des Conditions Générales d’Utilisation et accepte la déclaration de confidentialité.
-                </p>
+                @richText($header, form_cgu)
                 <button>
 					<span class="btn-text">
-						SE CREER UN COMPTE
+						@simpleText($header, form_button)
 					</span>
                 </button>
             </form>
@@ -136,9 +135,7 @@ use Prismic\Dom\RichText;
             <div class="icn">
                 <img src="{{ asset('img/common/icn-subscribe.svg') }}">
             </div>
-            <p>
-                Votre version d’essai est valable pendant 30 jours et vous offre l’ensemble des fonctionnalités de planification et d’ordonnancement de la version Standard, avec outil de simulation et partage collaboratif intégrés.
-            </p>
+            @richText($header, form_desc)
         </div>
     </div>
 
