@@ -94,10 +94,9 @@ class PrismicContentProvider
         $response = null;
         try {
             $response = $this->api->query($predicates, $options);
-            //dd($predicates, $options, $response);
         }
         catch (RequestFailureException $e) {
-            dd($e);
+            dd($predicates, $options, $e);
         }
         Debugbar::stopMeasure('prismic');
 
@@ -223,6 +222,27 @@ class PrismicContentProvider
         $document->data->lang = substr($document->lang, 0, 2);
         $document->data->alternate_languages = $document->alternate_languages;
         return $document->data;
+    }
+
+    /**
+     * Get glossary words list
+     * @param string $locale
+     * @return mixed
+     */
+    public function getGlossaire(string $locale)
+    {
+        $response = $this->get('glossaire', $locale, [
+            //"tags" => $params['tags'] ?? null,
+            "order" => "[my.glossaire.uid]",
+            //"limit" => $params['limit'] ?? null,
+            //"page" => $params['page'] ?? null
+        ]);
+
+        if (count($response->results) == 0) {
+            Debugbar::warning("No glossaire item");
+        }
+
+        return $response->results;
     }
 }
 

@@ -57,41 +57,8 @@ use Prismic\Dom\richText;
 
                 <div class="content">
 
-                    @foreach ($doc->body as $el)
-
-                        @switch($el->slice_type)
-
-                            @case("texte")
-                                @richText($el->primary, texte)
-                                @break
-
-                            @case("citation")
-                                <div class="container-quote">
-                                    <img class="obj" src="{{ asset('img/business/icn-quote.svg') }}">
-                                    <p>@simpleText($el->primary, quote)</p>
-                                    <div class="name">@simpleText($el->primary, author)</div>
-                                </div>
-                                @break
-
-                            @case("bouton")
-                                <button>
-                                    <a href="@linkSrc($el->primary, link)" @linkTarget($el->primary, link)>
-                                        <span class="btn-text">@simpleText($el->primary, button)</span>
-                                        <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
-                                    </a>
-                                </button>
-                                @break
-
-                            @case("youtube")
-                                <iframe src="https://www.youtube.com/embed/@simpleText($el->primary, youtube_video_id)"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
-                                @break
-
-                        @endswitch
-
+                    @foreach ($doc->body as $slice)
+                        @include('components.content_text', ['slice', $slice])
                     @endforeach
 
                     @component('components.share_links')

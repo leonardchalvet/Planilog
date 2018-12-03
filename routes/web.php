@@ -69,6 +69,16 @@ function () {
         ['uses' => 'PrismicController@post']
     )->name('post');
 
+    // GLOSSAIRE
+    Route::get(
+        LaravelLocalization::transRoute('routes.glossaire'),
+        ['uses' => 'PrismicController@glossaire']
+    )->name('glossaire');
+    Route::get(
+        LaravelLocalization::transRoute('routes.glossaire_mot'),
+        ['uses' => 'PrismicController@glossaire']
+    )->name('glossaire_mot');
+
 });
 
 // Github webhook

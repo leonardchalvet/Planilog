@@ -187,6 +187,47 @@ EOL;
     }
 
 
+
+    public function glossaire(Request $request, ?string $slug = null)
+    {
+        $glossaire = $this->contentProvider->getGlossaire($this->locale);
+
+        if (count($glossaire) == 0) {
+            abort(404, "Glossary is empty :/");
+        }
+
+        $item = null;
+        if ($slug) {
+            foreach ($glossaire as $word) {
+                if ($word->uid == $slug) {
+                    $item = $word->data;
+                    $item->uid = $word->uid;
+                    $item->alternate_languages = $word->alternate_languages;
+
+                    $word->selected = true;
+                } else {
+                    $word->selected = false;
+                }
+            }
+            if (null == $item) {
+                abort(404, "Missing definition for " . $slug);
+            }
+        }
+        else {
+            $route = route('glossaire_mot', ['slug' => $glossaire[0]->uid]);
+            return response(null, 302)->header('Location', $route);
+        }
+
+        if ($request->has("debug")) dd($glossaire, $slug, $item);
+
+        return view('repeatable_glossaire', [
+            'glossaire' => $glossaire,
+            'doc' => $item,
+            'slug' => $slug
+        ]);
+    }
+
+
     /**
      * Action for Prismic preview
      * - Get token from Prismic
