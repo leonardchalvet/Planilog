@@ -79,6 +79,20 @@ function () {
         ['uses' => 'PrismicController@glossaire']
     )->name('glossaire_mot');
 
+
+    // SUPPORT
+    Route::get(
+        LaravelLocalization::transRoute('routes.support'),
+        ['uses' => 'PrismicController@supportPage']
+    )->name('page_support');
+    Route::get(
+        LaravelLocalization::transRoute('routes.support_cat'),
+        ['uses' => 'PrismicController@supportCat']
+    )->name('support_cat');
+    Route::get(
+        LaravelLocalization::transRoute('routes.support_post'),
+        ['uses' => 'PrismicController@supportPost']
+    )->name('support_post');
 });
 
 

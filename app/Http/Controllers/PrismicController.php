@@ -7,6 +7,7 @@ use App\Http\Services\MailSupportService;
 use App\Http\Services\PrismicContentProvider;
 use App\Http\Services\PrismicLinkResolver as PrismicLinkResolver;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Log;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Prismic\Api;
@@ -138,7 +139,7 @@ EOL;
         $document = $this->contentProvider->getSimpleType('blog_post', $slug);
 
         // Get related posts
-        // TODO : use fetch links
+        // TODO : use fetch links ?
         // https://prismic.io/docs/php/query-the-api/fetch-linked-document-fields
         $ids = [];
         foreach ($document->related_posts as $post) {
@@ -187,7 +188,11 @@ EOL;
     }
 
 
-
+    /**
+     * @param Request $request
+     * @param null|string $slug
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function glossaire(Request $request, ?string $slug = null)
     {
         $glossaire = $this->contentProvider->getGlossaire($this->locale);
@@ -226,6 +231,132 @@ EOL;
             'slug' => $slug
         ]);
     }
+
+    /**
+     * @param Request $request
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function supportPage(Request $request)
+    {
+        $document = $this->contentProvider->getSimplePage('page_support', $this->locale);
+
+        $categories = [];
+        $data = $this->contentProvider->getSupportCategories($this->locale);
+        foreach ($data as $c) {
+            $categories[$c->uid] = $c;
+        }
+
+        $posts = [];
+        $data = $this->contentProvider->getSupportPosts($this->locale);
+        foreach ($data as $p) {
+            $posts[$p->data->support_category->uid][$p->data->support_subcategory][] = $p;
+        }
+
+        if ($request->has("debug")) dd($document, $categories, $posts);
+
+        return view('page_support', [
+            'doc' => $document,
+            'categories' => $categories,
+            'posts' => $posts
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @param string $cat
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function supportCat(Request $request, string $cat)
+    {
+
+        $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
+        $document = $this->contentProvider->getSimpleType('support_categorie2', $cat);
+
+        $categories = $this->contentProvider->getSupportCategories($this->locale);
+
+        $posts = [];
+        $data = $this->contentProvider->getSupportPosts($this->locale, $document->id);
+        foreach ($data as $p) {
+            $posts[$p->data->support_subcategory][] = $p;
+        }
+
+        if ($request->has("debug")) dd($document, $posts);
+
+        return view('repeatable_support_cat', [
+            'doc' => $document,
+            'categories' => $categories,
+            'support' => $support,
+            'posts' => $posts
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @param string $cat
+     * @param string $slug
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function supportPost(Request $request, string $cat, string $slug)
+    {
+        $document = $this->contentProvider->getSimpleType('support_post2', $slug);
+
+        $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
+        $categories = $this->contentProvider->getSupportCategories($this->locale);
+
+        // Redirect to right route
+        if ($cat !== $document->support_category->uid) {
+            $url = route("support_post", [
+                'cat' => $document->support_category->uid,
+                'slug' => $document->uid
+            ]);
+            return response(null, 302)->header('Location', $url);
+        }
+
+        $categorie = null;
+        foreach ($categories as $c) {
+            if ($c->id == $document->support_category->id) {
+                $document->support_category->data = $c->data;
+                $categorie = $c->data;
+            }
+        }
+
+        // Store viewed posts in cookies
+        $json = Cookie::get('support_posts');
+        Debugbar::info("JSON", $json);
+        $ids = $json ? json_decode($json) : [];
+        array_filter($ids, function($val) use ($document) {
+            return $val != $document->id;
+        });
+        $ids[] = $document->id;
+        $ids = array_slice($ids, -5);
+        //setcookie('support_posts', json_encode($ids), time() + 86400, '/');
+        Cookie::queue('support_posts', json_encode($ids));
+
+        // Get viewed posts
+        $viewed_posts = $this->contentProvider->getPostsByIDs($ids);
+
+        // Get related posts
+        $ids = [];
+        //dd($document);
+        foreach ($document->related_posts as $post) {
+            if (property_exists($post->post, 'id'))
+                $ids[] = $post->post->id;
+        }
+        $related_posts = $this->contentProvider->getPostsByIDs($ids);
+
+
+        if ($request->has("debug")) dd($document, $cat, $categories);
+
+        return view('repeatable_support_post', [
+            'doc' => $document,
+            'cat' => $categorie,
+            'categories' => $categories,
+            'support' => $support,
+            'viewed_posts' => $viewed_posts,
+            'related_posts' => $related_posts,
+        ]);
+    }
+
 
 
     /**

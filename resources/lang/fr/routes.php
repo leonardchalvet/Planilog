@@ -10,4 +10,7 @@ return [
     "glossaire_mot" => "glossaire/{slug}",
     "contact_commercial" => "contact",
     "contact_assistance" => "assistance",
+    "support" => "support",
+    "support_cat" => "support/{cat}",
+    "support_post" => "support/{cat}/{slug}",
 ];

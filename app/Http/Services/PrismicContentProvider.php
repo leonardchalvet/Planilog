@@ -66,6 +66,12 @@ class PrismicContentProvider
             $options['page'] = $page;
         }
 
+        // (support post categorie)
+        $cat = $params['categorie'] ?? null;
+        if ($cat) {
+            $predicates[] = Predicates::any('my.support_post2.support_category', [$cat]);
+        }
+
         /*
         $filters = $params['filters'] ?? null;
         if ($filters) {
@@ -93,6 +99,7 @@ class PrismicContentProvider
         Debugbar::startMeasure('prismic', "Prismic API [$pageType]");
         $response = null;
         try {
+            //dd($options, $params, $predicates);
             $response = $this->api->query($predicates, $options);
         }
         catch (RequestFailureException $e) {
@@ -217,6 +224,7 @@ class PrismicContentProvider
             abort(404, "$type $slug not found");
         }
 
+        $document->data->id = $document->id;
         $document->data->uid = $document->uid;
         $document->data->tags = $document->tags;
         $document->data->lang = substr($document->lang, 0, 2);
@@ -240,6 +248,38 @@ class PrismicContentProvider
 
         if (count($response->results) == 0) {
             Debugbar::warning("No glossaire item");
+        }
+
+        return $response->results;
+    }
+
+    public function getSupportCategories(string $locale)
+    {
+        $response = $this->get('support_categorie2', $locale, [
+            //"tags" => $params['tags'] ?? null,
+            //"order" => "[my.glossaire.uid]",
+            //"limit" => $params['limit'] ?? null,
+            //"page" => $params['page'] ?? null
+        ]);
+
+        if (count($response->results) == 0) {
+            Debugbar::warning("No support category item");
+        }
+
+        return $response->results;
+    }
+    public function getSupportPosts(string $locale, ?string $cat = null)
+    {
+        $response = $this->get('support_post2', $locale, [
+            "categorie" => $cat
+            //"tags" => $params['tags'] ?? null,
+            //"order" => "[my.glossaire.uid]",
+            //"limit" => $params['limit'] ?? null,
+            //"page" => $params['page'] ?? null
+        ]);
+
+        if (count($response->results) == 0) {
+            Debugbar::warning("No support post item");
         }
 
         return $response->results;

@@ -1,0 +1,89 @@
+{
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Name"
+      }
+    },
+    "seo_page_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Description"
+      }
+    },
+    "seo_og_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Name"
+      }
+    },
+    "seo_og_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Description"
+      }
+    },
+    "seo_og_image" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "SEO Open Graph - Image"
+      }
+    }
+  },
+  "Cover" : {
+    "cover_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre"
+      }
+    },
+    "cover_search": {
+      "type": "Text",
+      "config": {
+        "label": "\"Rechercher\""
+      }
+    }
+  },
+  "Autre question" : {
+    "cover_more": {
+      "type": "Text",
+      "config": {
+        "label": "texte"
+      }
+    },
+    "cover_button": {
+      "type": "Text",
+      "config": {
+        "label": "bouton"
+      }
+    },
+    "cover_button_mail": {
+      "type": "Text",
+      "config": {
+        "label": "email"
+      }
+    }
+  },
+  "Traductions" : {
+    "related_posts": {
+      "type": "Text",
+      "config": {
+        "label": "\"Articles associés\""
+      }
+    },
+    "viewed_posts": {
+      "type": "Text",
+      "config": {
+        "label": "\"Consultés récemment\""
+      }
+    }
+  }
+}
