@@ -30,8 +30,7 @@ class PrismicController extends Controller
         $this->contentProvider = $contentProvider;
         $this->linkResolver = $linkResolver;
         $this->locale = config('laravellocalization.prismic_locales')[LaravelLocalization::getCurrentLocale()];
-        $this->api = Api::get(env('PRISMIC_API'));
-
+        $this->api = Api::get(config('services.prismic.api'));
     }
 
     /**

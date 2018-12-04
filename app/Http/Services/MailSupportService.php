@@ -11,15 +11,19 @@ class MailSupportService
     public function mail(string $to, string $subject, string $message)
     {
         $mail = new PHPMailer(true); // Passing `true` enables exceptions
-        try {
 
+        try {
             // Server settings
             //$mail->SMTPDebug = 2; // Enable verbose debug output
             $mail->isSMTP();
             $mail->Host = config('mail.host');
-            $mail->SMTPAuth = true;
-            $mail->Username = config('mail.username');
-            $mail->Password = config('mail.password');
+
+            if (config('mail.username') != "") {
+                $mail->SMTPAuth = true;
+                $mail->Username = config('mail.username');
+                $mail->Password = config('mail.password');
+            }
+
             $mail->SMTPSecure = config('mail.encryption');
             $mail->Port = config('mail.port');
 

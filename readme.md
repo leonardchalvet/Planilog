@@ -7,7 +7,7 @@
 
 **Composer**
 ```
-wget https://getcomposer.org/composer.phar -o composer
+wget https://getcomposer.org/composer.phar -O composer
 ```
 
 **Clone repository**
@@ -33,7 +33,19 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Edit `.env`
+Edit `.env`:
+
+```
+APP_ENV=production
+APP_DEBUG=false
+```
+
+...and set others parameters.
+
+```
+php artisan key:generate
+```
+
 
 **Set directory permissions**
 
@@ -56,8 +68,10 @@ git pull
 **Update dependancies**
 
 ``` 
-composer install
+composer install --no-dev
 ```
+
+Change `.env` if needed.
 
 **Cache backend ressources and configuration**
 
