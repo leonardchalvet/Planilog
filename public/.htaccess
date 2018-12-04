@@ -1,3 +1,18 @@
+
+# Set password only for planilog.fr
+SetEnvIf Host planilog.fr passreq
+
+AuthUserFile /homez.254/planilogml/.htpasswd
+AuthName "Accès Restreint"
+AuthType Basic
+require valid-user
+
+Order allow,deny
+Allow from all
+Deny from env=passreq
+Satisfy any
+
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
