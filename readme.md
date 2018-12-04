@@ -67,17 +67,16 @@ git pull
 
 **Update dependancies**
 
-``` 
-composer install --no-dev
-```
-
 Change `.env` if needed.
+
+``` 
+../composer install --optimize-autoloader --no-dev
+
+```
 
 **Cache backend ressources and configuration**
 
 ``` 
-composer install --optimize-autoloader --no-dev
-
 php artisan cache:clear
 
 php artisan config:clear 
