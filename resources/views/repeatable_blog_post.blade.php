@@ -1,5 +1,5 @@
 <?php
-use Prismic\Dom\richText;
+use Prismic\Dom\RichText;
 ?>
 
 @extends('layouts.base', ['doc' => $doc])

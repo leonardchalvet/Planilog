@@ -37,6 +37,7 @@
     {{-- Erk, c'est moche :( --}}
     <?php $locales = array_flip(Config::get('laravellocalization.prismic_locales')); ?>
     @foreach($doc->alternate_languages as $alt)
+        <!-- -->
         <link rel="alternate"
               href="{{ LaravelLocalization::getLocalizedURL($locales[$alt->lang], $linkResolver->resolve($alt)) }}"
               hreflang="<?= $alt->lang ?>" />

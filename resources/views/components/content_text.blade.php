@@ -1,5 +1,5 @@
 <?php
-use Prismic\Dom\richText;
+use Prismic\Dom\RichText;
 ?>
 
 @switch($slice->slice_type)

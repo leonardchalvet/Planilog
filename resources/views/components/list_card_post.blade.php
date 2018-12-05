@@ -1,5 +1,5 @@
 <?php
-use Prismic\Dom\richText;
+use Prismic\Dom\RichText;
 if (LaravelLocalization::getCurrentLocale() == "fr") {
     setlocale(LC_TIME, 'fr_FR');
 } else {
