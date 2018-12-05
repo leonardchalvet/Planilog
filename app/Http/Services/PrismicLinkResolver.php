@@ -2,6 +2,8 @@
 
 namespace App\Http\Services;
 
+use Illuminate\Support\Facades\Config;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Prismic\LinkResolver;
 use Barryvdh\Debugbar\Facade as Debugbar;
 use Route;
@@ -19,10 +21,12 @@ class PrismicLinkResolver extends LinkResolver
      */
     public function resolve($link) :?string
     {
+        //dd($link);
         $url = "/";
         if (property_exists($link, 'isBroken') && $link->isBroken === true) {
             $url = '/404';
         }
+
 
         // LINK
         if (property_exists($link, 'link_type')) {
@@ -51,8 +55,16 @@ class PrismicLinkResolver extends LinkResolver
             $url = $this->resolve2($link);
         }
 
-        Debugbar::info($link, $url);
 
+        $locale = LaravelLocalization::getCurrentLocale();
+        $locales = array_flip(Config::get('laravellocalization.prismic_locales'));
+        if (property_exists($link, 'lang') && isset($locales[$link->lang])) {
+            $locale = $locales[$link->lang];
+        }
+        $url = LaravelLocalization::getLocalizedURL($locale, $url);
+
+        //Debugbar::info($link, $url);
+        //dd($link, $locales, $locale, $url);
         return $url;
 
 
