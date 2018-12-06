@@ -305,6 +305,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common/notif-info.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/notif-info.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/common/notif-warning.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/notif-warning.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/common/rs-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -754,6 +774,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/features/feature-simuler/icn-share.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/glossaire/search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/glossaire/search.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

@@ -148,6 +148,18 @@
 					<p>
 						ed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.Nam dapibus nisl vitae elit fringilla rutrum, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien.
 					</p>
+					<div class="notif">
+						<img class="icn" src="img/common/notif-info.svg" alt="">
+						<p>
+							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. 
+						</p>
+					</div>
+					<div class="notif warning">
+						<img class="icn" src="img/common/notif-warning.svg" alt="">
+						<p>
+							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. 
+						</p>
+					</div>
 					<ul>
 						<li>Fusce vehicula</li>
 						<li>dolor arcu</li>
