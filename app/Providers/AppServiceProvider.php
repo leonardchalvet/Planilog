@@ -56,7 +56,7 @@ class AppServiceProvider extends ServiceProvider
             // lol! Blade directives cannot use multiple parameters?
             list($doc, $field) = explode(',',str_replace(['(',')',' ', '\''], '', $arguments));
 
-            return  '<?= isset('.$doc.'->'.$field.') ? '.$doc.'->'.$field.'->url : ""; ?>';
+            return  '<?= isset('.$doc.'->'.$field.') && isset('.$doc.'->'.$field.'->url) ? '.$doc.'->'.$field.'->url : ""; ?>';
         });
         Blade::directive('linkSrc', function ($arguments) {
             // lol! Blade directives cannot use multiple parameters?
