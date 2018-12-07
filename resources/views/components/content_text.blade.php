@@ -33,4 +33,15 @@ use Prismic\Dom\RichText;
     </iframe>
     @break
 
+    @case("notification")
+    <div class="notif @simpleText($slice->primary, type)">
+        @if ($slice->primary->type == "warning")
+            <img class="icn" src="{{ asset('img/common/notif-warning.svg') }}">
+        @else
+            <img class="icn" src="{{ asset('img/common/notif-info.svg') }}">
+        @endif
+        @richText($slice->primary, message)
+    </div>
+    @break
+
 @endswitch

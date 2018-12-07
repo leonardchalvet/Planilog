@@ -150,6 +150,35 @@
               }
             },
             "repeat": {}
+          },
+          "notification": {
+            "type": "Slice",
+            "fieldset": "Notification",
+            "description": "Message informatif",
+            "icon": "error_outline",
+            "display": "list",
+            "non-repeat": {
+              "type": {
+                "type": "Select",
+                "config": {
+                  "options": [
+                    "info",
+                    "warning"
+                  ],
+                  "default_value": "info",
+                  "label": "Type"
+                }
+              },
+              "message": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "Message"
+                }
+              }
+            },
+            "repeat": {}
           }
         }
       }
