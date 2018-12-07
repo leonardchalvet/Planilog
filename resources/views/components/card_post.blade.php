@@ -4,7 +4,7 @@ $data = $post->data
 ?>
 <div class="el">
     <div class="cover">
-        <a href="{{ route('post', ['slug' => $post->uid]) }}"
+        <a href="{{ route('blog_post', ['slug' => $post->uid]) }}"
            class="background"
            style="background-image: url(@imageSrc($data, post_image));">
         </a>
@@ -13,7 +13,7 @@ $data = $post->data
                 @simpleText($doc, post_title)
             @endslot
             @slot('url')
-                {{ route('post', ['slug' => $post->uid]) }}
+                {{ route('blog_post', ['slug' => $post->uid]) }}
             @endslot
         @endcomponent
     </div>
