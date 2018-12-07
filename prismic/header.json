@@ -46,7 +46,7 @@
             "type": "Link",
             "config": {
               "label": "Menu Outils El Link",
-              "allowTargetBlank" : true
+              "allowTargetBlank": true
             }
           }
         },
@@ -86,7 +86,7 @@
             "type": "Link",
             "config": {
               "label": "Menu Modules El Link",
-              "allowTargetBlank" : true
+              "allowTargetBlank": true
             }
           }
         },
@@ -103,7 +103,7 @@
       "type": "Link",
       "config": {
         "label": "Header Menu Tarifs Link",
-        "allowTargetBlank" : true
+        "allowTargetBlank": true
       }
     },
     "header_menu_contact": {
@@ -116,7 +116,7 @@
       "type": "Link",
       "config": {
         "label": "Header Menu Contact Link",
-        "allowTargetBlank" : true
+        "allowTargetBlank": true
       }
     },
     "header_menu_login": {
@@ -129,7 +129,7 @@
       "type": "Link",
       "config": {
         "label": "Header Menu Login Link",
-        "allowTargetBlank" : true
+        "allowTargetBlank": true
       }
     },
     "header_menu_essai": {
@@ -190,6 +190,43 @@
       "type": "Text",
       "config": {
         "label": "Bouton valider"
+      }
+    }
+  },
+  "Bannière": {
+    "banner_status": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "actif",
+          "inactif"
+        ],
+        "default_value": "actif",
+        "label": "État"
+      }
+    },
+    "banner_message": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Message"
+      }
+    }
+  },
+  "Cookies": {
+    "cookies_message": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Message"
+      }
+    },
+    "cookies_button": {
+      "type": "Text",
+      "config": {
+        "label": "Bouton accepter"
       }
     }
   }

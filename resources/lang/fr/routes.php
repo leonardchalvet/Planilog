@@ -13,4 +13,5 @@ return [
     "support" => "support",
     "support_cat" => "support/{cat}",
     "support_post" => "support/{cat}/{slug}",
+    "cookies" => "cookies",
 ];

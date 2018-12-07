@@ -56,6 +56,8 @@
 
 <body>
 
+
+
 @include('layouts.header')
 
 @yield('content')
@@ -66,6 +68,11 @@
 @yield('js')
 
 
+<script src="{{ asset("js/js.cookie.js") }}"></script>
+@include('components.header_banner')
+@include('components.header_cookies')
+
+
 {{-- DEBUG --}}
 <style>
     @keyframes blink { 50% { outline: 1px solid red; } }
@@ -74,12 +81,12 @@
 </style>
 <script>$('a[href="#"]').addClass("emptyLink");</script>
 
+
 {{--  Prismic Toolbar for previews --}}
 <script>
     window.prismic = { endpoint: '{{ Config::get('services.prismic.api') }}' };
 </script>
 <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
-
 
 </body>
 </html>

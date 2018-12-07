@@ -26,6 +26,11 @@ function () {
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_tarifs']
     )->name('page_tarifs');
 
+    Route::get(
+        LaravelLocalization::transRoute('routes.cookies'),
+        ['uses' => 'PrismicController@genericPage', 'page' => 'page_cookies']
+    )->name('page_cookies');
+
     Route::any(
         LaravelLocalization::transRoute('routes.contact_commercial'),
         ['uses' => 'PrismicController@contactPage']
@@ -67,7 +72,7 @@ function () {
     Route::get(
         LaravelLocalization::transRoute('routes.post'),
         ['uses' => 'PrismicController@post']
-    )->name('post');
+    )->name('blog_post');
 
     // GLOSSAIRE
     Route::get(

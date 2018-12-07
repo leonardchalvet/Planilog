@@ -88,6 +88,8 @@ use Prismic\Dom\RichText;
         <section id="section-relatedArticles">
             <div class="wrapper">
                 <div class="container-col">
+
+                    @if (count($related_posts) > 0)
                     <div class="col">
                         <h3>@simpleText($support, related_posts)</h3>
                         <ul>
@@ -102,6 +104,9 @@ use Prismic\Dom\RichText;
                             @endforeach
                         </ul>
                     </div>
+                    @endif
+
+                    @if (count($viewed_posts) > 0)
                     <div class="col">
                         <h3>@simpleText($support, viewed_posts)</h3>
                         <ul>
@@ -116,6 +121,8 @@ use Prismic\Dom\RichText;
                             @endforeach
                         </ul>
                     </div>
+                    @endif
+
                 </div>
             </div>
         </section>

@@ -18,6 +18,9 @@ class ComposerServiceProvider extends ServiceProvider
         View::composer('layouts/header', 'App\Http\ViewComposers\PageStructureComposer@composeHeader');
         View::composer('layouts/footer', 'App\Http\ViewComposers\PageStructureComposer@composeFooter');
         View::composer('layouts/footer_cta', 'App\Http\ViewComposers\PageStructureComposer@composeFooterCTA');
+
+        View::composer('components/header_banner', 'App\Http\ViewComposers\PageStructureComposer@composeHeader');
+        View::composer('components/header_cookies', 'App\Http\ViewComposers\PageStructureComposer@composeHeader');
     }
 
     /**

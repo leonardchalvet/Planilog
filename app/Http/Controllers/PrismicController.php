@@ -319,20 +319,23 @@ EOL;
             }
         }
 
-        // Store viewed posts in cookies
-        $json = Cookie::get('support_posts');
-        Debugbar::info("JSON", $json);
-        $ids = $json ? json_decode($json) : [];
-        array_filter($ids, function($val) use ($document) {
-            return $val != $document->id;
-        });
-        $ids[] = $document->id;
-        $ids = array_slice($ids, -5);
-        //setcookie('support_posts', json_encode($ids), time() + 86400, '/');
-        Cookie::queue('support_posts', json_encode($ids));
+        $viewed_posts = [];
+        // Check if cookies policy accepted
+        if (Cookie::get('cookies_policy', "off") != "off") {
+            // Store viewed posts in cookies
+            $json = Cookie::get('support_posts');
+            $ids = $json ? json_decode($json) : [];
+            array_filter($ids, function($val) use ($document) {
+                return $val != $document->id;
+            });
+            $ids[] = $document->id;
+            $ids = array_slice($ids, -5);
+            Cookie::queue('support_posts', json_encode($ids));
 
-        // Get viewed posts
-        $viewed_posts = $this->contentProvider->getPostsByIDs($ids);
+            // Get viewed posts
+            $viewed_posts = $this->contentProvider->getPostsByIDs($ids);
+        }
+
 
         // Get related posts
         $ids = [];
