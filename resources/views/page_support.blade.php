@@ -89,6 +89,18 @@ use Prismic\Dom\RichText;
                             @richText($data, support_desc)
                         </a>
                     @endforeach
+
+                    {{-- Carte spécifique glossaire --}}
+                    <a class="el" href="{{ route('glossaire') }}">
+                        <div class="icn">
+                            <img src="{{ asset('img/support/icn-search.svg') }}">
+                        </div>
+                        <h3>
+                            @simpleText($doc, glossaire_title)
+                        </h3>
+                        @richText($doc, glossaire_desc)
+                    </a>
+
                 </div>
             </div>
         </section>

@@ -50,6 +50,19 @@
       "config": {
         "label": "\"Rechercher\""
       }
+    },
+    "glossaire_title": {
+      "type": "Text",
+      "config": {
+        "label": "Carte glossaire - titre"
+      }
+    },
+    "glossaire_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Carte glossaire - texte"
+      }
     }
   },
   "Autre question" : {
