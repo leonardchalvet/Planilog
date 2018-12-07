@@ -66,7 +66,7 @@ use Prismic\Dom\RichText;
                             @simpleText($doc, post_title)
                         @endslot
                         @slot('url')
-                            {{ route('post', ['slug' => $doc->uid]) }}
+                            {{ route('blog_post', ['slug' => $doc->uid]) }}
                         @endslot
                     @endcomponent
                 </div>
