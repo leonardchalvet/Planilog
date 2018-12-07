@@ -31,4 +31,13 @@ $(window).on('load', function() {
 	$('#lightbox-subscribe .container-subscribe .container-desc .close').click(function(){
 		$('#lightbox-subscribe').removeClass('displayBlock show');
 	})
+
+	$('#banner .cross').click(function(){
+		$('#banner').addClass('hide');
+		$('#header-desktop').removeClass('banner-active');
+	})
+
+	$('#cookies .wrapper .btn').click(function(){
+		$('#cookies').addClass('hide');
+	})
 })

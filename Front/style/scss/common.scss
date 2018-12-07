@@ -485,6 +485,11 @@ main
 						width: 100%;
 						margin: 40px 0px 70px 0px;
 					}
+					a{
+						text-decoration: none;
+						color: $colorMain_1;
+						font-family: $font_1;
+					}
 				}
 				> h2{
 					@include styleH4;

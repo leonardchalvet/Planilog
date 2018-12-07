@@ -1,4 +1,52 @@
 /*=============================
+=            BANNER           =
+=============================*/
+#banner{
+	position: fixed;
+	z-index: 21;
+	top: 0px;
+	left: 0px;
+	height: 40px;
+	background-color: $colorMain_4;
+	padding: 13px 0px 13px 0px;
+	width: 100%;
+	transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+	.text{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		p{
+			font-size: 11px;
+			color: #FFFFFF;
+			font-family: $font_3;
+		}
+		img{
+			width: 5px;
+			margin-left:10px;
+		}
+	}
+	.cross{
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		height: 7px;
+		width: 7px;
+		img{
+			width: 100%;
+		}
+	}
+	&.hide{
+		transform: translateY(-40px);
+	}
+}
+/*=================================
+=            END BANNER           =
+=================================*/
+
+/*=============================
 =            HEADER           =
 =============================*/
 #header-desktop{
@@ -192,7 +240,6 @@
 			}
 		}
 	}
-
 	&.scroll{
 		transform: translateY(-40px);
 		box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
@@ -214,14 +261,20 @@
 			transform: translateY(-20px);
 		}
 	}
+	&.banner-active{
+		transform: translateY(40px);
+	}
+	&.banner-active.scroll{
+		transform: translateY(0px);
+	}
 }
 /*=================================
 =            END HEADER           =
 =================================*/
 
-/*=============================
-=            HEADER           =
-=============================*/
+/*===============================
+=            LIGHTBOX           =
+===============================*/
 
 #lightbox-subscribe{
 	display: none;
@@ -352,6 +405,56 @@
 	}
 }
 
-/*=================================
-=            END HEADER           =
-=================================*/
+/*===================================
+=            END LIGHTBOX           =
+===================================*/
+
+/*==============================
+=            COOKIES           =
+==============================*/
+
+#cookies{
+	position: fixed;
+	z-index: 20;
+	bottom: 0px;
+	left: 0px;
+	padding: 17px 0px 17px 0px;	
+	width: 100%;	
+	background-color: #F7F9FC;	
+	box-shadow: 0 -10px 25px 0 rgba(56,70,122,0.15);
+	transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		.text{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			p{
+				@include styleParagraphSmall;
+				margin-right: 15px;
+			}
+			a{
+				color: $colorMain_2;	
+				font-family: $font_3;	
+				font-size: 16px;		
+				line-height: 26px;
+				opacity: 0.8;
+				text-decoration: underline;
+			}
+		}
+		.btn{
+			@include styleButtonSmall;
+		}
+	}
+	&.hide{
+		transform: translateY(100px);
+	}
+}
+
+/*==================================
+=            END COOKIES           =
+==================================*/

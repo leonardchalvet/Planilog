@@ -1,4 +1,14 @@
-<header id="header-desktop">
+<div id="banner">
+	<div class="text">
+		<p>Suivez notre prochain webinar le 28 Octobre 2018</p>
+		<img src="img/common/arrow-white-2.svg" alt="">
+	</div>
+	<div class="cross">
+		<img src="img/common/icn-cross.svg" alt="">
+	</div>
+</div>
+
+<header id="header-desktop" class="banner-active">
 	<div class="wrapper">
 		<a class="logo <?php echo($styleHeader); ?>" href="index.php">
 			<img src="img/common/logo.png" alt="">
@@ -162,4 +172,20 @@
 		</div>
 	</div>
 	
+</div>
+
+<div id="cookies">
+	<div class="wrapper">
+		<div class="text">
+			<p>
+				This website uses cookies to ensure you get the best experience on our website.
+			</p>
+			<a href="">
+				Lean more
+			</a>
+		</div>
+		<a class="btn">
+			<span class="btn-text">ACCEPT COOKIES</span>
+		</a>
+	</div>
 </div>

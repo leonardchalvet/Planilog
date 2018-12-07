@@ -72,6 +72,13 @@
 		"oAP": "/contact-commercial.php",
 		"oF": 0
 		},
+	"/cookies.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/cookies.php",
+		"oF": 0
+		},
 	"/domaine-maintenance.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -239,6 +246,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/common/arrow-red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/common/arrow-white-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/arrow-white-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1743,6 +1760,19 @@
 		"oA": 0,
 		"oAP": "/style/css/contact-commercial.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/cookies.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/cookies.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
