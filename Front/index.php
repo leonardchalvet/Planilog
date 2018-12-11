@@ -23,7 +23,7 @@
 
 
 			<section id="section-cover">
-				<img class="background" src="img/home/sectionCover/cover.jpg" alt="">
+				
 				<img class="shape" src="img/home/sectionCover/shape.svg" alt="">
 				<div class="wrapper">
 					<div class="container-cover">
@@ -40,7 +40,7 @@
 							</a>
 						</div>
 						<div class="container-illu">
-							
+							<img src="img/home/sectionCover/cover.jpg" alt="">
 						</div>
 					</div>
 					<div class="container-logo">

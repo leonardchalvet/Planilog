@@ -95,7 +95,6 @@ $(window).on('load', function() {
 			var index = $(this).index() + 1;
 			countEl=index;
 			prg();
-			
 		})
 
 		var interval = setInterval(function() {
@@ -106,14 +105,51 @@ $(window).on('load', function() {
 
 	};
 
-	sectionFtrCaroussel(
-		10000,
-		'#section-ftr',  
-		".container-el .el", 
-		".container-video .video"
-	);
+	function sectionFtrCarousselMobile(Section, El, Video){
 
-	
+		El = Section + ' ' + El;
+		Video = Section + ' ' + Video;
+		
+
+		$(El).click(function(){
+			var index = $(this).index() + 1;
+			countEl=index;
+
+			var elVideo = Video;
+			$(El + '.active').removeClass('active');
+			$(elVideo).hide().removeClass('active');
+			
+			
+			$(El + ':nth-child('+countEl+')').addClass('active');
+			
+			$(elVideo + '.' + $(El + '.active').data('video')).fadeIn(350).addClass('active');
+
+			var iframe = $(elVideo + '.active' + ' iframe');
+			var player = new Vimeo.Player(iframe);
+			player.play();
+		})
+
+		$(El+ ':nth-child(1)').click();
+
+		
+	};
+
+	if (window.matchMedia("(min-width: 700px)").matches) {
+		sectionFtrCaroussel(
+			10000,
+			'#section-ftr',  
+			".container-el .el", 
+			".container-video .video"
+		);
+		sectionModulesHoverBtn();
+	} else {
+		sectionFtrCarousselMobile(
+			'#section-ftr',  
+			".container-el .el", 
+			".container-video .video"
+		);
+	}
+
 
 	function sectionQuotesCaroussel(Delay, Section, El, Step, Nav){
 
@@ -209,7 +245,7 @@ $(window).on('load', function() {
 		});
 	};
 
-	sectionModulesHoverBtn();
+	
 
 	
 

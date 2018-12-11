@@ -67,6 +67,10 @@ footer{
 							line-height: 25px;
 							opacity: 0.8;
 							text-decoration: underline;
+							transition: all 0.25s ease;
+							&:hover{
+								opacity: 0.5;
+							}
 						}
 					}
 				}
@@ -92,9 +96,13 @@ footer{
 			flex-flow: row wrap;
 			align-items: center;
 			.rs{
+				width: 25px;
 				text-decoration: none;
 				margin-right: 23px;
 				transition: all 0.25s ease;
+				img{
+					width: 100%;
+				}
 				&:last-child{
 					margin-right:0px;
 				}
@@ -103,5 +111,23 @@ footer{
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	footer .container-ul ul{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	footer .foot .cpr{
+		text-align: center;
+	}
+	footer .foot .container-rs{
+		top: initial;
+		transform: translate(0px);
+		width: 100%;
+		bottom: calc(100% + 40px);
+		justify-content: center;
+
 	}
 }
