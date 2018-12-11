@@ -2,7 +2,9 @@
 return [
     "tarifs" => "tarifs",
     "domaine" => "domaine/{slug}",
+    "domaine_root" => "domaine",
     "fonctionnalite" => "fonctionnalite/{slug}",
+    "fonctionnalite_root" => "fonctionnalite",
     "client" => "business-case/{slug}",
     "blog" => "blog",
     "post" => "blog/{slug}",
