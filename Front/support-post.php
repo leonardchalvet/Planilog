@@ -29,7 +29,7 @@
 					<div class="container-title">
 						<div class="container-rslt">
 							<div class="text">
-								Compte et paramètres
+								<span>Compte</span> et paramètres
 							</div>
 							<img src="img/support-list/arrow.svg" alt="">
 						</div>

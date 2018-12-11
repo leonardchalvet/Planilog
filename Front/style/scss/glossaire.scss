@@ -164,7 +164,66 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile) {
 
+	#section-glossaire {
+		padding-top: 0;
+	}
+	#section-glossaire .wrapper {
+		padding: 0;
+	}
+
+	#section-glossaire .wrapper .container-list {
+		width: 100%;
+		padding: 0 25px;
+		padding-top: 120px;
+		background-color: rgba(56,70,122,0.06);
+	}
+	#section-glossaire .wrapper .container-list:before {
+		content: none;
+	}
+	#section-glossaire .wrapper .container-list .container-input {
+		position: relative;
+		z-index: 2;
+		margin-bottom: 30px;
+	}
+	#section-glossaire .wrapper .container-list .container-el {
+		position: relative;
+		z-index: 1;
+		padding: 0;
+		height: 0;
+	}
+	#section-glossaire .wrapper .container-list .container-el.show {
+		height: 240px;
+	}
+	#section-glossaire .wrapper .container-text {
+		width: 100%;
+		padding: 25px;
+		padding-top: 40px;
+	}
+	#section-glossaire .wrapper .container-text h1 {
+		text-align: center;
+		margin-bottom: 115px
+	}
+	#section-glossaire .wrapper .container-text .container-rs {
+		display: flex;
+		justify-content: space-between;
+		width: 200px;
+		right: auto;
+		top: 115px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#section-glossaire .wrapper .container-text .container-rs a {
+		height: 25px;
+	}
+	#section-glossaire .wrapper .container-text>p>img {
+		height: 170px;
+	}
+	#section-glossaire .wrapper .container-text iframe {
+		height: 170px;
+	}
+}
 /*====================================
 =            END GLOSSAIRE           =
 ====================================*/

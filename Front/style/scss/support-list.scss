@@ -122,6 +122,37 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cover .wrapper {
+		padding-top: 110px;
+		padding-bottom: 70px;
+	}
+	#section-cover .container-title .container-rslt {
+		align-items: flex-end;
+	}
+	#section-cover .container-title .container-rslt .text span {
+		display: block;
+	}
+	#section-cover .container-title .container-dropdown .container-el {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#section-cover .container-title .container-dropdown .container-el .el {
+		width: 100%;
+		padding: 18px 0;
+	}
+
+	#section-list .container-list .list {
+		margin-bottom: 70px;
+	}
+	#section-list .container-list .list .container-el .el {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
 /*============================================
 =            END PAGE SUPPORT LIST           =
 ============================================*/

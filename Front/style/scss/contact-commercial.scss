@@ -210,6 +210,37 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-contact {
+		padding-top: 120px;
+	}
+	#section-contact form {
+		margin-top: 75px;
+	}
+	#section-contact form .container-input {
+		flex-direction: column;
+	}
+	#section-contact form .container-input .input {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	#section-contact form .container-input .textarea {
+		margin-top: 0;
+	}
+	#section-contact form .container-rcl {
+		margin-top: 35px;
+	}
+	#section-contact form .container-rcl .title {
+		margin-bottom: 30px;
+	}
+	#section-contact form .container-rcl button {
+		position: relative;
+	    margin: auto;
+	    margin-top: 35px;
+	}
+}
+
 /*==================================================
 =            END PAGE CONTACT COMMERCIAL           =
 ==================================================*/
