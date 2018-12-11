@@ -45,6 +45,15 @@
 		}
 	}
 }
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cookies {
+		padding: 120px 0;
+	}
+
+}
+
 /*=======================================
 =            END PAGE COOKIES           =
 ========================================*/

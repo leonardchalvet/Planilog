@@ -85,7 +85,6 @@
 						</div>
 					</div>
 					<div class="container-text">
-						<img class="obj" src="img/business/icn-quote.svg" alt="">
 						<div class="container-cm-text">
 							<div class="icn"></div>
 							<div class="text">
@@ -124,7 +123,7 @@
 						</div>
 					</div>
 					<div class="container-quote">
-						<div class="icn"></div>
+						<img class="obj" src="img/business/icn-quote.svg" alt="">
 						<div class="quote">
 							Planilog nous a permis de gagner plusieurs mois de capacité de production par an, sans augmenter nos ressources 
 						</div>

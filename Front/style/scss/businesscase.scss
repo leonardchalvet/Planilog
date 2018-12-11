@@ -162,8 +162,11 @@
 	}
 	.container-quote{
 		width: 370px;
-		.icn{
-
+		.obj{
+			display: block;
+			width: 40px;
+			margin: auto;
+			margin-bottom: 25px;
 		}
 		.quote{
 			@include styleH4;
@@ -177,7 +180,79 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile){
 
+	#section-1 {
+		padding-top: 120px;
+		margin-bottom: 70px;
+	}
+	#section-1 .wrapper .container-text {
+		padding: 0 25px;
+		width: 100%;
+	}
+	.container-cm-text {
+		position: relative;
+	}
+	.container-cm-text .icn {
+		position: absolute;
+		top: 10px;
+	}
+	.container-cm-text .text {
+		width: 100%;
+	}
+	#section-1 .wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+	#section-1 .wrapper .container-text .container-pres {
+		transform: translateY(-350px);
+	}
+	#section-1 .wrapper .container-img {
+		position: relative;
+		width: 100%;
+		height: 365px;
+		transform: translateY(275px);
+		right: auto;
+	}
+	.container-cm-text .text h3 {
+		width: 225px;
+    	transform: translateX(70px);
+	}
+
+	#section-2 .wrapper {
+		flex-direction: column;
+		padding: 0;
+	}
+	#section-2 .container-num {
+		padding: 70px 25px;
+		position: relative;
+	    left: 0;
+	    width: 100%;
+	}
+	#section-2 .container-num .container-el {
+		padding: 0;
+	}
+	#section-2 .container-text {
+		padding-right: 25px;
+		padding-left: 25px;
+		width: 100%;
+	}
+
+	#section-3 {
+		margin-top: 0;
+	}
+	#section-3 .wrapper {
+		padding-top: 0;
+	}
+	#section-3 .container-quote {
+		margin-top: 70px;
+		width: 100%;
+	}
+	#section-2 .container-num .container-el .el .num {
+		font-size: 38px;
+	}
+}
 /*===================================
 =            END BUSINESS           =
 ====================================*/

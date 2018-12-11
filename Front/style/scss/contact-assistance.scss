@@ -94,6 +94,22 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-contact {
+		padding-top: 125px;
+	}
+	#section-contact .container-el {
+		flex-direction: column;
+	}
+	#section-contact .container-el .el {
+		width: 100%
+	}
+	#section-contact .container-el .el p {
+		min-height: auto;
+	}
+}
+
 /*=================================================
 =            END PAGE CONTACT ASSITANCE           =
 ==================================================*/
