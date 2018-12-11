@@ -319,6 +319,94 @@
 	width: 32%;
 }
 
+@media screen and (max-width: $breakPoint_mobile){
+	#section-cover .wrapper{
+		padding-top: 130px;
+		padding-bottom: 0px;
+	}
+	#section-cover .shape{
+		width: 100%;
+	}
+	#section-cover .container-cover .container-illu{
+		position: relative;
+		left: initial;
+		bottom: initial;
+		width: 100%;
+	}
+	#section-cover .container-cover .container-illu img{
+		width: 200%;
+		transform: translateX(-12%);
+	}
+	#section-ftr .container-el .el{
+		display: flex;
+		flex-flow: row wrap;
+		padding-left: 80px;
+		position: relative;
+	}
+	#section-ftr .container-el .icn{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	#section-ftr .container-el h3{
+		margin-top: 0px;
+	}
+	#section-ftr .container-el .el:after{
+		content: '';
+		position: absolute;
+		top: 74px;
+		left: 25px;
+		width: 1px;
+		height: calc(100% - 25px);
+		background-color: rgba($colorMain_4, 0.2); 
+
+	}
+	#section-ftr .container-el .el:last-child:after{
+		content: initial;
+	}
+
+	#section-case{
+		padding-bottom: 60px;
+	}
+	#section-case .wrapper{
+		padding-top: 150px;
+	}
+	#section-case .wrapper .container-text .icn img{
+		margin-top: 0px;
+	}
+	#section-case .wrapper .container-stats .container-img{
+		position: absolute;
+		right: 0px;
+		width: 75%;
+		height: 140px;
+		top: -50px;
+	}
+	#section-case .wrapper .container-stats{
+		width: 100%;
+		margin-top: 60px;
+		padding-left: 0px;
+	}
+
+	#section-avantage{
+		padding: 60px 0px 60px 0px;
+	}
+	#section-avantage .wrapper .container-el{
+		padding-right: 0px;
+	}
+	#section-avantage .wrapper .container-el .el{
+		margin-bottom: 12px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	.domaine-production #section-avantage .wrapper .container-el .el{
+		width: 100%;
+	}
+	.domaine-maintenance #section-avantage .wrapper .container-el .el{
+		width: 100%;
+	}
+}
+
 /*=======================================
 =            END PAGE DOMAINE           =
 ========================================*/

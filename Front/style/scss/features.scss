@@ -258,6 +258,40 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile){
+	#section-cover{
+		padding: 130px 0px 70px 0px;
+	}
+	#section-cover .container-illu{
+		width: 100%;
+		height: initial;
+		margin-top: 75px;
+	}
+	#section-cover .container-illu iframe{
+		height: 52vw;
+		position: initial;
+		transform: initial;
+		top: initial;
+	}
+	#section-cover .shape{
+		width: 100%;
+	}
+
+	#section-features{
+		padding: 70px 0px 60px 0px;
+	}
+
+	#section-bnd .container-el{
+		width: 100%;
+		margin-top: 45px;
+	}
+	#section-bnd .container-el .el{
+		width: calc(50% - 4px);
+		margin-bottom: 8px;
+		height: 133px;
+	}
+}
+
 /*========================================
 =            END PAGE FEATURES           =
 ========================================*/

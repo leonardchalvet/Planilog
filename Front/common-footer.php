@@ -67,10 +67,13 @@
 					<img src="img/common/rs-google.svg" alt="">
 				</a>
 				<a class="rs" href="">
-					<img src="img/common/rs-facebook.svg" alt="">
+					<img src="img/common/rs-linkedin.svg" alt="">
 				</a>
 				<a class="rs" href="">
 					<img src="img/common/rs-twitter.svg" alt="">
+				</a>
+				<a class="rs" href="">
+					<img src="img/common/rs-youtube.svg" alt="">
 				</a>
 			</div>
 		</div>
