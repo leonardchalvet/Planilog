@@ -59,6 +59,16 @@
 			</ul>
 		</div>
 		<div class="foot">
+			<div class="container-lg">
+				<div class="lg">
+					<span>Français</span>
+					<img src="img/common/arrow-blue.svg" alt="">
+				</div>
+				<div class="dropdown">
+					<a class="ch-lg">Français</a>
+					<a class="ch-lg">Anglais</a>
+				</div>
+			</div>
 			<div class="cpr">
 				© 2018 Planilog All rights reserved
 			</div>

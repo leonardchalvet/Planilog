@@ -1,71 +1,55 @@
 $(window).on('load', function() {
-    var container = $('#section-blog .container-el');
-    var nextButton = $('#nextButton');
-    var category = nextButton.data("category");
-    if (!category) category = "all";
 
-    $('.filter[data-category='+category+']').addClass('active');
+	if (window.matchMedia("(min-width: 700px)").matches) {
 
-    /*
-    $('#section-blog .container-filter .filter').click(function(){
+		$('#section-blog .container-filter .filter').click(function(){
+			if(!$(this).hasClass('active')) {
+				$('#section-blog .container-filter .filter').removeClass('active');
+				$('#section-blog .container-el').removeClass('anim');
+				$(this).addClass('active');
+				setTimeout(function() {
+					$('#section-blog .container-el').addClass('anim');
+				}, 50);
+			}
+		})
 
-        console.log("CAT " + $(this).data("category"));
+	}
+	else {
 
-        // Hide posts
-        $('#section-blog .container-filter .filter').removeClass('active');
-        container.removeClass('anim').empty();
+		$('#section-blog .container-filter .filter').click(function(){
+			if($(this).is(":first-child"))
+				$(this).toggleClass('show');
+		})
 
-        // Change category, goto page 1
-        nextButton.attr("data-page", 1);
-        nextButton.attr("data-category", $(this).data("category"));
-        // Get posts
-        getPosts();
+		$('#section-blog .container-filter .filter').click(function(){
+			if(!$(this).hasClass('active')) {
+				$('#section-blog .container-filter .filter').removeClass('active show');
+				$('#section-blog .container-el').removeClass('anim');
+				$(this).addClass('active');
 
-        $(this).addClass('active');
-    });
-    */
+				$('#section-blog .container-filter').prepend($(this));
 
-    nextButton.on('click', function() {
-        console.log("NEXT");
-        getPosts();
-    });
+				if($('#section-blog .container-filter .filter:first-child').text().trim() != "Tous") {
+					$('#section-blog .container-filter .filter').each(function(){
+						if($(this).text().trim() == "Tous") {
+							$('#section-blog .container-filter .filter:nth-child(2)').before($(this));
+						}
+					})
+				}
 
-    function getPosts() {
-        var page = nextButton.data("page");
-        console.log("get posts " + category + " " + page, nextButton);
-        // Get posts
-        if (typeof gogo !== 'undefined') {
-            $.ajax({
-                url: posts_url + "?page=" + page + "&category=" + category,
-                success: function (data) {
-                    container.append(data);
-                    showAnim();
-                }
-            });
-        }
-        else {
-            // Show posts
-            setTimeout(function() {
-                container.addClass('anim');
-            }, 50);
-        }
-    }
+				setTimeout(function() {
+					$('#section-blog .container-el').addClass('anim');
+				}, 50);
+			}
+		})
 
-    function showAnim() {
-        var next = container.find('.paginator:last').data("next");
-        if (Number.isInteger(next) && next > 0) {
-            nextButton.data("page", next);
-        }
-        else {
-            // No more content
-            nextButton.remove();
-        }
-        // Show posts
-        setTimeout(function() {
-            container.addClass('anim');
-        }, 50);
-    }
+		$('body').on('click', function(event) { 
+		    if (!$(event.target).closest('#section-blog .container-filter').length) {
+				$('#section-blog .container-filter .filter').removeClass('show');
+		    }
+		});
 
-    //getPosts();
-    showAnim();
-});
+	}
+
+	$('#section-blog .container-filter .filter:nth-child(1)').click();
+})

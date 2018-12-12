@@ -39,7 +39,7 @@
 						</a>
 					</div>
 					<div class="container-illu">
-						<iframe src="https://player.vimeo.com/video/302867153" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/302867153?api=1&background=1&mute=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>

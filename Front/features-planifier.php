@@ -37,7 +37,7 @@
 						</a>
 					</div>
 					<div class="container-illu">
-						<iframe src="https://player.vimeo.com/video/302867175" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/302867175?api=1&background=1&mute=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
@@ -71,32 +71,6 @@
 								Ajoutez manuellement des ordres de travail/fabrication, chantiers ou commandes à votre planning grâce à la fonction glisser / déposer sur la bonne ressource (machines ou personnel).
 							</p>
 						</div>
-                        <div class="el">
-                            <img class="icn" src="img/features/feature-mesurer/icn-performances.svg" alt="">
-                            <h3>
-                                Indicateurs de performance supportés par Planilog
-                            </h3>
-                            <p>
-                                <span class="title">Pour la production industrielle : </span>
-                            </p>
-                            <ul>
-                                <li>Nombre d’unités</li>
-                                <li>Taux de Rebut</li>
-                                <li>Cadences</li>
-                                <li>On-Time Delivery OTD</li>
-                                <li>Temps de cycles / Turn Around Time (TAT)</li>
-                                <li>Taux de rendement Synthétique (TRS) / Overall Equipment </li>
-                                <li>Efficiency (OEE)</li>
-                                <li>On Time In Full - OTIF</li>
-                                <li>Pour la maintenance industrielle : </li>
-                                <li>Temps moyen de réparation des machines </li>
-                                <li>MTTR</li>
-                                <li>Temps moyen entre interventions de maintenance </li>
-                                <li>Temps moyen entre pannes MTBF (GMAO)</li>
-                                <li>Temps moyen de fonctionnement avant panne MTTF</li>
-                            </ul>
-
-                        </div>
 						<div class="el">
 							<img class="icn" src="img/features/feature-planifier/icn-processus.svg" alt="">
 							<h3>
@@ -193,18 +167,6 @@
 								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
 								<h3>
 									Ordonnancer
-								</h3>
-								<a class="btn" href="#">
-									<span class="btn-text">DETAILS</span>
-									<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
-								</a>
-							</div>
-						</div>
-						<div class="el">
-							<div class="content">
-								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
-								<h3>
-									Mesurer
 								</h3>
 								<a class="btn" href="#">
 									<span class="btn-text">DETAILS</span>

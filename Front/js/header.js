@@ -64,6 +64,10 @@ $(window).on('load', function() {
 		$('#cookies').addClass('hide');
 	})
 
+	$('footer .foot .container-lg').click(function(){
+		$(this).find('.dropdown').fadeToggle(250);
+	})
+
 	if (window.matchMedia("(max-width: 700px)").matches) {
 		$('#cookies .wrapper .btn').insertAfter('#cookies .wrapper .text a');
 	};
