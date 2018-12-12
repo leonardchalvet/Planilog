@@ -196,30 +196,21 @@ EOL;
     {
         $glossaire = $this->contentProvider->getGlossaire($this->locale);
 
-        if (count($glossaire) == 0) {
-            abort(404, "Glossary is empty :/");
-        }
-
-        $item = null;
+        $item = $this->contentProvider->getSimplePage('page_glossaire', $this->locale);
+        $item->isRoot = true;
         if ($slug) {
             foreach ($glossaire as $word) {
                 if ($word->uid == $slug) {
                     $item = $word->data;
                     $item->uid = $word->uid;
                     $item->alternate_languages = $word->alternate_languages;
+                    $item->isRoot = false;
 
                     $word->selected = true;
                 } else {
                     $word->selected = false;
                 }
             }
-            if (null == $item) {
-                abort(404, "Missing definition for " . $slug);
-            }
-        }
-        else {
-            $route = route('glossaire_mot', ['slug' => $glossaire[0]->uid]);
-            return response(null, 302)->header('Location', $route);
         }
 
         if ($request->has("debug")) dd($glossaire, $slug, $item);

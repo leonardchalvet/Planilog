@@ -41,19 +41,30 @@ use Prismic\Dom\RichText;
                 </div>
                 <div class="container-text">
 
-                    <h1>@simpleText($doc, word)</h1>
-                    @foreach ($doc->body as $slice)
-                        @include('components.content_text', ['slice', $slice])
-                    @endforeach
+                    @if($doc->isRoot)
 
-                    @component('components.share_links')
-                        @slot('title')
-                            @simpleText($doc, post_title)
-                        @endslot
-                        @slot('url')
-                            {{ route('glossaire_mot', ['slug' => $doc->uid]) }}
-                        @endslot
-                    @endcomponent
+                        {{-- No word selected --}}
+                        <h1>@simpleText($doc, title)</h1>
+                        @richText($doc, desc)
+
+                    @else
+
+                        {{-- Word selected --}}
+                        <h1>@simpleText($doc, word)</h1>
+                        @foreach ($doc->body as $slice)
+                            @include('components.content_text', ['slice', $slice])
+                        @endforeach
+
+                        @component('components.share_links')
+                            @slot('title')
+                                @simpleText($doc, post_title)
+                            @endslot
+                            @slot('url')
+                                {{ route('glossaire_mot', ['slug' => $doc->uid]) }}
+                            @endslot
+                        @endcomponent
+                        
+                    @endif
 
                 </div>
             </div>
