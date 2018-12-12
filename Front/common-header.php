@@ -12,6 +12,7 @@
 	<div class="wrapper">
 		<a class="logo <?php echo($styleHeader); ?>" href="index.php">
 			<img src="img/common/logo.png" alt="">
+			<img src="img/common/logo_white.png" alt="">
 		</a>
 	</div>
 	<div class="container-head">
@@ -123,6 +124,7 @@
 		<div class="wrapper">
 			<a class="logo <?php echo($styleHeader); ?>" href="">
 				<img src="img/common/logo.png" alt="">
+				<img src="img/common/logo_white.png" alt="">
 			</a>
 			<div class="container-action">
 				<div class="container-text">
@@ -222,10 +224,10 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<a href="">
+				<a class="signin" href>
 					<span>SE CONNECTER</span>
 				</a>
-				<a href="">
+				<a class="signup">
 					<span>ESSAI GRATUIT</span>
 				</a>
 			</div>
