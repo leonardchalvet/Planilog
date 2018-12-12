@@ -1,8 +1,43 @@
-<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <circle fill="#FFB400" fill-rule="nonzero" opacity=".2" cx="30" cy="30" r="30"/>
-    <path fill="#FFFCCF" d="M19.6 13l.2 11.3 20.5 10.2-.2-11.3z"/>
-    <path fill="#FFB400" d="M21.4 16.6v6l17 8.3v-6z"/>
-    <path fill="#FFE300" d="M16 16.6v6l17 8.3v-6zM21.4 27.4v5l17 8.4v-5zM21.4 35.4v4.2l17 8.4v-4.2z"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>organisation</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -442.000000)">
+            <g id="1" transform="translate(93.000000, 396.000000)">
+                <g id="picto">
+                    <g id="organisation" transform="translate(45.000000, 46.000000)">
+                        <g id="liste">
+                            <circle id="Oval-4" fill="#FFB400" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                            <g transform="translate(16.000000, 17.000000)">
+                                <polygon id="Shape" fill-opacity="0.5" fill="#FFB400" points="5.35714286 0.0439111018 5.35714286 6 22.3214286 13.9487179 22.3214286 7.99262905"></polygon>
+                                <g id="download">
+                                    <g id="3d-box-corner" transform="translate(0.000000, 0.500000)">
+                                        <polygon id="Shape" fill="#FFE300" points="0.056547619 0.900862069 0.056547619 5.35775862 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFB400" points="17 7.5 17 11.5 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFFCCF" points="17 7.5 1.44940476 0.226293103 0.056547619 0.900862069 15.6071429 8.49580016"></polygon>
+                                    </g>
+                                </g>
+                                <g id="download" transform="translate(5.000000, 10.000000)">
+                                    <g id="3d-box-corner" transform="translate(0.000000, 0.500000)">
+                                        <polygon id="Shape" fill="#FFE300" points="0.056547619 0.900862069 0.056547619 5.35775862 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFB400" points="17 7.5 17 11.5 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFFCCF" points="17 7.5 1.44940476 0.226293103 0.056547619 0.900862069 15.6071429 8.49580016"></polygon>
+                                    </g>
+                                </g>
+                                <g id="download" transform="translate(5.000000, 17.000000)">
+                                    <g id="3d-box-corner" transform="translate(0.000000, 0.500000)">
+                                        <polygon id="Shape" fill="#FFE300" points="0.056547619 0.900862069 0.056547619 5.35775862 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFB400" points="17 7.5 17 11.5 15.6071429 12.6314655 15.6071429 8.17456897"></polygon>
+                                        <polygon id="Shape" fill="#FFFCCF" points="17 7.5 1.44940476 0.226293103 0.056547619 0.900862069 15.6071429 8.49580016"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

@@ -8,12 +8,16 @@ function dropdownHeight(){
 
 $(window).on('load', function() {
 
-	$("#section-cover .wrapper .container-search .container-input input").focusin(function() {
-	  $('#section-cover .wrapper .container-search').addClass('open');
-	  dropdownHeight();
-	});
-	$("#section-cover .wrapper .container-search .container-input input").focusout(function() {
+
+	$(document).click(function(){
 	  $('#section-cover .wrapper .container-search').removeClass('open');
 	});
+
+	$("#section-cover .wrapper .container-search .container-input input").click(function(e) {
+	  $('#section-cover .wrapper .container-search').addClass('open');
+	  e.stopPropagation();
+	  dropdownHeight();
+	});
+	
 })
 

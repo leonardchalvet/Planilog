@@ -1,7 +1,7 @@
 <section id="section-banner">
 	<div class="wrapper">
 		<h2>
-			Vous n’avez pas trouvez la réponse à votre question ?
+			Vous n'avez pas trouvé la réponse à vôtre question ?
 		</h2>
 		<a class="btn" href="#">
 			<span class="btn-text">CONTACTEZ-NOUS</span>

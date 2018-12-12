@@ -29,10 +29,10 @@
 		.container-text{
 			width: 570px;
 			h1{
-				@include styleH1;
+				@include styleH2;
 			}
 			p{
-				@include styleParagraphBig;
+				@include styleParagraphMedium;
 				margin-top: 20px;
 			}
 		}

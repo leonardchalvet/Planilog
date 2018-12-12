@@ -1,9 +1,31 @@
-<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <circle fill="#FFB400" fill-rule="nonzero" opacity=".2" cx="30" cy="30" r="30"/>
-    <path fill="#FFE300" d="M36.7 25.6l-19.6-9.2v22l19.6 9.1z"/>
-    <path fill="#FFB400" d="M41 23.4v22l-4.3 2.1v-22z"/>
-    <path fill="#FFFCCF" d="M41 23.4l-19.6-9.2-4.3 2.2L36.7 26z"/>
-    <path d="M20.4 34.3c0 .4.4 1 .8 1.2l11 5c.4.2.8 0 .8-.5v-5.6c0-.5-.3-1-.8-1.2-.4-.2-.8 0-.8.5v4.8L22 34.2v-4.8c0-.5-.3-1-.8-1.2-.4-.2-.8 0-.8.5v5.6zm6.3-9.2c-.4-.2-.8 0-.8.4v4.9l-1.5-.8c-.5-.2-.6 0-.3.5l2.6 3.8 2.6-1.4c.3-.2.2-.5-.2-.7l-1.6-.7v-4.9c0-.4-.3-1-.8-1.1z" fill="#FFB400" fill-rule="nonzero"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>importation</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-818.000000, -220.000000)">
+            <g id="2" transform="translate(773.000000, 176.000000)">
+                <g id="picto">
+                    <g id="importation" transform="translate(45.000000, 44.000000)">
+                        <g id="picto-download">
+                            <circle id="Oval-4" fill="#FFB400" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                            <g id="download" transform="translate(20.000000, 15.500000)">
+                                <g id="box" transform="translate(0.000000, 0.500000)">
+                                    <polygon id="Rectangle-6" fill="#FFB400" points="14.4444444 10.0384615 20 6.69230769 20 12.271003 14.4444444 15.6171568"></polygon>
+                                    <polygon id="Rectangle-6-Copy-5" fill="#FFB400" points="14.4444444 14.6342519 20 11.288098 20 24.6538462 14.4444444 28"></polygon>
+                                    <polygon id="Rectangle-6-Copy" fill="#FFFCCF" points="14.4444444 10.0384615 20 6.69230769 5.55555556 0 0 3.34615385"></polygon>
+                                    <polygon id="Rectangle-6-Copy-2" fill="#FFE300" points="14.4444444 10.0384615 14.4444444 15.6153846 0 8.92307692 0 3.34615385"></polygon>
+                                    <polygon id="Rectangle-6-Copy-3" fill="#FFE300" points="14.4444444 28 14.4444444 14.6153846 0 7.92307692 0 21.3076923"></polygon>
+                                </g>
+                                <g id="Group-14" transform="translate(4.000000, 11.000000)" fill="#FFB400" fill-rule="nonzero">
+                                    <path d="M2.99986064,0.0864247289 C2.52910273,-0.134613801 2.14747796,0.0808326423 2.14747796,0.590073159 L2.14747796,5.99483784 L0.441823205,5.19396885 C-0.0284435692,4.97316093 -0.14212994,5.20265422 0.192037146,5.71287693 L2.99986064,10 L5.80768414,8.34963419 C6.13999789,8.15430883 6.03207542,7.8188023 5.55789808,7.59615823 L3.85224333,6.79528924 L3.85224333,1.39052455 C3.85224333,0.891328661 3.47390066,0.309004327 2.99986064,0.0864247289 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

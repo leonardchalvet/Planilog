@@ -1,13 +1,35 @@
-<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <circle fill="#FFB400" fill-rule="nonzero" opacity=".2" cx="30" cy="30" r="30"/>
-    <path fill="#FFE300" d="M14 18v5.3l12 6 .4-6z"/>
-    <path fill="#FFB400" d="M31.4 20.1v6L26 29.3v-6z"/>
-    <path fill="#FFFCCF" d="M31.4 20.1l-12-5.4L14 18l12 5.7z"/>
-    <path fill="#FFE300" d="M27.5 35.7V41l12 6 .5-6z"/>
-    <path fill="#FFB400" d="M45 37.8v6L39.4 47v-6z"/>
-    <path fill="#FFFCCF" d="M45 37.8l-12-5.4-5.5 3.3 12 5.7z"/>
-    <path stroke="#FFB400" stroke-linecap="round" d="M28 25l4.8 2.2v6.4"/>
-    <path stroke="#FFB400" stroke-linecap="round" d="M31 32.7l1.8 1.9 2-2"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>gantpicto</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -661.000000)">
+            <g id="1" transform="translate(93.000000, 616.000000)">
+                <g id="picto">
+                    <g id="gantpicto" transform="translate(45.000000, 45.000000)">
+                        <circle id="Oval-4" fill="#FFB400" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                        <g id="priorites" transform="translate(14.000000, 14.000000)">
+                            <g id="Group">
+                                <g id="3d-box-corner">
+                                    <polygon id="Shape" fill="#FFE300" points="0 4.02439024 0 9.28385198 11.9230769 15.2926829 12.4420788 9.22834315"></polygon>
+                                    <polygon id="Shape" fill="#FFB400" points="17.4102564 6.13372582 17.4871795 12.0731707 11.9230769 15.2926829 11.8461538 9.35323802"></polygon>
+                                    <polygon id="Shape" fill="#FFFCCF" points="17.4102564 6.13372582 5.48717949 0.729403425 0 4.02439024 11.9230769 9.65853659"></polygon>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(13.512821, 17.707317)">
+                                <g id="3d-box-corner">
+                                    <polygon id="Shape" fill="#FFE300" points="0 4.02439024 0 9.28385198 11.9230769 15.2926829 12.4420788 9.22834315"></polygon>
+                                    <polygon id="Shape" fill="#FFB400" points="17.4102564 6.13372582 17.4871795 12.0731707 11.9230769 15.2926829 11.8461538 9.35323802"></polygon>
+                                    <polygon id="Shape" fill="#FFFCCF" points="17.4102564 6.13372582 5.48717949 0.729403425 0 4.02439024 11.9230769 9.65853659"></polygon>
+                                </g>
+                            </g>
+                            <polyline id="Path-2" stroke="#FFB400" stroke-width="0.971999987" stroke-linecap="round" fill-rule="nonzero" points="14.0769231 10.9463415 18.8205128 13.154007 18.8205128 19.6390244"></polyline>
+                            <polyline id="Path-3" stroke="#FFB400" stroke-width="0.971999987" stroke-linecap="round" fill-rule="nonzero" points="16.9230769 18.6731707 18.8205128 20.604878 20.7179487 18.6731707"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
