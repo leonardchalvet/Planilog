@@ -85,7 +85,7 @@ use Prismic\Dom\RichText;
                     <div class="container-video">
                         @foreach ($doc->section_ftr_container_el as $outil)
                             <div class="video video-<?= $video_id++ ?>">
-                                <iframe src="https://player.vimeo.com/video/@simpleText($outil, section_ftr_el_video)"
+                                <iframe src="https://player.vimeo.com/video/@simpleText($outil, section_ftr_el_video)?api=1&background=1&mute=0"
                                         frameborder="0"
                                         webkitallowfullscreen
                                         mozallowfullscreen

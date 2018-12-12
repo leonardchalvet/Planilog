@@ -39,7 +39,7 @@ use Prismic\Dom\RichText;
                     </a>
                 </div>
                 <div class="container-illu">
-                    <iframe src="https://player.vimeo.com/video/@simpleText($doc, fct_video)"
+                    <iframe src="https://player.vimeo.com/video/@simpleText($doc, fct_video)?api=1&background=1&mute=0"
                             frameborder="0"
                             webkitallowfullscreen
                             mozallowfullscreen
