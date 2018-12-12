@@ -241,7 +241,7 @@ class PrismicContentProvider
     {
         $response = $this->get('glossaire', $locale, [
             //"tags" => $params['tags'] ?? null,
-            "order" => "[my.glossaire.uid]",
+            "order" => "[my.glossaire.word]",
             //"limit" => $params['limit'] ?? null,
             //"page" => $params['page'] ?? null
         ]);

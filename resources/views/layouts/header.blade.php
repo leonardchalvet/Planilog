@@ -2,12 +2,15 @@
 use Prismic\Dom\RichText;
 ?>
 
-<header id="header-desktop">
+<header id="header-desktop" class="@yield('header_class')">
     <div class="wrapper">
-        <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
+        <a class="logo" href="{{ route('page_home') }}">
             <img src="@imageSrc($header, header_logo)">
             <img src="@imageSrc($header, header_logo_white)">
         </a>
+        @hasSection('container_title')
+            <a class='container-titlePage'>@yield('container_title')</a>
+        @endif
     </div>
 
     <div class="container-head">
@@ -93,10 +96,10 @@ use Prismic\Dom\RichText;
 </header>
 
 
-<header id="header-mobile">
+<header id="header-mobile" class="@yield('header_class')">
     <div class="head">
         <div class="wrapper">
-            <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
+            <a class="logo" href="{{ route('page_home') }}">
                 <img src="@imageSrc($header, header_logo)">
                 <img src="@imageSrc($header, header_logo_white)">
             </a>

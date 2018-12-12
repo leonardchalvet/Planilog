@@ -198,12 +198,14 @@ EOL;
 
         $item = $this->contentProvider->getSimplePage('page_glossaire', $this->locale);
         $item->isRoot = true;
+        $title = $item->title;
         if ($slug) {
             foreach ($glossaire as $word) {
                 if ($word->uid == $slug) {
                     $item = $word->data;
                     $item->uid = $word->uid;
                     $item->alternate_languages = $word->alternate_languages;
+                    $item->title = $title;
                     $item->isRoot = false;
 
                     $word->selected = true;

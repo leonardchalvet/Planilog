@@ -12,6 +12,7 @@ use Prismic\Dom\RichText;
 
 @section('style', asset('css/blog.css'))
 @section('header_class', '')
+@section('container_title', 'Blog')
 
 @section('content')
     

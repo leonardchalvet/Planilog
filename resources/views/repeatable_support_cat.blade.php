@@ -12,12 +12,14 @@ use Prismic\Dom\RichText;
 
 @section('style', asset('css/support-list.css'))
 @section('header_class', 'style-white')
+@section('container_title', $support->support_title)
 
 @section('content')
 
     <main>
 
         <section id="section-cover">
+            <div class="background" style="background-image: url({{ asset('img/common/pattern-cover.png') }});"></div>
             <div class="wrapper">
                 <div class="container-title">
                     <div class="container-rslt">

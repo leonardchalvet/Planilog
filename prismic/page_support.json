@@ -45,6 +45,12 @@
         "label": "Titre"
       }
     },
+    "support_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre 2"
+      }
+    },
     "cover_search": {
       "type": "Text",
       "config": {
