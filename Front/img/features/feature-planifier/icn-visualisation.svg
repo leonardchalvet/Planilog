@@ -1,22 +1,25 @@
-<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <path d="M2.7 0l18 7.2v17.1c-10.8-5.4-17-7.2-18.9-5.4C0 20.7.3 14.4 2.8 0z" id="a"/>
-  </defs>
-  <g fill="none" fill-rule="evenodd">
-    <circle fill="#FFB400" fill-rule="nonzero" opacity=".2" cx="30" cy="30" r="30"/>
-    <path d="M39.9 21.1l-12-4.9a2.2 2.2 0 0 0-3 2V33a5 5 0 0 0 3.2 4.7l12 4.9a2.2 2.2 0 0 0 2.9-2V25.8a5 5 0 0 0-3.1-4.7z" fill="#FFB400"/>
-    <path d="M24.7 20l5.9 2.4V22a1.3 1.3 0 0 1 1.8-1.3c.8.3 1.3 1.1 1.3 2v1l1 .4c2.2.9 3.6 3 3.6 5.3v14.8a2.8 2.8 0 0 1-4 2.6l-12.8-5.3a4.3 4.3 0 0 1-2.7-4V21.9a2.8 2.8 0 0 1 2.8-2.8v-.6a1.3 1.3 0 0 1 1.8-1.3c.8.3 1.3 1.1 1.3 2v.9z" stroke="#FFF0CC" stroke-width="1.3" fill="#FFB400" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M32.6 25.6l-12-4.9a2.2 2.2 0 0 0-2.9 2v15.8c0 1.4.9 2.8 2.2 3.3l12.9 5.3a2.2 2.2 0 0 0 3-2V30.3a5 5 0 0 0-3.2-4.7z" fill="#FFE300"/>
-    <g transform="translate(15 26.7)">
-      <mask id="b" fill="#fff">
-        <use xlink:href="#a"/>
-      </mask>
-      <path d="M17.6-1l-12-5a2.2 2.2 0 0 0-2.9 2v15.8c0 1.4.9 2.8 2.2 3.3l12.9 5.3a2.2 2.2 0 0 0 3-2V3.6a5 5 0 0 0-3.2-4.7z" fill="#FFFCCF" mask="url(#b)"/>
-      <g mask="url(#b)" fill="#FFB400">
-        <path d="M5.4 6.7c4.1-3 7.7-1.5 11.8 5-4.5 2.9-7.6 1.6-11.8-5zm5.9 0c1.3.5 2.4 2 2.4 3.5 0 1.4-1 2-2.4 1.5a4.2 4.2 0 0 1-2.4-3.5c0-1.4 1-2 2.4-1.5z"/>
-        <path d="M11.3 10.7c.8.3 1.4 0 1.4-.9 0-.8-.6-1.7-1.4-2-.8-.3-1.4 0-1.4.9 0 .8.6 1.7 1.4 2z"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>visualisation</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -1101.000000)">
+            <g id="1" transform="translate(93.000000, 1056.000000)">
+                <g id="picto">
+                    <g id="visualisation" transform="translate(45.000000, 45.000000)">
+                        <circle id="Oval-4" fill="#FFB400" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
+                        <g id="Group-4" transform="translate(20.000000, 18.000000)">
+                            <polygon id="Rectangle-6" fill="#FFB400" points="14.4444444 10.0384615 20 6.69230769 20 12.271003 14.4444444 15.6171568"></polygon>
+                            <polygon id="Rectangle-6-Copy-5" fill="#FFB400" points="14.4444444 14.6342519 20 11.288098 20 24.6538462 14.4444444 28"></polygon>
+                            <polygon id="Rectangle-6-Copy" fill="#FFFCCF" points="14.4444444 10.0384615 20 6.69230769 5.55555556 0 0 3.34615385"></polygon>
+                            <polygon id="Rectangle-6-Copy-2" fill="#FFE300" points="14.4444444 10.0384615 14.4444444 15.6153846 0 8.92307692 0 3.34615385"></polygon>
+                            <polygon id="Rectangle-6-Copy-3" fill="#FFE300" points="14.4444444 28 14.4444444 14.6153846 0 7.92307692 0 21.3076923"></polygon>
+                            <polygon id="Rectangle-6-Copy-4" fill="#FFFFFF" points="4.84067761 12.9507739 4.84067761 9.26510133 1.67244144 7.76828082 1.67244144 11.5637419"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
     </g>
-    <path d="M22.2 18.6a.7.7 0 0 0-.9.7V22c0 .6.4 1.1 1 1.3a.7.7 0 0 0 .8-.6V20c0-.6-.3-1.1-.9-1.4zM31.3 22.2a.7.7 0 0 0-1 .7v2.7c0 .6.4 1.1 1 1.3a.7.7 0 0 0 .9-.6v-2.7c0-.6-.4-1.1-1-1.4z" fill="#FFE300"/>
-  </g>
 </svg>

@@ -19,7 +19,8 @@
 
 		<?php 
 			$styleHeader = "style-dark";
-			include('common-header.php'); 
+			$containerTitle = "<a class='container-titlePage'>Blog</a>";
+			include('common-header.php') 
 		?> 
 
 		<main>

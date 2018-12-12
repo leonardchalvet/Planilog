@@ -5,12 +5,25 @@
 ===================================*/
 
 #section-cover{
+	position: relative;
 	padding: 185px 0px 125px 0px;
 	background-color: $colorMain_1;
+	.background{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		opacity: 0.5;
+	}
 	.wrapper{
 		@include styleGrid1;
 		position: relative;
 		text-align: center;
+		z-index: 1;
 		h1{
 			@include styleH3;
 			color: #FFF;

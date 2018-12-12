@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
-    <title>446AE96E-0512-44BD-8DED-A64398F92818</title>
-    <desc>Created with sketchtool.</desc>
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>performances</title>
+    <desc>Created with Sketch.</desc>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-818.000000, -2991.000000)">
             <g id="2" transform="translate(773.000000, 2946.000000)">
                 <g id="picto">
                     <g id="performances" transform="translate(45.000000, 45.000000)">
                         <circle id="Oval-4" fill="#FB6D6D" fill-rule="nonzero" opacity="0.2" cx="30" cy="30" r="30"></circle>
-                        <g id="Group" transform="translate(16.000000, 14.000000)">
+                        <g id="Group-4" transform="translate(20.000000, 16.000000)">
+                            <polygon id="Rectangle-6" fill="#FB6D6D" points="14.4444444 10.0384615 20 6.69230769 20 12.271003 14.4444444 15.6171568"></polygon>
+                            <polygon id="Rectangle-6-Copy-5" fill="#FB6D6D" points="14.4444444 14.6342519 20 11.288098 20 24.6538462 14.4444444 28"></polygon>
+                            <polygon id="Rectangle-6-Copy" fill="#FFCBFE" points="14.4444444 10.0384615 20 6.69230769 5.55555556 0 0 3.34615385"></polygon>
+                            <polygon id="Rectangle-6-Copy-2" fill="#FFA6B0" points="14.4444444 10.0384615 14.4444444 15.6153846 0 8.92307692 0 3.34615385"></polygon>
+                            <polygon id="Rectangle-6-Copy-3" fill="#FFA6B0" points="14.4444444 28 14.4444444 14.6153846 0 7.92307692 0 21.3076923"></polygon>
+                        </g>
+                        <g id="Group" transform="translate(20.000000, 28.000000)" fill-rule="nonzero">
                             <g id="3d-box-corner" transform="translate(0.903226, 0.894737)">
-                                <path d="M24.4284095,10.4358665 L3.55674388,0.564967767 C3.1554841,0.37519879 2.67636063,0.54664596 2.48659165,0.947905737 C2.43578758,1.05532914 2.40943678,1.17268172 2.40943678,1.29151286 L2.40943678,18.7334117 C2.40943678,19.3549433 2.76775768,19.9207776 3.32962246,20.1865019 L24.2012881,30.0574007 C24.6025479,30.2471696 25.0816714,30.0757225 25.2714403,29.6744627 C25.3222444,29.5670393 25.3485952,29.4496867 25.3485952,29.3308556 L25.3485952,20.5342105 L25.3485952,11.8889567 C25.3485952,11.2674251 24.9902743,10.7015909 24.4284095,10.4358665 Z" id="Shape" fill="#FB6D6D"></path>
-                                <path d="M22.0519787,12.0463928 L1.18031308,2.17549408 C0.7790533,1.98572511 0.299929829,2.15717228 0.110160853,2.55843205 C0.0593567829,2.66585546 0.0330059834,2.78320803 0.0330059834,2.90203918 L0.0330059834,20.3439381 C0.0330059834,20.9654696 0.391326882,21.5313039 0.953191662,21.7970282 L21.8248573,31.667927 C22.2261171,31.8576959 22.7052406,31.6862488 22.8950095,31.284989 C22.9458136,31.1775656 22.9721644,31.060213 22.9721644,30.9413819 L22.9721644,22.1447368 L22.9721644,13.499483 C22.9721644,12.8779514 22.6138435,12.3121172 22.0519787,12.0463928 Z" id="Shape" fill="#FFA6B0"></path>
-                                <polyline id="Path-23" stroke="#FFCBFE" stroke-width="1.70999993" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="1.5842872 19.3263158 6.31770905 15.3 9.15776215 21.7421053 15.7845527 15.3 16.7312371 17.7157895 21.4646589 13.6894737"></polyline>
-                                <ellipse id="Oval" stroke="#FB6D6D" stroke-width="0.803699967" fill="#FB6D6D" fill-rule="nonzero" cx="1.31829536" cy="19.4534626" rx="1" ry="1"></ellipse>
-                                <ellipse id="Oval" stroke="#FB6D6D" stroke-width="0.803699967" fill="#FB6D6D" fill-rule="nonzero" cx="21.5971715" cy="13.5199446" rx="1" ry="1"></ellipse>
+                                <polyline id="Path-23" stroke="#FFCBFE" stroke-width="0.923399884" stroke-linecap="round" stroke-linejoin="round" points="1 3.8 3.61904762 1.8 5.19047619 5 8.85714286 1.8 9.38095238 3 12 1"></polyline>
+                                <circle id="Oval" stroke="#FB6D6D" stroke-width="0.5" fill="#FB6D6D" cx="0.5" cy="4.5" r="1"></circle>
+                                <circle id="Oval" stroke="#FB6D6D" stroke-width="0.5" fill="#FB6D6D" cx="12.5" cy="0.5" r="1"></circle>
                             </g>
                         </g>
                     </g>

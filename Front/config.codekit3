@@ -189,6 +189,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/business/arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/business/arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/business/cover-1.png": {
 		"ft": 32768,
 		"iS": 1036381,
@@ -332,6 +342,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common/logo_white.png": {
+		"ft": 32768,
+		"iS": 7198,
+		"oA": 0,
+		"oAP": "/img/common/logo_white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common/notif-info.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -351,6 +372,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/img/common/pattern-cover.png": {
+		"ft": 32768,
+		"iS": 77579,
+		"oA": 0,
+		"oAP": "/img/common/pattern-cover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/common/rs-facebook.svg": {
 		"ft": 2097152,

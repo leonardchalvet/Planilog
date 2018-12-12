@@ -351,6 +351,7 @@ main
 
 			/*----------  COMMON STYLE  ----------*/
 			@mixin styleButton{
+				border: none;
 				cursor: pointer;
 			  	padding: 18px 30px 18px 30px;
 			  	border-radius: 4px;
