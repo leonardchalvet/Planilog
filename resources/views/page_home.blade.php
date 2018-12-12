@@ -18,7 +18,7 @@ use Prismic\Dom\RichText;
     <main>
 
         <section id="section-cover">
-            <img class="background" src="@imageSrc($doc, cover_img)">
+
             <img class="shape" src="{{ asset('img/home/sectionCover/shape.svg') }}">
             <div class="wrapper">
                 <div class="container-cover">
@@ -33,7 +33,7 @@ use Prismic\Dom\RichText;
                         </a>
                     </div>
                     <div class="container-illu">
-
+                        <img class="background" src="@imageSrc($doc, cover_img)">
                     </div>
                 </div>
                 <div class="container-logo">

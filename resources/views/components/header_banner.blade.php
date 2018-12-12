@@ -21,6 +21,7 @@ use Prismic\Dom\RichText;
         if (s === "on") {
             $("#banner").show();
             $("#header-desktop").addClass("banner-active");
+            $("#header-mobile").addClass("banner-active");
         }
         $("#banner").on('click', '.cross', function() {
            if (c !== "off") {

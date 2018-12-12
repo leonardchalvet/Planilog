@@ -91,6 +91,95 @@ use Prismic\Dom\RichText;
     </div>
 </header>
 
+
+<header id="header-mobile">
+    <div class="head">
+        <div class="wrapper">
+            <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
+                <img src="@imageSrc($header, header_logo)">
+            </a>
+            <div class="container-action">
+                <div class="container-text">
+                    <div class="text open">MENU</div>
+                    <div class="text close">FERMER</div>
+                </div>
+                <div class="container-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-link">
+        <div class="wrapper">
+            <div class="list-link">
+                <div class="link">
+                    <a>
+                        <span>@simpleText($header, header_menu_outils)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                    </a>
+                    <div class="container-el">
+                        @foreach($header->header_outils_container_el as $outil)
+                            <a class="el"
+                               href="@linkSrc($outil, header_outils_el_link)"
+                                    @linkTarget($outil, header_outils_el_link)>
+                                <img class="icn" src="@imageSrc($outil, header_outils_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($outil, header_outils_el_title)</h3>
+                                    @richText($outil, header_outils_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="link">
+                    <a>
+                        <span>@simpleText($header, header_menu_modules)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                    </a>
+                    <div class="container-el">
+                        @foreach($header->header_modules_container_el as $module)
+                            <a class="el"
+                               href="@linkSrc($module, header_modules_el_button_link)"
+                                    @linkTarget($module, header_modules_el_button_link)>
+                                <img class="icn" src="@imageSrc($module, header_modules_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($module, header_modules_el_title)</h3>
+                                    @richText($module, header_modules_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="@linkSrc($header, header_menu_tarifs_link)"
+                            @linkTarget($header, header_menu_tarifs_link)>
+                        <span>@simpleText($header, header_menu_tarifs)</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="@linkSrc($header, header_menu_contact_link)"
+                            @linkTarget($header, header_menu_contact_link)>
+                        <span>@simpleText($header, header_menu_contact)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container-action">
+                <a href="@linkSrc($header, header_menu_login_link)"
+                        @linkTarget($header, header_menu_login_link)>
+                    <span>@simpleText($header, header_menu_login)</span>
+                </a>
+                <a class="signup">
+                    @simpleText($header, header_menu_essai)
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
 <div id="lightbox-subscribe">
 
     <div class="background"></div>
