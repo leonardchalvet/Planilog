@@ -74,6 +74,21 @@
 			transition: transform 1s cubic-bezier(.23, 1, .32, 1);
 			img{
 				height: 100%;
+
+				&:last-child {
+					display: none;
+				}
+			}
+
+			&.style-white {
+				img {
+					&:first-child {
+						display: none;
+					}
+					&:last-child {
+						display: block;
+					}
+				}
 			}
 		}
 	}
@@ -259,6 +274,17 @@
 			transform: translateY(20px);
 			.logo{
 				transform: translateX(-10%) scale(0.8);
+			
+				&.style-white {
+					img {
+						&:first-child {
+							display: block;
+						}
+						&:last-child {
+							display: none;
+						}
+					}
+				}
 			}
 		}
 		.container-head{
@@ -311,6 +337,29 @@
 				display: block;
 				img{
 					height: 100%;
+
+					&:last-child {
+						display: none;
+					}
+				}
+
+				&.style-white {
+					img {
+						&:first-child {
+							display: none;
+						}
+						&:last-child {
+							display: block;
+						}
+					}
+				}
+				&.style-white ~ .container-action {
+					.container-text .text {
+						color: #fff;
+					}
+					.container-burger .line {
+						background-color: #fff;
+					}
 				}
 			}
 			.container-action{
@@ -510,6 +559,28 @@
 			box-shadow: 0 3px 22px 0 rgba(56,70,122,0.15);
 		}
 	}
+	&.open, &.scroll {
+		.head .wrapper .logo {
+			&.style-white {
+				img {
+					&:first-child {
+						display: block;
+					}
+					&:last-child {
+						display: none;
+					}
+				}
+			}
+			&.style-white ~ .container-action {
+				.container-text .text {
+					color: $colorMain_1;
+				}
+				.container-burger .line {
+					background-color: $colorMain_1;
+				}
+			}
+		}
+	}
 	&.banner-active{
 		transform: translateY(40px);
 	}
@@ -650,6 +721,39 @@
 			transform: translate(-50%, -50%) translateZ(10px);
 		}
 	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	
+	#lightbox-subscribe {
+		position: fixed;
+		perspective: initial;
+		overflow-y: scroll;
+	}
+	#lightbox-subscribe .container-subscribe {
+		top: 0;
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	#lightbox-subscribe.show .container-subscribe {
+		transform: translateX(-50%);
+	}
+	#lightbox-subscribe .container-subscribe .container-form {
+		width: 100%;
+	}
+	#lightbox-subscribe .container-subscribe .container-form form .container-input {
+		flex-direction: column;
+	}
+	#lightbox-subscribe .container-subscribe .container-form form .container-input .input {
+		width: 100%;
+	}
+	#lightbox-subscribe .container-subscribe .container-desc {
+		width: 100%;
+		padding: 60px 30px;
+	}
+	#lightbox-subscribe .container-subscribe .container-form form button {
+		margin-top: 30px;
+	}
+
 }
 
 /*===================================

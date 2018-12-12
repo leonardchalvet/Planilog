@@ -18,7 +18,7 @@
 	<body>
 
 		<?php 
-			$styleHeader = "style-dark";
+			$styleHeader = "style-white";
 			include('common-header.php'); 
 		?> 
 
