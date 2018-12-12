@@ -32,10 +32,13 @@ $(window).on('load', function() {
 		$('#header-desktop .li-dropdown .dropdown').removeClass('displayBlock');
 	})
 
-	$('#header-desktop .container-head .container-action .signup').click(function(){
+	$('#header-desktop .container-head .container-action .signup').click(function(){ openLightboxSubscribe(); })
+	$('#header-mobile .container-link .container-action .signup').click(function(){ openLightboxSubscribe(); })
+
+	function openLightboxSubscribe() {
 		$('#lightbox-subscribe').addClass('displayBlock').outerWidth();
 		$('#lightbox-subscribe').addClass('show').outerWidth();
-	})
+	}
 
 	$('#header-mobile .head .wrapper .container-action').click(function(){
 		$('#header-mobile').toggleClass('open');
