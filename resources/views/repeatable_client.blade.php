@@ -67,7 +67,6 @@ use Prismic\Dom\RichText;
                 </div>
 
                 <div class="container-text">
-                    <img class="obj" src="{{ asset('img/business/icn-quote.svg') }}">
                     <div class="container-cm-text">
                         <div class="icn"></div>
                         <div class="text">
@@ -91,7 +90,7 @@ use Prismic\Dom\RichText;
                     </div>
                 </div>
                 <div class="container-quote">
-                    <div class="icn"></div>
+                    <img class="obj" src="{{ asset('img/business/icn-quote.svg') }}">
                     <div class="quote">
                         @richText($doc, quote_text)
                     </div>

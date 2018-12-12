@@ -13,6 +13,12 @@
         "label": "Header Logo"
       }
     },
+    "header_logo_white": {
+      "type": "Image",
+      "config": {
+        "label": "Header Logo (Blanc)"
+      }
+    },
     "header_menu_outils": {
       "type": "Text",
       "config": {

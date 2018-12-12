@@ -11,7 +11,7 @@ use Prismic\Dom\RichText;
 @section('og_image', property_exists($doc->seo_og_image, 'url') ? $doc->seo_og_image->url : "")
 
 @section('style', asset('css/support-post.css'))
-@section('header_class', 'style-dark')
+@section('header_class', 'style-white')
 
 @section('content')
 
@@ -22,7 +22,8 @@ use Prismic\Dom\RichText;
                 <div class="container-title">
                     <div class="container-rslt">
                         <div class="text">
-                            @simpleText($cat, support_title)
+                            {{-- first word in <span> --}}
+                            <?= nl2br(preg_replace('/([^[:space:]]*)(.*)/', "<span>$1</span>$2", $cat->support_title)); ?>
                         </div>
                         <img src="{{ asset('img/support-list/arrow.svg') }}">
                     </div>

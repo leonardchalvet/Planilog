@@ -11,7 +11,7 @@ use Prismic\Dom\RichText;
 @section('og_image', property_exists($doc->seo_og_image, 'url') ? $doc->seo_og_image->url : "")
 
 @section('style', asset('css/support.css'))
-@section('header_class', 'style-dark')
+@section('header_class', 'style-white')
 
 @section('content')
 

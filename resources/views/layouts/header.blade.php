@@ -6,6 +6,7 @@ use Prismic\Dom\RichText;
     <div class="wrapper">
         <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
             <img src="@imageSrc($header, header_logo)">
+            <img src="@imageSrc($header, header_logo_white)">
         </a>
     </div>
 
@@ -97,6 +98,7 @@ use Prismic\Dom\RichText;
         <div class="wrapper">
             <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
                 <img src="@imageSrc($header, header_logo)">
+                <img src="@imageSrc($header, header_logo_white)">
             </a>
             <div class="container-action">
                 <div class="container-text">
@@ -166,7 +168,7 @@ use Prismic\Dom\RichText;
                 </div>
             </div>
             <div class="container-action">
-                <a href="@linkSrc($header, header_menu_login_link)"
+                <a class="signin" href="@linkSrc($header, header_menu_login_link)"
                         @linkTarget($header, header_menu_login_link)>
                     <span>@simpleText($header, header_menu_login)</span>
                 </a>
