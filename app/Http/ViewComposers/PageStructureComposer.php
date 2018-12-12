@@ -2,6 +2,7 @@
 
 namespace app\Http\ViewComposers;
 
+use App\Http\Services\AlternateLangResolver;
 use App\Http\Services\PrismicContentProvider;
 use App\Http\Services\PrismicLinkResolver;
 use Barryvdh\Debugbar\Facade as Debugbar;
@@ -20,17 +21,26 @@ class PageStructureComposer
      * @var PrismicLinkResolver
      */
     private $linkResolver;
+    /**
+     * @var AlternateLangResolver
+     */
+    private $alternateLangResolver;
 
     /**
      * PageStructureComposer constructor.
      * @param PrismicLinkResolver $linkResolver
      * @param PrismicContentProvider $contentProvider
+     * @param AlternateLangResolver $alternateLangResolver
      */
-    public function __construct(PrismicLinkResolver $linkResolver, PrismicContentProvider $contentProvider)
+    public function __construct(PrismicLinkResolver $linkResolver,
+                                PrismicContentProvider $contentProvider,
+                                AlternateLangResolver $alternateLangResolver
+    )
     {
         $this->locale = config('laravellocalization.prismic_locales')[LaravelLocalization::getCurrentLocale()];
         $this->contentProvider = $contentProvider;
         $this->linkResolver = $linkResolver;
+        $this->alternateLangResolver = $alternateLangResolver;
     }
 
     /**
@@ -41,6 +51,7 @@ class PageStructureComposer
     {
         // Link resolver
         $view->with('linkResolver', $this->linkResolver);
+        $view->with('alternateLangResolver', $this->alternateLangResolver);
 
         // Get translation from prismic
         //$translations = $this->contentProvider->getLayout('translations', $this->locale);

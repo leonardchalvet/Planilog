@@ -55,7 +55,25 @@ use Prismic\Dom\RichText;
                 </li>
             </ul>
         </div>
+
+
         <div class="foot">
+
+            {{-- Language selector --}}
+            <div class="container-lg">
+                <div class="lg">
+                    <span>{{ LaravelLocalization::getCurrentLocaleNative() }}</span>
+                    <img src="{{ asset('img/common/arrow-blue.svg') }}">
+                </div>
+                <div class="dropdown">
+                    @foreach($alternateLangResolver->getAlternateLang($doc->alternate_languages) as $alt)
+                        <a class="ch-lg" href="{{ $alt["url"] }}">
+                            {{ $alt["locale_name"] }}
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
             <div class="cpr">
                 © 2018 Planilog All rights reserved
             </div>

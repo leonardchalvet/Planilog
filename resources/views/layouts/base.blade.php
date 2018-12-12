@@ -34,23 +34,11 @@
     --}}
 
     {{-- alternate languages --}}
-    {{-- Erk, c'est moche :( --}}
-    <?php $locales = array_flip(Config::get('laravellocalization.prismic_locales')); ?>
-    @foreach($doc->alternate_languages as $alt)
-        <!-- -->
-        <link rel="alternate"
-              href="{{ LaravelLocalization::getLocalizedURL($locales[$alt->lang], $linkResolver->resolve($alt)) }}"
-              hreflang="<?= $alt->lang ?>" />
+    @foreach($alternateLangResolver->getAlternateLang($doc->alternate_languages) as $alt)
+        @continue($alt["hreflang"] == null)
+        <link rel="alternate" href="{{ $alt["url"] }}" hreflang="{{ $alt["hreflang"] }}" />
     @endforeach
-
-    {{-- canonical url --}}
-    @if (isset($lang) && $lang != LaravelLocalization::getCurrentLocale())
-        {{-- if language is defined (on articles) --}}
-        <link rel="canonical" href="{{ LaravelLocalization::getLocalizedURL($lang) }}" />
-    @else
-        {{-- else, canonical url is current url --}}
-        <link rel="canonical" href="{{ URL::current() }}" />
-    @endif
+    <!-- <link rel="canonical" href="{{ URL::current() }}" /> -->
 
 </head>
 
