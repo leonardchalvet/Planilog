@@ -295,6 +295,10 @@ EOL;
         $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
         $categories = $this->contentProvider->getSupportCategories($this->locale);
 
+        if (!property_exists($document->support_category, "uid")) {
+            abort(404, "Orphan support post");
+        }
+
         // Redirect to right route
         if ($cat !== $document->support_category->uid) {
             $url = route("support_post", [
