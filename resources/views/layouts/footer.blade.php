@@ -47,7 +47,7 @@ use Prismic\Dom\RichText;
                         <div class="pp" style="background-image: url(@imageSrc($footer, footer_menu_contact_image))"></div>
                         <div class="text">
                             @richText($footer, footer_menu_contact_paragraph)
-                            <a href="mailto:@simpleText($footer, footer_menu_contact_link)">
+                            <a href="{{ route('page_contact_commercial') }}">
                                 @simpleText($footer, footer_menu_contact_text)
                             </a>
                         </div>

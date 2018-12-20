@@ -105,24 +105,10 @@
         "label": "Header Menu Tarifs"
       }
     },
-    "header_menu_tarifs_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Tarifs Link",
-        "allowTargetBlank": true
-      }
-    },
     "header_menu_contact": {
       "type": "Text",
       "config": {
         "label": "Header Menu Contact"
-      }
-    },
-    "header_menu_contact_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Contact Link",
-        "allowTargetBlank": true
       }
     },
     "header_menu_login": {

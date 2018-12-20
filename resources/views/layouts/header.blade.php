@@ -64,8 +64,7 @@ use Prismic\Dom\RichText;
             <li>
                 <div class="container-text">
                     <a class="title"
-                       href="@linkSrc($header, header_menu_tarifs_link)"
-                       @linkTarget($header, header_menu_tarifs_link)>
+                       href="{{ route('page_tarifs') }}">
                     @simpleText($header, header_menu_tarifs)
                     </a>
                 </div>
@@ -73,8 +72,7 @@ use Prismic\Dom\RichText;
             <li>
                 <div class="container-text">
                     <a class="title"
-                       href="@linkSrc($header, header_menu_contact_link)"
-                       @linkTarget($header, header_menu_contact_link)>
+                       href="{{ route('page_contact_commercial') }}">
                         @simpleText($header, header_menu_contact)
                     </a>
                 </div>
