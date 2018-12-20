@@ -65,9 +65,12 @@
 <style>
     @keyframes blink { 50% { outline: 1px solid red; } }
     /*.emptyLink{ animation: blink 2s step-end infinite alternate; }*/
-    .emptyLink { outline: 2px solid #6eff64; }
+    .emptyLink:not(.logo) { outline: 2px solid #6eff64; }
 </style>
-<script>$('a[href="#"]').addClass("emptyLink");</script>
+<script>
+    $('a[href="#"]').addClass("emptyLink");
+    $('a[href="{{ LaravelLocalization::getLocalizedURL(null, "/") }}"]').addClass("emptyLink");
+</script>
 
 
 {{--  Prismic Toolbar for previews --}}
