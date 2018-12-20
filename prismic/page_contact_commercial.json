@@ -48,7 +48,8 @@
     "cover_paragraph": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     },
@@ -67,7 +68,8 @@
     "cover_assistance": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, hyperlink",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Déjà client ?"
       }
     }

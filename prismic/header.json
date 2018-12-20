@@ -44,7 +44,7 @@
           "header_outils_el_paragraph": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, em, strong",
               "label": "Menu Outils El Paragraph"
             }
           },
@@ -84,7 +84,7 @@
           "header_modules_el_paragraph": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, em, strong",
               "label": "Menu Modules El Paragraph"
             }
           },
@@ -155,7 +155,7 @@
     "form_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em, hyperlink, image",
+        "multi": "paragraph, strong, em, hyperlink",
         "allowTargetBlank": true,
         "label": "Description"
       }
@@ -187,7 +187,7 @@
     "form_gcu": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em, hyperlink, image",
+        "multi": "paragraph, strong, em, hyperlink",
         "allowTargetBlank": true,
         "label": "Texte CGU"
       }

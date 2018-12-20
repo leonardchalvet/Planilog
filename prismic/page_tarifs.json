@@ -48,14 +48,16 @@
     "tarifs_desc_1": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     },
     "tarifs_desc_2": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description 2"
       }
     },
@@ -68,7 +70,8 @@
     "tarif_standard_paragraph": {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi" : "paragraph, em, strong, hyperlink",
+        "allowTargetBlank": true,
         "label": "Standard - Description"
       }
     },
@@ -129,7 +132,8 @@
     "tarif_business_paragraph": {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi" : "paragraph, em, strong, hyperlink",
+        "allowTargetBlank": true,
         "label": "Business - Description"
       }
     },
@@ -190,7 +194,8 @@
     "tarif_premium_paragraph": {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi" : "paragraph, em, strong, hyperlink",
+        "allowTargetBlank": true,
         "label": "Premium - Description"
       }
     },
@@ -252,7 +257,8 @@
     "free_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     },
@@ -328,7 +334,8 @@
               "réponse": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, strong, em",
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true,
                   "label": "Réponse"
                 }
               }

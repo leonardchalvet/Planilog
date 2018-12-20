@@ -60,7 +60,8 @@
     "support_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     }

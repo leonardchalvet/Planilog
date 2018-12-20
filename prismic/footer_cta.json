@@ -18,7 +18,8 @@
     "footer_cta_paragraph": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Footer CTA Paragraph"
       }
     },
