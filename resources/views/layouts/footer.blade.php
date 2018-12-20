@@ -62,12 +62,14 @@ use Prismic\Dom\RichText;
             {{-- Language selector --}}
             <div class="container-lg">
                 <div class="lg">
-                    <span>{{ LaravelLocalization::getCurrentLocaleNative() }}</span>
+                    <span style="text-transform: capitalize">{{ LaravelLocalization::getCurrentLocaleNative() }}</span>
                     <img src="{{ asset('img/common/arrow-blue.svg') }}">
                 </div>
                 <div class="dropdown">
                     @foreach($alternateLangResolver->getAlternateLang($doc->alternate_languages) as $alt)
-                        <a class="ch-lg" href="{{ $alt["url"] }}">
+                        <a class="ch-lg"
+                           href="{{ $alt["url"] }}"
+                           style="text-transform: capitalize">
                             {{ $alt["locale_name"] }}
                         </a>
                     @endforeach
