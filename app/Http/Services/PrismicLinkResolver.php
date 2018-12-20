@@ -69,7 +69,7 @@ class PrismicLinkResolver extends LinkResolver
 
         // Localized link
         $locale = $this->locale; // default
-        if (property_exists($link, 'lang') && isset($locales[$link->lang])) {
+        if (property_exists($link, 'lang') && isset($this->locales[$link->lang])) {
             $locale = $this->locales[$link->lang];
         }
         $url = LaravelLocalization::getLocalizedURL($locale, $url);
