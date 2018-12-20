@@ -271,10 +271,10 @@ class PrismicContentProvider
     public function getSupportPosts(string $locale, ?string $cat = null)
     {
         $response = $this->get('support_post2', $locale, [
-            "categorie" => $cat
+            "categorie" => $cat,
             //"tags" => $params['tags'] ?? null,
             //"order" => "[my.glossaire.uid]",
-            //"limit" => $params['limit'] ?? null,
+            "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);
 
