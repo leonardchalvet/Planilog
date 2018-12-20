@@ -5,7 +5,7 @@ use Prismic\Dom\RichText;
 <footer>
     <div class="wrapper">
         <div class="logo">
-            <a href="{{ route('page_home') }}">
+            <a href="{{ route('page_home') }}" class="logo">
                 <img src="@imageSrc($footer, footer_logo)">
             </a>
         </div>

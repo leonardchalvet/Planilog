@@ -64,5 +64,5 @@ use Prismic\Dom\RichText;
         var posts_url="{{ route('list_posts') }}";
         var gogo=true;
     </script>
-    <script src="{{ asset("js/blog.js") }}"></script>
+    <script src="{{ asset("js/blog2.js") }}"></script>
 @endsection
