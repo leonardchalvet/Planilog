@@ -71,7 +71,6 @@ use Prismic\Dom\RichText;
                     </ul>
                 </div>
 
-
                 <div class="el">
                     <img class="icn" src="{{ asset('img/tarifs/sectionTarifs/icn-2.svg') }}">
                     <h3 class="title">@simpleText($doc, tarif_business_title)</h3>
@@ -104,8 +103,6 @@ use Prismic\Dom\RichText;
                         @endforeach
                     </ul>
                 </div>
-
-
 
                 <div class="el">
                     <img class="icn" src="{{ asset('img/tarifs/sectionTarifs/icn-3.svg') }}">
@@ -140,9 +137,8 @@ use Prismic\Dom\RichText;
                     </ul>
                 </div>
 
-
             </div>
-            @richText($doc, tarifs_desc_1, text)
+            @richText($doc, tarifs_desc_2, text)
         </div>
     </section>
 
