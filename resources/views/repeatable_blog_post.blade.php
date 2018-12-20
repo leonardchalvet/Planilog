@@ -12,7 +12,9 @@ use Prismic\Dom\RichText;
 
 @section('style', asset('css/post.css'))
 @section('header_class', 'style-dark')
+
 @section('container_title', 'Blog')
+@section('container_link', route('page_blog'))
 
 @section('content')
 

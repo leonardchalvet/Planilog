@@ -12,7 +12,9 @@ use Prismic\Dom\RichText;
 
 @section('style', asset('css/glossaire.css'))
 @section('header_class', 'style-dark')
+
 @section('container_title', $doc->title)
+@section('container_link', route('glossaire'))
 
 @section('content')
 

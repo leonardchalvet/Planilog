@@ -9,7 +9,7 @@ use Prismic\Dom\RichText;
             <img src="@imageSrc($header, header_logo_white)">
         </a>
         @hasSection('container_title')
-            <a class='container-titlePage'>@yield('container_title')</a>
+            <a class='container-titlePage' href="@yield('container_link')">@yield('container_title')</a>
         @endif
     </div>
 

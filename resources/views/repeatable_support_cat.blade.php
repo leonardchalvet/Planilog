@@ -12,7 +12,9 @@ use Prismic\Dom\RichText;
 
 @section('style', asset('css/support-list.css'))
 @section('header_class', 'style-white')
+
 @section('container_title', $support->support_title)
+@section('container_link', route('page_support'))
 
 @section('content')
 
