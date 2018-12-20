@@ -240,7 +240,14 @@ EOL;
 
         $posts = [];
         $data = $this->contentProvider->getSupportPosts($this->locale);
+
         foreach ($data as $p) {
+            // ignore articles without category
+            if (!property_exists($p->data->support_category, "uid")) {
+                Debugbar::warning("Support [".$p->data->page_title."]without category");
+                continue;
+            }
+
             $posts[$p->data->support_category->uid][$p->data->support_subcategory][] = $p;
         }
 
@@ -271,6 +278,7 @@ EOL;
         foreach ($data as $p) {
             $posts[$p->data->support_subcategory][] = $p;
         }
+        ksort($posts);
 
         if ($request->has("debug")) dd($document, $posts);
 

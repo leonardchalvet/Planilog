@@ -257,8 +257,8 @@ class PrismicContentProvider
     {
         $response = $this->get('support_categorie2', $locale, [
             //"tags" => $params['tags'] ?? null,
-            //"order" => "[my.glossaire.uid]",
-            //"limit" => $params['limit'] ?? null,
+            "order" => "[my.support_categorie2.support_order]",
+            "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);
 
@@ -273,7 +273,7 @@ class PrismicContentProvider
         $response = $this->get('support_post2', $locale, [
             "categorie" => $cat,
             //"tags" => $params['tags'] ?? null,
-            //"order" => "[my.glossaire.uid]",
+            "order" => "[my.support_post2.support_title]",
             "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);

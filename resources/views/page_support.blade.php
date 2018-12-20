@@ -44,16 +44,20 @@ use Prismic\Dom\RichText;
                                         <div class="icn">
                                             <img src="@imageSrc($data, support_icon)">
                                         </div>
-                                        <div class="title">
+                                        <a href="{{ route('support_cat', ['cat' => $slug]) }}"
+                                           class="title"
+                                           style="text-decoration: none">
                                             @simpleText($data, support_title)
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="container-ul">
                                         @foreach($cat as $sub => $items)
                                             <div class="list liveCatElt liveSubCat">
-                                                <div class="title">
+                                                <a href="{{ route('support_cat', ['cat' => $slug]) }}"
+                                                   class="title"
+                                                   style="text-decoration: none">
                                                     {{ $sub }}
-                                                </div>
+                                                </a>
                                                 <ul>
                                                     @foreach($items as $post)
                                                         <?php $p = $post->data ?>
@@ -135,6 +139,7 @@ use Prismic\Dom\RichText;
         $(document).ready(function(){
             {{-- LIVE SEARCH --}}
             $(".container-dropdown").hide();
+
             $("#liveSearch").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $(".container-dropdown").hide();
@@ -143,6 +148,7 @@ use Prismic\Dom\RichText;
                 if (value.length >= 3) {
 
                     $(".container-dropdown").show();
+                    $("#no-result").hide();
 
                     $("#liveList .liveSubCatElt").filter(function () {
                         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
@@ -157,15 +163,32 @@ use Prismic\Dom\RichText;
                             $(this).hide();
                         }
                     });
+                    {{-- Affichage des sous-catégories --}}
+                    $("#liveList .liveSubCat").each(function () {
+                        if ($(this).find(".title").text().toLowerCase().indexOf(value) > -1) {
+                            $(this).show();
+                        }
+                    });
+
                     {{-- Masquage des categories vides --}}
                     $("#liveList .liveCat").each(function () {
                         if ($(this).find('.liveCatElt:visible').length === 0) {
                             $(this).hide();
                         }
                     });
+                    {{-- Affichage des catégories --}}
+                    $("#liveList .liveCat").each(function () {
+                        if ($(this).find(".title").text().toLowerCase().indexOf(value) > -1) {
+                            $(this).show();
+                        }
+                    });
 
-                    if ($('.liveCatElt:visible').length === 0) {
+                    //console.log($('.liveCat:visible').length);
+                    if ($('.liveCat:visible').length === 0) {
                         $("#no-result").show();
+                    }
+                    else {
+                        $("#no-result").hide();
                     }
                 }
             });
