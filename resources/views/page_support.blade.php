@@ -34,6 +34,7 @@ use Prismic\Dom\RichText;
                         <input id="liveSearch" type="text" placeholder="@simpleText($doc, cover_search)">
                     </div>
                     <div class="container-dropdown">
+                        <div class="prout" id="no-result">@simpleText($doc, cover_no_result)</div>
                         <div class="container-el" id="liveList">
 
                             @foreach($posts as $slug => $cat)
@@ -137,6 +138,7 @@ use Prismic\Dom\RichText;
             $("#liveSearch").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $(".container-dropdown").hide();
+                $("#no-result").hide();
 
                 if (value.length >= 3) {
 
@@ -151,16 +153,20 @@ use Prismic\Dom\RichText;
 
                     {{-- Masquage des sous-categories vides --}}
                     $("#liveList .liveSubCat").each(function () {
-                        if ($(this).find('.liveSubCatElt:visible').length == 0) {
+                        if ($(this).find('.liveSubCatElt:visible').length === 0) {
                             $(this).hide();
                         }
                     });
                     {{-- Masquage des categories vides --}}
                     $("#liveList .liveCat").each(function () {
-                        if ($(this).find('.liveCatElt:visible').length == 0) {
+                        if ($(this).find('.liveCatElt:visible').length === 0) {
                             $(this).hide();
                         }
                     });
+
+                    if ($('.liveCatElt:visible').length === 0) {
+                        $("#no-result").show();
+                    }
                 }
             });
         });

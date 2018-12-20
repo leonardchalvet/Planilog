@@ -57,6 +57,12 @@
         "label": "\"Rechercher\""
       }
     },
+    "cover_no_result": {
+      "type": "Text",
+      "config": {
+        "label": "\"Aucun résultat\""
+      }
+    },
     "glossaire_title": {
       "type": "Text",
       "config": {

@@ -68,7 +68,6 @@
     .emptyLink:not(.logo) { outline: 2px solid #6eff64; }
     .prout {
         font-size: 16px;
-        color: white;
         font-family: OpenSans-Regular;
     }
 </style>
