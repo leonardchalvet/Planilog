@@ -48,7 +48,7 @@
     "cover_paragraph" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi": "paragraph, strong, em, hyperlink",
         "label" : "Description"
       }
     },
@@ -98,7 +98,7 @@
     "section_ftr_paragraph" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi": "paragraph, strong, em, hyperlink",
         "label" : "Description"
       }
     },
@@ -127,7 +127,7 @@
           "section_ftr_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
-              "multi" : "paragraph",
+              "multi": "paragraph, strong, em, hyperlink",
               "label" : "Description"
             }
           },
@@ -158,7 +158,7 @@
     "section_modules_paragraph" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi": "paragraph, strong, em, hyperlink",
         "label" : "Description"
       }
     },
@@ -181,7 +181,7 @@
           "section_modules_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
-              "multi" : "paragraph",
+              "multi": "paragraph, strong, em, hyperlink",
               "label" : "Description"
             }
           },
@@ -212,7 +212,7 @@
     "section_resultats_paragraph" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi": "paragraph, strong, em, hyperlink",
         "label" : "Description"
       }
     },
@@ -241,7 +241,7 @@
           "section_resultats_el_paragraph" : {
             "type" : "StructuredText",
             "config" : {
-              "multi" : "paragraph",
+              "multi": "paragraph, strong, em, hyperlink",
               "label" : "texte"
             }
           }
@@ -260,7 +260,7 @@
     "section_apprentissage_paragraph" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "paragraph",
+        "multi": "paragraph, strong, em, hyperlink",
         "label" : "Description"
       }
     },
@@ -317,6 +317,19 @@
             "type" : "Text",
             "config" : {
               "label" : "citation"
+            }
+          },
+          "section_quotes_el_link" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Lien"
+            }
+          },
+          "section_quotes_el_target" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Lien",
+              "allowTargetBlank" : true
             }
           }
         },
