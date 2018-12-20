@@ -244,7 +244,7 @@ EOL;
         foreach ($data as $p) {
             // ignore articles without category
             if (!property_exists($p->data->support_category, "uid")) {
-                Debugbar::warning("Support [".$p->data->page_title."]without category");
+                Debugbar::warning("Support [".$p->data->page_title."] without category");
                 continue;
             }
 
