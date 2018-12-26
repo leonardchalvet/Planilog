@@ -17,7 +17,10 @@
 	
 	<body>
 
-		<?php include('common-header.php') ?> 
+		<?php 
+			$containerTitle = "<a class='container-titlePage'>Blog</a>";
+			include('common-header.php') 
+		?> 
 
 		<main>
 
@@ -50,6 +53,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-3.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -58,9 +67,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -83,6 +89,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-4.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -91,9 +103,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -116,6 +125,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-1.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -124,9 +139,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -149,6 +161,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-1.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -157,9 +175,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -182,6 +197,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-2.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -190,9 +211,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -215,6 +233,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-3.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -223,9 +247,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>
@@ -248,6 +269,12 @@
 							<div class="cover">
 								<div class="background" style="background-image: url(img/img-test/background-4.jpg);"></div>
 								<div class="container-rs">
+									<a class="rs-link">
+										<img src="img/blog/icn-hyperlink.svg" alt="">
+										<span class="dropdown">
+											votre lien a été copié
+										</span>
+									</a>
 									<a href="">
 										<img src="img/blog/icn-facebook.svg" alt="">
 									</a>
@@ -256,9 +283,6 @@
 									</a>
 									<a href="">
 										<img src="img/blog/icn-linkedin.svg" alt="">
-									</a>
-									<a href="">
-										<img src="img/blog/icn-hyperlink.svg" alt="">
 									</a>
 								</div>
 							</div>

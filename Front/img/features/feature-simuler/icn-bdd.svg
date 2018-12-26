@@ -1,41 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>BB460C83-21A0-4063-AD62-88CA9FA1C4E1</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="2b-Features---Simuler" transform="translate(-194.000000, -878.000000)" fill-rule="nonzero">
-            <g id="Section-1" transform="translate(194.000000, 878.000000)">
-                <g id="1">
-                    <g id="bdd">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>bdd</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -1441.000000)" fill-rule="nonzero">
+            <g id="1" transform="translate(93.000000, 1396.000000)">
+                <g id="picto">
+                    <g id="bdd" transform="translate(45.000000, 45.000000)">
                         <circle id="Oval-4" fill="#00D1C1" opacity="0.2" cx="30" cy="30" r="30"></circle>
-                        <g id="Group-3" transform="translate(17.000000, 13.000000)">
-                            <g id="Group-4" transform="translate(10.714286, 0.891892)">
-                                <g id="Group-2" transform="translate(0.000000, 11.467181)">
-                                    <path d="M0,2.86679537 L13.3928571,2.86679537 L13.3928571,7.70451255 C11.9830827,9.25736004 9.75093985,10.0337838 6.69642857,10.0337838 C3.64191729,10.0337838 1.40977444,9.25736004 0,7.70451255 L0,2.86679537 Z" id="Rectangle" fill="#54C4C2"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.86679537" rx="6.69642857" ry="2.86679537"></ellipse>
+                        <g id="Group-3" transform="translate(21.000000, 16.000000)">
+                            <g id="Group-4">
+                                <g id="Group-2" transform="translate(0.000000, 18.086957)">
+                                    <path d="M0,3.57591973 L18,3.57591973 L18,9.61028428 C16.1052632,11.5472408 13.1052632,12.5157191 9,12.5157191 C4.89473684,12.5157191 1.89473684,11.5472408 0,9.61028428 L0,3.57591973 Z" id="Rectangle" fill="#00D1C1"></path>
+                                    <ellipse id="Oval" fill="#17E2B3" cx="9" cy="3.57591973" rx="9" ry="3.57591973"></ellipse>
                                 </g>
-                                <g id="Group-2" transform="translate(0.000000, 5.733591)">
-                                    <path d="M0,2.86679537 L13.3928571,2.86679537 L13.3928571,7.70451255 C11.9830827,9.25736004 9.75093985,10.0337838 6.69642857,10.0337838 C3.64191729,10.0337838 1.40977444,9.25736004 0,7.70451255 L0,2.86679537 Z" id="Rectangle" fill="#54C4C2"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.86679537" rx="6.69642857" ry="2.86679537"></ellipse>
-                                </g>
-                                <g id="Group-2">
-                                    <path d="M0,2.86679537 L13.3928571,2.86679537 L13.3928571,7.70451255 C11.9830827,9.25736004 9.75093985,10.0337838 6.69642857,10.0337838 C3.64191729,10.0337838 1.40977444,9.25736004 0,7.70451255 L0,2.86679537 Z" id="Rectangle" fill="#54C4C2"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.86679537" rx="6.69642857" ry="2.86679537"></ellipse>
-                                </g>
-                            </g>
-                            <g id="Group-4" transform="translate(0.000000, 12.486486)">
-                                <g id="Group-2" transform="translate(0.000000, 10.702703)">
-                                    <path d="M0,2.71683992 L13.3928571,2.71683992 L13.3928571,7.30150728 C11.9830827,8.7731289 9.75093985,9.50893971 6.69642857,9.50893971 C3.64191729,9.50893971 1.40977444,8.7731289 0,7.30150728 L0,2.71683992 Z" id="Rectangle" fill="#00D1C1"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.71683992" rx="6.69642857" ry="2.71683992"></ellipse>
-                                </g>
-                                <g id="Group-2" transform="translate(0.000000, 5.351351)">
-                                    <path d="M0,2.71683992 L13.3928571,2.71683992 L13.3928571,7.30150728 C11.9830827,8.7731289 9.75093985,9.50893971 6.69642857,9.50893971 C3.64191729,9.50893971 1.40977444,8.7731289 0,7.30150728 L0,2.71683992 Z" id="Rectangle" fill="#00D1C1"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.71683992" rx="6.69642857" ry="2.71683992"></ellipse>
+                                <g id="Group-2" transform="translate(0.000000, 9.043478)">
+                                    <path d="M0,3.57591973 L18,3.57591973 L18,9.61028428 C16.1052632,11.5472408 13.1052632,12.5157191 9,12.5157191 C4.89473684,12.5157191 1.89473684,11.5472408 0,9.61028428 L0,3.57591973 Z" id="Rectangle" fill="#00D1C1"></path>
+                                    <ellipse id="Oval" fill="#17E2B3" cx="9" cy="3.57591973" rx="9" ry="3.57591973"></ellipse>
                                 </g>
                                 <g id="Group-2">
-                                    <path d="M0,2.71683992 L13.3928571,2.71683992 L13.3928571,7.30150728 C11.9830827,8.7731289 9.75093985,9.50893971 6.69642857,9.50893971 C3.64191729,9.50893971 1.40977444,8.7731289 0,7.30150728 L0,2.71683992 Z" id="Rectangle" fill="#00D1C1"></path>
-                                    <ellipse id="Oval" fill="#17E2B3" cx="6.69642857" cy="2.71683992" rx="6.69642857" ry="2.71683992"></ellipse>
+                                    <path d="M0,3.57591973 L18,3.57591973 L18,9.61028428 C16.1052632,11.5472408 13.1052632,12.5157191 9,12.5157191 C4.89473684,12.5157191 1.89473684,11.5472408 0,9.61028428 L0,3.57591973 Z" id="Rectangle" fill="#00D1C1"></path>
+                                    <ellipse id="Oval" fill="#17E2B3" cx="9" cy="3.57591973" rx="9" ry="3.57591973"></ellipse>
                                 </g>
                             </g>
                         </g>

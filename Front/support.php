@@ -19,12 +19,14 @@
 
 		<?php 
 			$styleHeader = "style-white";
+			$containerTitle = "<a class='container-titlePage'>Centre d'aide</a>";
 			include('common-header.php'); 
 		?> 
 
 		<main>
 
 			<section id="section-cover">
+				<div class="background" style="background-image: url(img/common/pattern-cover.png);"></div>
 				<div class="wrapper">
 					<h1>
 						Comment pouvons-nous vous aider ?
@@ -34,7 +36,7 @@
 							<div class="icn">
 								<img src="img/support/search.svg" alt="">
 							</div>
-							<input type="text" placeholder="Search">
+							<input type="text" placeholder="Rechercher">
 						</div>
 						<div class="container-dropdown">
 							<div class="container-el">

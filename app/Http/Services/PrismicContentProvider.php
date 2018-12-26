@@ -241,8 +241,8 @@ class PrismicContentProvider
     {
         $response = $this->get('glossaire', $locale, [
             //"tags" => $params['tags'] ?? null,
-            "order" => "[my.glossaire.uid]",
-            //"limit" => $params['limit'] ?? null,
+            "order" => "[my.glossaire.word]",
+            "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);
 
@@ -257,8 +257,8 @@ class PrismicContentProvider
     {
         $response = $this->get('support_categorie2', $locale, [
             //"tags" => $params['tags'] ?? null,
-            //"order" => "[my.glossaire.uid]",
-            //"limit" => $params['limit'] ?? null,
+            "order" => "[my.support_categorie2.support_order]",
+            "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);
 
@@ -271,10 +271,10 @@ class PrismicContentProvider
     public function getSupportPosts(string $locale, ?string $cat = null)
     {
         $response = $this->get('support_post2', $locale, [
-            "categorie" => $cat
+            "categorie" => $cat,
             //"tags" => $params['tags'] ?? null,
-            //"order" => "[my.glossaire.uid]",
-            //"limit" => $params['limit'] ?? null,
+            "order" => "[my.support_post2.support_title]",
+            "limit" => 1000,
             //"page" => $params['page'] ?? null
         ]);
 

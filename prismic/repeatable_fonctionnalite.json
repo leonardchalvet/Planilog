@@ -60,7 +60,8 @@
     "fct_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     },
@@ -118,7 +119,8 @@
               "desc": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, strong, em, list-item",
+                  "multi": "paragraph, strong, em, list-item, hyperlink",
+                  "allowTargetBlank": true,
                   "label": "Description"
                 }
               }
@@ -138,7 +140,8 @@
     "see_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     },

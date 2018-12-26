@@ -51,6 +51,12 @@
         "label": "Titre"
       }
     },
+    "support_order": {
+      "type": "Number",
+      "config": {
+        "label": "Ordre de tri"
+      }
+    },
     "support_icon": {
       "type": "Image",
       "config": {
@@ -60,7 +66,8 @@
     "support_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Description"
       }
     }

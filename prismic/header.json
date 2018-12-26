@@ -44,7 +44,7 @@
           "header_outils_el_paragraph": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, em, strong",
               "label": "Menu Outils El Paragraph"
             }
           },
@@ -84,7 +84,7 @@
           "header_modules_el_paragraph": {
             "type": "StructuredText",
             "config": {
-              "multi": "paragraph",
+              "multi": "paragraph, em, strong",
               "label": "Menu Modules El Paragraph"
             }
           },
@@ -105,24 +105,10 @@
         "label": "Header Menu Tarifs"
       }
     },
-    "header_menu_tarifs_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Tarifs Link",
-        "allowTargetBlank": true
-      }
-    },
     "header_menu_contact": {
       "type": "Text",
       "config": {
         "label": "Header Menu Contact"
-      }
-    },
-    "header_menu_contact_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Contact Link",
-        "allowTargetBlank": true
       }
     },
     "header_menu_login": {
@@ -155,7 +141,7 @@
     "form_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em, hyperlink, image",
+        "multi": "paragraph, strong, em, hyperlink",
         "allowTargetBlank": true,
         "label": "Description"
       }
@@ -187,7 +173,7 @@
     "form_gcu": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em, hyperlink, image",
+        "multi": "paragraph, strong, em, hyperlink",
         "allowTargetBlank": true,
         "label": "Texte CGU"
       }

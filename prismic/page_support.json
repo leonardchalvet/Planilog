@@ -45,10 +45,22 @@
         "label": "Titre"
       }
     },
+    "support_title": {
+      "type": "Text",
+      "config": {
+        "label": "Titre 2"
+      }
+    },
     "cover_search": {
       "type": "Text",
       "config": {
         "label": "\"Rechercher\""
+      }
+    },
+    "cover_no_result": {
+      "type": "Text",
+      "config": {
+        "label": "\"Aucun résultat\""
       }
     },
     "glossaire_title": {
@@ -60,7 +72,8 @@
     "glossaire_desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em",
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
         "label": "Carte glossaire - texte"
       }
     }

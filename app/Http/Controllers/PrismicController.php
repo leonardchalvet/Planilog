@@ -198,12 +198,14 @@ EOL;
 
         $item = $this->contentProvider->getSimplePage('page_glossaire', $this->locale);
         $item->isRoot = true;
+        $title = $item->title;
         if ($slug) {
             foreach ($glossaire as $word) {
                 if ($word->uid == $slug) {
                     $item = $word->data;
                     $item->uid = $word->uid;
                     $item->alternate_languages = $word->alternate_languages;
+                    $item->title = $title;
                     $item->isRoot = false;
 
                     $word->selected = true;
@@ -238,7 +240,14 @@ EOL;
 
         $posts = [];
         $data = $this->contentProvider->getSupportPosts($this->locale);
+
         foreach ($data as $p) {
+            // ignore articles without category
+            if (!property_exists($p->data->support_category, "uid")) {
+                Debugbar::warning("Support [".$p->data->page_title."] without category");
+                continue;
+            }
+
             $posts[$p->data->support_category->uid][$p->data->support_subcategory][] = $p;
         }
 
@@ -269,6 +278,7 @@ EOL;
         foreach ($data as $p) {
             $posts[$p->data->support_subcategory][] = $p;
         }
+        ksort($posts);
 
         if ($request->has("debug")) dd($document, $posts);
 
@@ -292,6 +302,10 @@ EOL;
 
         $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
         $categories = $this->contentProvider->getSupportCategories($this->locale);
+
+        if (!property_exists($document->support_category, "uid")) {
+            abort(404, "Orphan support post");
+        }
 
         // Redirect to right route
         if ($cat !== $document->support_category->uid) {

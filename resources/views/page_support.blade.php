@@ -13,11 +13,15 @@ use Prismic\Dom\RichText;
 @section('style', asset('css/support.css'))
 @section('header_class', 'style-white')
 
+@section('container_title', $doc->support_title)
+@section('container_link', route('page_support'))
+
 @section('content')
 
     <main>
 
         <section id="section-cover">
+            <div class="background" style="background-image: url({{ asset('img/common/pattern-cover.png') }});"></div>
             <div class="wrapper">
                 <h1>
                     @simpleText($doc, cover_title)
@@ -30,6 +34,7 @@ use Prismic\Dom\RichText;
                         <input id="liveSearch" type="text" placeholder="@simpleText($doc, cover_search)">
                     </div>
                     <div class="container-dropdown">
+                        <div class="prout" id="no-result">@simpleText($doc, cover_no_result)</div>
                         <div class="container-el" id="liveList">
 
                             @foreach($posts as $slug => $cat)
@@ -39,16 +44,20 @@ use Prismic\Dom\RichText;
                                         <div class="icn">
                                             <img src="@imageSrc($data, support_icon)">
                                         </div>
-                                        <div class="title">
+                                        <a href="{{ route('support_cat', ['cat' => $slug]) }}"
+                                           class="title"
+                                           style="text-decoration: none">
                                             @simpleText($data, support_title)
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="container-ul">
                                         @foreach($cat as $sub => $items)
                                             <div class="list liveCatElt liveSubCat">
-                                                <div class="title">
+                                                <a href="{{ route('support_cat', ['cat' => $slug]) }}"
+                                                   class="title"
+                                                   style="text-decoration: none">
                                                     {{ $sub }}
-                                                </div>
+                                                </a>
                                                 <ul>
                                                     @foreach($items as $post)
                                                         <?php $p = $post->data ?>
@@ -130,13 +139,16 @@ use Prismic\Dom\RichText;
         $(document).ready(function(){
             {{-- LIVE SEARCH --}}
             $(".container-dropdown").hide();
+
             $("#liveSearch").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $(".container-dropdown").hide();
+                $("#no-result").hide();
 
                 if (value.length >= 3) {
 
                     $(".container-dropdown").show();
+                    $("#no-result").hide();
 
                     $("#liveList .liveSubCatElt").filter(function () {
                         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
@@ -147,16 +159,37 @@ use Prismic\Dom\RichText;
 
                     {{-- Masquage des sous-categories vides --}}
                     $("#liveList .liveSubCat").each(function () {
-                        if ($(this).find('.liveSubCatElt:visible').length == 0) {
+                        if ($(this).find('.liveSubCatElt:visible').length === 0) {
                             $(this).hide();
                         }
                     });
+                    {{-- Affichage des sous-catégories --}}
+                    $("#liveList .liveSubCat").each(function () {
+                        if ($(this).find(".title").text().toLowerCase().indexOf(value) > -1) {
+                            $(this).show();
+                        }
+                    });
+
                     {{-- Masquage des categories vides --}}
                     $("#liveList .liveCat").each(function () {
-                        if ($(this).find('.liveCatElt:visible').length == 0) {
+                        if ($(this).find('.liveCatElt:visible').length === 0) {
                             $(this).hide();
                         }
                     });
+                    {{-- Affichage des catégories --}}
+                    $("#liveList .liveCat").each(function () {
+                        if ($(this).find(".title").text().toLowerCase().indexOf(value) > -1) {
+                            $(this).show();
+                        }
+                    });
+
+                    //console.log($('.liveCat:visible').length);
+                    if ($('.liveCat:visible').length === 0) {
+                        $("#no-result").show();
+                    }
+                    else {
+                        $("#no-result").hide();
+                    }
                 }
             });
         });

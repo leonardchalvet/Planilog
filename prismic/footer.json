@@ -109,20 +109,15 @@
     "footer_menu_contact_paragraph": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph",
+        "multi": "paragraph, strong, em",
+        "allowTargetBlank": true,
         "label": "Contact paragraph"
       }
     },
     "footer_menu_contact_text": {
       "type": "Text",
       "config": {
-        "label": "Contact Mail Text"
-      }
-    },
-    "footer_menu_contact_link": {
-      "type": "Text",
-      "config": {
-        "label": "Contact Mail link"
+        "label": "Contact Text"
       }
     },
     "footer_social_medias": {

@@ -13,6 +13,9 @@ use Prismic\Dom\RichText;
 @section('style', asset('css/blog.css'))
 @section('header_class', '')
 
+@section('container_title', 'Blog')
+@section('container_link', route('page_blog'))
+
 @section('content')
     
     <main>
@@ -63,5 +66,5 @@ use Prismic\Dom\RichText;
         var posts_url="{{ route('list_posts') }}";
         var gogo=true;
     </script>
-    <script src="{{ asset("js/blog.js") }}"></script>
+    <script src="{{ asset("js/blog2.js") }}"></script>
 @endsection

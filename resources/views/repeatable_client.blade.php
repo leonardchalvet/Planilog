@@ -30,7 +30,7 @@ use Prismic\Dom\RichText;
 								<span class="btn-text">
 									@simpleText($doc, case_button)
 								</span>
-                            <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
+                            <img class="btn-arrow" src="{{ asset('img/business/arrow.svg') }}">
                         </a>
                     </div>
 

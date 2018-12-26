@@ -8,12 +8,13 @@
 	</div>
 </div>
 
-<header id="header-desktop" class="banner-active">
+<header id="header-desktop" class="banner-active <?php echo($styleHeader); ?>">
 	<div class="wrapper">
-		<a class="logo <?php echo($styleHeader); ?>" href="index.php">
+		<a class="logo" href="index.php">
 			<img src="img/common/logo.png" alt="">
 			<img src="img/common/logo_white.png" alt="">
 		</a>
+		<?php echo($containerTitle); ?>
 	</div>
 	<div class="container-head">
 		<ul class="container-link">
@@ -107,7 +108,7 @@
 			</li>
 		</ul>
 		<div class="container-action">
-			<a class="signin" href="">
+			<a class="signin">
 				SE CONNECTER
 			</a>
 			<a class="signup">

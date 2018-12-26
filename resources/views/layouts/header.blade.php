@@ -2,12 +2,15 @@
 use Prismic\Dom\RichText;
 ?>
 
-<header id="header-desktop">
+<header id="header-desktop" class="@yield('header_class')">
     <div class="wrapper">
-        <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
+        <a class="logo" href="{{ route('page_home') }}">
             <img src="@imageSrc($header, header_logo)">
             <img src="@imageSrc($header, header_logo_white)">
         </a>
+        @hasSection('container_title')
+            <a class='container-titlePage' href="@yield('container_link')">@yield('container_title')</a>
+        @endif
     </div>
 
     <div class="container-head">
@@ -61,8 +64,7 @@ use Prismic\Dom\RichText;
             <li>
                 <div class="container-text">
                     <a class="title"
-                       href="@linkSrc($header, header_menu_tarifs_link)"
-                       @linkTarget($header, header_menu_tarifs_link)>
+                       href="{{ route('page_tarifs') }}">
                     @simpleText($header, header_menu_tarifs)
                     </a>
                 </div>
@@ -70,8 +72,7 @@ use Prismic\Dom\RichText;
             <li>
                 <div class="container-text">
                     <a class="title"
-                       href="@linkSrc($header, header_menu_contact_link)"
-                       @linkTarget($header, header_menu_contact_link)>
+                       href="{{ route('page_contact_commercial') }}">
                         @simpleText($header, header_menu_contact)
                     </a>
                 </div>
@@ -93,10 +94,10 @@ use Prismic\Dom\RichText;
 </header>
 
 
-<header id="header-mobile">
+<header id="header-mobile" class="@yield('header_class')">
     <div class="head">
         <div class="wrapper">
-            <a class="logo @yield('header_class')" href="{{ route('page_home') }}">
+            <a class="logo" href="{{ route('page_home') }}">
                 <img src="@imageSrc($header, header_logo)">
                 <img src="@imageSrc($header, header_logo_white)">
             </a>

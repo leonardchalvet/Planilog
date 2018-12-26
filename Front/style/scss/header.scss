@@ -62,32 +62,48 @@
 	z-index: 20;
 	height: 100px;
 	transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+
 	.wrapper{
 		@include styleGrid1;
 		padding-top: 30px;
 		transition: all 0.25s ease;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
 		.logo{
 			display: inline-block;
 			height: 40px;
 			text-decoration: none;
 			transition: transform 1s cubic-bezier(.23, 1, .32, 1);
+			cursor: pointer;
 			img{
+				cursor: pointer;
 				height: 100%;
 
 				&:last-child {
 					display: none;
 				}
 			}
+		}
 
-			&.style-white {
-				img {
-					&:first-child {
-						display: none;
-					}
-					&:last-child {
-						display: block;
-					}
-				}
+		.container-titlePage{
+			display: block;
+			text-decoration: none;
+			position: relative;
+			margin-left: 55px;
+			@include styleH5;
+			transition: all 1s cubic-bezier(.23, 1, .32, 1);
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -27px;
+				height: 6px;	
+				width: 6px;	
+				border-radius: 3px;
+				background-color: #B9BCC6;
+				transition: all 1s cubic-bezier(.23, 1, .32, 1);
 			}
 		}
 	}
@@ -264,6 +280,19 @@
 			}
 		}
 	}
+	&.style-white {
+		.logo img {
+			&:first-child {
+				display: none;
+			}
+			&:last-child {
+				display: block;
+			}
+		}
+		.container-titlePage{
+			color: #FFF;
+		}
+	}
 	&.scroll{
 		transform: translateY(-40px);
 		box-shadow: 0 10px 25px 0 rgba(56,70,122,0.15);
@@ -274,14 +303,12 @@
 			.logo{
 				transform: translateX(-10%) scale(0.8);
 			
-				&.style-white {
-					img {
-						&:first-child {
-							display: block;
-						}
-						&:last-child {
-							display: none;
-						}
+				img {
+					&:first-child {
+						display: block;
+					}
+					&:last-child {
+						display: none;
 					}
 				}
 			}
@@ -295,7 +322,16 @@
 		.signup:before{
 			transform: translateY(-20px);
 		}
+		.container-titlePage{
+			color: $colorMain_1;
+			transform: translateX(-20px);
+			&:before{
+				transform: translateX(-10px);
+				background-color: rgba($colorMain_1 , 0.5);
+			}
+		}
 	}
+	
 	&.banner-active{
 		transform: translateY(40px);
 	}

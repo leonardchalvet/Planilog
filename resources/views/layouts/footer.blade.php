@@ -5,7 +5,7 @@ use Prismic\Dom\RichText;
 <footer>
     <div class="wrapper">
         <div class="logo">
-            <a href="{{ route('page_home') }}">
+            <a href="{{ route('page_home') }}" class="logo">
                 <img src="@imageSrc($footer, footer_logo)">
             </a>
         </div>
@@ -47,7 +47,7 @@ use Prismic\Dom\RichText;
                         <div class="pp" style="background-image: url(@imageSrc($footer, footer_menu_contact_image))"></div>
                         <div class="text">
                             @richText($footer, footer_menu_contact_paragraph)
-                            <a href="mailto:@simpleText($footer, footer_menu_contact_link)">
+                            <a href="{{ route('page_contact_commercial') }}">
                                 @simpleText($footer, footer_menu_contact_text)
                             </a>
                         </div>
@@ -62,12 +62,14 @@ use Prismic\Dom\RichText;
             {{-- Language selector --}}
             <div class="container-lg">
                 <div class="lg">
-                    <span>{{ LaravelLocalization::getCurrentLocaleNative() }}</span>
+                    <span style="text-transform: capitalize">{{ LaravelLocalization::getCurrentLocaleNative() }}</span>
                     <img src="{{ asset('img/common/arrow-blue.svg') }}">
                 </div>
                 <div class="dropdown">
                     @foreach($alternateLangResolver->getAlternateLang($doc->alternate_languages) as $alt)
-                        <a class="ch-lg" href="{{ $alt["url"] }}">
+                        <a class="ch-lg"
+                           href="{{ $alt["url"] }}"
+                           style="text-transform: capitalize">
                             {{ $alt["locale_name"] }}
                         </a>
                     @endforeach

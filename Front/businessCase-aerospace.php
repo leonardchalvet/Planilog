@@ -35,7 +35,7 @@
 								<span class="btn-text">
 									VOIR LE SITE
 								</span>
-								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
+								<img class="btn-arrow" src="img/business/arrow.svg" alt="">
 							</a>
 						</div>
 						<div class="container-cm-text">
