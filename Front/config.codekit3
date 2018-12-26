@@ -281,6 +281,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/common/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/common/icn-cross.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -326,6 +336,17 @@
 		"iS": 9658,
 		"oA": 0,
 		"oAP": "/img/common/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common/logo_white.png": {
+		"ft": 32768,
+		"iS": 7198,
+		"oA": 0,
+		"oAP": "/img/common/logo_white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1516,6 +1537,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/js.cookie.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/js.cookie-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/post.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1995,90 +2026,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/tarifs.php",
-		"oF": 0
-		},
-	"/video/home/Mesurer.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Mesurer.mp4",
-		"oF": 0
-		},
-	"/video/home/Mesurer.ogv": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Mesurer.ogv",
-		"oF": 0
-		},
-	"/video/home/Mesurer.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Mesurer.webm",
-		"oF": 0
-		},
-	"/video/home/Ordonnancer.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Ordonnancer.mp4",
-		"oF": 0
-		},
-	"/video/home/Ordonnancer.ogv": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Ordonnancer.ogv",
-		"oF": 0
-		},
-	"/video/home/Ordonnancer.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Ordonnancer.webm",
-		"oF": 0
-		},
-	"/video/home/Planifier.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Planifier.mp4",
-		"oF": 0
-		},
-	"/video/home/Planifier.ogv": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Planifier.ogv",
-		"oF": 0
-		},
-	"/video/home/Planifier.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Planifier.webm",
-		"oF": 0
-		},
-	"/video/home/Simuler.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Simuler.mp4",
-		"oF": 0
-		},
-	"/video/home/Simuler.ogv": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Simuler.ogv",
-		"oF": 0
-		},
-	"/video/home/Simuler.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/video/home/Simuler.webm",
 		"oF": 0
 		}
 	},

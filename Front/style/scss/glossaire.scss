@@ -16,7 +16,7 @@
 		align-items: flex-start;
 		.container-list{
 			position: relative;
-			width: 345px;
+			width: 445px;
 			padding-right: 50px;
 			&:before{
 				content:'';
@@ -108,7 +108,7 @@
 			}
 		}
 		.container-text{
-			width: calc(100% - 345px);
+			width: calc(100% - 445px);
 			padding: 25px 50px 100px 90px;
 			@include styleWysiwyg;
 			h1{
@@ -161,6 +161,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_tablet) {
+	#section-glossaire .wrapper .container-list:before{
+		width: calc(100% + (100vw / 2));
 	}
 }
 

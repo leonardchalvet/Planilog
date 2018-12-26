@@ -16,7 +16,7 @@
 		z-index: 1;
 	}
 	.wrapper{
-		padding: 190px 0px 190px 0px;
+		padding: 250px 0px 190px 0px;
 		@include styleGrid1;
 		position: relative;
 		z-index: 1;
@@ -34,6 +34,9 @@
 			p{
 				@include styleParagraphBig;
 				margin-top: 20px;
+				a{
+					@include styleParagraphBig;
+				}
 			}
 		}
 		.container-illu{
@@ -143,6 +146,7 @@
 
 		.container-text{
 			width: 350px;
+			text-align: center;
 			.icn{
 				width: 166px;
 				margin:auto;

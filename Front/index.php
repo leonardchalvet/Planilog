@@ -313,7 +313,7 @@
 							</div>
 
 							<div class="container-quote">
-								<q>Par sa qualité d’écoute et la puissance de calcul du moteur d’ordonnancement, Planilog a parfaitement complété cette équipe projet, contribuant ainsi à l’amélioration de nos performances.</q>
+								<q>Par sa qualité d’écoute et la puissance de calcul du moteur d’ordonnancement, Planilog a parfaitement complété cette équipe projet, contribuant ainsi à l’amélioration de nos performances. <a href="">salut</a> </q>
 							</div>
 							
 						</div>

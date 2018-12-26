@@ -33,6 +33,7 @@
 								La planification de production simple et visuelle 
 							</h1>
 							<p>
+								<a href="">salut</a>
 								Que vous souhaitiez savoir dans quel ordre et sur quelle machine traiter les commandes, quelles sont les tâches à accomplir ou combien de temps cela va-t-il prendre, utilisez notre solution de planification et d’ordonnancement sous contraintes, entièrement intégrée.
 							</p>
 						</div>

@@ -106,6 +106,7 @@
 							</div>
 							<button>
 								<span class="btn-text">ENVOYER</span>
+								<img class="btn-check" src="img/common/check.svg" alt="">
 							</button>
 						</div>
 

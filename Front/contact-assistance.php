@@ -56,7 +56,7 @@
 							<p>
 								Accessible uniquement aux administrateurs Planilog. Connectez-vous à votre compte administrateur pour l’étape de validation.
 							</p>
-							<a href="">support@planilog.com</a>
+							<a href="mailto:sales@planilog.com">sales@planilog.com</a>
 						</div>
 						<div class="el">
 							<div class="icn">
