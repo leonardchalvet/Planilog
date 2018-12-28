@@ -6,7 +6,7 @@ use Prismic\Dom\RichText;
         <h2>
             {{ $text }}
         </h2>
-        <a class="btn" href="mailto:{{ $mail }}">
+        <a class="btn" href="{{ $mail }}">
             <span class="btn-text">{{ $button }}</span>
             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
         </a>
