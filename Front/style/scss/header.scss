@@ -277,6 +277,9 @@
 					position: relative;
 					color: #FFF;
 				}
+				&:hover:before{
+					background-color: #EB6767;
+				}
 			}
 		}
 	}

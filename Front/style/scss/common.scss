@@ -378,7 +378,7 @@ main
 					z-index: 1;
 				}
 				&:hover{
-					background-color: #fa3b3b;
+					background-color: #EB6767;
 					.btn-arrow{
 						transform: translateX(5px) scaleX(1.2);
 					}
@@ -455,7 +455,7 @@ main
 						transform: translate(0px) !important;
 						box-shadow: 0 8px 15px 0 rgba(56,70,122,0.30);
 						&:before{
-							background-color: #fa3b3b;
+							background-color: #EB6767;
 							transform: translateX(0px);
 						}
 						.btn-text{
