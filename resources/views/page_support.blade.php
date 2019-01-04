@@ -135,19 +135,24 @@ use Prismic\Dom\RichText;
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/header.js") }}"></script>
     <script src="{{ asset("js/support.js") }}"></script>
+    <script src="{{ asset("js/highlight.js") }}"></script>
+    <style>.highlight {background-color: #FFFF88;}</style>
     <script>
         $(document).ready(function(){
+
             {{-- LIVE SEARCH --}}
             $(".container-dropdown").hide();
 
             $("#liveSearch").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $(".container-dropdown").hide();
+                $(".container-dropdown").unhighlight();
                 $("#no-result").hide();
 
                 if (value.length >= 3) {
 
                     $(".container-dropdown").show();
+                    $(".container-dropdown").highlight(value);
                     $("#no-result").hide();
 
                     $("#liveList .liveSubCatElt").filter(function () {
