@@ -76,6 +76,22 @@
     $('a[href="{{ LaravelLocalization::getLocalizedURL(null, "/") }}"]').addClass("emptyLink");
 </script>
 
+{{-- trial form --}}
+<script>
+    $("form.ajaxForm").submit(function(e) {
+        // prevent Default functionality
+        e.preventDefault();
+        // get the action-url of the form
+        var actionurl = e.currentTarget.action;
+        // disable button
+        $(this).find("button").addClass("active").prop("disabled",true);
+        // post form
+        $.post(actionurl, $(this).serialize(), function(data) {
+            // Nothing to do here
+        });
+    });
+</script>
+
 
 {{--  Prismic Toolbar for previews --}}
 <script>

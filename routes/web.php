@@ -31,10 +31,15 @@ function () {
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_cookies']
     )->name('page_cookies');
 
-    Route::any(
+    Route::get(
         LaravelLocalization::transRoute('routes.contact_commercial'),
         ['uses' => 'PrismicController@contactPage']
     )->name('page_contact_commercial');
+    // Formulaire
+    Route::post(
+        LaravelLocalization::transRoute('routes.contact_commercial'),
+        ['uses' => 'PrismicController@contactForm']
+    );
     Route::get(
         LaravelLocalization::transRoute('routes.contact_assistance'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_contact_assistance']

@@ -60,8 +60,8 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
     'to' => [
-        'commercial' => env('MAIL_CONTACT_COMMERCIAL'),
-        'sales'      => env('MAIL_CONTACT_SALES'),
+        'address' => env('MAIL_CONTACT'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*

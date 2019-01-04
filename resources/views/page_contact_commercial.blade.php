@@ -36,8 +36,9 @@ use Prismic\Dom\RichText;
                     <p class="hr">@simpleText($doc, cover_support_time)</p>
                     @richText($doc, cover_assistance, link)
                 </div>
-                <form action="" method="post">
+                <form class="ajaxForm" method="post" action="{{ route('page_contact_commercial') }}">
                     @csrf
+                    <input type="hidden" name="subject" value="contact">
                     <div class="container-input">
                         <div class="input">
                             <div class="title">@simpleText($doc, field_name)</div>
@@ -92,6 +93,7 @@ use Prismic\Dom\RichText;
                         </div>
                         <button>
                             <span class="btn-text">ENVOYER</span>
+                            <img class="btn-check" src="{{ asset('img/common/check.svg') }}">
                         </button>
                     </div>
 

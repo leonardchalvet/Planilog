@@ -192,7 +192,7 @@ use Prismic\Dom\RichText;
             <h2>
                 @simpleText($header, form_title)
             </h2>
-            <form action="{{ route('inscription') }}" method="post">
+            <form class="ajaxForm" action="{{ route('inscription') }}" method="post">
                 @csrf
                 <div class="container-input">
                     <div class="input">

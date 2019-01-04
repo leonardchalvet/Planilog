@@ -53,29 +53,8 @@ class PrismicController extends Controller
     }
 
 
-    public function contactPage(Request $request, MailSupportService $support)
+    public function contactPage(Request $request)
     {
-        if ($request->isMethod("POST")) {
-
-            $name = $request->post("name");
-            $email = $request->post("email");
-            $tel = $request->post("tel");
-            $question = $request->post("question");
-            $pref = $request->post("rappel");
-            $pref .= $pref == 'tel' ? "(" . $request->post("time") . ")" : '';
-            $to = config('mail.to.commercial');
-            $subject = "[contact commercial]";
-            $message = <<<EOL
-Nouveau message de $name
-Email : $email
-Téléphone : $tel
-Préférences de rappel : $pref
-
-$question         
-EOL;
-            $support->mail($to, $subject, $message);
-        }
-
         // Get asked page
         $page = 'page_contact_commercial';
         $document = $this->contentProvider->getSimplePage($page, $this->locale);
@@ -85,6 +64,31 @@ EOL;
         return view($page, [
             'doc' => $document
         ]);
+    }
+
+    public function contactForm(Request $request, MailSupportService $support)
+    {
+        if ($request->isMethod("POST")) {
+
+            $name = $request->post("name");
+            $email = $request->post("email");
+            $tel = $request->post("tel");
+            $question = $request->post("question");
+            $pref = $request->post("rappel");
+            $pref .= $pref == 'tel' ? "(" . $request->post("time") . ")" : '';
+            $to = config('mail.to.address');
+            $subject = "[contact commercial] $name";
+            $message = <<<EOL
+Nouveau message de $name
+Email : $email
+Téléphone : $tel
+
+$question         
+EOL;
+            $support->mail($to, $subject, $message);
+        }
+
+        return response(null, 200);
     }
 
     /**
@@ -383,20 +387,22 @@ EOL;
 
     public function inscription(Request $request, MailSupportService $support)
     {
-        $name = implode(' ', [$request->post("firstname"), $request->post("lastname")]);
-        $email = $request->post("email", "--");
-        $tel = $request->post("tel", "--");
-        $to = config('mail.to.sales');
-        $subject = "[Inscription]";
+        $email = $request->post("email");
+        $name = $request->post("lastname", $email);
+        $name2 = implode(' ', [$request->post("firstname"), $request->post("lastname")]);
+        $tel = $request->post("tel");
+        $to = config('mail.to.address');
+        $subject = "[Inscription] $name";
         $message = <<<EOL
 Nouvelle inscription
-Nom : $name
+Nom : $name2
 Email : $email
 Téléphone : $tel
 EOL;
         $support->mail($to, $subject, $message);
 
-        return response(null, 302)->header('Location', route('page_home'));
+        return response(null, "200");
+        //return response(null, 302)->header('Location', route('page_home'));
     }
 }
 
