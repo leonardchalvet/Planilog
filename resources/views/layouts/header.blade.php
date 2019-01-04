@@ -217,6 +217,7 @@ use Prismic\Dom\RichText;
 					<span class="btn-text">
 						@simpleText($header, form_button)
 					</span>
+                    <img class="btn-check" src="{{ asset('img/common/check.svg') }}">
                 </button>
             </form>
         </div>

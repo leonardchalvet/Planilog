@@ -153,10 +153,14 @@ use Prismic\Dom\RichText;
                 <form class="ajaxForm" method="post" action="{{ route('inscription') }}">
                     @csrf
                     <div class="container-input">
-                        <input type="text" name="email" placeholder="@simpleText($doc, free_input_placeholder)">
+                        <input type="text"
+                               name="email"
+                               placeholder="@simpleText($doc, free_input_placeholder)"
+                               required>
                         <button class="btn">
                             <span class="btn-text">@simpleText($doc, free_input_button)</span>
                             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
+                            <img class="btn-check" src="{{ asset('img/common/check.svg') }}">
                         </button>
                     </div>
                 </form>

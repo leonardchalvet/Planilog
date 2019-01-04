@@ -66,17 +66,16 @@
     @keyframes blink { 50% { outline: 1px solid red; } }
     /*.emptyLink{ animation: blink 2s step-end infinite alternate; }*/
     .emptyLink:not(.logo) { outline: 2px solid #6eff64; }
-    .prout {
-        font-size: 16px;
-        font-family: OpenSans-Regular;
-    }
 </style>
 <script>
     $('a[href="#"]').addClass("emptyLink");
     $('a[href="{{ LaravelLocalization::getLocalizedURL(null, "/") }}"]').addClass("emptyLink");
 </script>
 
-{{-- trial form --}}
+{{-- Missing style --}}
+<style>.prout {font-size: 16px;font-family: OpenSans-Regular;}</style>
+
+{{-- ajax forms --}}
 <script>
     $("form.ajaxForm").submit(function(e) {
         // prevent Default functionality
