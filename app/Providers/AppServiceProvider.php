@@ -33,7 +33,11 @@ class AppServiceProvider extends ServiceProvider
             $class = $arguments[2] ?? null;
 
             // RichText::asHtml($doc->cover_intro->value, $linkResolver))
-            if ($class) {
+            if ($class == "q") {
+                // set to quote
+                return '<?= isset(' . $doc . '->' . $field . ') ? str_replace(["<p>", "</p>"], ["<q>", "</q>"], RichText::asHtml(' . $doc . '->' . $field . ', $linkResolver)) : ""; ?>';
+            }
+            elseif ($class) {
                 // Add class to paragraph
                 return '<?= isset(' . $doc . '->' . $field . ') ? str_replace("<p>", "<p class=\''.$class.'\'>", RichText::asHtml(' . $doc . '->' . $field . ', $linkResolver)) : ""; ?>';
             }

@@ -322,8 +322,10 @@
             }
           },
           "section_quotes_el_paragraph" : {
-            "type" : "Text",
+            "type" : "StructuredText",
             "config" : {
+              "multi": "paragraph, strong, em, hyperlink",
+              "allowTargetBlank": true,
               "label" : "citation"
             }
           },

@@ -202,7 +202,7 @@ use Prismic\Dom\RichText;
                             </div>
 
                             <div class="container-quote">
-                                <q>@simpleText($quote, section_quotes_el_paragraph)</q>
+                                @richText($quote, section_quotes_el_paragraph, q)
                             </div>
                             @if (!empty($quote->section_quotes_el_link))
                             <a href="@linkSrc($quote, section_quotes_el_target)"
