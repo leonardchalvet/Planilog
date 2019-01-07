@@ -57,6 +57,12 @@
         "label": "Client"
       }
     },
+    "case_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Logo"
+      }
+    },
     "case_desc": {
       "type": "StructuredText",
       "config": {

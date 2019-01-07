@@ -67,7 +67,7 @@ use Prismic\Dom\RichText;
             <div class="wrapper">
                 <div class="container-text">
                     <div class="icn">
-                        <img src="{{ asset('img/domaine/Lisi.png') }}">
+                        <img src="@imageSrc($case, case_logo)">
                     </div>
                     <div class="title">
                         @simpleText($case, case_title)
