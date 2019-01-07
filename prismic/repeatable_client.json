@@ -133,6 +133,14 @@
         "allowTargetBlank": true,
         "label": "Citation"
       }
+    },
+    "quote_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Descrption"
+      }
     }
   },
   "Textes": {

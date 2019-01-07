@@ -97,6 +97,9 @@ use Prismic\Dom\RichText;
                     <div class="name">
                         @simpleText($doc, quote_author)
                     </div>
+                    <div class="post">
+                        @richText($doc, quote_desc)
+                    </div>
                 </div>
             </div>
         </section>
