@@ -6,7 +6,7 @@ use Prismic\Dom\RichText;
         <div class="text">
             @richText($header, cookies_message)
         </div>
-        <a class="btn" href="{{ Request::url() }}" id="acceptCookiesButton">
+        <a class="btn logo" href="{{ Request::url() }}" id="acceptCookiesButton">
             <span class="btn-text">@simpleText($header, cookies_button)</span>
         </a>
     </div>
@@ -20,7 +20,8 @@ use Prismic\Dom\RichText;
             $("#cookies").show();
         }
 
-        $("#cookies").on('click', '#acceptCookiesButton', function() {
+        $("#cookies").on('click', '#acceptCookiesButton', function(e) {
+            e.preventDefault();
             Cookies.set('cookies_policy', 'on');
         });
     });
