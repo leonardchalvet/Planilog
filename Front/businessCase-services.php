@@ -133,6 +133,9 @@
 						<div class="name">
 							Tum Tantasatityanon
 						</div>
+						<div class="post">
+							Lorem
+						</div>
 					</div>
 				</div>
 			</section>

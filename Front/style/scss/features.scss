@@ -258,6 +258,13 @@
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	#section-cover .container-illu{
+		height: 212px;
+		width: 350px;
+	}
+}
+
 @media screen and (max-width: $breakPoint_mobile){
 	#section-cover{
 		padding: 130px 0px 70px 0px;

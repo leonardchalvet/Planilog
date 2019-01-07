@@ -30,10 +30,10 @@
 			width: 570px;
 			h1{
 				@include styleH2;
+				margin-bottom: 30px;
 			}
 			p{
 				@include styleParagraphMedium;
-				margin-top: 20px;
 				a{
 					@include styleParagraphBig;
 				}
@@ -153,6 +153,8 @@
 				img{
 					margin-top: 35px;
 					width: 100%;
+					max-width: 100px;
+					max-height: 80px;
 				}
 			}
 			.title{

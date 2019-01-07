@@ -675,6 +675,19 @@
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	#section-ftr .container-ftr .container-video{
+		height: 212px;
+		width: 350px;
+	}
+	#section-ftr .container-ftr .container-el{
+		width: 400px;
+	}
+	#section-quotes .wrapper{
+		padding-left: 320px;
+	}
+}
+
 @media screen and (max-width: $breakPoint_mobile){
 	#section-cover .shape{
 		width: 100%;

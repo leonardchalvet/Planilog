@@ -472,6 +472,9 @@ main
 				> p{
 					text-align: left;
 					@include styleParagraphMedium;
+					font-size: 16px;
+					line-height: 30px;
+
 					color: $colorMain_1;
 					
 					&:first-child:first-letter{
@@ -505,6 +508,11 @@ main
 				}
 				> h3{
 					@include styleH5;
+					text-align: left;
+					margin: 50px 0px 25px 0px;
+				}
+				> h4{
+					@include styleH6;
 					text-align: left;
 					margin: 50px 0px 25px 0px;
 				}

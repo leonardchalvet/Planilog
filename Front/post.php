@@ -36,6 +36,9 @@
 						<h1>
 							Nam porttitor blandit accumsan ut vel dic accumsan ut vel dic
 						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi suscipit quidem nostrum asperiores numquam tempora reiciendis autem magnam id maiores. Expedita, quo sequi. Fuga eum illo totam esse sapiente harum!
+						</p>
 						<div class="container-user">
 							<div class="pp" style="background-image: url(img/img-test/user.jpg);"></div>
 							<p>

@@ -342,6 +342,32 @@
 		transform: translateY(0px);
 	}
 }
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+
+	#header-desktop .container-head .container-link{
+		margin-right: 15px;
+	}
+	#header-desktop .container-head .container-link li{
+		margin-right: 20px;
+	}
+	#header-desktop .container-head .container-link li .container-text .arrow
+	{
+		margin-left: 8px;
+	}
+	#header-desktop .wrapper{
+		padding-top: 35px;
+	}
+	#header-desktop .wrapper .logo{
+		height: 30px;
+	}
+
+	#header-desktop .container-head{
+		padding-left: 15px;
+	}
+	#header-desktop .container-head .container-action a{
+		padding: 0px 15px 0px 15px;
+	}
+}
 /*=========================================
 =            END HEADER DESKTOP           =
 =========================================*/

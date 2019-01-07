@@ -35,6 +35,9 @@
 			max-width: 715px;
 			margin: 8px auto 0px auto;
 		}
+		p{
+			@include styleParagraphSmall;
+		}
 		.container-user{
 			margin-top: 40px;
 			display: flex;

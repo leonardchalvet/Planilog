@@ -298,6 +298,27 @@
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	#section-try .container-li{
+		width: 300px;
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	#section-tarifs .container-el .el{
+		width: 100%;
+	}
+	#section-try .container-text{
+		width: 100%;
+	}
+	#section-try .container-text .container-input .btn{
+		margin-top: 20px;
+	}
+	#section-try .container-li{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
 /*======================================
 =            END PAGE TARIFS           =
 =======================================*/

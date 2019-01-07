@@ -264,19 +264,20 @@
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+}
+
 @media screen and (max-width: $breakPoint_mobile) {
 
 	#section-blog {
 		padding-top: 125px;
 	}
-	#section-blog .wrapper {
-		padding: 0;
-	}
 	#section-blog .container-filter {
 		position: relative;
 		z-index: 1;
 		width: 100px;
-		padding-left: 25px;
+		height: 40px;
+		padding-left: 0px;
 	}
 	#section-blog .container-filter .filter:first-child {
 		display: block;
@@ -306,6 +307,9 @@
 	    		top: 35px * ($i - 1);
 	    	}
 	    }
+	}
+	#section-blog .container-el .el:not(:first-child){
+		width: 100%;
 	}
 	#section-blog .container-el .el .cover .container-rs,
 	#section-blog .container-el .el .cover .container-rs a {
