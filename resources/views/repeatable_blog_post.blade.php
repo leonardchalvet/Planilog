@@ -41,6 +41,8 @@ use Prismic\Dom\RichText;
                         @simpleText($doc, post_title)
                     </h1>
 
+                    @richText($doc, post_excerpt)
+
                     <div class="container-user">
                         <div class="pp" style="background-image: url(@imageSrc($doc, post_author_image));"></div>
                         <p>
