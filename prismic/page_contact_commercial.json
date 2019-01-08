@@ -93,6 +93,12 @@
         "label": "Téléphone"
       }
     },
+    "field_com": {
+      "type": "Text",
+      "config": {
+        "label": "Société"
+      }
+    },
     "field_question": {
       "type": "Text",
       "config": {

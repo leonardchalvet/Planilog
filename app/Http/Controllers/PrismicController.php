@@ -73,6 +73,7 @@ class PrismicController extends Controller
             $name = $request->post("name");
             $email = $request->post("email");
             $tel = $request->post("tel");
+            $societe = $request->post("societe");
             $question = $request->post("question");
             $pref = $request->post("rappel");
             $pref .= $pref == 'tel' ? "(" . $request->post("time") . ")" : '';
@@ -81,6 +82,7 @@ class PrismicController extends Controller
             $message = <<<EOL
 Nouveau message de $name
 Email : $email
+Société : $societe
 Téléphone : $tel
 
 $question         
