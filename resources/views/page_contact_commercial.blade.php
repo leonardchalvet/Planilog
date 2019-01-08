@@ -52,9 +52,13 @@ use Prismic\Dom\RichText;
                             <div class="title">@simpleText($doc, field_tel)</div>
                             <input type="tel" name="tel" required>
                         </div>
+                        <div class="input">
+                            <div class="title">@simpleText($doc, field_com)</div>
+                            <input type="text" name="societe" required>
+                        </div>
                         <div class="textarea">
                             <div class="title">@simpleText($doc, field_question)</div>
-                            <textarea name="question" required></textarea>
+                            <textarea name="question"></textarea>
                         </div>
                     </div>
                     <div class="container-rcl">
