@@ -1,0 +1,171 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*=============================================
+=            BUSINESS CASE TEMPLATE           =
+=============================================*/
+
+#section-pres{
+	position: relative;
+	.shape{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 70%;
+		z-index: 1;
+	}
+	.wrapper{
+		@include styleGrid1;
+		text-align: center;
+		padding-top: 185px;
+		h2{
+			font-size: 13px;
+			line-height: 18px;
+			font-family: $font_1;
+			color: #B9BCC6;
+		}
+		h1{
+			margin-top: 12px;
+			@include styleH3;
+		}
+		p{
+			margin-top: 12px;
+			@include styleParagraphMedium;
+		}
+		a{	
+			margin-top: 25px;
+			@include styleButtonSmall;
+		}
+	}
+}
+
+#section-el{
+	position: relative;
+	padding: 85px 0px 115px 0px;
+	.wrapper{
+		@include styleGrid1;
+		>.container-el{
+			position: relative;
+			>.el{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				width: 100%;
+				margin-bottom: 95px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+
+				.container-text{
+					width: 60%;
+					h3{
+						@include styleH5;
+					}
+					p{	
+						@include styleParagraphSmall;
+						margin-top: 37px;
+					}
+				}
+				.container-obj{
+					width: 30%;
+					.obj-img{
+						width: 100%;
+						height: 440px;
+						background-repeat: no-repeat;
+						background-position: top center;
+						background-size: cover;
+						background-color: rgba(0, 0, 0, 0.1);
+					}
+					.obj-num{
+						width: 100%;
+						padding: 75px 95px 75px 95px;
+						background-color: #F7F9FC;
+						.container-el{
+							position: relative;
+							.el{
+								margin-bottom: 64px;
+								&:last-child{
+									margin-bottom: 0px;
+								}
+								h4{
+									font-size: 11px;
+									line-height: 15px;
+									font-family: $font_1;
+									color: $colorMain_3;
+								}
+								.num{
+									@include styleH3;
+									font-family: $font_1;
+									margin-top: 14px;
+									position: relative;
+									&:after{
+										content:'';
+										position: absolute;
+										left: 0px;
+										top: calc(100% + 10px);
+										height: 2px;	
+										width: 20px;
+										background-color: $colorMain_2;
+									}
+								}
+								.desc{
+									@include styleParagraphSmall;
+									margin-top: 34px;
+								}
+								&:last-child{
+									margin-bottom: 0px;
+								}
+							}
+						}
+					}
+					.obj-quote{
+						width: 100%;
+						img{
+							display: block;
+							width: 40px;
+							margin: auto;
+							margin-bottom: 25px;
+						}
+						.quote{
+							@include styleH4;
+							font-family: $font_3;
+						}
+						.name{
+							@include styleH6;
+							margin-top: 40px;
+							color: $colorMain_4;
+						}
+						.post{
+							@include styleParagraphMedium;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	#section-el .wrapper>.container-el>.el .container-obj .obj-num{
+		padding: 25px 35px 25px 35px;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	#section-el .wrapper>.container-el>.el .container-text,
+	#section-el .wrapper>.container-el>.el .container-obj{
+		width: 100%;
+	}
+	#section-el .wrapper>.container-el>.el .container-obj{
+		margin-top: 30px;
+	}
+	#section-el .wrapper>.container-el>.el .container-obj .obj-num{
+		padding: 25px 35px 25px 35px;
+	}
+}
+
+/*=================================================
+=            END BUSINESS CASE TEMPLATE           =
+=================================================*/
+
+@import 'footer.scss';

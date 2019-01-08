@@ -30,6 +30,13 @@
 		"oAP": "/businessCase-services.php",
 		"oF": 0
 		},
+	"/businessCase-template.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/businessCase-template.php",
+		"oF": 0
+		},
 	"/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1548,6 +1555,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/js/highlight.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/highlight-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/index.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1642,6 +1659,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/blog-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/businesscase-template.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/businesscase-template-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1820,6 +1847,19 @@
 		"oA": 0,
 		"oAP": "/style/css/blog.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/businesscase-template.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/businesscase-template.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
