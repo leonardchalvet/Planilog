@@ -67,7 +67,7 @@ use Prismic\Dom\RichText;
                 </div>
                 <div class="dropdown">
                     @foreach($alternateLangResolver->getAlternateLang($doc->alternate_languages) as $alt)
-                        <a class="ch-lg"
+                        <a class="ch-lg logo"
                            href="{{ $alt["url"] }}"
                            style="text-transform: capitalize">
                             {{ $alt["locale_name"] }}
