@@ -1,0 +1,35 @@
+{
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
+      }
+    },
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Name"
+      }
+    },
+    "text_404" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Texte page introuvable"
+      }
+    },
+    "text_500" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Texte erreur techniquqe"
+      }
+    },
+    "link" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Retour à l'accueil"
+      }
+    }
+  }
+}
