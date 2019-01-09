@@ -74,7 +74,7 @@ class PrismicLinkResolver extends LinkResolver
         }
         $url = LaravelLocalization::getLocalizedURL($locale, $url);
 
-        //Debugbar::info($link, $url);
+        Debugbar::info($link, $url);
         //dd($link, $locales, $locale, $url);
         return $url;
     }

@@ -45,7 +45,7 @@ use Prismic\Dom\RichText;
                                 </a>
                             @endforeach
                             {{-- Carte spécifique glossaire --}}
-                            <a class="el" href="{{ route('glossaire') }}">
+                            <a class="el" href="{{ route('page_glossaire') }}">
                                 <div class="icn">
                                     <img src="{{ asset('img/support/icn-search.svg') }}">
                                 </div>

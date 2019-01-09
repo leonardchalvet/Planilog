@@ -14,7 +14,7 @@ use Prismic\Dom\RichText;
 @section('header_class', 'style-dark')
 
 @section('container_title', $doc->title)
-@section('container_link', route('glossaire'))
+@section('container_link', route('page_glossaire'))
 
 @section('content')
 
