@@ -77,13 +77,6 @@
         "label": "CTA - texte"
       }
     },
-    "fct_button_link": {
-      "type": "Link",
-      "config": {
-        "label": "CTA - Lien",
-        "allowTargetBlank": true
-      }
-    },
     "fct_color": {
       "type": "Color",
       "config": {

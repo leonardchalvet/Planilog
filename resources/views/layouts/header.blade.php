@@ -84,7 +84,7 @@ use Prismic\Dom\RichText;
                     @linkTarget($header, header_menu_login_link)>
                 @simpleText($header, header_menu_login)
             </a>
-            <a class="signup">
+            <a class="signup signup-button">
 				<span class="text">
 					@simpleText($header, header_menu_essai)
 				</span>
@@ -173,7 +173,7 @@ use Prismic\Dom\RichText;
                         @linkTarget($header, header_menu_login_link)>
                     <span>@simpleText($header, header_menu_login)</span>
                 </a>
-                <a class="signup">
+                <a class="signup signup-button">
                     @simpleText($header, header_menu_essai)
                 </a>
             </div>

@@ -32,8 +32,10 @@ $(window).on('load', function() {
 		$('#header-desktop .li-dropdown .dropdown').removeClass('displayBlock');
 	})
 
-	$('#header-desktop .container-head .container-action .signup').click(function(){ openLightboxSubscribe(); })
-	$('#header-mobile .container-link .container-action .signup').click(function(){ openLightboxSubscribe(); })
+	$('.signup-button').click(function(e){
+		e.preventDefault();
+		openLightboxSubscribe();
+	});
 
 	function openLightboxSubscribe() {
 		$('#lightbox-subscribe').addClass('displayBlock').outerWidth();
