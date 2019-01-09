@@ -9,6 +9,20 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/404.php",
+		"oF": 0
+		},
+	"/500.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/500.php",
+		"oF": 0
+		},
 	"/blog.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1759,6 +1773,16 @@
 		"oAP": "/style/css/home.css.map",
 		"oF": 0
 		},
+	"/style/css/lost.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/lost-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/post.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2003,6 +2027,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/lost.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/lost.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
