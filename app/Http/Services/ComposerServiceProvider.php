@@ -21,9 +21,6 @@ class ComposerServiceProvider extends ServiceProvider
 
         View::composer('components/header_banner', 'App\Http\ViewComposers\PageStructureComposer@composeHeader');
         View::composer('components/header_cookies', 'App\Http\ViewComposers\PageStructureComposer@composeHeader');
-
-        View::composer('errors/404', 'App\Http\ViewComposers\PageStructureComposer@composeError');
-        View::composer('errors/500', 'App\Http\ViewComposers\PageStructureComposer@composeError');
     }
 
     /**

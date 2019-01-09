@@ -59,19 +59,6 @@ class PageStructureComposer
     }
 
     /**
-     * Bind data for error page
-     *
-     * @param  View  $view
-     * @return void
-     */
-    public function composeError(View $view)
-    {
-        $error = $this->contentProvider->getLayout('page_erreur', $this->locale);
-        $view->with('doc', $error);
-    }
-
-
-    /**
      * Bind data for header to the view.
      *
      * @param  View  $view

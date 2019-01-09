@@ -149,7 +149,6 @@ class PrismicContentProvider
             }
             /** @var Document $document */
             $document = $response->results[0];
-            $document->data->alternate_languages = $document->alternate_languages;
             $layout = $document->data;
 
             Cache::put($pageType.'-'.$locale, $layout, now()->addMinutes(10));
