@@ -122,21 +122,7 @@ EOL;
 
     public function domaine(Request $request, string $slug)
     {
-        $document = $this->contentProvider->getSimpleType('domaine', $slug);
-
-        // Get business case
-        $case = null;
-        if ($document->business_case_button_link->link_type != "Any") {
-            $uid = $document->business_case_button_link->uid;
-            $case = $this->contentProvider->getSimpleType('client', $uid);
-        }
-
-        if ($request->has("debug")) dd($document, $case);
-
-        return view('repeatable_domaine', [
-            'doc' => $document,
-            'case' => $case
-        ]);
+        return $this->genericTypePage($request, 'domaine', $slug);
     }
 
     public function post(Request $request, string $slug)

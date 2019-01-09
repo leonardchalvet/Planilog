@@ -10,101 +10,110 @@ use Prismic\Dom\RichText;
 @section('og_description', $doc->seo_og_description ?? $doc->seo_page_description)
 @section('og_image', property_exists($doc->seo_og_image, 'url') ? $doc->seo_og_image->url : "")
 
-@section('style', asset('css/businesscase.css'))
+@section('style', asset('css/businesscase-template.css'))
 @section('header_class', '')
 
 @section('content')
 
     <main>
-        
-        <section id="section-1">
+
+        <section id="section-pres">
+            <img class="shape" src="{{asset('img/home/sectionCover/shape.svg') }}">
             <div class="wrapper">
-                <div class="container-text">
-                    <div class="container-pres">
-                        <h2>@simpleText($doc, case_title)</h2>
-                        <h1>@simpleText($doc, case_business)</h1>
-                        @richText($doc, case_desc)
-                        <a class="btn"
-                           href="@linkSrc($doc, case_button_link)"
-                           @linkTarget($doc, case_button_link)>
+                <h2>@simpleText($doc, case_title)</h2>
+                <h1>@simpleText($doc, case_business)</h1>
+                @richText($doc, case_desc)
+                <a class="btn"
+                   href="@linkSrc($doc, case_button_link)"
+                        @linkTarget($doc, case_button_link)>
 								<span class="btn-text">
 									@simpleText($doc, case_button)
 								</span>
-                            <img class="btn-arrow" src="{{ asset('img/business/arrow.svg') }}">
-                        </a>
-                    </div>
-
-                    <div class="container-cm-text">
-                        <div class="icn"></div>
-                        <div class="text">
-                            <h3>@simpleText($doc, text_1_title)</h3>
-                            @richText($doc, text_1_desc)
-                        </div>
-                    </div>
-                </div>
-                <div class="container-img" style="background-image: url(@imageSrc($doc, case_cover));"></div>
+                    <img class="btn-arrow" src="{{ asset('img/business/arrow.svg') }}">
+                </a>
             </div>
         </section>
 
-        <section id="section-2">
+        <section id="section-el">
             <div class="wrapper">
-                <div class="container-num">
-                    <div class="container-el">
-                        @foreach($doc->kpis as $kpi)
+                <div class="container-el">
+
+                    @foreach ($doc->body as $slice)
+
+                        @switch($slice->slice_type)
+
+                            @case("text_img")
                             <div class="el">
-                                <h4>
-                                    @simpleText($kpi, title)
-                                </h4>
-                                <div class="num">
-                                    @simpleText($kpi, value)
+                                <div class="container-text">
+                                    @richText($slice->primary, text)
                                 </div>
-                                <div class="desc">
-                                    @simpleText($kpi, desc)
+                                <div class="container-obj">
+                                    <div class="obj-img" style="background-image: url(@imageSrc($slice->primary, img)">
+                                    </div>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
-                </div>
+                            @break
 
-                <div class="container-text">
-                    <div class="container-cm-text">
-                        <div class="icn"></div>
-                        <div class="text">
-                            <h3>@simpleText($doc, text_2_title)</h3>
-                            @richText($doc, text_2_desc)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            @case("text_kpis")
+                            <div class="el">
+                                <div class="container-text">
+                                    @richText($slice->primary, text)
+                                </div>
+                                <div class="container-obj">
+                                    <div class="obj-num">
+                                        <div class="container-el">
+                                            @foreach ($slice->items as $kpi)
+                                            <div class="el">
+                                                <h4>
+                                                    @simpleText($kpi, title)
+                                                </h4>
+                                                <div class="num">
+                                                    @simpleText($kpi, value)
+                                                </div>
+                                                <div class="desc">
+                                                    @simpleText($kpi, desc)
+                                                </div>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @break
 
-        <section id="section-3">
-            <div class="wrapper">
-                <div class="container-text">
-                    <div class="container-cm-text">
-                        <div class="icn"></div>
-                        <div class="text">
-                            <h3>@simpleText($doc, text_3_title)</h3>
-                            @richText($doc, text_3_desc)
-                        </div>
-                    </div>
-                </div>
-                <div class="container-quote">
-                    <img class="obj" src="{{ asset('img/business/icn-quote.svg') }}">
-                    <div class="quote">
-                        @richText($doc, quote_text)
-                    </div>
-                    <div class="name">
-                        @simpleText($doc, quote_author)
-                    </div>
-                    <div class="post">
-                        @richText($doc, quote_desc)
-                    </div>
+
+                            @case("text_quote")
+                            <div class="el">
+                                <div class="container-text">
+                                    @richText($slice->primary, text)
+                                </div>
+                                <div class="container-obj">
+                                    <div class="obj-quote">
+                                        <img src="{{asset('img/business/icn-quote.svg') }}">
+                                        <div class="quote">
+                                            @richText($slice->primary, quote_text)
+                                        </div>
+                                        <div class="name">
+                                            @simpleText($slice->primary, quote_author)
+                                        </div>
+                                        <div class="post">
+                                            @richText($slice->primary, quote_desc)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @break
+
+                        @endswitch
+
+                    @endforeach
+
                 </div>
             </div>
         </section>
 
     </main>
+
 
 @endsection
 
