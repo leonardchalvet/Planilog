@@ -152,6 +152,8 @@
 					.container-checkbox{
 						display: block;
 						margin-top: 26px;
+						opacity: 0.5;
+						transition: all 0.25s ease;
 						.checkbox{
 							cursor: pointer;
 							display: flex;
@@ -178,7 +180,6 @@
 							}
 							.text{
 								@include styleParagraphTiny;
-								color: #B9BCC6;
 							}
 							&.active {
 								.checkbox-btn{
@@ -194,8 +195,13 @@
 						
 					}
 
-					&.active .rd{
-						opacity: 1;
+					&.active {
+						.rd{
+							opacity: 1;
+						}
+						.container-checkbox{
+							opacity: 1;
+						}
 					}
 				}
 			}
