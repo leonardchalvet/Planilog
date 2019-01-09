@@ -18,6 +18,8 @@
 		@include styleGrid1;
 		text-align: center;
 		padding-top: 185px;
+		position: relative;
+		z-index: 1;
 		h2{
 			font-size: 13px;
 			line-height: 18px;
@@ -63,6 +65,7 @@
 					}
 					p{	
 						@include styleParagraphSmall;
+						line-height: 30px;
 						margin-top: 37px;
 					}
 				}

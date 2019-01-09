@@ -471,8 +471,7 @@ main
 				position: relative;
 				> p{
 					text-align: left;
-					@include styleParagraphMedium;
-					font-size: 16px;
+					@include styleParagraphSmall;
 					line-height: 30px;
 
 					color: $colorMain_1;
