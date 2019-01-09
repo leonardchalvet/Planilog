@@ -1,0 +1,71 @@
+@import 'common.scss';
+
+/*================================
+=            PAGE LOST           =
+================================*/
+
+.head{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 2;
+	padding-top: 35px;
+	.wrapper{
+		@include styleGrid1;
+		a{
+			text-decoration: none;
+			img{
+				height: 40px;
+			}
+		}
+	}
+}
+
+#section-page{
+	position: relative;
+	padding-top: 25vh;
+	min-height: 100vh;
+	.shape{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 70%;
+		z-index: 1;
+	}
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		h1{
+			font-family: $font_1;
+		  	color: $colorMain_1;
+			font-size: 190px;
+			line-height: 259px;
+		}
+		p{
+			@include styleParagraphBig;
+		}
+		a{
+			margin-top: 65px;
+			@include styleButtonSmall;
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+	#section-page{
+		padding-top: 40vh;
+	}
+	#section-page .wrapper h1{
+		@include styleH1;
+	}
+	#section-page .wrapper a{
+		margin-top: 30px;
+	}
+}
+
+/*====================================
+=            END PAGE LOST           =
+====================================*/
