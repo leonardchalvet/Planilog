@@ -86,7 +86,7 @@ function () {
     Route::get(
         LaravelLocalization::transRoute('routes.glossaire'),
         ['uses' => 'PrismicController@glossaire']
-    )->name('glossaire');
+    )->name('page_glossaire');
     Route::get(
         LaravelLocalization::transRoute('routes.glossaire_mot'),
         ['uses' => 'PrismicController@glossaire']

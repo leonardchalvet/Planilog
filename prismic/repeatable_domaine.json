@@ -64,17 +64,78 @@
       "config": {
         "label": "Image"
       }
-    },
-    "business_case_button": {
+    }
+  },
+  "Business case": {
+    "case_title": {
       "type": "Text",
       "config": {
-        "label": "Business case - Bouton"
+        "label": "Titre"
       }
     },
-    "business_case_button_link": {
+    "case_business": {
+      "type": "Text",
+      "config": {
+        "label": "Client"
+      }
+    },
+    "case_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Logo"
+      }
+    },
+    "case_cover": {
+      "type": "Image",
+      "config": {
+        "label": "Image"
+      }
+    },
+    "case_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "case_button": {
+      "type": "Text",
+      "config": {
+        "label": "Bouton"
+      }
+    },
+    "case_button_link": {
       "type": "Link",
       "config": {
-        "label": "Business case - Client"
+        "label": "Bouton lien",
+        "allowTargetBlank": true
+      }
+    },
+    "kpis": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "value": {
+            "type": "Text",
+            "config": {
+              "label": "Valeur"
+            }
+          },
+          "desc": {
+            "type": "Text",
+            "config": {
+              "label": "Unité"
+            }
+          }
+        },
+        "label": "Chiffres"
       }
     }
   },

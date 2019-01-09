@@ -62,29 +62,28 @@ use Prismic\Dom\RichText;
         </section>
 
         {{-- $case --}}
-        @if ($case != null)
         <section id="section-case">
             <div class="wrapper">
                 <div class="container-text">
                     <div class="icn">
-                        <img src="@imageSrc($case, case_logo)">
+                        <img src="@imageSrc($doc, case_logo)">
                     </div>
                     <div class="title">
-                        @simpleText($case, case_title)
+                        @simpleText($doc, case_title)
                     </div>
                     <h3>
-                        @simpleText($case, case_business)
+                        @simpleText($doc, case_business)
                     </h3>
-                    @richText($case, case_desc)
-                    <a class="btn" href="@linkSrc($doc, business_case_button_link)">
-                        <span class="btn-text">@simpleText($doc, business_case_button)</span>
+                    @richText($doc, case_desc)
+                    <a class="btn" href="@linkSrc($doc, case_button_link)" @linkTarget($doc, case_button_link)>
+                        <span class="btn-text">@simpleText($doc, case_button)</span>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                     </a>
                 </div>
                 <div class="container-stats">
-                    <div class="container-img" style="background-image: url(@imageSrc($case, case_cover));"></div>
+                    <div class="container-img" style="background-image: url(@imageSrc($doc, case_cover));"></div>
                     <div class="container-el">
-                        @foreach($case->kpis as $kpi)
+                        @foreach($doc->kpis as $kpi)
                             <div class="el">
                                 <h4>@simpleText($kpi, title)</h4>
                                 <div class="container-num">
@@ -101,7 +100,6 @@ use Prismic\Dom\RichText;
                 </div>
             </div>
         </section>
-        @endif
 
 
         <section id="section-avantage">

@@ -83,12 +83,6 @@
         "label": "Bouton lien",
         "allowTargetBlank": true
       }
-    },
-    "case_cover": {
-      "type": "Image",
-      "config": {
-        "label": "Image"
-      }
     }
   },
   "Chiffres": {
@@ -184,7 +178,117 @@
         "label": "Texte 3 - Description"
       }
     }
+  },
+  "Contenu": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "text_img": {
+            "type": "Slice",
+            "fieldset": "Texte & image",
+            "description": "Texte & image",
+            "icon": "insert_photo",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
+                  "allowTargetBlank": true,
+                  "label": "Texte"
+                }
+              },
+              "img": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "text_quote": {
+            "type": "Slice",
+            "fieldset": "Texte & citation",
+            "description": "Texte & citation",
+            "icon": "format_quote",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
+                  "allowTargetBlank": true,
+                  "label": "Texte"
+                }
+              },
+              "quote_author": {
+                "type": "Text",
+                "config": {
+                  "label": "Auteur"
+                }
+              },
+              "quote_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "Citation"
+                }
+              },
+              "quote_desc": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "Descrption"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "text_kpis": {
+            "type": "Slice",
+            "fieldset": "Texte & chiffres",
+            "description": "Texte & chiffres",
+            "icon": "format_list_bulleted",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
+                  "allowTargetBlank": true,
+                  "label": "Texte"
+                }
+              }
+            },
+            "repeat": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Chiffre - titre"
+                }
+              },
+              "value": {
+                "type": "Text",
+                "config": {
+                  "label": "Chiffre - valeur"
+                }
+              },
+              "desc": {
+                "type": "Text",
+                "config": {
+                  "label": "Chiffre - unité"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
-
 
