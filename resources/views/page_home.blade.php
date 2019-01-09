@@ -27,7 +27,7 @@ use Prismic\Dom\RichText;
                             @simpleText($doc, cover_title)
                         </h1>
                         @richText($doc, cover_paragraph)
-                        <a class="btn" href="@linkSrc($doc, cover_button_link)" @linkTarget($doc, cover_button_link)>
+                        <a class="btn signup-button">
                             <span class="btn-text">@simpleText($doc, cover_button_text)</span>
                             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                         </a>

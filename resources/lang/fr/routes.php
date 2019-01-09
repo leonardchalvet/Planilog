@@ -1,8 +1,8 @@
 <?php
 return [
     "tarifs" => "tarifs",
-    "domaine" => "domaine/{slug}",
-    "domaine_root" => "domaine",
+    "domaine" => "module/{slug}",
+    "domaine_root" => "module",
     "fonctionnalite" => "fonctionnalite/{slug}",
     "fonctionnalite_root" => "fonctionnalite",
     "client" => "business-case/{slug}",

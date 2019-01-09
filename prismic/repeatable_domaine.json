@@ -181,13 +181,6 @@
       "config": {
         "label": "CTA - Bouton"
       }
-    },
-    "content_button_link": {
-      "type": "Link",
-      "config": {
-        "label": "CTA - Lien",
-        "allowTargetBlank": true
-      }
     }
   },
   "Avantages": {
