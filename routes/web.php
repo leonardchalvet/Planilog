@@ -57,8 +57,9 @@ function () {
         ['uses' => 'PrismicController@fonctionnalite']
     )->name('fonctionnalite');
 
-    Route::redirect(LaravelLocalization::transRoute('routes.fonctionnalite_root'), '/', 302);
-    Route::redirect(LaravelLocalization::transRoute('routes.domaine_root'), '/', 302);
+    Route::redirect(LaravelLocalization::transRoute('routes.fonctionnalite_root'), '/', 301);
+    Route::redirect(LaravelLocalization::transRoute('routes.domaine_root'), '/', 301);
+    Route::redirect(LaravelLocalization::transRoute('routes.client_root'), '/', 301);
 
     // CLIENTS
     Route::get(

@@ -6,6 +6,7 @@ return [
     "fonctionnalite" => "fonctionnalite/{slug}",
     "fonctionnalite_root" => "fonctionnalite",
     "client" => "business-case/{slug}",
+    "client_root" => "business-case",
     "page_blog" => "blog",
     "blog_post" => "blog/{slug}",
     "page_glossaire" => "glossaire",
