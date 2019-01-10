@@ -55,6 +55,7 @@ class PrismicLinkResolver extends LinkResolver
             elseif ($link->link_type == "Web") {
                 // Web link
                 $url = $link->url;
+                return $url; // DON'T TRANSLATE THIS, IDIOT!
             }
             elseif ($link->link_type == "Document") {
                 $url = $this->resolve2($link);
@@ -69,13 +70,17 @@ class PrismicLinkResolver extends LinkResolver
 
         // Localized link
         $locale = $this->locale; // default
+        $url1 = $url;
         if (property_exists($link, 'lang') && isset($this->locales[$link->lang])) {
             $locale = $this->locales[$link->lang];
         }
+        elseif (property_exists($link, 'lang') && in_array($link->lang, $this->locales)) {
+            $locale = $link->lang;
+        }
         $url = LaravelLocalization::getLocalizedURL($locale, $url);
 
-        Debugbar::info($link, $url);
-        //dd($link, $locales, $locale, $url);
+        //Debugbar::info($link, $url);
+        //dd($link, $locale, $this->locales, $url);
         return $url;
     }
 

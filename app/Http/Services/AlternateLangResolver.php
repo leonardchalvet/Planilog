@@ -3,6 +3,7 @@
 namespace App\Http\Services;
 
 
+use Barryvdh\Debugbar\Facade as Debugbar;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -30,6 +31,7 @@ class AlternateLangResolver
     {
         $response = [];
         $curentLocale = LaravelLocalization::getCurrentLocale(); // en, fr...
+        $route = Route::currentRouteName();
 
         // For each laravel locales (en, fr...)
         foreach (LaravelLocalization::getSupportedLocales() as $key => $locale) {
@@ -37,34 +39,40 @@ class AlternateLangResolver
             // Default url is current url
             $url = null;
             $hreflang = null;
+            $params = Route::current()->parameters();
 
-            // Current locale url is already current locale url -> let $url null
-            if ($key != $curentLocale) {
-                // Check if there is a alternate language document defined in Prismic
+            // Don't translate current url in current locale
+            if ($key !== $curentLocale) {
+                // Check if current page has alternate language defined (in prismic)
                 // For each prismic locales (en-us, fr-fr...)
                 foreach ($alternate_languages as $alt) {
                     // If there is a match
                     if (($this->locales[$alt->lang] ?? null) == $key) {
-                        //dump($alt, $key);
+                        // Then we translate the route's params
+                        $here = true;
                         $hreflang = $alt->lang;
-                        $url = $this->linkResolver->resolve($alt);
+                        if (property_exists($alt, 'uid')) $params['slug'] = $alt->uid;
+                        if (isset($params['cat'])) $params['cat'] = 'xxx';
                         break; // Don't check others prismic locales
                     }
                 }
-                // Get prefix url if there is no alternate language in the doc
+                // If there is no match, remove slug (to go to default page)
                 // eg: /en/blog/some-english-article-not-in-french => /fr/blog
-                $url = $url ?? $url = Route::current()->compiled->getStaticPrefix();
+                if (!$hreflang) {
+                    $params['slug'] = "";
+                }
             }
 
-            // "convert" link to asked locale
-            $url = LaravelLocalization::getLocalizedURL($key, $url);
+            $url = LaravelLocalization::getURLFromRouteNameTranslated($key, 'routes.'.$route, $params);
+            //Debugbar::info($key . " " . $route . " -> " . $url, $params);
 
-            $response[] = [
-                "url" => $url,
-                "hreflang" => $hreflang,
-                "locale_name" => $locale['native'],
+            $response[$key] = [
                 "locale_code" => $key,
+                "locale_name" => $locale['native'],
+                "hreflang"    => $hreflang,
+                "url"         => $url,
             ];
+
         }
 
         return $response;

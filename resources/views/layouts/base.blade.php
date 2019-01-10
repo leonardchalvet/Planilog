@@ -42,7 +42,7 @@
         @continue($alt["hreflang"] == null)
         <link rel="alternate" href="{{ $alt["url"] }}" hreflang="{{ $alt["hreflang"] }}" />
     @endforeach
-    <!-- <link rel="canonical" href="{{ URL::current() }}" /> -->
+    <link rel="canonical" href="{{ URL::current() }}" />
 
 </head>
 

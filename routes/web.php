@@ -22,26 +22,26 @@ function () {
     )->name('page_home');
 
     Route::get(
-        LaravelLocalization::transRoute('routes.tarifs'),
+        LaravelLocalization::transRoute('routes.page_tarifs'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_tarifs']
     )->name('page_tarifs');
 
     Route::get(
-        LaravelLocalization::transRoute('routes.cookies'),
+        LaravelLocalization::transRoute('routes.page_cookies'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_cookies']
     )->name('page_cookies');
 
     Route::get(
-        LaravelLocalization::transRoute('routes.contact_commercial'),
+        LaravelLocalization::transRoute('routes.page_contact_commercial'),
         ['uses' => 'PrismicController@contactPage']
     )->name('page_contact_commercial');
     // Formulaire
     Route::post(
-        LaravelLocalization::transRoute('routes.contact_commercial'),
+        LaravelLocalization::transRoute('routes.page_contact_assistance'),
         ['uses' => 'PrismicController@contactForm']
     );
     Route::get(
-        LaravelLocalization::transRoute('routes.contact_assistance'),
+        LaravelLocalization::transRoute('routes.page_contact_assistance'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_contact_assistance']
     )->name('page_contact_assistance');
 
@@ -68,7 +68,7 @@ function () {
 
     // BLOG
     Route::get(
-        LaravelLocalization::transRoute('routes.blog'),
+        LaravelLocalization::transRoute('routes.page_blog'),
         ['uses' => 'PrismicController@genericPage', 'page' => 'page_blog']
     )->name('page_blog');
     // ARTICLES LIST
@@ -78,13 +78,13 @@ function () {
     )->name('list_posts');
     // ARTICLE
     Route::get(
-        LaravelLocalization::transRoute('routes.post'),
+        LaravelLocalization::transRoute('routes.blog_post'),
         ['uses' => 'PrismicController@post']
     )->name('blog_post');
 
     // GLOSSAIRE
     Route::get(
-        LaravelLocalization::transRoute('routes.glossaire'),
+        LaravelLocalization::transRoute('routes.page_glossaire'),
         ['uses' => 'PrismicController@glossaire']
     )->name('page_glossaire');
     Route::get(
@@ -95,7 +95,7 @@ function () {
 
     // SUPPORT
     Route::get(
-        LaravelLocalization::transRoute('routes.support'),
+        LaravelLocalization::transRoute('routes.page_support'),
         ['uses' => 'PrismicController@supportPage']
     )->name('page_support');
     Route::get(

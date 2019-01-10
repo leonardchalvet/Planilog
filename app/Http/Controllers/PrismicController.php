@@ -254,14 +254,14 @@ EOL;
 
     /**
      * @param Request $request
-     * @param string $cat
+     * @param string $slug
      * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function supportCat(Request $request, string $cat)
+    public function supportCat(Request $request, string $slug)
     {
 
         $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
-        $document = $this->contentProvider->getSimpleType('support_categorie2', $cat);
+        $document = $this->contentProvider->getSimpleType('support_categorie2', $slug);
 
         $categories = $this->contentProvider->getSupportCategories($this->locale);
 
@@ -286,9 +286,10 @@ EOL;
      * @param Request $request
      * @param string $cat
      * @param string $slug
+     * @param PrismicLinkResolver $resolver
      * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function supportPost(Request $request, string $cat, string $slug)
+    public function supportPost(Request $request, string $cat, string $slug, PrismicLinkResolver $resolver)
     {
         $document = $this->contentProvider->getSimpleType('support_post2', $slug);
 
@@ -305,7 +306,7 @@ EOL;
                 'cat' => $document->support_category->uid,
                 'slug' => $document->uid
             ]);
-            return response(null, 302)->header('Location', $url);
+            return response(null, 301)->header('Location', $url);
         }
 
         $categorie = null;
@@ -390,7 +391,6 @@ EOL;
         $support->mail($to, $subject, $message);
 
         return response(null, "200");
-        //return response(null, 302)->header('Location', route('page_home'));
     }
 }
 

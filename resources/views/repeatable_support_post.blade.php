@@ -27,7 +27,7 @@ use Prismic\Dom\RichText;
                     <div class="container-rslt">
                         <div class="text">
                             {{-- first word in <span> --}}
-                            <?= nl2br(preg_replace('/([^[:space:]]*)(.*)/', "<span>$1</span>$2", $cat->support_title)); ?>
+                            <?= nl2br(preg_replace('/([^[:space:]]*)(.*)/', "<span>$1</span>$2", $cat->support_title ?? "")); ?>
                         </div>
                         <img src="{{ asset('img/support-list/arrow.svg') }}">
                     </div>
