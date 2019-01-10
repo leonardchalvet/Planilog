@@ -23,7 +23,7 @@ use Prismic\Dom\RichText;
 
                 @richText($doc, desc)
 
-                <a href="{{ route('page_home') }}" class="btn" id="acceptCookiesButton">
+                <a href="{{ route('page_home') }}" class="btn logo" id="acceptCookiesButton">
                     <span class="btn-text">
                         @simpleText($doc, button)
                     </span>
