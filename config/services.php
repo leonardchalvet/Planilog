@@ -45,5 +45,9 @@ return [
         'token' => env('PRISMIC_TOKEN'),
     ],
 
+    'google' => [
+        'tag_manager_id' => env('GOOGLE_TAG_MANAGER', false),
+    ]
+
 
 ];

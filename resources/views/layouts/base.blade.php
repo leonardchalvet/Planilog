@@ -56,9 +56,8 @@
 @include('layouts.footer')
 
 
+@include('components.google_tag_manager')
 @yield('js')
-
-
 <script src="{{ asset("js/js.cookie.js") }}"></script>
 @include('components.header_banner')
 @include('components.header_cookies')
