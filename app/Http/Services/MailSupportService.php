@@ -28,7 +28,6 @@ class MailSupportService
                 $mail->Password = config('mail.password');
             }
 
-
             $mail->CharSet = 'UTF-8';
             $mail->Encoding = 'base64';
 

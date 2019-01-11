@@ -5,6 +5,9 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 // Used by Prismic for previews
 Route::get('/preview', ['uses' => 'PrismicController@preview']);
 
+
+Route::post('/raf', ['uses' => 'PrismicController@test']);
+
 /*
  * Groups for localized routes
  * https://github.com/mcamara/laravel-localization
