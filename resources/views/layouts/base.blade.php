@@ -63,7 +63,7 @@
 @include('components.header_cookies')
 
 
-{{-- DEBUG --}}
+{{-- Show missing links --}}
 <style>
     @keyframes blink { 50% { outline: 1px solid red; } }
     /*.emptyLink{ animation: blink 2s step-end infinite alternate; }*/
@@ -73,9 +73,6 @@
     $('a[href="#"]').addClass("emptyLink");
     $('a[href="{{ LaravelLocalization::getLocalizedURL(null, "/") }}"]').addClass("emptyLink");
 </script>
-
-{{-- Missing style --}}
-<style>.prout {font-size: 16px;font-family: OpenSans-Regular;}</style>
 
 {{-- ajax forms --}}
 <script>
@@ -92,7 +89,6 @@
         });
     });
 </script>
-
 
 {{--  Prismic Toolbar for previews --}}
 <script>

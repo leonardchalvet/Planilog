@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Log;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use PHPMailer\PHPMailer\PHPMailer;
 use Prismic\Api;
 use Prismic\LinkResolver;
 use Prismic\Predicates;
@@ -391,6 +392,48 @@ EOL;
         $support->mail($to, $subject, $message);
 
         return response(null, "200");
+    }
+
+
+    public function test()
+    {
+        $mail = new PHPMailer(true); // Passing `true` enables exceptions
+
+        try {
+            // Server settings
+            //$mail->SMTPDebug = 2; // Enable verbose debug output
+            if (config('mail.driver') == "SMTP") {
+                $mail->isSMTP();
+                $mail->SMTPSecure = config('mail.encryption');
+                $mail->Port = config('mail.port');
+            }
+            $mail->Host = config('mail.host');
+
+            if (config('mail.username') != "") {
+                $mail->SMTPAuth = true;
+                $mail->Username = config('mail.username');
+                $mail->Password = config('mail.password');
+            }
+
+
+            $mail->CharSet = 'UTF-8';
+            $mail->Encoding = 'base64';
+
+            // Recipients
+            $mail->setFrom(config('mail.from.address'), config('mail.from.name'));
+            $mail->addAddress("leahpar@gmail.com");
+
+            //Content
+            $mail->Subject = "test";
+            $mail->Body    = "message";
+            $mail->isHTML(false);
+            $res = $mail->send();
+
+            dd($res, $mail);
+
+        } catch (\Exception $e) {
+            dd($e, $mail->ErrorInfo);
+        }
     }
 }
 

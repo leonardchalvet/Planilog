@@ -292,3 +292,4 @@ FileETag None
     </IfModule>
 
 </IfModule>
+RedirectPermanent /wiki/xp https://www.planilog.com/fr/glossaire
