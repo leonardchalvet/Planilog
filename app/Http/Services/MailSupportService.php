@@ -15,7 +15,11 @@ class MailSupportService
         try {
             // Server settings
             //$mail->SMTPDebug = 2; // Enable verbose debug output
-            $mail->isSMTP();
+            if (config('mail.driver') == "SMTP") {
+                $mail->isSMTP();
+                $mail->SMTPSecure = config('mail.encryption');
+                $mail->Port = config('mail.port');
+            }
             $mail->Host = config('mail.host');
 
             if (config('mail.username') != "") {
@@ -24,8 +28,6 @@ class MailSupportService
                 $mail->Password = config('mail.password');
             }
 
-            $mail->SMTPSecure = config('mail.encryption');
-            $mail->Port = config('mail.port');
 
             $mail->CharSet = 'UTF-8';
             $mail->Encoding = 'base64';
