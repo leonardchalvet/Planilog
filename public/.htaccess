@@ -524,8 +524,8 @@ RedirectPermanent /pme_planning.html#!page=sample_rh https://www.planilog.com/
 RedirectPermanent /pme_planning.html#!page=subscription https://www.planilog.com/
 RedirectPermanent /prices.htm https://www.planilog.com/fr/tarifs
 RedirectPermanent /prices.htm#!page=connexion https://www.planilog.com/fr/tarifs
-RedirectPermanent /privacy_policy.htm https://www.planilog.com/fr/cookies
-RedirectPermanent /privacy_policy.htm#!page=connexion https://www.planilog.com/fr/cookies
+RedirectPermanent /privacy_policy.htm https://www.planilog.com/fr/pages/cookies
+RedirectPermanent /privacy_policy.htm#!page=connexion https://www.planilog.com/fr/pages/cookies
 RedirectPermanent /quotes_pro.php https://www.planilog.com/fr/contact
 RedirectPermanent /register_aps.html https://www.planilog.com/
 RedirectPermanent /register_aps.html#!page=connexion https://www.planilog.com/
