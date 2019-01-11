@@ -576,6 +576,11 @@
 							color: #FFF;
 						}
 					}
+					a{
+						@include styleH5;
+						color: #FFF;
+						font-family: $font_3;
+					}
 				}
 				
 
