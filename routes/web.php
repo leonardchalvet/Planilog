@@ -27,11 +27,6 @@ function () {
     )->name('page_tarifs');
 
     Route::get(
-        LaravelLocalization::transRoute('routes.page_cookies'),
-        ['uses' => 'PrismicController@genericPage', 'page' => 'page_cookies']
-    )->name('page_cookies');
-
-    Route::get(
         LaravelLocalization::transRoute('routes.page_contact_commercial'),
         ['uses' => 'PrismicController@contactPage']
     )->name('page_contact_commercial');
@@ -60,6 +55,7 @@ function () {
     Route::redirect(LaravelLocalization::transRoute('routes.fonctionnalite_root'), '/', 301);
     Route::redirect(LaravelLocalization::transRoute('routes.domaine_root'), '/', 301);
     Route::redirect(LaravelLocalization::transRoute('routes.client_root'), '/', 301);
+    Route::redirect(LaravelLocalization::transRoute('routes.simple_page_root'), '/', 301);
 
     // CLIENTS
     Route::get(
@@ -107,6 +103,13 @@ function () {
         LaravelLocalization::transRoute('routes.support_post'),
         ['uses' => 'PrismicController@supportPost']
     )->name('support_post');
+
+    // GENERIC PAGES
+    Route::get(
+        LaravelLocalization::transRoute('routes.simple_page'),
+        ['uses' => 'PrismicController@simplePage']
+    )->name('simple_page');
+
 });
 
 

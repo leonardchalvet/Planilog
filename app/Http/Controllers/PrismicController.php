@@ -126,6 +126,11 @@ EOL;
         return $this->genericTypePage($request, 'domaine', $slug);
     }
 
+    public function simplePage(Request $request, string $slug)
+    {
+        return $this->genericTypePage($request, 'simple_page', $slug);
+    }
+
     public function post(Request $request, string $slug)
     {
         $document = $this->contentProvider->getSimpleType('blog_post', $slug);

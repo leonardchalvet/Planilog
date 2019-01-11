@@ -16,5 +16,6 @@ return [
     "page_support" => "support",
     "support_cat" => "support/{slug}",
     "support_post" => "support/{cat}/{slug}",
-    "page_cookies" => "cookies",
+    "simple_page" => "pages/{slug}",
+    "simple_page_root" => "pages",
 ];

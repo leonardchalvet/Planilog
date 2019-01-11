@@ -23,11 +23,6 @@ use Prismic\Dom\RichText;
 
                 @richText($doc, desc)
 
-                <a href="{{ route('page_home') }}" class="btn logo" id="acceptCookiesButton">
-                    <span class="btn-text">
-                        @simpleText($doc, button)
-                    </span>
-                </a>
             </div>
         </section>
 
@@ -39,12 +34,4 @@ use Prismic\Dom\RichText;
 @section('js')
     <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
     <script src="{{ asset("js/header.js") }}"></script>
-    <script>
-        $(window).on('load', function() {
-            var c = Cookies.get('cookies_policy') || "off";
-            $("#section-cookies").on('click', '#acceptCookiesButton', function() {
-                Cookies.set('cookies_policy', 'on');
-            });
-        });
-    </script>
 @endsection
