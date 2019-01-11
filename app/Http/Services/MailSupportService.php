@@ -15,14 +15,11 @@ class MailSupportService
         try {
             // Server settings
             //$mail->SMTPDebug = 2; // Enable verbose debug output
-            if (config('mail.driver') == "SMTP") {
+            if (config('mail.driver') == "smtp") {
                 $mail->isSMTP();
                 $mail->SMTPSecure = config('mail.encryption');
                 $mail->Port = config('mail.port');
-            }
-            $mail->Host = config('mail.host');
-
-            if (config('mail.username') != "") {
+                $mail->Host = config('mail.host');
                 $mail->SMTPAuth = true;
                 $mail->Username = config('mail.username');
                 $mail->Password = config('mail.password');
@@ -41,7 +38,7 @@ class MailSupportService
             $mail->isHTML(false);
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-            $mail->send();
+            return $mail->send();
 
         } catch (Exception $e) {
             dd($e, $mail->ErrorInfo);

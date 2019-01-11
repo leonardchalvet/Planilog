@@ -5,9 +5,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 // Used by Prismic for previews
 Route::get('/preview', ['uses' => 'PrismicController@preview']);
 
-
-Route::post('/raf', ['uses' => 'PrismicController@test']);
-
 /*
  * Groups for localized routes
  * https://github.com/mcamara/laravel-localization
@@ -40,7 +37,7 @@ function () {
     )->name('page_contact_commercial');
     // Formulaire
     Route::post(
-        LaravelLocalization::transRoute('routes.page_contact_assistance'),
+        LaravelLocalization::transRoute('routes.page_contact_commercial'),
         ['uses' => 'PrismicController@contactForm']
     );
     Route::get(
