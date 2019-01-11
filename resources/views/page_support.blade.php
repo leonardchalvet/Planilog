@@ -34,7 +34,7 @@ use Prismic\Dom\RichText;
                         <input id="liveSearch" type="text" placeholder="@simpleText($doc, cover_search)">
                     </div>
                     <div class="container-dropdown">
-                        <div class="prout" id="no-result">@simpleText($doc, cover_no_result)</div>
+                        <div id="no-result">@simpleText($doc, cover_no_result)</div>
                         <div class="container-el" id="liveList">
 
                             @foreach($posts as $slug => $cat)

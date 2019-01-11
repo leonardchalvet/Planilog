@@ -203,14 +203,14 @@ use Prismic\Dom\RichText;
 
                             <div class="container-quote">
                                 @richText($quote, section_quotes_el_paragraph, q)
+
+                                @if (!empty($quote->section_quotes_el_link))
+                                <p><a href="@linkSrc($quote, section_quotes_el_target)"
+                                   @linkTarget($quote, section_quotes_el_target)>
+                                    @simpleText($quote, section_quotes_el_link)
+                                </a></p>
+                                @endif
                             </div>
-                            @if (!empty($quote->section_quotes_el_link))
-                            <a href="@linkSrc($quote, section_quotes_el_target)"
-                               class="prout" style="color: white"
-                               @linkTarget($quote, section_quotes_el_target)>
-                                @simpleText($quote, section_quotes_el_link)
-                            </a>
-                            @endif
                         </div>
                     @endforeach
                 </div>
