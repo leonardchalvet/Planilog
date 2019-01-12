@@ -310,7 +310,7 @@ FileETag None
 
 </IfModule>
 
-RedirectPermanent /wiki https://www.planilog.com/fr/support
+RedirectPermanent /wiki https://www.planilog.com/fr/glossaire
 RedirectPermanent /documentation https://www.planilog.com/fr/support
 RedirectPermanent /planilog https://www.planilog.com/fr
 RedirectPermanent /Planilog https://www.planilog.com/fr
