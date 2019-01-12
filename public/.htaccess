@@ -19,10 +19,11 @@
     </IfModule>
 
     RewriteEngine On
-    # Redirections 301 répertoire documentation/planilog
+    # Redirections 301 répertoire documentation/planilog/PDF
     RewriteRule ^documentation/(.*)$ https://www.planilog.com/fr/support [R=301,L]
     RewriteRule ^planilog/(.*)$ https://www.planilog.com/fr [R=301,L]
     RewriteRule ^Planilog/(.*)$ https://www.planilog.com/fr [R=301,L]
+    RewriteRule ^PDF/(.*)$ https://www.planilog.com/fr/support [R=301,L]
 
     # Redirections 301 répertoire wiki sauf :
     RewriteRule ^wiki/web-aps/piloter-votre-planification-sous-contraintes-avec-le-tableau-de-bord-planilog-web-aps-jitasap.html https://www.planilog.com/fr/module/planning-production [R=301,L]
@@ -310,6 +311,11 @@ FileETag None
 
 </IfModule>
 
+RedirectPermanent /video_presentation.html https://www.planilog.com/fr/support/tutoriel-video
+RedirectPermanent /quotes.php https://www.planilog.com/fr/contact
+RedirectPermanent /planning.htm https://www.planilog.com/fr
+RedirectPermanent /partenaires_eva.php?p_eva=world https://www.planilog.com/fr
+RedirectPermanent /PDF https://www.planilog.com/fr/support
 RedirectPermanent /wiki https://www.planilog.com/fr/glossaire
 RedirectPermanent /documentation https://www.planilog.com/fr/support
 RedirectPermanent /planilog https://www.planilog.com/fr
