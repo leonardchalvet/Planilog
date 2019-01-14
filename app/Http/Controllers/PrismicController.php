@@ -99,11 +99,12 @@ EOL;
      * @param Request $request
      * @param string $type
      * @param string $slug
+     * @param string|null $locale
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function genericTypePage(Request $request, string $type, string $slug)
+    public function genericTypePage(Request $request, string $type, string $slug, string $locale = null)
     {
-        $document = $this->contentProvider->getSimpleType($type, $slug);
+        $document = $this->contentProvider->getSimpleType($type, $slug, $locale);
 
         if ($request->has("debug")) dd($document);
 
@@ -113,31 +114,29 @@ EOL;
     }
     public function client(Request $request, string $slug)
     {
-        return $this->genericTypePage($request, 'client', $slug);
+        return $this->genericTypePage($request, 'client', $slug, $this->locale);
     }
 
     public function fonctionnalite(Request $request, string $slug)
     {
-        return $this->genericTypePage($request, 'feature', $slug);
+        return $this->genericTypePage($request, 'feature', $slug, $this->locale);
     }
 
     public function domaine(Request $request, string $slug)
     {
-        return $this->genericTypePage($request, 'domaine', $slug);
+        return $this->genericTypePage($request, 'domaine', $slug, $this->locale);
     }
 
     public function simplePage(Request $request, string $slug)
     {
-        return $this->genericTypePage($request, 'simple_page', $slug);
+        return $this->genericTypePage($request, 'simple_page', $slug, $this->locale);
     }
 
     public function post(Request $request, string $slug)
     {
-        $document = $this->contentProvider->getSimpleType('blog_post', $slug);
+        $document = $this->contentProvider->getSimpleType('blog_post', $slug, $this->locale);
 
         // Get related posts
-        // TODO : use fetch links ?
-        // https://prismic.io/docs/php/query-the-api/fetch-linked-document-fields
         $ids = [];
         foreach ($document->related_posts as $post) {
             $ids[] = $post->post->id;
@@ -267,7 +266,7 @@ EOL;
     {
 
         $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
-        $document = $this->contentProvider->getSimpleType('support_categorie2', $slug);
+        $document = $this->contentProvider->getSimpleType('support_categorie2', $slug, $this->locale);
 
         $categories = $this->contentProvider->getSupportCategories($this->locale);
 
@@ -292,12 +291,11 @@ EOL;
      * @param Request $request
      * @param string $cat
      * @param string $slug
-     * @param PrismicLinkResolver $resolver
      * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function supportPost(Request $request, string $cat, string $slug, PrismicLinkResolver $resolver)
+    public function supportPost(Request $request, string $cat, string $slug)
     {
-        $document = $this->contentProvider->getSimpleType('support_post2', $slug);
+        $document = $this->contentProvider->getSimpleType('support_post2', $slug, $this->locale);
 
         $support = $this->contentProvider->getSimplePage('page_support', $this->locale);
         $categories = $this->contentProvider->getSupportCategories($this->locale);

@@ -211,13 +211,16 @@ class PrismicContentProvider
     /**
      * @param $type
      * @param $slug
+     * @param null $locale
      * @return mixed
      */
-    public function getSimpleType($type, $slug)
+    public function getSimpleType($type, $slug, $locale = null)
     {
         /** @var Document $document */
         Debugbar::startMeasure('prismic', "Prismic API [$type: $slug]");
-        $document = $this->api->getByUID($type, $slug);
+        $options = [];
+        if ($locale) $options["lang"] = $locale;
+        $document = $this->api->getByUID($type, $slug, $options);
         Debugbar::stopMeasure('prismic');
 
         if (null == $document) {
