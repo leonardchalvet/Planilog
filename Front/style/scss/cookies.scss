@@ -10,6 +10,8 @@
 	.wrapper{
 		@include styleGrid4;
 
+		@include styleWysiwyg;
+
 		> p{
 			text-align: left;
 			@include styleParagraphMedium;
