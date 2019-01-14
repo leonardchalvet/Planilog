@@ -96,7 +96,7 @@ class PrismicLinkResolver extends LinkResolver
             }
         }
         elseif ($link->type == "glossaire") {
-            $url = route("page_glossaire");
+            $url = route("glossaire_mot", ['slug' => $link->uid]);
         }
         elseif ($link->type == "simple_page") {
             $url = route($link->type, ['slug' => $link->uid]);

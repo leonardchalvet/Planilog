@@ -54,11 +54,10 @@
     "desc": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, strong, em, hyperlink",
+        "multi": "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, list-item, o-list-item",
         "allowTargetBlank": true,
         "label": "Texte"
       }
     }
   }
 }
-RGPD – Règlement Général de protection des données
