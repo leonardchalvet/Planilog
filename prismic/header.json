@@ -129,6 +129,13 @@
       "config": {
         "label": "Header Menu Essai"
       }
+    },
+    "header_menu_essai_link": {
+      "type": "Link",
+      "config": {
+        "label": "Header Menu Essai Link",
+        "allowTargetBlank": true
+      }
     }
   },
   "Formulaire d'inscription": {

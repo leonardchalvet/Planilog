@@ -84,10 +84,12 @@ use Prismic\Dom\RichText;
                     @linkTarget($header, header_menu_login_link)>
                 @simpleText($header, header_menu_login)
             </a>
-            <a class="signup signup-button">
-				<span class="text">
-					@simpleText($header, header_menu_essai)
-				</span>
+            <a class="signup"
+               href="@linkSrc($header, header_menu_essai_link)"
+                    @linkTarget($header, header_menu_login_link)>
+                <span class="text">
+                    @simpleText($header, header_menu_essai)
+                </span>
             </a>
         </div>
     </div>
@@ -173,63 +175,12 @@ use Prismic\Dom\RichText;
                         @linkTarget($header, header_menu_login_link)>
                     <span>@simpleText($header, header_menu_login)</span>
                 </a>
-                <a class="signup signup-button">
+                <a class="signup"
+                   href="@linkSrc($header, header_menu_essai_link)"
+                   @linkTarget($header, header_menu_login_link)>
                     @simpleText($header, header_menu_essai)
                 </a>
             </div>
         </div>
     </div>
 </header>
-
-
-
-<div id="lightbox-subscribe">
-
-    <div class="background"></div>
-
-    <div class="container-subscribe">
-        <div class="container-form">
-            <h2>
-                @simpleText($header, form_title)
-            </h2>
-            <form class="ajaxForm" action="{{ route('inscription') }}" method="post">
-                @csrf
-                <div class="container-input">
-                    <div class="input">
-                        <div class="title">@simpleText($header, form_name)</div>
-                        <input type="text" name="lastname">
-                    </div>
-                    <div class="input">
-                        <div class="title">@simpleText($header, form_name2)</div>
-                        <input type="text" name="firstname">
-                    </div>
-                    <div class="input">
-                        <div class="title">@simpleText($header, form_email)*</div>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="input">
-                        <div class="title">@simpleText($header, form_tel)</div>
-                        <input type="tel" name="tel">
-                    </div>
-                </div>
-                @richText($header, form_cgu)
-                <button>
-					<span class="btn-text">
-						@simpleText($header, form_button)
-					</span>
-                    <img class="btn-check" src="{{ asset('img/common/check.svg') }}">
-                </button>
-            </form>
-        </div>
-        <div class="container-desc">
-            <div class="close">
-                <img src="{{ asset('img/common/icn-cross.svg') }}">
-            </div>
-            <div class="icn">
-                <img src="{{ asset('img/common/icn-subscribe.svg') }}">
-            </div>
-            @richText($header, form_desc)
-        </div>
-    </div>
-
-</div>

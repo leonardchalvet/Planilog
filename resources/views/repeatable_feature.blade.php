@@ -33,7 +33,8 @@ use Prismic\Dom\RichText;
                     </h1>
                     <p>
                     @richText($doc, fct_desc)
-                    <a class="btn signup-button" {{--href="@linkSrc($doc, fct_button_link)" @linkTarget($doc, fct_button_link)--}}>
+                    <a class="btn" href="@linkSrc($header, header_menu_essai_link)"
+                            @linkTarget($header, header_menu_login_link)>
                         <span class="btn-text">@simpleText($doc, fct_button)</span>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                     </a>

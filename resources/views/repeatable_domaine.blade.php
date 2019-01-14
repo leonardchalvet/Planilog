@@ -53,7 +53,8 @@ use Prismic\Dom\RichText;
                     @endforeach
                 </div>
                 <div class="container-btn">
-                    <a class="signup-button">
+                    <a href="@linkSrc($header, header_menu_essai_link)"
+                            @linkTarget($header, header_menu_login_link)>
                         <span class="btn-text">@simpleText($doc, content_button)</span>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                     </a>

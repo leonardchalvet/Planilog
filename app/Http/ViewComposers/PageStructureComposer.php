@@ -56,6 +56,10 @@ class PageStructureComposer
         // Get translation from prismic
         //$translations = $this->contentProvider->getLayout('translations', $this->locale);
         //$view->with('translations', $translations);
+
+        // Get header (for signup link)
+        $header = $this->contentProvider->getLayout('header', $this->locale);
+        $view->with('header', $header);
     }
 
     /**
