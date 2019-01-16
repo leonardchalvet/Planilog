@@ -4,7 +4,7 @@ $(window).on('load', function() {
     var category = nextButton.data("category");
     if (!category) category = "all";
 
-    $('.filter[data-category='+category+']').addClass('active');
+    $('.filter[data-category="'+category+'"]').addClass('active');
 
 
 
