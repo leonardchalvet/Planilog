@@ -1,287 +1,193 @@
 {
-  "A-General": {
-    "page_title": {
-      "type": "Text",
-      "config": {
-        "useAsTitle": true,
-        "label": "Page name (displayed only on Prismic)"
+  "A-General" : {
+    "page_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
       }
     },
-    "uid": {
-      "type": "UID",
-      "config": {
-        "label": "Slug (unique, utilisé dans l'url) ex : 'planifier'"
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "Slug (unique, utilisé dans l'url) ex : 'planifier'"
       }
     },
-    "seo_page_title": {
-      "type": "Text",
-      "config": {
-        "label": "SEO - Name"
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Name"
       }
     },
-    "seo_page_description": {
-      "type": "Text",
-      "config": {
-        "label": "SEO - Description"
+    "seo_page_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO - Description"
       }
     },
-    "seo_og_title": {
-      "type": "Text",
-      "config": {
-        "label": "SEO Open Graph - Name"
+    "seo_og_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Name"
       }
     },
-    "seo_og_description": {
-      "type": "Text",
-      "config": {
-        "label": "SEO Open Graph - Description"
+    "seo_og_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Open Graph - Description"
       }
     },
-    "seo_og_image": {
-      "type": "Image",
-      "config": {
-        "label": "SEO Open Graph - Image"
+    "seo_og_image" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "SEO Open Graph - Image"
       }
     }
   },
-  "Cover": {
-    "case_title": {
-      "type": "Text",
-      "config": {
-        "label": "Titre"
+  "Cover" : {
+    "case_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Titre"
       }
     },
-    "case_business": {
-      "type": "Text",
-      "config": {
-        "label": "Client"
+    "case_business" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Client"
       }
     },
-    "case_logo": {
-      "type": "Image",
-      "config": {
-        "label": "Logo"
+    "case_logo" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Logo"
       }
     },
-    "case_desc": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Description"
+    "case_desc" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "allowTargetBlank" : true,
+        "label" : "Description"
       }
     },
-    "case_button": {
-      "type": "Text",
-      "config": {
-        "label": "Bouton"
+    "case_button" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Bouton"
       }
     },
-    "case_button_link": {
-      "type": "Link",
-      "config": {
-        "label": "Bouton lien",
-        "allowTargetBlank": true
+    "case_button_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Bouton lien",
+        "allowTargetBlank" : true
       }
     }
   },
-  "Chiffres": {
-    "kpis": {
-      "type": "Group",
-      "config": {
-        "fields": {
-          "title": {
-            "type": "Text",
-            "config": {
-              "label": "Title"
-            }
-          },
-          "value": {
-            "type": "Text",
-            "config": {
-              "label": "Valeur"
-            }
-          },
-          "desc": {
-            "type": "Text",
-            "config": {
-              "label": "unité"
-            }
-          }
-        },
-        "label": "Chiffres"
-      }
-    }
-  },
-  "Citation": {
-    "quote_author": {
-      "type": "Text",
-      "config": {
-        "label": "Auteur"
-      }
-    },
-    "quote_text": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Citation"
-      }
-    },
-    "quote_desc": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Descrption"
-      }
-    }
-  },
-  "Textes": {
-    "text_1_title": {
-      "type": "Text",
-      "config": {
-        "label": "Texte 1 - Titre"
-      }
-    },
-    "text_1_desc": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Texte 1 - Description"
-      }
-    },
-    "text_2_title": {
-      "type": "Text",
-      "config": {
-        "label": "Texte 2 - Titre"
-      }
-    },
-    "text_2_desc": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Texte 2 - Description"
-      }
-    },
-    "text_3_title": {
-      "type": "Text",
-      "config": {
-        "label": "Texte 3 - Titre"
-      }
-    },
-    "text_3_desc": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Texte 3 - Description"
-      }
-    }
-  },
-  "Contenu": {
-    "body": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "choices": {
-          "text_img": {
-            "type": "Slice",
-            "fieldset": "Texte & image",
-            "description": "Texte & image",
-            "icon": "insert_photo",
-            "display": "list",
-            "non-repeat": {
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
-                  "allowTargetBlank": true,
-                  "label": "Texte"
+  "Contenu" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "choices" : {
+          "text_img" : {
+            "type" : "Slice",
+            "fieldset" : "Texte & image",
+            "description" : "Texte & image",
+            "icon" : "insert_photo",
+            "display" : "list",
+            "non-repeat" : {
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi": "paragraph, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Texte"
                 }
               },
-              "img": {
-                "type": "Image",
-                "config": {
-                  "label": "Image"
+              "img" : {
+                "type" : "Image",
+                "config" : {
+                  "label" : "Image"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           },
-          "text_quote": {
-            "type": "Slice",
-            "fieldset": "Texte & citation",
-            "description": "Texte & citation",
-            "icon": "format_quote",
-            "display": "list",
-            "non-repeat": {
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
-                  "allowTargetBlank": true,
-                  "label": "Texte"
+          "text_quote" : {
+            "type" : "Slice",
+            "fieldset" : "Texte & citation",
+            "description" : "Texte & citation",
+            "icon" : "format_quote",
+            "display" : "list",
+            "non-repeat" : {
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi": "paragraph, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Texte"
                 }
               },
-              "quote_author": {
-                "type": "Text",
-                "config": {
-                  "label": "Auteur"
+              "quote_author" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Auteur"
                 }
               },
-              "quote_text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, strong, em, hyperlink",
-                  "allowTargetBlank": true,
-                  "label": "Citation"
+              "quote_text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank" : true,
+                  "label" : "Citation"
                 }
               },
-              "quote_desc": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, strong, em, hyperlink",
-                  "allowTargetBlank": true,
-                  "label": "Descrption"
+              "quote_desc" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, strong, em, hyperlink",
+                  "allowTargetBlank" : true,
+                  "label" : "Descrption"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           },
-          "text_kpis": {
-            "type": "Slice",
-            "fieldset": "Texte & chiffres",
-            "description": "Texte & chiffres",
-            "icon": "format_list_bulleted",
-            "display": "list",
-            "non-repeat": {
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, strong, em, hyperlink, heading3, heading4, heading5, heading6",
-                  "allowTargetBlank": true,
-                  "label": "Texte"
+          "text_kpis" : {
+            "type" : "Slice",
+            "fieldset" : "Texte & chiffres",
+            "description" : "Texte & chiffres",
+            "icon" : "format_list_bulleted",
+            "display" : "list",
+            "non-repeat" : {
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi": "paragraph, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Texte"
                 }
               }
             },
-            "repeat": {
-              "title": {
-                "type": "Text",
-                "config": {
-                  "label": "Chiffre - titre"
+            "repeat" : {
+              "title" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Chiffre - titre"
                 }
               },
-              "value": {
-                "type": "Text",
-                "config": {
-                  "label": "Chiffre - valeur"
+              "value" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Chiffre - valeur"
                 }
               },
-              "desc": {
-                "type": "Text",
-                "config": {
-                  "label": "Chiffre - unité"
+              "desc" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Chiffre - unité"
                 }
               }
             }
@@ -291,4 +197,3 @@
     }
   }
 }
-
