@@ -195,6 +195,7 @@ EOL;
 
         $item = $this->contentProvider->getSimplePage('page_glossaire', $this->locale);
         $item->isRoot = true;
+        $item->uid = null;
         $title = $item->title;
         if ($slug) {
             foreach ($glossaire as $word) {
@@ -209,6 +210,10 @@ EOL;
                 } else {
                     $word->selected = false;
                 }
+            }
+            if ($item->uid != $slug) {
+                // Asked for a word, but none found
+                abort(404, "Word not found");
             }
         }
 
