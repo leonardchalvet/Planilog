@@ -52,7 +52,7 @@
 				transform: translateY(-50%) translateX(20%);
 				right: calc(0px - ((100vw - #{$grid_desktop_1})/2));
 			}
-			@media screen and (min-width: 1900px) {
+			@media screen and (min-width: 2050px) {
 				img{
 					transform: translateY(-50%) translateX(0%);
 					max-height: initial;

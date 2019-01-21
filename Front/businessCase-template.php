@@ -69,6 +69,11 @@
 									<br> 
 									LISI Aerospace est en mesure de répondre à tout type de besoin d'assemblage, de l'avant-projet à la conception, de la fabrication à la livraison de composants ou sous-ensembles primaires, dans un cadre de gestion de programme.
 								</p>
+								<ul>
+									<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim illum hic, error saepe sed facilis nam, inventore, magni dolorem, quo repudiandae ullam sequi ex totam alias a tenetur praesentium.</li>
+									<li>salut</li>
+									<li>salut</li>
+								</ul>
 							</div>
 							<div class="container-obj">
 								<div class="obj-num">

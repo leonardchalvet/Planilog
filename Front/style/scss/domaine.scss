@@ -112,6 +112,10 @@
 		p{
 			@include styleParagraphSmall;
 			margin-top: 32px;
+			a{
+				@include styleParagraphSmall;
+				font-family: $font_2;
+			}
 		}
 	}
 	.container-btn{

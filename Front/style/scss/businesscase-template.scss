@@ -63,6 +63,18 @@
 
 					@include styleWysiwyg;
 
+					> ul{
+						li{
+							@include styleParagraphSmall;
+							&:last-child{
+								margin-bottom:0px;
+							}
+							&:before{
+								background-color: $colorMain_3;
+							}
+						}
+					}
+
 					h3{
 						@include styleH5;
 					}
