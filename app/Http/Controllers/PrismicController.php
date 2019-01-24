@@ -139,7 +139,7 @@ EOL;
         // Get related posts
         $ids = [];
         foreach ($document->related_posts as $post) {
-            $ids[] = $post->post->id;
+            if (property_exists($post->post, "id")) $ids[] = $post->post->id;
         }
         $related_posts = $this->contentProvider->getPostsByIDs($ids);
 
