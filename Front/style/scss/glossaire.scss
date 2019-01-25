@@ -105,6 +105,30 @@
 						}
 					}
 				}
+				ol{
+					list-style: none;
+  					counter-reset: my-awesome-counter;
+					text-align: left;
+					margin: 25px 0px 50px 0px;
+					li{
+						counter-increment: my-awesome-counter;
+						padding-left: 40px;
+						position: relative;
+						@include styleH6;
+						line-height: 32px;
+						font-family: $font_3;
+						margin-bottom:15px;
+						&:last-child{
+							margin-bottom:0px;
+						}
+						&:before{
+							content: counter(my-awesome-counter) ". ";
+							position: absolute;
+							left: 10px;
+						}
+						
+					}
+				}
 			}
 		}
 		.container-text{
