@@ -2,3 +2,4 @@ User-agent: *
 Disallow:
 Noindex: /fr/support/xxx/*
 Noindex: /en/support/xxx/*
+Sitemap: https://www.planilog.com/sitemap.xml
