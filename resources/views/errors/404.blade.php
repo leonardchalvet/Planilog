@@ -42,5 +42,12 @@
         </div>
     </section>
 </main>
+
+{{--  Prismic Toolbar for previews --}}
+<script>
+    window.prismic = { endpoint: '{{ Config::get('services.prismic.api') }}' };
+</script>
+<script src="https://static.cdn.prismic.io/prismic.min.js"></script>
+
 </body>
 </html>
