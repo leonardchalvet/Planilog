@@ -379,4 +379,7 @@ RedirectPermanent /fren/feature/schedule https://www.planilog.com/en/feature/sch
 RedirectPermanent /frfr/tarifs https://www.planilog.com/fr/tarifs
 RedirectPermanent /fren/support/xxx/links https://www.planilog.com/en/support/planilog-configuration/displaying-subsequent-preceding-task-links
 
+RedirectPermanent /en/glossary/glossaire---make-to-stock--mts1 https://www.planilog.com/en/glossary/make-to-stock-mts
+RedirectPermanent /en/glossary/glossaire---turnaround-time--tat https://www.planilog.com/en/glossary/turnaround-time-tat
+
 RedirectPermanent /app https://app.planilog.com
