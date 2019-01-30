@@ -452,7 +452,7 @@
 }
 
 #section-apprentissage{
-	margin-top: 170px;
+	margin-top: 120px;
 	.wrapper{
 		@include styleGrid3;
 		position: relative;
@@ -573,10 +573,14 @@
 						color: #FFF;
 						font-family: $font_3;
 						a{
+							display: inline-block;
+							margin-top: 10px;
 							color: #FFF;
 						}
 					}
 					a{
+						display: inline-block;
+						margin-top: 10px;
 						@include styleH5;
 						color: #FFF;
 						font-family: $font_3;

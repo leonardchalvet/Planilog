@@ -522,10 +522,12 @@ main
 					li{
 						padding-left: 40px;
 						position: relative;
-						@include styleH6;
-						line-height: 32px;
-						font-family: $font_3;
+						@include styleParagraphSmall;
+						color: $colorMain_1;
 						margin-bottom:15px;
+						a{
+							color: $colorMain_1;
+						}
 						&:last-child{
 							margin-bottom:0px;
 						}
@@ -551,10 +553,12 @@ main
 						counter-increment: my-awesome-counter;
 						padding-left: 40px;
 						position: relative;
-						@include styleH6;
-						line-height: 32px;
-						font-family: $font_3;
+						@include styleParagraphSmall;
+						color: $colorMain_1;
 						margin-bottom:15px;
+						a{
+							color: $colorMain_1;
+						}
 						&:last-child{
 							margin-bottom:0px;
 						}

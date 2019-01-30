@@ -36,6 +36,21 @@
 				font-family: $font_1;
 			}
 		}
+		> ul{
+			li{
+				font-size: 18px;
+				line-height: 32px;
+				font-family: $font_3;
+			}
+		}
+
+		> ol{
+			li{
+				font-size: 18px;
+				line-height: 32px;
+				font-family: $font_3;
+			}
+		}
 		> h2{
 			@include styleH4;
 			text-align: left;
