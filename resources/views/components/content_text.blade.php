@@ -17,7 +17,7 @@ use Prismic\Dom\RichText;
     @break
 
     @case("bouton")
-    <a href="@linkSrc($slice->primary, link)" @linkTarget($slice->primary, link)>
+    <a href="@linkSrc($slice->primary, link)" @linkTarget($slice->primary, link) class="button">
         <span class="btn-text">@simpleText($slice->primary, button)</span>
         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
     </a>
