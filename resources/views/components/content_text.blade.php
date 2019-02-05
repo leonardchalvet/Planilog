@@ -17,12 +17,10 @@ use Prismic\Dom\RichText;
     @break
 
     @case("bouton")
-    <button>
-        <a href="@linkSrc($slice->primary, link)" @linkTarget($slice->primary, link)>
-            <span class="btn-text">@simpleText($slice->primary, button)</span>
-            <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
-        </a>
-    </button>
+    <a href="@linkSrc($slice->primary, link)" @linkTarget($slice->primary, link)>
+        <span class="btn-text">@simpleText($slice->primary, button)</span>
+        <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
+    </a>
     @break
 
     @case("youtube")

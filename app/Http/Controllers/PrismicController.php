@@ -76,8 +76,8 @@ class PrismicController extends Controller
             $tel = $request->post("tel");
             $societe = $request->post("societe");
             $question = $request->post("question");
-            $pref = $request->post("rappel");
-            $pref .= $pref == 'tel' ? "(" . $request->post("time") . ")" : '';
+            $pref = $request->post("contact-type");
+            $pref .= $pref == 'téléphone' ? " (" . $request->post("contact-time") . ")" : '';
             $to = config('mail.to.address');
             $subject = "[contact commercial] $name";
             $message = <<<EOL
@@ -85,6 +85,7 @@ Nouveau message de $name
 Email : $email
 Société : $societe
 Téléphone : $tel
+Préférence de contact : $pref
 
 $question         
 EOL;

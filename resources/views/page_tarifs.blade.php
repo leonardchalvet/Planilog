@@ -147,16 +147,8 @@ use Prismic\Dom\RichText;
             <div class="container-text">
                 <h2 class="title">@simpleText($doc, free_title)</h2>
                 @richText($doc, free_desc, paragraph)
-                <p class="title-label">
-                    @simpleText($doc, free_input_label)
-                </p>
-                <form class="ajaxForm" method="post" action="{{ route('inscription') }}">
-                    @csrf
+                <form action="@linkSrc($header, header_menu_essai_link)">
                     <div class="container-input">
-                        <input type="text"
-                               name="email"
-                               placeholder="@simpleText($doc, free_input_placeholder)"
-                               required>
                         <button class="btn">
                             <span class="btn-text">@simpleText($doc, free_input_button)</span>
                             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">

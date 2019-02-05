@@ -27,7 +27,9 @@ use Prismic\Dom\RichText;
                         <div class="icn">
                             <img src="{{ asset('img/glossaire/search.svg') }}">
                         </div>
-                        <input id="liveSearch" type="text" placeholder="Rechercher">
+                        <input id="liveSearch"
+                               type="text"
+                               placeholder="{{ LaravelLocalization::getCurrentLocale() == "fr" ? "Rechercher" : "Search" }}">
                     </div>
                     <div class="container-el">
                         <ul id="liveList">

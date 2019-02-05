@@ -64,7 +64,8 @@ use Prismic\Dom\RichText;
                     <div class="container-rcl">
                         <div class="title">@simpleText($doc, label_contact)</div>
                         <div class="container-radio">
-                            <div class="radio">
+                            <input id="input-radio" name="contact-type" type="hidden">
+                            <div class="radio" data-radio="e-mail">
                                 <div class="content">
                                     <div class="btn-radio">
                                         <div class="rd"></div>
@@ -72,7 +73,7 @@ use Prismic\Dom\RichText;
                                     <div class="text">@simpleText($doc, field_contact_email)</div>
                                 </div>
                             </div>
-                            <div class="radio">
+                            <div class="radio" data-radio="téléphone">
                                 <div class="content">
                                     <div class="btn-radio">
                                         <div class="rd"></div>
@@ -80,13 +81,14 @@ use Prismic\Dom\RichText;
                                     <div class="text">@simpleText($doc, field_contact_tel)</div>
                                 </div>
                                 <div class="container-checkbox">
-                                    <div class="checkbox">
+                                    <input id="input-checkbox" name="contact-time" type="hidden">
+                                    <div class="checkbox" data-checkbox="matin">
                                         <div class="checkbox-btn">
                                             <img src="{{ asset('img/contact-commercial/check.svg') }}">
                                         </div>
                                         <div class="text">@simpleText($doc, field_contact_tel_am)</div>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="checkbox" data-checkbox="après-midi">
                                         <div class="checkbox-btn">
                                             <img src="{{ asset('img/contact-commercial/check.svg') }}">
                                         </div>
