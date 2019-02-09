@@ -37,6 +37,8 @@
     RewriteRule ^wiki/tag/kpi https://www.planilog.com/fr/fonctionnalite/mesurer [R=301,L]
     RewriteRule ^wiki/(.*)$ https://www.planilog.com/fr/glossaire [R=301,L]
 
+    RewriteRule ^enen/glossary/glossaire---theory-of-constraints https://www.planilog.com/en/glossary/theory-of-constraints-toc [R=301,L]
+
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
