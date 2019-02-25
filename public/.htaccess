@@ -38,6 +38,8 @@
     RewriteRule ^wiki/(.*)$ https://www.planilog.com/fr/glossaire [R=301,L]
 
     RewriteRule ^enen/glossary/glossaire---theory-of-constraints https://www.planilog.com/en/glossary/theory-of-constraints-toc [R=301,L]
+    RewriteRule ^enfr/support/xxx/facturation1 https://www.planilog.com/fr/support/facturation-et-abonnement [R=301,L]
+
 
 
     # Handle Authorization Header
@@ -391,7 +393,6 @@ RedirectPermanent /frfr/support/xxx/comment-creer-des-listes-et-des-dependances 
 RedirectPermanent /fren/feature/schedule https://www.planilog.com/en/feature/schedule
 RedirectPermanent /frfr/tarifs https://www.planilog.com/fr/tarifs
 RedirectPermanent /fren/support/xxx/links https://www.planilog.com/en/support/planilog-configuration/displaying-subsequent-preceding-task-links
-RedirectPermanent /enfr/support/xxx/facturation1 https://www.planilog.com/fr/support/facturation-et-abonnement
 
 RedirectPermanent /en/glossary/glossaire---make-to-stock--mts1 https://www.planilog.com/en/glossary/make-to-stock-mts
 RedirectPermanent /en/glossary/glossaire---turnaround-time--tat https://www.planilog.com/en/glossary/turnaround-time-tat
