@@ -71,6 +71,30 @@
 @include('components.header_banner')
 @include('components.header_cookies')
 
+<!-- Drip -->
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = '6665262';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/6665262.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+<!-- end Drip -->
+
+<!-- Albacross -->
+<script type="text/javascript">
+ (function(a,l,b,c,r,s){_nQc=c,r=a.createElement(l),s=a.getElementsByTagName(l)[0];r.async=1;
+ r.src=l.src=("https:"==a.location.protocol?"https://":"http://")+b;s.parentNode.insertBefore(r,s);
+ })(document,"script","serve.albacross.com/track.js","89360617");
+</script>
+<!-- END: Albacross -->
+
 
 {{-- Show missing links --}}
 <style>
