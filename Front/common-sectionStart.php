@@ -11,7 +11,7 @@
 			<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 		</a>
 		<div class="text">
-			ou <a class="clearbit-overlay" data-form-id="62740498-591d-48e4-a3d6-d644ad545524" data-theme="none">contactez nous</a>
+			ou <a class="clearbit-overlay" data-form-id="62740498-591d-48e4-a3d6-d644ad545524" data-theme="default">contactez nous</a>
 		</div>
 	</div>
 	<img class="laptop" src="img/common/start-laptop.png" alt="">

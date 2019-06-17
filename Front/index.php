@@ -39,7 +39,7 @@
 									<span class="btn-text">ESSAI GRATUIT</span>
 									<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 								</a>
-								<a class="link clearbit-overlay" data-form-id="dd68acc2-ad67-4d20-bf95-abd65f896922" data-theme="none">
+								<a class="link clearbit-overlay" data-form-id="dd68acc2-ad67-4d20-bf95-abd65f896922" data-theme="default">
 									Prendre RDV avec un consultant
 								</a>
 							</div>
