@@ -71,21 +71,37 @@
 @include('components.header_banner')
 @include('components.header_cookies')
 
-<!-- Drip -->
-<script type="text/javascript">
-  var _dcq = _dcq || [];
-  var _dcs = _dcs || {};
-  _dcs.account = '6665262';
 
-  (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true;
-    dc.src = '//tag.getdrip.com/6665262.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-  })();
+<!-- Hotjar Tracking Code for www.planilog.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1365974,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<!-- end Drip -->
+<!-- END: Hotjar -->
+
+<!-- ActiveCampaign Conversation -->
+<script type="text/javascript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '66437612');
+    vgo('setTrackByDefault', true);
+
+    vgo('process');
+</script>
+<!-- END: ActiveCampaign -->
+
+<!-- Crisp -->
+<script type="text/javascript">
+window.$crisp=[];window.CRISP_WEBSITE_ID="8edf0053-091e-4629-81d7-2c2ca36066b9";
+(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";
+s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+<!-- END: Crisp -->
 
 <!-- Albacross -->
 <script type="text/javascript">
