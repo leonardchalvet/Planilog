@@ -34,10 +34,16 @@
 							<p>
 								Planilog est l’application collaborative de planification et d’ordonnancement qui optimise vos flux de production et de maintenance en temps réel.
 							</p>
-							<a class="btn" href="#">
-								<span class="btn-text">ESSAI GRATUIT</span>
-								<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
-							</a>
+							<div class="container-action">
+								<a class="btn clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
+									<span class="btn-text">ESSAI GRATUIT</span>
+									<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
+								</a>
+								<a class="link clearbit-overlay" data-form-id="dd68acc2-ad67-4d20-bf95-abd65f896922" data-theme="none">
+									Prendre RDV avec un consultant
+								</a>
+							</div>
+							
 						</div>
 						<div class="container-illu">
 							<img src="img/home/sectionCover/cover.jpg" alt="">
@@ -381,5 +387,6 @@
 
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
+
 	</body>
 </html>

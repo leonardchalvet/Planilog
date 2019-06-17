@@ -31,7 +31,7 @@
 						<p>
 							La stabilité d’un modèle de planification repose sur sa précision et son niveau de détails. Planilog place l’agilité et la flexibilité au centre de ces préoccupations au travers d’un planning de gantt en ligne entièrement personnalisable et collaboratif. 
 						</p>
-						<a class="btn" href="#">
+						<a class="btn clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
 							<span class="btn-text">ESSAI GRATUIT</span>
 							<img class="btn-arrow" src="img/common/arrow-white.svg" alt="">
 						</a>

@@ -52,7 +52,7 @@
 						<div class="pp" style="background-image: url(img/img-test/user.jpg)"></div>
 						<div class="text">
 							<p>Un expert à votre écoute</p>
-							<a href="mailto:sales@planilog.com">Contacter</a>
+							<a class="clearbit-overlay" data-form-id="62740498-591d-48e4-a3d6-d644ad545524" data-theme="none">Contacter</a>
 						</div>
 					</div>
 				</li>
@@ -89,3 +89,6 @@
 		</div>
 	</div>
 </footer>
+
+
+<script type="text/javascript" src="https://clearbitjs.com/v1/x/forms.js"></script>

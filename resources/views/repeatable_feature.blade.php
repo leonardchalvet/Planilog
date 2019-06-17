@@ -33,7 +33,7 @@ use Prismic\Dom\RichText;
                     </h1>
                     <p>
                     @richText($doc, fct_desc)
-                    <a class="btn" href="@linkSrc($header, header_menu_essai_link)"
+                    <a class="btn clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default" href="@linkSrc($header, header_menu_essai_link)"
                             @linkTarget($header, header_menu_login_link)>
                         <span class="btn-text">@simpleText($doc, fct_button)</span>
                         <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">

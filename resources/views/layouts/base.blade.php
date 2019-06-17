@@ -127,6 +127,7 @@
 <script>
     window.prismic = { endpoint: '{{ Config::get('services.prismic.api') }}' };
 </script>
+<script type="text/javascript" src="https://clearbitjs.com/v1/x/forms.js"></script>
 <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
 
 </body>

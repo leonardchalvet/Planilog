@@ -28,6 +28,8 @@
 		align-items: center;
 		.container-text{
 			width: 570px;
+			position: relative;
+			z-index: 1;
 			h1{
 				@include styleH1;
 			}
@@ -35,10 +37,23 @@
 				@include styleParagraphBig;
 				margin-top: 20px;
 			}
-			.btn{
+			.container-action{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
 				margin-top: 55px;
-				@include styleButtonBig;
+				.btn{
+					@include styleButtonBig;
+				}
+				.link{
+					margin-left: 40px;
+					@include styleParagraphSmall;
+					color: $colorMain_1;
+					text-decoration: underline;
+					margin-left: 40px;
+				}
 			}
+			
 		}
 		.container-illu{
 			flex-grow: 1;
