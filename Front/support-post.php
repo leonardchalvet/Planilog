@@ -132,7 +132,7 @@
 			<section id="section-post">
 				<div class="wrapper">
 					<p>
-						Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra 	   eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. <strong>Maecenas eu varius risus</strong>, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue.
+						Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra 	   eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. <strong>Maecenas eu varius risus</strong>, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis <a href="">augue.</a>
 						
 					</p>
 					<div class="container-quote">

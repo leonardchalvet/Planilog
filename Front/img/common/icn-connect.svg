@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>data-transfer-diagonal@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="1-B-4-Centre-d'aide-dpdwn" transform="translate(-1009.000000, -366.000000)" stroke-width="1.34399998">
+            <g id="dropdown" transform="translate(541.000000, 105.000000)">
+                <g id="Group-8" transform="translate(469.000000, 255.000000)">
+                    <g id="data-transfer-diagonal" transform="translate(0.000000, 7.000000)">
+                        <path d="M10.625,9.21428571 L19.375,0.214285714" id="Path" stroke="#38467A"></path>
+                        <polyline id="Path" stroke="#FFB400" points="19.375 4.07142857 19.375 0.214285714 15.625 0.214285714"></polyline>
+                        <path d="M9.375,2.78571429 L0.625,11.7857143" id="Path" stroke="#38467A"></path>
+                        <polyline id="Path" stroke="#FFB400" points="0.625 7.92857143 0.625 11.7857143 4.375 11.7857143"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

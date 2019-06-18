@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="22px" viewBox="0 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>accounting-document@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="1-B-4-Centre-d'aide-dpdwn" transform="translate(-1009.000000, -526.000000)" stroke-width="1.34399998">
+            <g id="dropdown" transform="translate(541.000000, 105.000000)">
+                <g id="Group-8" transform="translate(469.000000, 420.000000)">
+                    <g id="accounting-document" transform="translate(0.000000, 2.000000)">
+                        <path d="M16.7875,18.125 C16.7875,18.8153559 16.2166631,19.375 15.5125,19.375 L1.4875,19.375 C0.783336944,19.375 0.2125,18.8153559 0.2125,18.125 L0.2125,1.875 C0.2125,1.18464406 0.783336944,0.625 1.4875,0.625 L10.52215,0.625 C10.8600651,0.625 11.1841314,0.75665146 11.42315,0.990833333 L16.41435,5.88416667 C16.6532155,6.11849866 16.7875,6.43621066 16.7875,6.7675 L16.7875,18.125 Z" id="Path" stroke="#38467A"></path>
+                        <path d="M16.7875,6.875 L11.6875,6.875 C10.9833369,6.875 10.4125,6.31535594 10.4125,5.625 L10.4125,0.625" id="Path" stroke="#38467A"></path>
+                        <path d="M3.57,9.66166667 C3.94359565,10.1427357 4.53306267,10.414894 5.1493,10.3908333 C6.11745,10.3908333 6.90285,9.81333333 6.90285,9.10166667 C6.90285,8.39 6.12,7.81333333 5.1527,7.81333333 C4.1854,7.81333333 3.4,7.23583333 3.4,6.52333333 C3.4,5.81083333 4.1854,5.23416667 5.1527,5.23416667 C5.76902604,5.20967691 6.35868523,5.481924 6.732,5.96333333" id="Path" stroke="#38467A"></path>
+                        <path d="M5.1527,10.3908333 L5.1527,11.25" id="Path" stroke="#38467A"></path>
+                        <path d="M5.1527,4.375 L5.1527,5.23416667" id="Path" stroke="#38467A"></path>
+                        <path d="M8.5,12.5 L13.6,12.5" id="Path" stroke="#1C95FF"></path>
+                        <path d="M4.0375,16.25 L13.6,16.25" id="Path" stroke="#1C95FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

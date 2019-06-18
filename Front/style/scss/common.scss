@@ -473,8 +473,6 @@ main
 					text-align: left;
 					@include styleParagraphSmall;
 					line-height: 30px;
-
-					color: $colorMain_1;
 					
 					&:first-child:first-letter{
 						float: left;
@@ -488,6 +486,7 @@ main
 					strong{
 						font-weight: normal;
 						font-family: $font_1;
+						color: $colorMain_1;
 					}
 					> img{
 						width: 100%;
@@ -496,7 +495,11 @@ main
 					a{
 						text-decoration: none;
 						color: $colorMain_1;
-						font-family: $font_1;
+						text-decoration: underline;
+						transition: all 0.25s ease;
+						&:hover{
+							color: $colorMain_2;
+						}
 					}
 				}
 				> h2{

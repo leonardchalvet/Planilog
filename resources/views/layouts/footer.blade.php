@@ -52,6 +52,10 @@ use Prismic\Dom\RichText;
                             </a>
                         </div>
                     </div>
+                    <div class="container-tel">
+                        <img src="img/common/icn-phone-red.svg" alt="">
+                        <a href="tel:0325753085">03 25 75 30 85</a>
+                    </div>
                 </li>
             </ul>
         </div>

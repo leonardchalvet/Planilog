@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>settings-slider@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="1-B-4-Centre-d'aide-dpdwn" transform="translate(-587.000000, -361.000000)" stroke-width="1.34399998">
+            <g id="dropdown" transform="translate(541.000000, 105.000000)">
+                <g id="Group-7" transform="translate(47.000000, 255.000000)">
+                    <g id="settings-slider" transform="translate(0.000000, 2.000000)">
+                        <rect id="Rectangle" stroke="#38467A" x="0.625833333" y="0.625" width="18.75" height="18.75" rx="1.22499998"></rect>
+                        <path d="M10.6258333,13.125 L15.6258333,13.125" id="Path" stroke="#38467A"></path>
+                        <path d="M4.37583333,13.125 L6.87583333,13.125" id="Path" stroke="#38467A"></path>
+                        <path d="M10.6258333,13.125 C10.6258333,14.1604254 9.78653638,14.9998465 8.75111099,14.9999998 C7.71568559,15.0001531 6.87614017,14.1609807 6.87583333,13.1255553 C6.87552666,12.0901299 7.7145747,11.2504602 8.75,11.2499998 C9.24742529,11.2497789 9.72455299,11.4472254 10.076364,11.7988801 C10.4281749,12.1505347 10.6258333,12.6275747 10.6258333,13.125 L10.6258333,13.125 Z" id="Path" stroke="#00D1C1"></path>
+                        <path d="M11.8758333,6.875 L4.37583333,6.875" id="Path" stroke="#38467A"></path>
+                        <path d="M15.6258333,6.875 C15.6258333,5.8395746 14.7865364,5.00015353 13.751111,5.00000021 C12.7156856,4.99984688 11.8761402,5.83901933 11.8758333,6.87444469 C11.8755267,7.90987005 12.7145747,8.74953981 13.75,8.75 C14.7856688,8.75 15.6253732,7.91066869 15.6258333,6.875 Z" id="Path" stroke="#00D1C1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

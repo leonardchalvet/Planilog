@@ -48,8 +48,13 @@ $(window).on('load', function() {
 	})
 
 	$('#header-mobile .container-link .wrapper .list-link .link').click(function(){
-		$('#header-mobile .container-link .wrapper .list-link .link').removeClass('active');
-		$(this).addClass('active');
+		if ($(this).hasClass('active')) {
+			$('#header-mobile .container-link .wrapper .list-link .link').removeClass('active');
+		} else {
+			$('#header-mobile .container-link .wrapper .list-link .link').removeClass('active');
+			$(this).addClass('active');
+		}
+		
 	})
 
 	$('#lightbox-subscribe .container-subscribe .container-desc .close').click(function(){

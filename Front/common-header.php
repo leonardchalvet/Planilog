@@ -101,9 +101,70 @@
 					<a href="#" class="title">Tarifs</a>
 				</div>
 			</li>
-			<li>
+			<li class="li-dropdown li-dropdown-3">
 				<div class="container-text">
-					<a href="#" class="title">Contact</a>
+					<div class="title">Centre d’aide</div>
+					<img class="arrow" src="img/common/arrow-red.svg" alt="">
+				</div>
+				<div class="dropdown">
+					<div class="content">
+						<div class="container-el">
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-compte.svg" alt="">
+								<div class="text">
+									<h3>Comptes et paramêtres</h3>
+									<p>
+										Présentation de votre compte administrateur Planilog, de la gestion des droits d’accès à la personnalisation de l’interface utilisateur.
+									</p>
+								</div>
+							</a>
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-demarrage.svg" alt="">
+								<div class="text">
+									<h3>Démarrage rapide</h3>
+									<p>
+										Guide de démarrage conçue pour vous accompagner dans la prise en main de votre outil de planification GANTT. Disponible dès la version d’essai gratuit.   
+									</p>
+								</div>
+							</a>
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-configuration.svg" alt="">
+								<div class="text">
+									<h3>Configuration de Planilog</h3>
+									<p>
+										Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.   
+									</p>
+								</div>
+							</a>
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-connect.svg" alt="">
+								<div class="text">
+									<h3>Planilog Connect</h3>
+									<p>
+										Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.         
+									</p>
+								</div>
+							</a>
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-premium.svg" alt="">
+								<div class="text">
+									<h3>Fonctions premium</h3>
+									<p>
+										Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.        
+									</p>
+								</div>
+							</a>
+							<a class="el" href="#">
+								<img class="icn" src="img/common/icn-facturation.svg" alt="">
+								<div class="text">
+									<h3>Facturation et abonnement</h3>
+									<p>
+										Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.              
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</li>
 		</ul>
@@ -219,16 +280,73 @@
 					</a>
 				</div>
 				<div class="link">
-					<a href="">
-						<span>Contact</span>
+					<a>
+						<span>Centre d'aide</span>
+						<img class="arrow" src="img/common/arrow-red.svg" alt="">
 					</a>
+					<div class="container-el">
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-compte.svg" alt="">
+							<div class="text">
+								<h3>Comptes et paramêtres</h3>
+								<p>
+									Présentation de votre compte administrateur Planilog, de la gestion des droits d’accès à la personnalisation de l’interface utilisateur.
+								</p>
+							</div>
+						</a>
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-demarrage.svg" alt="">
+							<div class="text">
+								<h3>Démarrage rapide</h3>
+								<p>
+									Guide de démarrage conçue pour vous accompagner dans la prise en main de votre outil de planification GANTT. Disponible dès la version d’essai gratuit.   
+								</p>
+							</div>
+						</a>
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-configuration.svg" alt="">
+							<div class="text">
+								<h3>Configuration de Planilog</h3>
+								<p>
+									Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.   
+								</p>
+							</div>
+						</a>
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-connect.svg" alt="">
+							<div class="text">
+								<h3>Planilog Connect</h3>
+								<p>
+									Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.         
+								</p>
+							</div>
+						</a>
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-premium.svg" alt="">
+							<div class="text">
+								<h3>Fonctions premium</h3>
+								<p>
+									Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.        
+								</p>
+							</div>
+						</a>
+						<a class="el" href="#">
+							<img class="icn" src="img/common/icn-facturation.svg" alt="">
+							<div class="text">
+								<h3>Facturation et abonnement</h3>
+								<p>
+									Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.              
+								</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="container-action">
-				<a class="signin" href>
+				<a class="signin">
 					<span>SE CONNECTER</span>
 				</a>
-				<a class="signup">
+				<a class="signup clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
 					<span>ESSAI GRATUIT</span>
 				</a>
 			</div>

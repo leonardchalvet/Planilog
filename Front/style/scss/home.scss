@@ -46,7 +46,6 @@
 					@include styleButtonBig;
 				}
 				.link{
-					margin-left: 40px;
 					@include styleParagraphSmall;
 					color: $colorMain_1;
 					text-decoration: underline;
@@ -740,6 +739,14 @@
 		right: initial;
 		left: -70%;
 		width: 230%;
+	}
+	#section-cover .container-cover .container-text .container-action{
+		display: block;
+	}
+	#section-cover .container-cover .container-text .container-action .link{
+		margin-left: 0px;
+		margin-top: 30px;
+		display: block;
 	}
 	#section-cover .container-logo{
 		margin-top: -100px;

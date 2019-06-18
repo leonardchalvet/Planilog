@@ -175,7 +175,6 @@
 						display: flex;
 						flex-flow: row wrap;
 						.el{
-							display: block;
 							text-decoration: none;
 							padding: 28px 25px 28px 25px;
 							display: flex;
@@ -184,10 +183,11 @@
 							align-items: flex-start;
 							transition: all 0.25s ease;
 							.icn{
-								width: 17px;
+								max-width: 17px;
+								margin-right: 12px;
 							}
 							.text{
-								width: calc(100% - 30px);
+								flex: 1;
 								h3{
 									@include styleH6;
 									margin-bottom: 8px;
@@ -213,6 +213,13 @@
 					width: 513px;
 					.container-el .el{
 						width: 100%;
+					}
+				}
+				&.li-dropdown-3 .dropdown{ 
+					left: -300px;
+					width: 850px;
+					.container-el .el{
+						width: 50%;
 					}
 				}
 				&.li-dropdown .container-text:before{
@@ -535,10 +542,11 @@
 								margin-bottom: 0px;
 							}
 							.icn{
-								width: 17px;
+								max-width: 17px;
+								margin-right: 12px;
 							}
 							.text{
-								width: calc(100% - 30px);
+								flex: 1;
 								h3{
 									@include styleH6;
 									margin-bottom: 8px;

@@ -55,6 +55,10 @@
 							<a class="clearbit-overlay" data-form-id="62740498-591d-48e4-a3d6-d644ad545524" data-theme="default">Contacter</a>
 						</div>
 					</div>
+					<div class="container-tel">
+						<img src="img/common/icn-phone-red.svg" alt="">
+						<a href="tel:0325753085">03 25 75 30 85</a>
+					</div>
 				</li>
 			</ul>
 		</div>
