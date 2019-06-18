@@ -30,15 +30,12 @@ use Prismic\Dom\RichText;
                         <div class="container-action">
                             <a class="btn clearbit-overlay"
                                data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5"
-                               data-theme="default"
-                               href="@linkSrc($header, header_menu_essai_link)"
-                               @linkTarget($header, header_menu_login_link)>
+                               data-theme="default">
                                 <span class="btn-text">@simpleText($doc, cover_button_text)</span>
                                 <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
                             </a>
                             <a class="link clearbit-overlay"
                                data-form-id="dd68acc2-ad67-4d20-bf95-abd65f896922"
-                               href="#form"
                                data-theme="default">
                                 @simpleText($doc, cover_rdv_text)
                             </a>
