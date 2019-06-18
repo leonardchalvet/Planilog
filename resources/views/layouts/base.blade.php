@@ -73,13 +73,6 @@
 </script>
 <!-- END: Hotjar -->
 
-<!-- Crisp -->
-<script type="text/javascript">
-window.$crisp=[];window.CRISP_WEBSITE_ID="8edf0053-091e-4629-81d7-2c2ca36066b9";
-(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";
-s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-</script>
-<!-- END: Crisp -->
 
 <!-- Start of Async Drift Code -->
 <script>
