@@ -51,6 +51,29 @@
     @endforeach
     <link rel="canonical" href="{{ LaravelLocalization::getLocalizedURL() }}">
 
+
+
+<!-- Hotjar Tracking Code for www.planilog.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1365974,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- END: Hotjar -->
+
+<!-- Crisp -->
+<script type="text/javascript">
+window.$crisp=[];window.CRISP_WEBSITE_ID="8edf0053-091e-4629-81d7-2c2ca36066b9";
+(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";
+s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+<!-- END: Crisp -->
+
 <!-- Start of Async Drift Code -->
 <script>
 "use strict";
@@ -80,27 +103,6 @@ drift.load('m3z94n6mcnm7');
 </script>
 <!-- End of Async Drift Code -->
 
-
-<!-- Hotjar Tracking Code for www.planilog.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1365974,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<!-- END: Hotjar -->
-
-<!-- Crisp -->
-<script type="text/javascript">
-window.$crisp=[];window.CRISP_WEBSITE_ID="8edf0053-091e-4629-81d7-2c2ca36066b9";
-(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";
-s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-</script>
-<!-- END: Crisp -->
 
 </head>
 
