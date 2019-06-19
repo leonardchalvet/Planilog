@@ -99,8 +99,7 @@ use Prismic\Dom\RichText;
                     @linkTarget($header, header_menu_login_link)>
                 @simpleText($header, header_menu_login)
             </a>
-            <a class="signup clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default"
-                    @linkTarget($header, header_menu_login_link)>
+            <a class="signup clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
                 <span class="text">
                     @simpleText($header, header_menu_essai)
                 </span>
@@ -178,10 +177,23 @@ use Prismic\Dom\RichText;
                     </a>
                 </div>
                 <div class="link">
-                    <a href="@linkSrc($header, header_menu_contact_link)"
-                            @linkTarget($header, header_menu_contact_link)>
-                        <span>@simpleText($header, header_menu_contact)</span>
+                    <a>
+                        <span>@simpleText($header, header_menu_aide)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
                     </a>
+                    <div class="container-el">
+                        @foreach($header->header_aide_container_el as $module)
+                            <a class="el"
+                               href="@linkSrc($module, header_aide_el_link)"
+                                    @linkTarget($module, header_aide_el_link)>
+                                <img class="icn" src="@imageSrc($module, header_aide_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($module, header_aide_el_title)</h3>
+                                    @richText($module, header_aide_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
                 </div>
             </div>
             <div class="container-action">
@@ -190,7 +202,9 @@ use Prismic\Dom\RichText;
                     <span>@simpleText($header, header_menu_login)</span>
                 </a>
                 <a class="signup clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
-                    @simpleText($header, header_menu_essai)
+                    <span class="text">
+                        @simpleText($header, header_menu_essai)
+                    </span>
                 </a>
             </div>
         </div>
