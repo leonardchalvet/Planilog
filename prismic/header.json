@@ -1,231 +1,268 @@
 {
-  "A-Main": {
-    "header_title": {
-      "type": "Text",
-      "config": {
-        "useAsTitle": true,
-        "label": "Page name (displayed only on Prismic)"
+  "A-Main" : {
+    "header_title" : {
+      "type" : "Text",
+      "config" : {
+        "useAsTitle" : true,
+        "label" : "Page name (displayed only on Prismic)"
       }
     },
-    "header_logo": {
-      "type": "Image",
-      "config": {
-        "label": "Header Logo"
+    "header_logo" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Header Logo"
       }
     },
-    "header_logo_white": {
-      "type": "Image",
-      "config": {
-        "label": "Header Logo (Blanc)"
+    "header_logo_white" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Header Logo (Blanc)"
       }
     },
-    "header_menu_outils": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Outils"
+    "header_menu_outils" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Outils"
       }
     },
-    "header_outils_container_el": {
-      "type": "Group",
-      "config": {
-        "fields": {
-          "header_outils_el_icon": {
-            "type": "Image",
-            "config": {
-              "label": "Menu Outils El Icon"
+    "header_outils_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "header_outils_el_icon" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Menu Outils El Icon"
             }
           },
-          "header_outils_el_title": {
-            "type": "Text",
-            "config": {
-              "label": "Menu Outils El Title"
+          "header_outils_el_title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Menu Outils El Title"
             }
           },
-          "header_outils_el_paragraph": {
-            "type": "StructuredText",
-            "config": {
-              "multi": "paragraph, em, strong",
-              "label": "Menu Outils El Paragraph"
+          "header_outils_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph, em, strong",
+              "label" : "Menu Outils El Paragraph"
             }
           },
-          "header_outils_el_link": {
-            "type": "Link",
-            "config": {
-              "label": "Menu Outils El Link",
-              "allowTargetBlank": true
+          "header_outils_el_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Menu Outils El Link",
+              "allowTargetBlank" : true
             }
           }
         },
-        "label": "Menu Outils Container El"
+        "label" : "Menu Outils Container El"
       }
     },
-    "header_menu_modules": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Modules"
+    "header_menu_modules" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Modules"
       }
     },
-    "header_modules_container_el": {
-      "type": "Group",
-      "config": {
-        "fields": {
-          "header_modules_el_icon": {
-            "type": "Image",
-            "config": {
-              "label": "Menu Modules El Icon"
+    "header_modules_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "header_modules_el_icon" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Menu Modules El Icon"
             }
           },
-          "header_modules_el_title": {
-            "type": "Text",
-            "config": {
-              "label": "Menu Modules El Title"
+          "header_modules_el_title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Menu Modules El Title"
             }
           },
-          "header_modules_el_paragraph": {
-            "type": "StructuredText",
-            "config": {
-              "multi": "paragraph, em, strong",
-              "label": "Menu Modules El Paragraph"
+          "header_modules_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph, em, strong",
+              "label" : "Menu Modules El Paragraph"
             }
           },
-          "header_modules_el_button_link": {
-            "type": "Link",
-            "config": {
-              "label": "Menu Modules El Link",
-              "allowTargetBlank": true
+          "header_modules_el_button_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Menu Modules El Link",
+              "allowTargetBlank" : true
             }
           }
         },
-        "label": "Menu Modules Container El"
+        "label" : "Menu Modules Container El"
       }
     },
-    "header_menu_tarifs": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Tarifs"
+    "header_menu_tarifs" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Tarifs"
       }
     },
-    "header_menu_contact": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Contact"
+    "header_menu_aide" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Centre d'aide"
       }
     },
-    "header_menu_login": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Connexion"
+    "header_aide_container_el" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "header_aide_el_icon" : {
+            "type" : "Image",
+            "config" : {
+              "label" : "Menu Aides El Icon"
+            }
+          },
+          "header_aide_el_title" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Menu Aides El Title"
+            }
+          },
+          "header_aide_el_paragraph" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph, em, strong",
+              "label" : "Menu Aides El Paragraph"
+            }
+          },
+          "header_aide_el_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Menu Aides El Link",
+              "allowTargetBlank" : true
+            }
+          }
+        },
+        "label" : "Menu Aides Container El"
       }
     },
-    "header_menu_login_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Login Link",
-        "allowTargetBlank": true
+    "header_menu_contact" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Contact"
       }
     },
-    "header_menu_essai": {
-      "type": "Text",
-      "config": {
-        "label": "Header Menu Essai"
+    "header_menu_login" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Connexion"
       }
     },
-    "header_menu_essai_link": {
-      "type": "Link",
-      "config": {
-        "label": "Header Menu Essai Link",
-        "allowTargetBlank": true
+    "header_menu_login_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Header Menu Login Link",
+        "allowTargetBlank" : true
+      }
+    },
+    "header_menu_essai" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Header Menu Essai"
+      }
+    },
+    "header_menu_essai_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Header Menu Essai Link",
+        "allowTargetBlank" : true
       }
     }
   },
-  "Formulaire d'inscription": {
-    "form_title": {
-      "type": "Text",
-      "config": {
-        "label": "Titre"
+  "Formulaire d'inscription" : {
+    "form_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Titre"
       }
     },
-    "form_desc": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Description"
+    "form_desc" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "allowTargetBlank" : true,
+        "label" : "Description"
       }
     },
-    "form_name": {
-      "type": "Text",
-      "config": {
-        "label": "Champ - Nom"
+    "form_name" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Champ - Nom"
       }
     },
-    "form_name2": {
-      "type": "Text",
-      "config": {
-        "label": "Champ - Prénom"
+    "form_name2" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Champ - Prénom"
       }
     },
-    "form_email": {
-      "type": "Text",
-      "config": {
-        "label": "Champ - Email"
+    "form_email" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Champ - Email"
       }
     },
-    "form_tel": {
-      "type": "Text",
-      "config": {
-        "label": "Champ - Téléphone"
+    "form_tel" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Champ - Téléphone"
       }
     },
-    "form_gcu": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Texte CGU"
+    "form_gcu" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "allowTargetBlank" : true,
+        "label" : "Texte CGU"
       }
     },
-    "form_button": {
-      "type": "Text",
-      "config": {
-        "label": "Bouton valider"
+    "form_button" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Bouton valider"
       }
     }
   },
-  "Bannière": {
-    "banner_status": {
-      "type": "Select",
-      "config": {
-        "options": [
-          "actif",
-          "inactif"
-        ],
-        "default_value": "actif",
-        "label": "État"
+  "Bannière" : {
+    "banner_status" : {
+      "type" : "Select",
+      "config" : {
+        "options" : [ "actif", "inactif" ],
+        "default_value" : "actif",
+        "label" : "État"
       }
     },
-    "banner_message": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Message"
+    "banner_message" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "allowTargetBlank" : true,
+        "label" : "Message"
       }
     }
   },
-  "Cookies": {
-    "cookies_message": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, strong, em, hyperlink",
-        "allowTargetBlank": true,
-        "label": "Message"
+  "Cookies" : {
+    "cookies_message" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, strong, em, hyperlink",
+        "allowTargetBlank" : true,
+        "label" : "Message"
       }
     },
-    "cookies_button": {
-      "type": "Text",
-      "config": {
-        "label": "Bouton accepter"
+    "cookies_button" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Bouton accepter"
       }
     }
   }

@@ -13,7 +13,11 @@ use Prismic\Dom\RichText;
             <img class="btn-arrow" src="{{ asset('img/common/arrow-white.svg') }}">
         </a>
         <div class="text clearbit-overlay" data-form-id="62740498-591d-48e4-a3d6-d644ad545524" data-theme="default">
-            @richText($footer_cta, footer_cta_contact_paragraph)
+            <p>
+                <a>
+                    @simpleText($footer_cta, footer_cta_contact_link)
+                </a>
+            </p>
         </div>
     </div>
     <img class="laptop" src="{{ asset('img/common/start-laptop.png') }}">

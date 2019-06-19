@@ -53,8 +53,10 @@ use Prismic\Dom\RichText;
                         </div>
                     </div>
                     <div class="container-tel">
-                        <img src="img/common/icn-phone-red.svg" alt="">
-                        <a href="tel:0325753085">03 25 75 30 85</a>
+                        <img src="{{ asset('img/common/icn-phone-red.svg') }}">
+                        <a href="tel:@simpleText($footer, footer_menu_contact_tel)">
+                            @simpleText($footer, footer_menu_contact_tel)
+                        </a>
                     </div>
                 </li>
             </ul>
