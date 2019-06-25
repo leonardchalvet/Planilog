@@ -74,13 +74,6 @@
 <!-- END: Hotjar -->
 
 
-<!-- Crisp -->
-<script type="text/javascript">
-window.$crisp=[];window.CRISP_WEBSITE_ID="8edf0053-091e-4629-81d7-2c2ca36066b9";(function(){d=document;s=d.createElement("script");
-s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-</script>
-<!-- END: Crisp -->
-
 <!-- Heap web analytics -->
 <script type="text/javascript">
     window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
