@@ -118,24 +118,5 @@ Route::post('/trial', ['uses' => 'PrismicController@inscription'])->name('inscri
 
 
 // Github webhook
-Route::post('git-webhook', function () {
-    app('debugbar')->disable();
+Route::post('/git-webhook', ['uses' => 'GitController@githubWebhook']);
 
-    // test :
-    //curl -i -X POST -H 'Content-Type: application/json' -d '{"toto": "tata"}' http://planilog.elune.ovh/git-webhook
-    $data = json_decode(file_get_contents('php://input'), true);
-
-    $ref = $data["ref"] ?? "none";
-    if ($ref != "refs/heads/master") {
-        return response(null, 200);
-    }
-
-    shell_exec("echo 1 > /tmp/planilog.webhook.github");
-    return response(null, 200);
-});
-
-
-// Test error page
-Route::get('500', function () {
-    throw new \Exception('TEST PAGE. This simulated error exception allows testing of the 500 error page.');
-});
