@@ -16,36 +16,49 @@ class GitController extends Controller
         //curl -i -X POST -H 'Content-Type: application/json' -d '{"toto": "tata"}' http://planilog.local/git-webhook
         $data = json_decode(file_get_contents('php://input'), true);
 
-        $dir = dirname(__FILE__)."/../../../";
+        //$dir = dirname(__FILE__)."/../../../";
+        $dir = "/homez.254/planilogml/planilog";
 
         $ref = $data["ref"] ?? "none";
         if ($ref != "refs/heads/master") {
-            return response(null, 200);
+            return response($data, 200);
         }
 
-        $cmd = "cd $dir";
-        $cmd .= " && php artisan down";             // Mode maintenance
-        $cmd .= " && git pull";                     // mise à jour des sources
-        $cmd .= " && php artisan cache:clear";
-        $cmd .= " && php artisan config:cache";
-        $cmd .= " && php artisan route:cache";
-        $cmd .= " && php artisan view:cache";
-        $cmd .= " && php artisan up";               // Mode live
+        $res = "init...";
 
-        $res = shell_exec($cmd);
+        $cmd = "cd $dir && ./gitwebhook2.sh";
+
+        /*
+        //$php="/usr/local/php7.2/bin/php"; // OVH
+        $php="/usr/local/bin/php";  // local
+        $git="/usr/bin/git";
+        $cmd .= " && $php artisan env";
+        $cmd .= " && $php artisan down";             // Mode maintenance
+        $cmd .= " && $git pull";                     // mise à jour des sources
+        $cmd .= " && $php artisan cache:clear";
+        //$cmd .= " && $php artisan config:cache";
+        //$cmd .= " && php artisan route:cache";
+        //$cmd .= " && $php artisan view:cache";
+        //$cmd .= " && $php artisan up";               // Mode live
+        */
+
+        $res .= shell_exec($cmd);
 
         // Check si tout s'est bien passé
 
-        Log::channel('slack')->info($res);
         if (file_exists(storage_path('framework').'/down')) {
             Log::channel('slack')->critical(
                   "*ATTENTION, UNE ERREUR EST SURVENUE LORS DU DEPLOIEMENT !*\n"
                 . "Une fois l'erreur corrigée, remettre en ligne le site avec\n"
                 . "```php artisan up```");
         }
+        else {
+            Log::channel('slack')->info("auto déploiement terminé.");
+        }
+        echo $cmd.PHP_EOL;
         echo $res.PHP_EOL;
 
-        return response(null, 200);
+        return response($res, 200);
 
     }
 }
