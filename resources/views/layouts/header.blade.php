@@ -99,7 +99,9 @@ use Prismic\Dom\RichText;
                     @linkTarget($header, header_menu_login_link)>
                 @simpleText($header, header_menu_login)
             </a>
-            <a class="signup clearbit-overlay" data-form-id="90f550a2-09f6-4dc3-8179-c5fc5563f4e5" data-theme="default">
+            <a class="signup"
+               href="@linkSrc($header, header_menu_essai_link)"
+                    @linkTarget($header, header_menu_essai_link)>
                 <span class="text">
                     @simpleText($header, header_menu_essai)
                 </span>
