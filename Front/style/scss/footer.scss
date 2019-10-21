@@ -37,7 +37,7 @@ footer{
 						transition: all 0.25s ease;
 						font-size: 14px;
 						&:hover{
-							opacity:0.8;
+							opacity:0.5;
 						}
 					}
 				}
@@ -67,6 +67,7 @@ footer{
 							line-height: 25px;
 							opacity: 0.8;
 							text-decoration: underline;
+							cursor: pointer;
 							transition: all 0.25s ease;
 							&:hover{
 								opacity: 0.5;
