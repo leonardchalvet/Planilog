@@ -61,6 +61,8 @@ use Prismic\Dom\RichText;
                     </div>
                 </div>
             </li>
+
+            <?php /*
             <li>
                 <div class="container-text">
                     <a class="title"
@@ -69,6 +71,32 @@ use Prismic\Dom\RichText;
                     </a>
                 </div>
             </li>
+            */ ?>
+
+            <li class="li-dropdown li-dropdown-2">
+                <div class="container-text">
+                    <div class="title">@simpleText($header, header_menu_tarifs)</div>
+                    <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                            @foreach($header->header_tarifs_container_el as $tarif)
+                                <a class="el"
+                                   href="@linkSrc($tarif, header_tarifs_el_button_link)"
+                                    @linkTarget($tarif, header_tarifs_el_button_link)>
+                                    <img class="icn" src="@imageSrc($tarif, header_tarifs_el_icon)">
+                                    <div class="text">
+                                        <h3>@simpleText($tarif, header_tarifs_el_title)</h3>
+                                        @richText($tarif, header_tarifs_el_paragraph)
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </li>
+
             <li class="li-dropdown li-dropdown-3">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_aide)</div>

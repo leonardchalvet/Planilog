@@ -51,6 +51,11 @@ function () {
         LaravelLocalization::transRoute('routes.fonctionnalite'),
         ['uses' => 'PrismicController@fonctionnalite']
     )->name('fonctionnalite');
+    // FONCTIONNATLIES
+    Route::get(
+        LaravelLocalization::transRoute('routes.tarif'),
+        ['uses' => 'PrismicController@tarif']
+    )->name('tarif');
 
     Route::redirect(LaravelLocalization::transRoute('routes.fonctionnalite_root'), '/', 301);
     Route::redirect(LaravelLocalization::transRoute('routes.domaine_root'), '/', 301);

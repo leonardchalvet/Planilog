@@ -88,7 +88,7 @@ class PrismicLinkResolver extends LinkResolver
     private function resolve2($link)
     {
         $url = "/";
-        
+
         if (substr($link->type, 0, 5) == "page_") {
             // Direct route to page
             if (Route::has($link->type)) {
@@ -106,6 +106,9 @@ class PrismicLinkResolver extends LinkResolver
         }
         elseif ($link->type == "feature") {
             $url = route("fonctionnalite", ['slug' => $link->uid]);
+        }
+        elseif ($link->type == "tarif") {
+            $url = route("tarif", ['slug' => $link->uid]);
         }
         elseif ($link->type == "client") {
             $url = route($link->type, ['slug' => $link->uid]);
