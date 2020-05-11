@@ -99,6 +99,46 @@
                 "label" : "Menu Modules Container El"
             }
         },
+        "header_menu_integrations" : {
+            "type" : "Text",
+            "config" : {
+                "label" : "Header Menu Integrations"
+            }
+        },
+        "header_integrations_container_el" : {
+            "type" : "Group",
+            "config" : {
+                "fields" : {
+                    "header_integrations_el_icon" : {
+                        "type" : "Image",
+                        "config" : {
+                            "label" : "Menu Integrations El Icon"
+                        }
+                    },
+                    "header_integrations_el_title" : {
+                        "type" : "Text",
+                        "config" : {
+                            "label" : "Menu Integrations El Title"
+                        }
+                    },
+                    "header_integrations_el_paragraph" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "multi" : "paragraph, em, strong",
+                            "label" : "Menu Integrations El Paragraph"
+                        }
+                    },
+                    "header_integrations_el_button_link" : {
+                        "type" : "Link",
+                        "config" : {
+                            "label" : "Menu Integrations El Link",
+                            "allowTargetBlank" : true
+                        }
+                    }
+                },
+                "label" : "Menu Integrations Container El"
+            }
+        },
         "header_menu_tarifs" : {
             "type" : "Text",
             "config" : {
@@ -137,6 +177,46 @@
                     }
                 },
                 "label" : "Menu Tarifs Container El"
+            }
+        },
+        "header_menu_partenaires" : {
+            "type" : "Text",
+            "config" : {
+                "label" : "Header Menu Partenaires"
+            }
+        },
+        "header_partenaires_container_el" : {
+            "type" : "Group",
+            "config" : {
+                "fields" : {
+                    "header_partenaires_el_icon" : {
+                        "type" : "Image",
+                        "config" : {
+                            "label" : "Menu Partenaires El Icon"
+                        }
+                    },
+                    "header_partenaires_el_title" : {
+                        "type" : "Text",
+                        "config" : {
+                            "label" : "Menu Partenaires El Title"
+                        }
+                    },
+                    "header_partenaires_el_paragraph" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "multi" : "paragraph, em, strong",
+                            "label" : "Menu Partenaires El Paragraph"
+                        }
+                    },
+                    "header_partenaires_el_button_link" : {
+                        "type" : "Link",
+                        "config" : {
+                            "label" : "Menu Partenaires El Link",
+                            "allowTargetBlank" : true
+                        }
+                    }
+                },
+                "label" : "Menu Partenaires Container El"
             }
         },
         "header_menu_aide" : {
