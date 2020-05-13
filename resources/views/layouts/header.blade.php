@@ -64,7 +64,7 @@ use Prismic\Dom\RichText;
                 </div>
             </li>
 
-            <li class="li-dropdown li-dropdown-2">
+            <li class="li-dropdown li-dropdown-3">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_integrations)</div>
                     <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
@@ -99,7 +99,7 @@ use Prismic\Dom\RichText;
             </li>
             */ ?>
 
-            <li class="li-dropdown li-dropdown-2">
+            <li class="li-dropdown li-dropdown-4">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_tarifs)</div>
                     <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
@@ -123,7 +123,7 @@ use Prismic\Dom\RichText;
                 </div>
             </li>
 
-            <li class="li-dropdown li-dropdown-2">
+            <li class="li-dropdown li-dropdown-5">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_partenaires)</div>
                     <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
@@ -147,7 +147,7 @@ use Prismic\Dom\RichText;
                 </div>
             </li>
 
-            <li class="li-dropdown li-dropdown-3">
+            <li class="li-dropdown li-dropdown-6">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_aide)</div>
                     <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
