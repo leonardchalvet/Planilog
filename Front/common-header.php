@@ -18,296 +18,188 @@
 	</div>
 	<div class="container-head">
 		<ul class="container-link">
-			<li class="li-dropdown li-dropdown-1">
-				<div class="container-text">
-					<div class="title">Fonctionnalités</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="features-planifier.php">
-								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
-								<div class="text">
-									<h3>Planifier</h3>
-									<p>
-										Élaborez un planning conforme à l’ensemble de vos règles métiers, de la réglementation en vigueur et de vos objectifs.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-simuler.php">
-								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
-								<div class="text">
-									<h3>Simuler</h3>
-									<p>
-										Créez des scénarios d’optimisation et visualisez les conséquences de chacune de vos décisions dans une logique d’amélioration continue.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-ordonnancer.php">
-								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
-								<div class="text">
-									<h3>Ordonnancer</h3>
-									<p>
-										Ajustez votre planning en tenant compte de vos contraintes d’ordonnancement qu’il s’agisse de vos machines, de vos ressources humaines ou des besoins clients.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-mesurer.php">
-								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
-								<div class="text">
-									<h3>Mesurer</h3>
-									<p>
-										Évaluez la qualité de vos plannings en vous basant sur vos indicateurs de performance opérationnelle (KPI) .
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="li-dropdown li-dropdown-2">
-				<div class="container-text">
-					<div class="title">Modules</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-production.svg" alt="">
-								<div class="text">
-									<h3>Production industrielle</h3>
-									<p>
-										Découvrez comment Planilog développe votre capacité de production et améliore votre taux de service client .
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-maintenance.svg" alt="">
-								<div class="text">
-									<h3>Maintenance industrielle</h3>
-									<p>
-										Découvrez comment Planilog optimise le taux d’utilisation de vos équipements et la planification des interventions de vos techniciens. 
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="li-dropdown li-dropdown-3">
-				<div class="container-text">
-					<div class="title">Intégrations</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-compte.svg" alt="">
-								<div class="text">
-									<h3>Comptes et paramêtres</h3>
-									<p>
-										Présentation de votre compte administrateur Planilog, de la gestion des droits d’accès à la personnalisation de l’interface utilisateur.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-demarrage.svg" alt="">
-								<div class="text">
-									<h3>Démarrage rapide</h3>
-									<p>
-										Guide de démarrage conçue pour vous accompagner dans la prise en main de votre outil de planification GANTT. Disponible dès la version d’essai gratuit.   
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-configuration.svg" alt="">
-								<div class="text">
-									<h3>Configuration de Planilog</h3>
-									<p>
-										Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.   
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-connect.svg" alt="">
-								<div class="text">
-									<h3>Planilog Connect</h3>
-									<p>
-										Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.         
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-premium.svg" alt="">
-								<div class="text">
-									<h3>Fonctions premium</h3>
-									<p>
-										Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.        
-									</p>
-								</div>
-							</a>
-							<a class="el" href="#">
-								<img class="icn" src="img/common/icn-facturation.svg" alt="">
-								<div class="text">
-									<h3>Facturation et abonnement</h3>
-									<p>
-										Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.              
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-			
-			<li class="li-dropdown li-dropdown-4">
-				<div class="container-text">
-					<div class="title">Tarifs</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="features-planifier.php">
-								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
-								<div class="text">
-									<h3>Planifier</h3>
-									<p>
-										Élaborez un planning conforme à l’ensemble de vos règles métiers, de la réglementation en vigueur et de vos objectifs.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-simuler.php">
-								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
-								<div class="text">
-									<h3>Simuler</h3>
-									<p>
-										Créez des scénarios d’optimisation et visualisez les conséquences de chacune de vos décisions dans une logique d’amélioration continue.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-ordonnancer.php">
-								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
-								<div class="text">
-									<h3>Ordonnancer</h3>
-									<p>
-										Ajustez votre planning en tenant compte de vos contraintes d’ordonnancement qu’il s’agisse de vos machines, de vos ressources humaines ou des besoins clients.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-mesurer.php">
-								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
-								<div class="text">
-									<h3>Mesurer</h3>
-									<p>
-										Évaluez la qualité de vos plannings en vous basant sur vos indicateurs de performance opérationnelle (KPI) .
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="li-dropdown li-dropdown-5">
-				<div class="container-text">
-					<div class="title">Partenaires</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="features-planifier.php">
-								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
-								<div class="text">
-									<h3>Planifier</h3>
-									<p>
-										Élaborez un planning conforme à l’ensemble de vos règles métiers, de la réglementation en vigueur et de vos objectifs.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-simuler.php">
-								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
-								<div class="text">
-									<h3>Simuler</h3>
-									<p>
-										Créez des scénarios d’optimisation et visualisez les conséquences de chacune de vos décisions dans une logique d’amélioration continue.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-ordonnancer.php">
-								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
-								<div class="text">
-									<h3>Ordonnancer</h3>
-									<p>
-										Ajustez votre planning en tenant compte de vos contraintes d’ordonnancement qu’il s’agisse de vos machines, de vos ressources humaines ou des besoins clients.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-mesurer.php">
-								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
-								<div class="text">
-									<h3>Mesurer</h3>
-									<p>
-										Évaluez la qualité de vos plannings en vous basant sur vos indicateurs de performance opérationnelle (KPI) .
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="li-dropdown li-dropdown-6">
-				<div class="container-text">
-					<div class="title">Centre d'aide</div>
-					<img class="arrow" src="img/common/arrow-red.svg" alt="">
-				</div>
-				<div class="dropdown">
-					<div class="content">
-						<div class="container-el">
-							<a class="el" href="features-planifier.php">
-								<img class="icn" src="img/features/common-features/icn-planifier.svg" alt="">
-								<div class="text">
-									<h3>Planifier</h3>
-									<p>
-										Élaborez un planning conforme à l’ensemble de vos règles métiers, de la réglementation en vigueur et de vos objectifs.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-simuler.php">
-								<img class="icn" src="img/features/common-features/icn-simuler.svg" alt="">
-								<div class="text">
-									<h3>Simuler</h3>
-									<p>
-										Créez des scénarios d’optimisation et visualisez les conséquences de chacune de vos décisions dans une logique d’amélioration continue.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-ordonnancer.php">
-								<img class="icn" src="img/features/common-features/icn-ordonnancer.svg" alt="">
-								<div class="text">
-									<h3>Ordonnancer</h3>
-									<p>
-										Ajustez votre planning en tenant compte de vos contraintes d’ordonnancement qu’il s’agisse de vos machines, de vos ressources humaines ou des besoins clients.
-									</p>
-								</div>
-							</a>
-							<a class="el" href="features-mesurer.php">
-								<img class="icn" src="img/features/common-features/icn-mesurer.svg" alt="">
-								<div class="text">
-									<h3>Mesurer</h3>
-									<p>
-										Évaluez la qualité de vos plannings en vous basant sur vos indicateurs de performance opérationnelle (KPI) .
-									</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
+
+            <li class="li-dropdown li-dropdown-1">
+                <div class="container-text">
+                    <div class="title">Fonctionnalités</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                                                            <a class="el" href="http://elune.ovh:17509/fr/fonctionnalite/planifier">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F16371661-a67a-45da-9ef4-0b7244719a22_icn-1.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Planifier</h3>
+                                        <p>Élaborez un planning conforme à l’ensemble de vos règles métiers, de la réglementation en vigueur et de vos objectifs.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/fonctionnalite/simuler">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F6a562886-bd4c-4033-8aff-dabd5acc1668_icn-2.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Simuler</h3>
+                                        <p>Créez des scénarios d’optimisation et visualisez les conséquences de chacune de vos décisions dans une logique d’amélioration continue.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/fonctionnalite/ordonnancer">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F107f7148-8f07-4c5d-a083-78dbd74a33de_icn-3.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Ordonnancer</h3>
+                                        <p>Ajustez votre planning en tenant compte de vos contraintes d’ordonnancement qu’il s’agisse de vos machines, de vos ressources humaines ou des besoins clients. </p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/fonctionnalite/mesurer">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F663ec50d-456e-4d49-a87c-1d781ac4e66a_icn-4.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Mesurer</h3>
+                                        <p>Évaluez la qualité de vos plannings en vous basant sur vos indicateurs de performance opérationnelle (KPI).</p>                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-2">
+                <div class="container-text">
+                    <div class="title">Modules</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                                                        <a class="el" href="http://elune.ovh:17509/fr/module/planning-production">
+                                <img class="icn" src="https://images.prismic.io/maxgodenne%2F06222d6f-d1e9-4bf8-932f-fbb35d0521ae_icn-1.svg?auto=compress,format">
+                                <div class="text">
+                                    <h3>Planning Production</h3>
+                                    <p>Découvrez comment Planilog développe votre capacité de production et améliore votre taux de service client.</p>                                </div>
+                            </a>
+                                                        <a class="el" href="http://elune.ovh:17509/fr/module/maintenance-industrielle">
+                                <img class="icn" src="https://images.prismic.io/maxgodenne%2F4096f763-3c69-4c95-a630-19e1d5b39a22_icn-2.svg?auto=compress,format">
+                                <div class="text">
+                                    <h3>Maintenance industrielle</h3>
+                                    <p>Découvrez comment Planilog optimise le taux d’utilisation de vos équipements et la planification des interventions de vos techniciens.</p>                                </div>
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-3">
+                <div class="container-text">
+                    <div class="title">Integrations</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                                                        <a class="el" href="https://google.com">
+                                <img class="icn" src="">
+                                <div class="text">
+                                    <h3>Integration 1</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                </div>
+                            </a>
+                                                        <a class="el" href="https://google.com">
+                                <img class="icn" src="">
+                                <div class="text">
+                                    <h3>Integration 2</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                </div>
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+
+            
+            <li class="li-dropdown li-dropdown-4">
+                <div class="container-text">
+                    <div class="title">Tarifs</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown displayBlock">
+                    <div class="content">
+                        <div class="container-el">
+                                                            <a class="el" href="http://elune.ovh:17509/fr/tarif/tarif-1">
+                                    <img class="icn" src="">
+                                    <div class="text">
+                                        <h3>Tarif 1</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-5">
+                <div class="container-text">
+                    <div class="title">Partenaires</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                                                            <a class="el" href="https://google.com">
+                                    <img class="icn" src="">
+                                    <div class="text">
+                                        <h3>Partenaire 1</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="https://google.com">
+                                    <img class="icn" src="">
+                                    <div class="text">
+                                        <h3>Partenaire 2</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-6">
+                <div class="container-text">
+                    <div class="title">Centre d'aide</div>
+                    <img class="arrow" src="http://elune.ovh:17509/img/common/arrow-red.svg">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/comptes-et-parametres">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F10f1a61a-8f7a-470c-b0fa-45f3054232f5_icn-compte.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Comptes et paramètres</h3>
+                                        <p>Présentation de votre compte administrateur Planilog, de la gestion des droits d’accès à la personnalisation de l’interface utilisateur.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/demarrage-rapide">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F8615019f-5c85-49f2-898c-3865b6aa0f81_icn-demarrage.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Démarrage rapide</h3>
+                                        <p>Guide de démarrage conçue pour vous accompagner dans la prise en main de votre outil de planification GANTT. Disponible dès la version d’essai gratuit.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/configuration-de-planilog">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F520a6735-1a82-42e7-ab3b-78c0d989840e_icn-configuration.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Configuration de Planilog</h3>
+                                        <p>Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/planilog-connect">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F657df0a1-a690-4824-a8ff-dd60b7f0b688_icn-connect.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Planilog Connect</h3>
+                                        <p>Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/fonctions-premium">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F1fa058ab-51dc-4d68-a51f-198c30c721b3_icn-premium.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Fonctions premium</h3>
+                                        <p>Découvrez l’ensemble des options de configuration disponibles à partir de votre compte utilisateur.</p>                                    </div>
+                                </a>
+                                                            <a class="el" href="http://elune.ovh:17509/fr/support/facturation-et-abonnement">
+                                    <img class="icn" src="https://images.prismic.io/maxgodenne%2F52ad744c-4e93-4aa7-b9da-ee3f8728117a_icn-facturation.svg?auto=compress,format">
+                                    <div class="text">
+                                        <h3>Facturation et abonnement</h3>
+                                        <p>Tout ce dont vous avez besoin de savoir à propos de l’importation, l’exportation et la migration de données.</p>                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
 		<div class="container-action">
 			<a class="signin">
 				SE CONNECTER
