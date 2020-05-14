@@ -61,6 +61,10 @@ chmod -R 777 bootstrap/cache
 
 Just do a `git pull`.
 
+```
+php artisan serve --host 0.0.0.0 --port 8002
+```
+
 ## Production
 
 Run the script `gitwebhook2.sh` to deploy the branch `master`. It runs the following commands :
@@ -72,6 +76,7 @@ Run the script `gitwebhook2.sh` to deploy the branch `master`. It runs the follo
 - `php artisan route:clear` to clear and warmup the routes
 - `php artisan view:clear` to clear and warmup the views
 - `php artisan up` to go back in live mode if everything went fine
+
 
 ### Autodeploy
 

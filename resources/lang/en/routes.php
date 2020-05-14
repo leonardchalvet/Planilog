@@ -5,6 +5,8 @@ return [
     "domaine_root" => "module",
     "fonctionnalite" => "feature/{slug}",
     "fonctionnalite_root" => "feature",
+    "tarif" => "pricing/{slug}",
+    "tarif_root" => "pricing",
     "client" => "business-case/{slug}",
     "page_blog" => "blog",
     "blog_post" => "blog/{slug}",

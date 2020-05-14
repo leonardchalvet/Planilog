@@ -87,7 +87,7 @@ Société : $societe
 Téléphone : $tel
 Préférence de contact : $pref
 
-$question         
+$question
 EOL;
             $support->mail($to, $subject, $message);
         }
@@ -113,6 +113,7 @@ EOL;
             'doc' => $document
         ]);
     }
+
     public function client(Request $request, string $slug)
     {
         return $this->genericTypePage($request, 'client', $slug, $this->locale);
@@ -121,6 +122,11 @@ EOL;
     public function fonctionnalite(Request $request, string $slug)
     {
         return $this->genericTypePage($request, 'feature', $slug, $this->locale);
+    }
+
+    public function tarif(Request $request, string $slug)
+    {
+        return $this->genericTypePage($request, 'tarif', $slug, $this->locale);
     }
 
     public function domaine(Request $request, string $slug)

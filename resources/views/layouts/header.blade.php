@@ -15,6 +15,7 @@ use Prismic\Dom\RichText;
 
     <div class="container-head">
         <ul class="container-link">
+
             <li class="li-dropdown li-dropdown-1">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_outils)</div>
@@ -38,6 +39,7 @@ use Prismic\Dom\RichText;
                     </div>
                 </div>
             </li>
+
             <li class="li-dropdown li-dropdown-2">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_modules)</div>
@@ -61,6 +63,32 @@ use Prismic\Dom\RichText;
                     </div>
                 </div>
             </li>
+
+            <li class="li-dropdown li-dropdown-3">
+                <div class="container-text">
+                    <div class="title">@simpleText($header, header_menu_integrations)</div>
+                    <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                            @foreach($header->header_integrations_container_el as $integration)
+                            <a class="el"
+                               href="@linkSrc($integration, header_integrations_el_button_link)"
+                               @linkTarget($integration, header_integrations_el_button_link)>
+                                <img class="icn" src="@imageSrc($integration, header_integrations_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($integration, header_integrations_el_title)</h3>
+                                    @richText($integration, header_integrations_el_paragraph)
+                                </div>
+                            </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <?php /*
             <li>
                 <div class="container-text">
                     <a class="title"
@@ -69,7 +97,57 @@ use Prismic\Dom\RichText;
                     </a>
                 </div>
             </li>
-            <li class="li-dropdown li-dropdown-3">
+            */ ?>
+
+            <li class="li-dropdown li-dropdown-4">
+                <div class="container-text">
+                    <div class="title">@simpleText($header, header_menu_tarifs)</div>
+                    <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                            @foreach($header->header_tarifs_container_el as $tarif)
+                                <a class="el"
+                                   href="@linkSrc($tarif, header_tarifs_el_button_link)"
+                                    @linkTarget($tarif, header_tarifs_el_button_link)>
+                                    <img class="icn" src="@imageSrc($tarif, header_tarifs_el_icon)">
+                                    <div class="text">
+                                        <h3>@simpleText($tarif, header_tarifs_el_title)</h3>
+                                        @richText($tarif, header_tarifs_el_paragraph)
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-5">
+                <div class="container-text">
+                    <div class="title">@simpleText($header, header_menu_partenaires)</div>
+                    <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                </div>
+                <div class="dropdown">
+                    <div class="content">
+                        <div class="container-el">
+                            @foreach($header->header_partenaires_container_el as $partenaire)
+                                <a class="el"
+                                   href="@linkSrc($partenaire, header_partenaires_el_button_link)"
+                                    @linkTarget($partenaire, header_partenaires_el_button_link)>
+                                    <img class="icn" src="@imageSrc($partenaire, header_partenaires_el_icon)">
+                                    <div class="text">
+                                        <h3>@simpleText($partenaire, header_partenaires_el_title)</h3>
+                                        @richText($partenaire, header_partenaires_el_paragraph)
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="li-dropdown li-dropdown-6">
                 <div class="container-text">
                     <div class="title">@simpleText($header, header_menu_aide)</div>
                     <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
@@ -153,6 +231,7 @@ use Prismic\Dom\RichText;
                         @endforeach
                     </div>
                 </div>
+
                 <div class="link">
                     <a>
                         <span>@simpleText($header, header_menu_modules)</span>
@@ -172,12 +251,77 @@ use Prismic\Dom\RichText;
                         @endforeach
                     </div>
                 </div>
+
+                <div class="link">
+                    <a>
+                        <span>@simpleText($header, header_menu_integrations)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                    </a>
+                    <div class="container-el">
+                        @foreach($header->header_integrations_container_el as $integration)
+                            <a class="el"
+                               href="@linkSrc($integration, header_integrations_el_button_link)"
+                                @linkTarget($integration, header_integrations_el_button_link)>
+                                <img class="icn" src="@imageSrc($integration, header_integrations_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($integration, header_integrations_el_title)</h3>
+                                    @richText($integration, header_integrations_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+
+                <?php /*
                 <div class="link">
                     <a href="@linkSrc($header, header_menu_tarifs_link)"
                             @linkTarget($header, header_menu_tarifs_link)>
                         <span>@simpleText($header, header_menu_tarifs)</span>
                     </a>
                 </div>
+                */ ?>
+
+
+                <div class="link">
+                    <a>
+                        <span>@simpleText($header, header_menu_tarifs)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                    </a>
+                    <div class="container-el">
+                        @foreach($header->header_tarifs_container_el as $tarif)
+                            <a class="el"
+                               href="@linkSrc($tarif, header_tarifs_el_button_link)"
+                                @linkTarget($tarif, header_tarifs_el_button_link)>
+                                <img class="icn" src="@imageSrc($tarif, header_tarifs_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($tarif, header_tarifs_el_title)</h3>
+                                    @richText($tarif, header_tarifs_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+
+                <div class="link">
+                    <a>
+                        <span>@simpleText($header, header_menu_partenaires)</span>
+                        <img class="arrow" src="{{ asset('img/common/arrow-red.svg') }}">
+                    </a>
+                    <div class="container-el">
+                        @foreach($header->header_partenaires_container_el as $partenaire)
+                            <a class="el"
+                               href="@linkSrc($partenaire, header_partenaires_el_button_link)"
+                                @linkTarget($partenaire, header_partenaires_el_button_link)>
+                                <img class="icn" src="@imageSrc($partenaire, header_partenaires_el_icon)">
+                                <div class="text">
+                                    <h3>@simpleText($partenaire, header_partenaires_el_title)</h3>
+                                    @richText($partenaire, header_partenaires_el_paragraph)
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+
                 <div class="link">
                     <a>
                         <span>@simpleText($header, header_menu_aide)</span>
