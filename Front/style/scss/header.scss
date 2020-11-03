@@ -897,6 +897,7 @@
 		justify-content: space-between;
 		align-items: center;
 		.text{
+			width: 100%;
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
@@ -914,7 +915,10 @@
 			}
 		}
 		.btn{
+			margin-top: 10px;
+			width: 100%;
 			@include styleButtonSmall;
+			justify-content: center;
 		}
 	}
 	&.hide{
